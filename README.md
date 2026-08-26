@@ -84,13 +84,9 @@ Python is used throughout with Pandas, NumPy, SciPy, Matplotlib, and, where it i
 
 ## <i class="fas fa-book-open" style="color:#6CA2C6"></i> Resources
 
-The course is moving to the purpose-built textbook
+The course uses one purpose-built textbook:
 [*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
-Chapters are released as they are completed. The current primary readings are:
-
-- *Statistics and Data Analysis for Engineers*, Chapter 1, for Session 1.
-- Richard Brooks, *Mathematics for Software Engineering*, Chapters 4–5, for Session 2.
-- Sheldon M. Ross, *Introduction to Probability and Statistics for Engineers and Scientists*, 6th edition, for Sessions 3–12.
+Its twelve chapters follow the twelve course sessions in the same order. Chapters are released as they are completed, and each session page links to the relevant chapter.
 
 The mapping from sessions to sections is on the [Literature](pages/literature.md) page. Notation and Python conventions are collected in [Conventions](pages/conventions.md). Data files live in `data/` and are catalogued under [Datasets](pages/datasets.md).
 

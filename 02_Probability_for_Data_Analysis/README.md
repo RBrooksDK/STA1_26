@@ -8,8 +8,6 @@ Read Chapter 2, *Probability for Data Analysis*, in the new course textbook
 **Syllabus and input**
 
 - Brooks, *Statistics and Data Analysis for Engineers*, Chapter 2
-- *Mathematics for Software Engineering*, Chapters 4–5, as aligned source material and optional recap
-- Optional Ross 3.1–3.4 and 3.6–3.8
 - [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/02_Probability_for_Data_Analysis/session_material)
 
 ---

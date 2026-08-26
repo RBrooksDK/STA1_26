@@ -2,14 +2,12 @@
 
 ## Session preparation
 
-Read Ross 6.1–6.3 and selected parts of 6.4–6.5.
+Read Chapter 5, *Sampling Distributions and the Central Limit Theorem*, in the course textbook
+[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
 
 **Syllabus and input**
 
-- Ross 6.1 Introduction
-- Ross 6.2 The sample mean
-- Ross 6.3 The central limit theorem
-- Selected parts of 6.4–6.5 (sample variance; sampling from a normal population)
+- Brooks, *Statistics and Data Analysis for Engineers*, Chapter 5
 - [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/05_Sampling_Distributions_and_the_CLT/session_material)
 
 ---
@@ -41,7 +39,7 @@ By the end of the session, you should be able to:
 
 ## Scope boundary
 
-- Finite-population corrections (Ross 6.6)
+- Finite-population corrections
 - Proving the CLT
 - Confusing the distribution of the raw data with the distribution of the mean
 

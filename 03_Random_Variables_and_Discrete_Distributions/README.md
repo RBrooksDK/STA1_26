@@ -2,17 +2,13 @@
 
 ## Session preparation
 
-Read Ross 4.1–4.2, 4.4, 4.6 and 5.1–5.2. The binomial coefficient is introduced here, where the binomial model uses it.
+Read Chapter 3, *Random Variables and Discrete Distributions*, in the course textbook
+[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
+The binomial coefficient is introduced here, where the binomial model uses it.
 
 **Syllabus and input**
 
-- Ross 4.1 Random variables
-- Ross 4.2 Types of random variables
-- Ross 4.4 Expectation
-- Ross 4.6 Variance
-- Ross 5.1 Bernoulli and binomial
-- Ross 5.2 Poisson
-- Optional: selected parts of 5.3 (hypergeometric)
+- Brooks, *Statistics and Data Analysis for Engineers*, Chapter 3
 - [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/03_Random_Variables_and_Discrete_Distributions/session_material)
 
 ---
@@ -46,7 +42,7 @@ By the end of the session, you should be able to:
 ## Scope boundary
 
 - Geometric and negative binomial as core syllabus (they may appear as extras)
-- Jointly distributed random variables, covariance of sums, MGFs (Ross 4.3, 4.7–4.8)
+- Jointly distributed random variables, covariance of sums, and moment-generating functions (SMP1)
 - Deriving PMFs from first principles for every named family
 
 ---

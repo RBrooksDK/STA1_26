@@ -2,15 +2,14 @@
 
 ## Session preparation
 
-Read Ross 9.1–9.2 and 9.4–9.6. The English note [Calculating_metrics.md](Calculating_metrics.md) can be used as an extra derivation sheet.
+Read Chapter 10, *Simple Linear Regression*, in the course textbook
+[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
+The English note [Calculating_metrics.md](Calculating_metrics.md) can be used as an extra derivation sheet.
 
 **Syllabus and input**
 
-- Ross 9.1 Introduction
-- Ross 9.2 Least squares estimation
-- Selected parts of 9.4 (inference)
-- Ross 9.5 \(R^2\) and correlation
-- Ross 9.6 Residual analysis
+- Brooks, *Statistics and Data Analysis for Engineers*, Chapter 10
+- [Calculating metrics](Calculating_metrics.md), optional derivation sheet
 - [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/10_Simple_Linear_Regression/session_material)
 
 ---
