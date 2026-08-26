@@ -2,11 +2,15 @@
 
 ## Session preparation
 
-Read Brooks, *Mathematics for Software Engineering*, Chapter 6 (descriptive statistics). Skim the [Conventions](../pages/conventions.md) page, especially population versus sample and \(n-1\).
+Read Chapter 1, *Data and Descriptive Statistics*, in the new course textbook
+[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf#page=7).
+Skim the [Conventions](../pages/conventions.md) page, especially population
+versus sample and \(n-1\).
 
 **Syllabus and input**
 
-- Brooks, Chapter 6: data types, summaries, histograms, and boxplots
+- Brooks, *Statistics and Data Analysis for Engineers*, Chapter 1
+- *Mathematics for Software Engineering*, Chapter 6, as the aligned source and optional recap
 - Ross 1.2–1.4 and 2.1–2.3 as optional extra reading
 - [Dataset catalogue](../pages/datasets.md): `sensor_thickness.csv`
 - [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/01_Data_and_Descriptive_Statistics/session_material)
