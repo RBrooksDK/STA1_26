@@ -9,6 +9,7 @@ Read Ross 7.4, 8.4, and the two-sample part of 8.6.
 - Ross 7.4 Estimating the difference in means of two normal populations
 - Ross 8.4 Testing the equality of means of two normal populations
 - Two-sample part of 8.6
+- [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/08_Hypothesis_Testing_II_Comparing_Two_Groups/session_material)
 
 ---
 
@@ -25,16 +26,16 @@ By the end of the session, you should be able to:
 - distinguish statistical significance from practical importance.
 
 <p align="left">
-  <a href="Tutorial_08_notebook.ipynb">
+  <a href="Tutorial_08_notebook/">
     <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
     <br>
     <strong>Tutorial 8: A/B test of response times</strong>
   </a>
 </p>
 
-[Download notebook (.ipynb)](Tutorial_08_notebook.ipynb)
+[Download notebook (.ipynb)](https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/08_Hypothesis_Testing_II_Comparing_Two_Groups/Tutorial_08_notebook.ipynb)
 &nbsp;·&nbsp;
-[Read as markdown](Tutorial_08.md)
+[Read as markdown](Tutorial_08.md/)
 
 ---
 

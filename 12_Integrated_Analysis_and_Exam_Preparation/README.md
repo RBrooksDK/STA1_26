@@ -9,6 +9,7 @@ Revisit the [method map](#method-choice) below, your six assignments, and the [p
 - Selected examples from earlier Ross and Brooks chapters
 - Course tutorials 01–11
 - [Exam page](../pages/exam.md)
+- [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/12_Integrated_Analysis_and_Exam_Preparation/session_material)
 
 ---
 
@@ -24,16 +25,16 @@ By the end of the session, you should be able to:
 - explain one assignment and the project in about 20 minutes.
 
 <p align="left">
-  <a href="Tutorial_12_notebook.ipynb">
+  <a href="Tutorial_12_notebook/">
     <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
     <br>
     <strong>Tutorial 12: From raw data to a recommendation</strong>
   </a>
 </p>
 
-[Download notebook (.ipynb)](Tutorial_12_notebook.ipynb)
+[Download notebook (.ipynb)](https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/12_Integrated_Analysis_and_Exam_Preparation/Tutorial_12_notebook.ipynb)
 &nbsp;·&nbsp;
-[Read as markdown](Tutorial_12.md)
+[Read as markdown](Tutorial_12.md/)
 
 ---
 

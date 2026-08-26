@@ -10,6 +10,7 @@ Read Ross 8.1–8.3 and the one-sample part of 8.6.
 - Ross 8.2 Significance levels
 - Ross 8.3 Tests concerning the mean of a normal population
 - One-sample part of 8.6 (Bernoulli / proportion)
+- [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/07_Hypothesis_Testing_I_Principles_and_One_Sample_Tests/session_material)
 
 ---
 
@@ -26,16 +27,16 @@ By the end of the session, you should be able to:
 - use the duality between a confidence interval and a two-sided test.
 
 <p align="left">
-  <a href="Tutorial_07_notebook.ipynb">
+  <a href="Tutorial_07_notebook/">
     <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
     <br>
     <strong>Tutorial 7: Does the process meet the specification?</strong>
   </a>
 </p>
 
-[Download notebook (.ipynb)](Tutorial_07_notebook.ipynb)
+[Download notebook (.ipynb)](https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/07_Hypothesis_Testing_I_Principles_and_One_Sample_Tests/Tutorial_07_notebook.ipynb)
 &nbsp;·&nbsp;
-[Read as markdown](Tutorial_07.md)
+[Read as markdown](Tutorial_07.md/)
 
 ---
 

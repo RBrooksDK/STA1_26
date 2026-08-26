@@ -7,6 +7,7 @@ Read Ross 10.1–10.3. Only one-way ANOVA is core syllabus.
 **Syllabus and input**
 
 - Ross 10.1–10.3: one-way ANOVA, the \(F\)-test, and pairwise comparisons
+- [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/09_Analysis_of_Variance/session_material)
 
 ---
 
@@ -23,16 +24,16 @@ By the end of the session, you should be able to:
 - reuse boxplots from Session 01 as a diagnostic, not as a new plot type.
 
 <p align="left">
-  <a href="Tutorial_09_notebook.ipynb">
+  <a href="Tutorial_09_notebook/">
     <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
     <br>
     <strong>Tutorial 9: Several suppliers, one quality measure</strong>
   </a>
 </p>
 
-[Download notebook (.ipynb)](Tutorial_09_notebook.ipynb)
+[Download notebook (.ipynb)](https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/09_Analysis_of_Variance/Tutorial_09_notebook.ipynb)
 &nbsp;·&nbsp;
-[Read as markdown](Tutorial_09.md)
+[Read as markdown](Tutorial_09.md/)
 
 ---
 

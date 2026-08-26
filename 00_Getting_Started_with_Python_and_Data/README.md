@@ -9,6 +9,7 @@ This page is **self-study**. There is no classroom session 00. Work through it b
 - [Conventions](../pages/conventions.md): notation and Python style used in every later notebook
 - [Datasets](../pages/datasets.md): where files live and what they contain
 - [Literature](../pages/literature.md): which book belongs to which session
+- [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/00_Getting_Started_with_Python_and_Data/session_material)
 
 ---
 

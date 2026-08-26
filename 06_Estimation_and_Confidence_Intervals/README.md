@@ -9,6 +9,7 @@ Read Ross 7.1, 7.3, and 7.5. Section 7.4 waits until Session 08 (two groups).
 - Ross 7.1 Introduction
 - Ross 7.3 Interval estimates
 - Ross 7.5 Approximate confidence interval for a Bernoulli mean
+- [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/06_Estimation_and_Confidence_Intervals/session_material)
 
 ---
 
@@ -25,16 +26,16 @@ By the end of the session, you should be able to:
 - see how interval width depends on \(n\) and on the confidence level.
 
 <p align="left">
-  <a href="Tutorial_06_notebook.ipynb">
+  <a href="Tutorial_06_notebook/">
     <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
     <br>
     <strong>Tutorial 6: How precise is this measurement?</strong>
   </a>
 </p>
 
-[Download notebook (.ipynb)](Tutorial_06_notebook.ipynb)
+[Download notebook (.ipynb)](https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/06_Estimation_and_Confidence_Intervals/Tutorial_06_notebook.ipynb)
 &nbsp;·&nbsp;
-[Read as markdown](Tutorial_06.md)
+[Read as markdown](Tutorial_06.md/)
 
 ---
 

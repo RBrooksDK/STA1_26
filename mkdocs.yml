@@ -10,6 +10,7 @@ exclude_docs: |
   tools/**
   source_map.md
   _site/**
+  **/session_material/**
 
 validation:
   omitted_files: ignore
@@ -186,4 +187,3 @@ nav:
   - Conventions: pages/conventions.md
   - Datasets: pages/datasets.md
   - FAQ: pages/faq.md
-  - General Resources STA: https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgCRcFyOD9zaTZE0MIeH7KyCAcoyBaddmF791Zj-ghekZ04?e=ahV2dL
