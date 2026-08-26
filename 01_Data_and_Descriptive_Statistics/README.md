@@ -1,57 +1,52 @@
-# 01 — Data and Descriptive Statistics
-
-## Session preparation
-
-Read Chapter 1, *Data and Descriptive Statistics*, in the new course textbook
-[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf#page=7).
-Skim the [Conventions](../pages/conventions.md) page, especially population
-versus sample and \(n-1\).
-
-**Syllabus and input**
-
-- Brooks, *Statistics and Data Analysis for Engineers*, Chapter 1
-- [Dataset catalogue](../pages/datasets.md): `sensor_thickness.csv`
-- [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/01_Data_and_Descriptive_Statistics/session_material)
-
+---
+tags:
+    - Descriptive Statistics
+    - Data
+    - Mean
+    - Median
+    - Variance
+    - Histograms
+    - Boxplots
 ---
 
-## Session focus
+<h1 align="center">Data and Descriptive Statistics</h1>
 
-We start with data, not with formulae. The session introduces populations and samples, numerical summaries, and the plots used for the rest of the course.
+We start with data, not with formulae. A production measurement is only useful if we can say what is typical, how much it spreads, and whether the shape of the distribution is regular or skewed. This session introduces populations and samples, numerical summaries, and the plots used for the rest of the course.
 
-By the end of the session, you should be able to:
+A **population** is the complete set of items we care about; a **sample** is what we actually measured. Population parameters such as \(\mu\) and \(\sigma\) are unknown. Sample statistics such as \(\bar{x}\) and \(s\) are computed from the data. The sample variance uses \(n-1\). Histograms, boxplots, and scatterplots then show shape, outliers, and possible drift.
 
-- distinguish a population from a sample, and a parameter from a statistic;
-- compute mean, median, mode, variance, standard deviation, quartiles, and IQR;
-- identify potential outliers with the \(1.5 \times \operatorname{IQR}\) rule;
-- produce and interpret histograms, boxplots, and scatterplots;
-- describe distribution shape (symmetry, skew, unimodal versus multimodal).
+#### Key Concepts
 
-<p align="left">
-  <a href="Tutorial_01_notebook/">
-    <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
-    <br>
-    <strong>Tutorial 1: Characterising sensor measurements</strong>
-  </a>
-</p>
+- Population versus sample, parameter versus statistic
+- Mean, median, mode, variance, standard deviation, quartiles, and IQR
+- The \(1.5 \times \operatorname{IQR}\) outlier fence
+- Histograms, boxplots, and scatterplots
+- Distribution shape: symmetry, skew, unimodal versus multimodal
 
-[Download notebook (.ipynb)](https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/01_Data_and_Descriptive_Statistics/Tutorial_01_notebook.ipynb)
-&nbsp;·&nbsp;
-[Read as markdown](Tutorial_01.md/)
+!!! tip "Learning Objectives"
 
----
+    - Distinguish a population from a sample, and a parameter from a statistic.
+    - Compute mean, median, mode, variance, standard deviation, quartiles, and IQR.
+    - Identify potential outliers with the \(1.5 \times \operatorname{IQR}\) rule.
+    - Produce and interpret histograms, boxplots, and scatterplots.
+    - Describe distribution shape (symmetry, skew, unimodal versus multimodal).
 
-## Scope boundary
+<hr/>
 
-- Chebyshev's inequality and formal estimation theory
-- Inferential claims from a plot alone
-- Time-series decomposition (that belongs to SMP1)
+### Session Preparation:
 
----
+Brooks: [Chapter 1](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf)
 
-## Assignments
+Pay particular attention to population versus sample and to \(n-1\) in the sample variance.
 
-This session feeds **[Assignment 1](../pages/assignments.md)**: data, preprocessing, and descriptive analysis.
+### Resources
 
-The [assessment page](Exercises.md) is reserved for Assignment 1 material,
-which will be published during the semester.
+[Session material](https://github.com/RBrooksDK/STA1_26/tree/main/01_Data_and_Descriptive_Statistics/session_material)
+
+[Tutorial 1: Characterising sensor measurements](Tutorial_01_notebook/)
+
+[Datasets](../pages/datasets.md) (`sensor_thickness.csv`)
+
+<hr/>
+
+### Exercises

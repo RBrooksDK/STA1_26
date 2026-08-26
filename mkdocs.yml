@@ -12,6 +12,9 @@ exclude_docs: |
   source_map.md
   _site/**
   **/session_material/**
+  pages/literature.md
+  pages/conventions.md
+  pages/project.md
 
 validation:
   omitted_files: ignore
@@ -182,9 +185,6 @@ nav:
       - 12_Integrated_Analysis_and_Exam_Preparation/README.md
       - "Tutorial 12 (notebook)": 12_Integrated_Analysis_and_Exam_Preparation/Tutorial_12_notebook.ipynb
   - Assignments: pages/assignments.md
-  - Project: pages/project.md
   - Exam: pages/exam.md
-  - Literature: pages/literature.md
-  - Conventions: pages/conventions.md
   - Datasets: pages/datasets.md
   - FAQ: pages/faq.md

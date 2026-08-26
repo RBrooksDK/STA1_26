@@ -1,54 +1,45 @@
-# 06 — Estimation and Confidence Intervals
-
-## Session preparation
-
-Read Chapter 6, *Estimation and Confidence Intervals*, in the course textbook
-[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
-
-**Syllabus and input**
-
-- Brooks, *Statistics and Data Analysis for Engineers*, Chapter 6
-- [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/06_Estimation_and_Confidence_Intervals/session_material)
-
+---
+tags:
+    - Estimation
+    - Confidence Intervals
+    - t-interval
+    - Bootstrap
 ---
 
-## Session focus
+<h1 align="center">Estimation and Confidence Intervals</h1>
 
-An estimate is a number; an interval says how precise that number is. We construct confidence intervals for a mean and for a proportion, interpret coverage correctly, and add a bootstrap interval as a practical check.
+An estimate is a number; an interval says how precise that number is. After the CLT we can attach a margin of error to a mean or a proportion and talk about coverage rather than a single lucky sample.
 
-By the end of the session, you should be able to:
+We distinguish an estimator from an estimate, construct \(z\)- and \(t\)-intervals for a mean and an approximate interval for a proportion, and add a bootstrap interval as a practical check. A 95% interval is a statement about the procedure, not a claim that “the parameter now lies in this interval with probability 0.95”. Width depends on \(n\) and on the confidence level.
 
-- distinguish an estimator from an estimate, and discuss bias at an intuitive level;
-- construct a \(z\)-interval and a \(t\)-interval for a mean;
-- construct an approximate interval for a proportion;
-- interpret a 95% interval without claiming that “the parameter lies in this interval with probability 0.95” after the data are seen;
-- see how interval width depends on \(n\) and on the confidence level.
+#### Key Concepts
 
-<p align="left">
-  <a href="Tutorial_06_notebook/">
-    <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
-    <br>
-    <strong>Tutorial 6: How precise is this measurement?</strong>
-  </a>
-</p>
+- Estimator versus estimate, and bias at an intuitive level
+- \(z\)-interval and \(t\)-interval for a mean
+- Approximate interval for a proportion
+- Coverage and correct interpretation
+- How width depends on \(n\) and confidence level
 
-[Download notebook (.ipynb)](https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/06_Estimation_and_Confidence_Intervals/Tutorial_06_notebook.ipynb)
-&nbsp;·&nbsp;
-[Read as markdown](Tutorial_06.md/)
+!!! tip "Learning Objectives"
 
----
+    - Distinguish an estimator from an estimate, and discuss bias at an intuitive level.
+    - Construct a \(z\)-interval and a \(t\)-interval for a mean.
+    - Construct an approximate interval for a proportion.
+    - Interpret a 95% interval without claiming that the parameter lies in this interval with probability 0.95 after the data are seen.
+    - See how interval width depends on \(n\) and on the confidence level.
 
-## Scope boundary
+<hr/>
 
-- Maximum-likelihood theory or Bayesian estimation
-- Prediction intervals (they appear with regression in Session 10)
-- Treating bootstrap as a full extra chapter; it is a computational check
+### Session Preparation:
 
----
+Brooks: [Chapter 6](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf)
 
-## Assignments
+### Resources
 
-This session feeds **[Assignment 4](../pages/assignments.md)** together with Session 07.
+[Session material](https://github.com/RBrooksDK/STA1_26/tree/main/06_Estimation_and_Confidence_Intervals/session_material)
 
-The [assessment page](Exercises.md) is reserved for Assignment 4 material,
-which will be published during the semester.
+[Tutorial 6: How precise is this measurement?](Tutorial_06_notebook/)
+
+<hr/>
+
+### Exercises

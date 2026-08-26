@@ -51,7 +51,7 @@ The course contains **six practice-oriented group assignments** and one **small 
 | Assignment 6 | 11 | Regression and categorical data |
 | Project | 12 | A complete analysis of an engineering data set |
 
-See [Assignments](pages/assignments.md) and [Project](pages/project.md) for the assessment overview. The detailed briefs will be published during the semester through the relevant session assessment pages.
+See [Assignments](pages/assignments.md) for the assessment overview, including the group project. The detailed briefs will be published during the semester.
 
 ## <i class="fas fa-wave-square" style="color:#6CA2C6"></i> Course Content and Learning Objectives
 
@@ -84,10 +84,12 @@ Python is used throughout with Pandas, NumPy, SciPy, Matplotlib, and, where it i
 
 ## <i class="fas fa-book-open" style="color:#6CA2C6"></i> Resources
 
-The course uses one purpose-built textbook:
-[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
-Its twelve chapters follow the twelve course sessions in the same order. Chapters are released as they are completed, and each session page links to the relevant chapter.
+The course uses the purpose-built textbook
+[*Statistics and Data Analysis for Engineers*](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
+Its twelve chapters follow the twelve course sessions in the same order.
 
-The mapping from sessions to sections is on the [Literature](pages/literature.md) page. Notation and Python conventions are collected in [Conventions](pages/conventions.md). Data files live in `data/` and are catalogued under [Datasets](pages/datasets.md).
+The textbook is a work in progress and will be updated throughout the course as chapters are completed and explanations, examples, and exercises are refined. Please use the online version whenever possible. A downloaded copy will not update automatically; if you keep one locally, remember to replace it regularly with the newest version.
+
+Each session page states the matching textbook chapter. Data files live in `data/` and are catalogued under [Datasets](pages/datasets.md).
 
 Install a working Python 3.10+ environment with Jupyter. The easiest route is [Anaconda](https://www.anaconda.com/products/distribution) or VS Code with the Jupyter extension. Session 00 walks through the setup.

@@ -16,7 +16,7 @@
 
 ??? question "Are there mandatory exercises besides the assignments?"
 
-    The six assignments and the group project are the course assessment activities. The assessment link on each session page is reserved for the relevant brief and supporting material; tutorials provide the regular practice.
+    The six assignments and the group project are the course assessment activities. Tutorials provide the regular practice. Exercises will be added to the session pages later.
 
 ??? question "Which programming language do we use?"
 
@@ -60,8 +60,8 @@
 
 ??? question "Which book should I buy?"
 
-    No purchase is required. The course textbook, Brooks, [*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf), is provided online and follows the twelve sessions chapter by chapter. Details are on the [Literature](literature.md) page.
+    No purchase is required. The course textbook, Brooks, [*Statistics and Data Analysis for Engineers*](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf), is provided online and follows the twelve sessions chapter by chapter. Because it is updated throughout the course, use the online version whenever possible. Each session page links to the matching chapter.
 
 ??? question "Why do tutorials sometimes disagree with SciPy's default arguments?"
 
-    SciPy's normal distribution uses `scale=sigma` (standard deviation), the exponential uses `scale=1/rate`, and NumPy's `var` divides by \(n\) unless `ddof=1`. The course conventions are collected on the [Conventions](conventions.md) page.
+    SciPy's normal distribution uses `scale=sigma` (standard deviation), the exponential uses `scale=1/rate`, and NumPy's `var` divides by \(n\) unless `ddof=1`. Session 00 summarises the Python hygiene used throughout the course.

@@ -1,56 +1,46 @@
-# 04 — Continuous Distributions in Practice
-
-## Session preparation
-
-Read Chapter 4, *Continuous Distributions in Practice*, in the course textbook
-[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
-You must understand the models and compute probabilities in Python. You do not integrate densities by hand.
-
-**Syllabus and input**
-
-- Brooks, *Statistics and Data Analysis for Engineers*, Chapter 4
-- [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/04_Continuous_Distributions_in_Practice/session_material)
-
+---
+tags:
+    - Continuous Distributions
+    - Normal
+    - Exponential
+    - Uniform
+    - QQ-plot
 ---
 
-## Session focus
+<h1 align="center">Continuous Distributions in Practice</h1>
 
-Continuous measurements — thicknesses, times, noise — are described by densities. Probability is area. The working models are uniform, normal, and exponential.
+Continuous measurements — thicknesses, times, noise — are described by densities. Probability is area: for a continuous variable, \(P(X = x) = 0\). The working models in this course are uniform, normal, and exponential.
 
-By the end of the session, you should be able to:
+You must understand the models and compute probabilities in Python. You do not integrate densities by hand. SciPy supplies the PDF, CDF, survival function, and percent-point function. A \(z\)-score standardises a normal measurement, and a QQ-plot is a diagnostic of shape, not a proof of normality.
 
-- explain why \(P(X = x) = 0\) for a continuous variable;
-- use PDF, CDF, survival function, and percent-point function in SciPy;
-- standardise with a \(z\)-score and interpret it;
-- choose among uniform, normal, and exponential for a practical problem;
-- read a QQ-plot as a diagnostic, not as a proof of normality.
+#### Key Concepts
 
-<p align="left">
-  <a href="Tutorial_04_notebook/">
-    <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
-    <br>
-    <strong>Tutorial 4: Response times and component lifetimes</strong>
-  </a>
-</p>
+- Probability as area; \(P(X = x) = 0\)
+- PDF, CDF, survival function, and percent-point function
+- Uniform, normal, and exponential models
+- \(z\)-scores and percentiles
+- QQ-plots as diagnostics
 
-[Download notebook (.ipynb)](https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/04_Continuous_Distributions_in_Practice/Tutorial_04_notebook.ipynb)
-&nbsp;·&nbsp;
-[Read as markdown](Tutorial_04.md/)
+!!! tip "Learning Objectives"
 
----
+    - Explain why \(P(X = x) = 0\) for a continuous variable.
+    - Use PDF, CDF, survival function, and percent-point function in SciPy.
+    - Standardise with a \(z\)-score and interpret it.
+    - Choose among uniform, normal, and exponential for a practical problem.
+    - Read a QQ-plot as a diagnostic, not as a proof of normality.
 
-## Scope boundary
+<hr/>
 
-- Manual integration of a PDF, or deriving a CDF from a PDF by hand
-- Deriving means and variances from integrals
-- Gamma, Weibull, or logistic as core models
-- The theory of Poisson processes (SMP1); we only use the practical link “Poisson counts, exponential waits”
+### Session Preparation:
 
----
+Brooks: [Chapter 4](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf)
 
-## Assignments
+### Resources
 
-This session feeds **[Assignment 3](../pages/assignments.md)** together with Session 05.
+[Session material](https://github.com/RBrooksDK/STA1_26/tree/main/04_Continuous_Distributions_in_Practice/session_material)
 
-The [assessment page](Exercises.md) is reserved for Assignment 3 material,
-which will be published during the semester.
+[Tutorial 4: Response times and component lifetimes](Tutorial_04_notebook/)
+
+<hr/>
+
+### Exercises
