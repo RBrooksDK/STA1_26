@@ -39,6 +39,12 @@ use the same visual language as the MSE book template, but their amount must be
 appropriate to a practical 5-ECTS statistics course.  Proof-heavy exposition
 is not a goal unless it is necessary to avoid a misconception.
 
+The one-to-one alignment is an output requirement, not a requirement to
+preserve existing tutorial content. During development, choose the strongest
+correct explanation and engineering example first. Existing STA1 tutorials
+may then be substantially revised or replaced so that their workflow,
+notation, examples, and conclusions support the reviewed chapter.
+
 ## Shared review fields
 
 Each chapter/session has to answer these fields before it is marked complete:
