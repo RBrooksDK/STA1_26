@@ -39,7 +39,7 @@ By the end of the session, you should be able to:
 
 ---
 
-## What we do not do
+## Scope boundary
 
 - Chebyshev's inequality and formal estimation theory
 - Inferential claims from a plot alone
@@ -51,4 +51,5 @@ By the end of the session, you should be able to:
 
 This session feeds **[Assignment 1](../pages/assignments.md)**: data, preprocessing, and descriptive analysis.
 
-Exercises will be added later in [Exercises.md](Exercises.md).
+The [assessment page](Exercises.md) is reserved for Assignment 1 material,
+which will be published during the semester.

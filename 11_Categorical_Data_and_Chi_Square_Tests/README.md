@@ -40,7 +40,7 @@ By the end of the session, you should be able to:
 
 ---
 
-## What we do not do
+## Scope boundary
 
 - Ross 11.5–11.6
 - Treating a significant independence test as identifying a causal mechanism
@@ -51,4 +51,5 @@ By the end of the session, you should be able to:
 
 This session completes **[Assignment 6](../pages/assignments.md)**: regression and categorical data.
 
-Exercises will be added later in [Exercises.md](Exercises.md).
+The [assessment page](Exercises.md) is reserved for Assignment 6 material,
+which will be published during the semester.

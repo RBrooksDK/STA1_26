@@ -16,7 +16,7 @@
 
 ??? question "Are there mandatory exercises besides the assignments?"
 
-    Practice exercises will be added to each session later. They are for training. The six assignments and the project are the official products and the exam basis.
+    The six assignments and the group project are the course assessment activities. The assessment link on each session page is reserved for the relevant brief and supporting material; tutorials provide the regular practice.
 
 ??? question "Which programming language do we use?"
 

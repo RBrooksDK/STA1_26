@@ -37,7 +37,7 @@ By the end of the session, you should be able to:
 
 ---
 
-## What we do not do
+## Scope boundary
 
 - Two-way ANOVA and interactions
 - Treating a significant \(F\)-test as identifying *which* groups differ without a post-hoc analysis
@@ -48,4 +48,5 @@ By the end of the session, you should be able to:
 
 This session completes **[Assignment 5](../pages/assignments.md)**: comparing two and several groups.
 
-Exercises will be added later in [Exercises.md](Exercises.md).
+The [assessment page](Exercises.md) is reserved for Assignment 5 material,
+which will be published during the semester.

@@ -19,9 +19,12 @@ STA1 uses one notation and one Python style across sessions, tutorials, and assi
 | Sample variance | \(s^2\) |
 | Sample standard deviation | \(s\) |
 | Random sample statistics | \(\bar{X}\), \(S^2\) |
+| Population proportion / sample proportion | \(p\), \(\hat{p}\) |
 | PMF | \(p_X(k) = P(X = k)\) |
 | PDF | \(f_X(x)\) |
 | CDF | \(F_X(x) = P(X \le x)\) |
+| Expected value / variance | \(E[X]\), \(\operatorname{Var}(X)\) |
+| Standard error | \(\operatorname{SE}(\hat\theta)\) |
 
 ### Normal distribution
 
@@ -104,7 +107,7 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 
 DATA = Path("../data")   # from a session folder; Path("data") from the repo root
-rng = np.random.default_rng(42)
+rng = np.random.default_rng(2026)
 ```
 
 Rules:
@@ -122,3 +125,4 @@ Rules:
 - **Sample space** vs **sample**: all possible outcomes of a random experiment versus the data you actually collected. These two uses of “sample” are distinguished explicitly in Session 03.
 - **Estimator** vs **estimate**: a random variable computed from a sample versus the number you obtained.
 - **Statistical significance** vs **practical importance**: a small \(p\)-value is not automatically an engineering problem, and a large effect can fail to be significant in a small sample.
+- **Confidence interval** vs **prediction interval**: uncertainty about a parameter or mean response is different from uncertainty about one new observation.

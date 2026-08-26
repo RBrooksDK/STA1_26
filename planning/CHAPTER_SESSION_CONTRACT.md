@@ -186,7 +186,7 @@ together as one reviewed decision.
 - **Acceptance:** normal is always parameterised by variance in prose/math and
   SciPy `scale` is described as standard deviation.
 
-### Chapter 5 / Session 05 — Sampling Distributions and the CLT
+### Chapter 5 / Session 05 — Sampling Distributions and the Central Limit Theorem
 
 - **Purpose and outcome:** students explain why sample means vary, calculate a
   standard error, and use simulation to understand the central limit theorem.

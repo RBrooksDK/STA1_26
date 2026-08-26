@@ -40,7 +40,7 @@ By the end of the session, you should be able to:
 
 ---
 
-## What we do not do
+## Scope boundary
 
 - Two-sample and paired designs (Session 08)
 - Equating “not significant” with “no effect”
@@ -52,4 +52,5 @@ By the end of the session, you should be able to:
 
 This session completes **[Assignment 4](../pages/assignments.md)**: confidence intervals and one-sample tests.
 
-Exercises will be added later in [Exercises.md](Exercises.md).
+The [assessment page](Exercises.md) is reserved for Assignment 4 material,
+which will be published during the semester.

@@ -39,7 +39,7 @@ By the end of the session, you should be able to:
 
 ---
 
-## What we do not do
+## Scope boundary
 
 - Maximum-likelihood theory or Bayesian estimation
 - Prediction intervals (they appear with regression in Session 10)
@@ -51,4 +51,5 @@ By the end of the session, you should be able to:
 
 This session feeds **[Assignment 4](../pages/assignments.md)** together with Session 07.
 
-Exercises will be added later in [Exercises.md](Exercises.md).
+The [assessment page](Exercises.md) is reserved for Assignment 4 material,
+which will be published during the semester.

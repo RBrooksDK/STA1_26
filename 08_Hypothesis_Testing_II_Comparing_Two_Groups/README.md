@@ -39,7 +39,7 @@ By the end of the session, you should be able to:
 
 ---
 
-## What we do not do
+## Scope boundary
 
 - Tests of two variances as a standalone exam topic (Levene's test may appear as a diagnostic)
 - Many uncorrected pairwise tests among several groups (Session 09)
@@ -51,4 +51,5 @@ By the end of the session, you should be able to:
 
 This session feeds **[Assignment 5](../pages/assignments.md)** together with Session 09.
 
-Exercises will be added later in [Exercises.md](Exercises.md).
+The [assessment page](Exercises.md) is reserved for Assignment 5 material,
+which will be published during the semester.
