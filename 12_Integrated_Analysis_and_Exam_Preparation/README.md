@@ -2,11 +2,13 @@
 
 ## Session preparation
 
+Read Chapter 12, *Integrated Statistical Analysis and Exam Preparation*, in the course textbook
+[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
 Revisit the [method map](#method-choice) below, your six assignments, and the [project framework](../pages/project.md). Bring questions about the oral exam.
 
 **Syllabus and input**
 
-- Selected examples from earlier Ross and Brooks chapters
+- Brooks, *Statistics and Data Analysis for Engineers*, Chapter 12
 - Course tutorials 01–11
 - [Exam page](../pages/exam.md)
 - [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/12_Integrated_Analysis_and_Exam_Preparation/session_material)

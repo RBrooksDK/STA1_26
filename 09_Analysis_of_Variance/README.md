@@ -2,11 +2,13 @@
 
 ## Session preparation
 
-Read Ross 10.1–10.3. Only one-way ANOVA is core syllabus.
+Read Chapter 9, *Analysis of Variance*, in the course textbook
+[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
+Only one-way ANOVA is core syllabus.
 
 **Syllabus and input**
 
-- Ross 10.1–10.3: one-way ANOVA, the \(F\)-test, and pairwise comparisons
+- Brooks, *Statistics and Data Analysis for Engineers*, Chapter 9
 - [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/09_Analysis_of_Variance/session_material)
 
 ---

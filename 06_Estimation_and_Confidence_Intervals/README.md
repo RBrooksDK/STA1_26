@@ -2,13 +2,12 @@
 
 ## Session preparation
 
-Read Ross 7.1, 7.3, and 7.5. Section 7.4 waits until Session 08 (two groups).
+Read Chapter 6, *Estimation and Confidence Intervals*, in the course textbook
+[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
 
 **Syllabus and input**
 
-- Ross 7.1 Introduction
-- Ross 7.3 Interval estimates
-- Ross 7.5 Approximate confidence interval for a Bernoulli mean
+- Brooks, *Statistics and Data Analysis for Engineers*, Chapter 6
 - [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/06_Estimation_and_Confidence_Intervals/session_material)
 
 ---

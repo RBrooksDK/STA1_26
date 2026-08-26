@@ -2,14 +2,12 @@
 
 ## Session preparation
 
-Read Ross 8.1–8.3 and the one-sample part of 8.6.
+Read Chapter 7, *Hypothesis Testing I: Principles and One-Sample Tests*, in the course textbook
+[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
 
 **Syllabus and input**
 
-- Ross 8.1 Introduction
-- Ross 8.2 Significance levels
-- Ross 8.3 Tests concerning the mean of a normal population
-- One-sample part of 8.6 (Bernoulli / proportion)
+- Brooks, *Statistics and Data Analysis for Engineers*, Chapter 7
 - [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/07_Hypothesis_Testing_I_Principles_and_One_Sample_Tests/session_material)
 
 ---

@@ -2,13 +2,13 @@
 
 ## Session preparation
 
-Read Ross 5.4–5.6 **selectively**. You must understand the models and compute probabilities in Python. You do not integrate densities by hand.
+Read Chapter 4, *Continuous Distributions in Practice*, in the course textbook
+[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
+You must understand the models and compute probabilities in Python. You do not integrate densities by hand.
 
 **Syllabus and input**
 
-- Ross 5.4 Uniform
-- Ross 5.5 Normal
-- Ross 5.6 Exponential
+- Brooks, *Statistics and Data Analysis for Engineers*, Chapter 4
 - [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/04_Continuous_Distributions_in_Practice/session_material)
 
 ---

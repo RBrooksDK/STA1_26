@@ -2,13 +2,12 @@
 
 ## Session preparation
 
-Read Ross 7.4, 8.4, and the two-sample part of 8.6.
+Read Chapter 8, *Hypothesis Testing II: Comparing Two Groups*, in the course textbook
+[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
 
 **Syllabus and input**
 
-- Ross 7.4 Estimating the difference in means of two normal populations
-- Ross 8.4 Testing the equality of means of two normal populations
-- Two-sample part of 8.6
+- Brooks, *Statistics and Data Analysis for Engineers*, Chapter 8
 - [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/08_Hypothesis_Testing_II_Comparing_Two_Groups/session_material)
 
 ---
