@@ -36,7 +36,7 @@ Brooks: [Chapter 5](https://docs.google.com/viewer?url=https://raw.githubusercon
 
 [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/05_Sampling_Distributions_and_the_CLT/session_material)
 
-[Tutorial 5: From one sample to many](Tutorial_05_notebook/)
+[Tutorial 5: From one sample to many](Tutorial_05_notebook.ipynb)
 
 <hr/>
 
