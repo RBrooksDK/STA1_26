@@ -38,7 +38,7 @@ Brooks: [Chapter 7](https://docs.google.com/viewer?url=https://raw.githubusercon
 
 [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/07_Hypothesis_Testing_I_Principles_and_One_Sample_Tests/session_material)
 
-[Tutorial 7: Does the process meet the specification?](Tutorial_07_notebook/)
+[Tutorial 7: Does the process meet the specification?](Tutorial_07_notebook.ipynb)
 
 <hr/>
 

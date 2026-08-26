@@ -43,7 +43,7 @@ Pay particular attention to population versus sample and to \(n-1\) in the sampl
 
 [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/01_Data_and_Descriptive_Statistics/session_material)
 
-[Tutorial 1: Characterising sensor measurements](Tutorial_01_notebook/)
+[Tutorial 1: Characterising sensor measurements](Tutorial_01_notebook.ipynb)
 
 [Datasets](../pages/datasets.md) (`sensor_thickness.csv`)
 

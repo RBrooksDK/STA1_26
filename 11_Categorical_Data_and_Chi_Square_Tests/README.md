@@ -38,7 +38,7 @@ Brooks: [Chapter 11](https://docs.google.com/viewer?url=https://raw.githubuserco
 
 [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/11_Categorical_Data_and_Chi_Square_Tests/session_material)
 
-[Tutorial 11: Defect types across production lines](Tutorial_11_notebook/)
+[Tutorial 11: Defect types across production lines](Tutorial_11_notebook.ipynb)
 
 <hr/>
 

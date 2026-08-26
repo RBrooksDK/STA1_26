@@ -52,7 +52,7 @@ Revisit your six assignments and the [project](../pages/assignments.md#group-pro
 
 [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/12_Integrated_Analysis_and_Exam_Preparation/session_material)
 
-[Tutorial 12: From raw data to a recommendation](Tutorial_12_notebook/)
+[Tutorial 12: From raw data to a recommendation](Tutorial_12_notebook.ipynb)
 
 [Exam](../pages/exam.md)
 

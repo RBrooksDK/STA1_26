@@ -39,7 +39,7 @@ Brooks: [Chapter 10](https://docs.google.com/viewer?url=https://raw.githubuserco
 
 [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/10_Simple_Linear_Regression/session_material)
 
-[Tutorial 10: Calibration and energy use](Tutorial_10_notebook/)
+[Tutorial 10: Calibration and energy use](Tutorial_10_notebook.ipynb)
 
 [Calculating metrics](Calculating_metrics.md/) (optional derivation sheet)
 

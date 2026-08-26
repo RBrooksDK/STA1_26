@@ -38,7 +38,7 @@ Brooks: [Chapter 6](https://docs.google.com/viewer?url=https://raw.githubusercon
 
 [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/06_Estimation_and_Confidence_Intervals/session_material)
 
-[Tutorial 6: How precise is this measurement?](Tutorial_06_notebook/)
+[Tutorial 6: How precise is this measurement?](Tutorial_06_notebook.ipynb)
 
 <hr/>
 
