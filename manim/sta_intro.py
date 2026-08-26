@@ -54,7 +54,7 @@ def _symbol_rain(colors: list[str], n: int = 48) -> VGroup:
             if m.get_y() < y_bot:
                 m.set_y(y_top)
                 m.set_x(random.uniform(-6.8, 6.8))
-            m.set_opacity(0.12 + 0.18 * (0.5 + 0.5 * np.sin(m.get_y())))
+            m.set_opacity(0.45 + 0.40 * (0.5 + 0.5 * np.sin(m.get_y())))
 
     drops.add_updater(update)
     return drops
@@ -141,7 +141,7 @@ def build_scene(background: str, glyph_colors: list[str], accent: str, ink: str)
 
 StatsIntroLight = build_scene(
     background="#FFFFFF",
-    glyph_colors=["#363636", "#6CA2C6", "#C0D4F0"],
+    glyph_colors=["#363636", "#6CA2C6"],
     accent="#6CA2C6",
     ink="#363636",
 )
