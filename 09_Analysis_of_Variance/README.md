@@ -1,54 +1,44 @@
-# 09 — Analysis of Variance
-
-## Session preparation
-
-Read Chapter 9, *Analysis of Variance*, in the course textbook
-[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
-Only one-way ANOVA is core syllabus.
-
-**Syllabus and input**
-
-- Brooks, *Statistics and Data Analysis for Engineers*, Chapter 9
-- [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/09_Analysis_of_Variance/session_material)
-
+---
+tags:
+    - ANOVA
+    - F-test
+    - Tukey HSD
 ---
 
-## Session focus
+<h1 align="center">Analysis of Variance</h1>
 
-Comparing three or more groups with many \(t\)-tests inflates the type I error. ANOVA tests whether group means differ, using variation between and within groups. Tukey HSD then locates which pairs differ.
+Comparing three or more groups with many \(t\)-tests inflates the type I error. One-way ANOVA tests whether group means differ, using variation between groups relative to variation within groups. Only one-way ANOVA is core syllabus.
 
-By the end of the session, you should be able to:
+A significant \(F\)-test does not identify *which* groups differ. Tukey HSD then locates the pairs. Assumptions are independence, approximate normality, and similar variances; boxplots from Session 01 are reused as a diagnostic, not as a new plot type.
 
-- explain why many pairwise \(t\)-tests are a poor default;
-- read an ANOVA table (between, within, \(F\), \(p\));
-- state the assumptions: independence, approximate normality, similar variances;
-- run one-way ANOVA and Tukey HSD in Python;
-- reuse boxplots from Session 01 as a diagnostic, not as a new plot type.
+#### Key Concepts
 
-<p align="left">
-  <a href="Tutorial_09_notebook/">
-    <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
-    <br>
-    <strong>Tutorial 9: Several suppliers, one quality measure</strong>
-  </a>
-</p>
+- Why many pairwise \(t\)-tests are a poor default
+- Between-group and within-group variation
+- The ANOVA table, \(F\), and \(p\)
+- Assumptions of one-way ANOVA
+- Tukey HSD for pairwise comparisons
 
-[Download notebook (.ipynb)](https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/09_Analysis_of_Variance/Tutorial_09_notebook.ipynb)
-&nbsp;·&nbsp;
-[Read as markdown](Tutorial_09.md/)
+!!! tip "Learning Objectives"
 
----
+    - Explain why many pairwise \(t\)-tests are a poor default.
+    - Read an ANOVA table (between, within, \(F\), \(p\)).
+    - State the assumptions: independence, approximate normality, similar variances.
+    - Run one-way ANOVA and Tukey HSD in Python.
+    - Reuse boxplots from Session 01 as a diagnostic, not as a new plot type.
 
-## Scope boundary
+<hr/>
 
-- Two-way ANOVA and interactions
-- Treating a significant \(F\)-test as identifying *which* groups differ without a post-hoc analysis
+### Session Preparation:
 
----
+Brooks: [Chapter 9](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf)
 
-## Assignments
+### Resources
 
-This session completes **[Assignment 5](../pages/assignments.md)**: comparing two and several groups.
+[Session material](https://github.com/RBrooksDK/STA1_26/tree/main/09_Analysis_of_Variance/session_material)
 
-The [assessment page](Exercises.md) is reserved for Assignment 5 material,
-which will be published during the semester.
+[Tutorial 9: Several suppliers, one quality measure](Tutorial_09_notebook/)
+
+<hr/>
+
+### Exercises

@@ -1,53 +1,43 @@
-# 05 — Sampling Distributions and the Central Limit Theorem
-
-## Session preparation
-
-Read Chapter 5, *Sampling Distributions and the Central Limit Theorem*, in the course textbook
-[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
-
-**Syllabus and input**
-
-- Brooks, *Statistics and Data Analysis for Engineers*, Chapter 5
-- [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/05_Sampling_Distributions_and_the_CLT/session_material)
-
+---
+tags:
+    - Sampling Distributions
+    - Standard Error
+    - Central Limit Theorem
 ---
 
-## Session focus
+<h1 align="center">Sampling Distributions and the Central Limit Theorem</h1>
 
-A statistic such as \(\bar{X}\) is itself a random variable. Its distribution — the sampling distribution — is the reason later confidence intervals and tests work. The CLT is demonstrated by simulation, not proved.
+A statistic such as \(\bar{X}\) is itself a random variable. Its distribution — the sampling distribution — is the reason later confidence intervals and tests work. One sample gives one \(\bar{x}\); many samples give a distribution of \(\bar{x}\).
 
-By the end of the session, you should be able to:
+The standard error of the mean is \(\operatorname{SE}(\bar{X}) = \sigma / \sqrt{n}\). When the CLT applies we write \(\bar{X} \sim N(\mu, \sigma^2 / n)\), never \(N(\mu, \sigma / \sqrt{n})\). The theorem is demonstrated by simulation, not proved. It helps for means and reasonably large \(n\); it does not turn a single skewed observation into a normal one.
 
-- describe the sampling distribution of \(\bar{X}\) and write \(\operatorname{SE}(\bar{X}) = \sigma / \sqrt{n}\);
-- use \(N(\mu, \sigma^2 / n)\) when the CLT applies, never \(N(\mu, \sigma / \sqrt{n})\);
-- simulate repeated samples and watch the histogram of \(\bar{x}\) become approximately normal;
-- state when the CLT helps (means, large \(n\)) and when it does not (small \(n\), strong skew, interest in a single observation).
+#### Key Concepts
 
-<p align="left">
-  <a href="Tutorial_05_notebook/">
-    <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
-    <br>
-    <strong>Tutorial 5: From one sample to many</strong>
-  </a>
-</p>
+- A statistic as a random variable
+- Sampling distribution of \(\bar{X}\)
+- Standard error \(\sigma / \sqrt{n}\)
+- Notation \(N(\mu, \sigma^2 / n)\)
+- When the CLT helps and when it does not
 
-[Download notebook (.ipynb)](https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/05_Sampling_Distributions_and_the_CLT/Tutorial_05_notebook.ipynb)
-&nbsp;·&nbsp;
-[Read as markdown](Tutorial_05.md/)
+!!! tip "Learning Objectives"
 
----
+    - Describe the sampling distribution of \(\bar{X}\) and write \(\operatorname{SE}(\bar{X}) = \sigma / \sqrt{n}\).
+    - Use \(N(\mu, \sigma^2 / n)\) when the CLT applies.
+    - Simulate repeated samples and watch the histogram of \(\bar{x}\) become approximately normal.
+    - State when the CLT helps (means, large \(n\)) and when it does not (small \(n\), strong skew, a single observation).
 
-## Scope boundary
+<hr/>
 
-- Finite-population corrections
-- Proving the CLT
-- Confusing the distribution of the raw data with the distribution of the mean
+### Session Preparation:
 
----
+Brooks: [Chapter 5](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf)
 
-## Assignments
+### Resources
 
-This session completes **[Assignment 3](../pages/assignments.md)**: continuous models, sampling, and the CLT.
+[Session material](https://github.com/RBrooksDK/STA1_26/tree/main/05_Sampling_Distributions_and_the_CLT/session_material)
 
-The [assessment page](Exercises.md) is reserved for Assignment 3 material,
-which will be published during the semester.
+[Tutorial 5: From one sample to many](Tutorial_05_notebook/)
+
+<hr/>
+
+### Exercises

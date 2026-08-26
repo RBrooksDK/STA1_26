@@ -2,9 +2,11 @@
 
 STA1 uses one primary textbook throughout the course:
 
-Richard Brooks, [*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
+Richard Brooks, [*Statistics and Data Analysis for Engineers*](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
 
-The book is written specifically for STA1. Its chapter order, notation, Python examples, and engineering cases follow the course directly. No textbook purchase is required. Chapters are released in the linked PDF as they are completed.
+The book is written specifically for STA1. Its chapter order, notation, Python examples, and engineering cases follow the course directly. No textbook purchase is required.
+
+The textbook is a work in progress. Chapters and examples will be updated throughout the course, so use the online version whenever possible. A downloaded file is only a snapshot and must be replaced regularly if you want the newest version.
 
 Python tutorials and notebooks on this site are the working material. The textbook supplies definitions, explanations, worked examples, and chapter exercises.
 
@@ -13,18 +15,18 @@ Python tutorials and notebooks on this site are the working material. The textbo
 | Session | Textbook chapter |
 | ---: | --- |
 | 00 | Course site and Getting Started page |
-| 01 | [Chapter 1: Data and Descriptive Statistics](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf#page=7) |
-| 02 | [Chapter 2: Probability for Data Analysis](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf#page=18) |
-| 03 | Chapter 3: Random Variables and Discrete Distributions |
-| 04 | Chapter 4: Continuous Distributions in Practice |
-| 05 | Chapter 5: Sampling Distributions and the Central Limit Theorem |
-| 06 | Chapter 6: Estimation and Confidence Intervals |
-| 07 | Chapter 7: Hypothesis Testing I — Principles and One-Sample Tests |
-| 08 | Chapter 8: Hypothesis Testing II — Comparing Two Groups |
-| 09 | Chapter 9: Analysis of Variance |
-| 10 | Chapter 10: Simple Linear Regression |
-| 11 | Chapter 11: Categorical Data and Chi-Square Tests |
-| 12 | Chapter 12: Integrated Statistical Analysis and Exam Preparation |
+| 01 | [Chapter 1: Data and Descriptive Statistics](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf) |
+| 02 | [Chapter 2: Probability for Data Analysis](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf) |
+| 03 | [Chapter 3: Random Variables and Discrete Distributions](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf) |
+| 04 | [Chapter 4: Continuous Distributions in Practice](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf) |
+| 05 | [Chapter 5: Sampling Distributions and the Central Limit Theorem](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf) |
+| 06 | [Chapter 6: Estimation and Confidence Intervals](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf) |
+| 07 | [Chapter 7: Hypothesis Testing I — Principles and One-Sample Tests](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf) |
+| 08 | [Chapter 8: Hypothesis Testing II — Comparing Two Groups](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf) |
+| 09 | [Chapter 9: Analysis of Variance](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf) |
+| 10 | [Chapter 10: Simple Linear Regression](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf) |
+| 11 | [Chapter 11: Categorical Data and Chi-Square Tests](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf) |
+| 12 | [Chapter 12: Integrated Statistical Analysis and Exam Preparation](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf) |
 
 ## Course boundaries
 

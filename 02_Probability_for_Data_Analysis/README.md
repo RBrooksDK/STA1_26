@@ -1,54 +1,46 @@
-# 02 — Probability for Data Analysis
-
-## Session preparation
-
-Read Chapter 2, *Probability for Data Analysis*, in the new course textbook
-[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf#page=18).
-
-**Syllabus and input**
-
-- Brooks, *Statistics and Data Analysis for Engineers*, Chapter 2
-- [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/02_Probability_for_Data_Analysis/session_material)
-
+---
+tags:
+    - Probability
+    - Events
+    - Conditional Probability
+    - Independence
+    - Bayes
 ---
 
-## Session focus
+<h1 align="center">Probability for Data Analysis</h1>
 
-Probability is introduced as the language of uncertainty in engineering data, not as a combinatorics course. Contingency tables and probability trees are the main working tools.
+Probability is the language of uncertainty in engineering data, not a combinatorics course. Inspection systems, false alarms, and pass/fail tests all need a careful account of events, conditioning, and independence.
 
-By the end of the session, you should be able to:
+We represent an experiment with a sample space and events, then apply complement, union, and intersection rules. Contingency tables and probability trees are the main working tools. Conditional probability, independence, the law of total probability, and Bayes' theorem turn a table of counts into a decision — for example whether a positive inspection result is a true defect or a false alarm.
 
-- represent an experiment with a sample space and events;
-- apply complement, union, and intersection rules;
-- compute conditional probabilities from tables or trees;
-- distinguish independence from mutually exclusive events;
-- apply the law of total probability and Bayes' theorem to a false-positive problem.
+#### Key Concepts
 
-<p align="left">
-  <a href="Tutorial_02_notebook/">
-    <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
-    <br>
-    <strong>Tutorial 2: Probability tools for automated inspection</strong>
-  </a>
-</p>
+- Sample spaces, events, and probability rules
+- Complement, union, and intersection
+- Conditional probability from tables and trees
+- Independence versus mutually exclusive events
+- Total probability and Bayes' theorem
 
-[Download notebook (.ipynb)](https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/02_Probability_for_Data_Analysis/Tutorial_02_notebook.ipynb)
-&nbsp;·&nbsp;
-[Read as markdown](Tutorial_02.md/)
+!!! tip "Learning Objectives"
 
----
+    - Represent an experiment with a sample space and events.
+    - Apply complement, union, and intersection rules.
+    - Compute conditional probabilities from tables or trees.
+    - Distinguish independence from mutually exclusive events.
+    - Apply the law of total probability and Bayes' theorem to a false-positive problem.
 
-## Scope boundary
+<hr/>
 
-- General combinatorics as a standalone topic
-- Joint distributions of several random variables (SMP1)
-- Formal axiomatic development beyond what the applications need
+### Session Preparation:
 
----
+Brooks: [Chapter 2](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf)
 
-## Assignments
+### Resources
 
-This session feeds **[Assignment 2](../pages/assignments.md)** together with Session 03.
+[Session material](https://github.com/RBrooksDK/STA1_26/tree/main/02_Probability_for_Data_Analysis/session_material)
 
-The [assessment page](Exercises.md) is reserved for Assignment 2 material,
-which will be published during the semester.
+[Tutorial 2: Probability tools for automated inspection](Tutorial_02_notebook/)
+
+<hr/>
+
+### Exercises
