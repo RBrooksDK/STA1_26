@@ -29,7 +29,7 @@
     
     
       
-        <title>05 — Sampling Distributions and the Central Limit Theorem - Statistics and Data Analysis for Engineers</title>
+        <title>Index - Statistics and Data Analysis for Engineers</title>
       
     
     
@@ -98,7 +98,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#05-sampling-distributions-and-the-central-limit-theorem" class="md-skip">
+        <a href="#session-preparation" class="md-skip">
           Skip to content
         </a>
       
@@ -131,7 +131,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              05 — Sampling Distributions and the Central Limit Theorem
+              Index
             
           </span>
         </div>
@@ -311,25 +311,6 @@
   
   
     <li class="md-tabs__item">
-      <a href="../pages/project/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Project
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
       <a href="../pages/exam/" class="md-tabs__link">
         
   
@@ -337,44 +318,6 @@
     
   
   Exam
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../pages/literature/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Literature
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../pages/conventions/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Conventions
 
       </a>
     </li>
@@ -1424,33 +1367,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/project/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Project
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../pages/exam/" class="md-nav__link">
         
   
@@ -1459,60 +1375,6 @@
     
   
     Exam
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pages/literature/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Literature
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pages/conventions/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Conventions
   
 
     
@@ -1596,8 +1458,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1609,7 +1469,7 @@
   <a href="#session-preparation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Session preparation
+        Session Preparation:
       
     </span>
   </a>
@@ -1617,10 +1477,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#session-focus" class="md-nav__link">
+  <a href="#resources" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Session focus
+        Resources
       
     </span>
   </a>
@@ -1628,21 +1488,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#scope-boundary" class="md-nav__link">
+  <a href="#exercises" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Scope boundary
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#assignments" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Assignments
+        Exercises
       
     </span>
   </a>
@@ -1669,54 +1518,46 @@
   
 
 
-<h1 id="05-sampling-distributions-and-the-central-limit-theorem">05 — Sampling Distributions and the Central Limit Theorem<a class="headerlink" href="#05-sampling-distributions-and-the-central-limit-theorem" title="Permanent link">&para;</a></h1>
-<h2 id="session-preparation">Session preparation<a class="headerlink" href="#session-preparation" title="Permanent link">&para;</a></h2>
-<p>Read Chapter 5, <em>Sampling Distributions and the Central Limit Theorem</em>, in the course textbook
-<a href="https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf"><em>Statistics and Data Analysis for Engineers</em></a>.</p>
-<p><strong>Syllabus and input</strong></p>
+<h1 align="center">Sampling Distributions and the Central Limit Theorem</h1>
+
+<p>A statistic such as <span class="arithmatex">\(\bar{X}\)</span> is itself a random variable. Its distribution — the sampling distribution — is the reason later confidence intervals and tests work. One sample gives one <span class="arithmatex">\(\bar{x}\)</span>; many samples give a distribution of <span class="arithmatex">\(\bar{x}\)</span>.</p>
+<p>The standard error of the mean is <span class="arithmatex">\(\operatorname{SE}(\bar{X}) = \sigma / \sqrt{n}\)</span>. When the CLT applies we write <span class="arithmatex">\(\bar{X} \sim N(\mu, \sigma^2 / n)\)</span>, never <span class="arithmatex">\(N(\mu, \sigma / \sqrt{n})\)</span>. The theorem is demonstrated by simulation, not proved. It helps for means and reasonably large <span class="arithmatex">\(n\)</span>; it does not turn a single skewed observation into a normal one.</p>
+<h4 id="key-concepts">Key Concepts<a class="headerlink" href="#key-concepts" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Brooks, <em>Statistics and Data Analysis for Engineers</em>, Chapter 5</li>
-<li><a href="https://github.com/RBrooksDK/STA1_26/tree/main/05_Sampling_Distributions_and_the_CLT/session_material">Session material</a></li>
+<li>A statistic as a random variable</li>
+<li>Sampling distribution of <span class="arithmatex">\(\bar{X}\)</span></li>
+<li>Standard error <span class="arithmatex">\(\sigma / \sqrt{n}\)</span></li>
+<li>Notation <span class="arithmatex">\(N(\mu, \sigma^2 / n)\)</span></li>
+<li>When the CLT helps and when it does not</li>
 </ul>
-<hr />
-<h2 id="session-focus">Session focus<a class="headerlink" href="#session-focus" title="Permanent link">&para;</a></h2>
-<p>A statistic such as <span class="arithmatex">\(\bar{X}\)</span> is itself a random variable. Its distribution — the sampling distribution — is the reason later confidence intervals and tests work. The CLT is demonstrated by simulation, not proved.</p>
-<p>By the end of the session, you should be able to:</p>
+<div class="admonition tip">
+<p class="admonition-title">Learning Objectives</p>
 <ul>
-<li>describe the sampling distribution of <span class="arithmatex">\(\bar{X}\)</span> and write <span class="arithmatex">\(\operatorname{SE}(\bar{X}) = \sigma / \sqrt{n}\)</span>;</li>
-<li>use <span class="arithmatex">\(N(\mu, \sigma^2 / n)\)</span> when the CLT applies, never <span class="arithmatex">\(N(\mu, \sigma / \sqrt{n})\)</span>;</li>
-<li>simulate repeated samples and watch the histogram of <span class="arithmatex">\(\bar{x}\)</span> become approximately normal;</li>
-<li>state when the CLT helps (means, large <span class="arithmatex">\(n\)</span>) and when it does not (small <span class="arithmatex">\(n\)</span>, strong skew, interest in a single observation).</li>
+<li>Describe the sampling distribution of <span class="arithmatex">\(\bar{X}\)</span> and write <span class="arithmatex">\(\operatorname{SE}(\bar{X}) = \sigma / \sqrt{n}\)</span>.</li>
+<li>Use <span class="arithmatex">\(N(\mu, \sigma^2 / n)\)</span> when the CLT applies.</li>
+<li>Simulate repeated samples and watch the histogram of <span class="arithmatex">\(\bar{x}\)</span> become approximately normal.</li>
+<li>State when the CLT helps (means, large <span class="arithmatex">\(n\)</span>) and when it does not (small <span class="arithmatex">\(n\)</span>, strong skew, a single observation).</li>
 </ul>
-<p align="left">
-  <a href="Tutorial_05_notebook/">
-    <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
-    <br>
-    <strong>Tutorial 5: From one sample to many</strong>
-  </a>
-</p>
+</div>
+<hr/>
 
-<p><a href="https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/05_Sampling_Distributions_and_the_CLT/Tutorial_05_notebook.ipynb">Download notebook (.ipynb)</a>
-&nbsp;·&nbsp;
-<a href="Tutorial_05/">Read as markdown</a></p>
-<hr />
-<h2 id="scope-boundary">Scope boundary<a class="headerlink" href="#scope-boundary" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Finite-population corrections</li>
-<li>Proving the CLT</li>
-<li>Confusing the distribution of the raw data with the distribution of the mean</li>
-</ul>
-<hr />
-<h2 id="assignments">Assignments<a class="headerlink" href="#assignments" title="Permanent link">&para;</a></h2>
-<p>This session completes <strong><a href="../pages/assignments/">Assignment 3</a></strong>: continuous models, sampling, and the CLT.</p>
-<p>The <a href="Exercises/">assessment page</a> is reserved for Assignment 3 material,
-which will be published during the semester.</p>
+<h3 id="session-preparation">Session Preparation:<a class="headerlink" href="#session-preparation" title="Permanent link">&para;</a></h3>
+<p>Brooks: <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf">Chapter 5</a></p>
+<h3 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h3>
+<p><a href="https://github.com/RBrooksDK/STA1_26/tree/main/05_Sampling_Distributions_and_the_CLT/session_material">Session material</a></p>
+<p><a href="Tutorial_05_notebook/">Tutorial 5: From one sample to many</a></p>
+<hr/>
+
+<h3 id="exercises">Exercises<a class="headerlink" href="#exercises" title="Permanent link">&para;</a></h3>
 
 
 
 
 
 
+
+  
+  
 
 
 

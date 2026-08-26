@@ -1,46 +1,15 @@
-# 12 — Integrated Statistical Analysis and Exam Preparation
-
-## Session preparation
-
-Read Chapter 12, *Integrated Statistical Analysis and Exam Preparation*, in the course textbook
-[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
-Revisit the [method map](#method-choice) below, your six assignments, and the [project framework](../pages/project.md). Bring questions about the oral exam.
-
-**Syllabus and input**
-
-- Brooks, *Statistics and Data Analysis for Engineers*, Chapter 12
-- Course tutorials 01–11
-- [Exam page](../pages/exam.md)
-- [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/12_Integrated_Analysis_and_Exam_Preparation/session_material)
-
+---
+tags:
+    - Method Choice
+    - Integrated Analysis
+    - Exam Preparation
 ---
 
-## Session focus
+<h1 align="center">Integrated Statistical Analysis and Exam Preparation</h1>
 
-The last session is synthesis: choose a method, run a complete analysis from raw data to a recommendation, and practise the oral format.
+The last session is synthesis: choose a method, run a complete analysis from raw data to a recommendation, and practise the oral format. Always start with plots from Session 01. Always end with a sentence that a colleague in production or operations could use.
 
-By the end of the session, you should be able to:
-
-- choose among descriptive methods, intervals, one- and two-sample tests, ANOVA, regression, and chi-square tests;
-- carry a data set from import and plots through a justified method to a written conclusion;
-- communicate uncertainty and assumptions to a non-specialist;
-- explain one assignment and the project in about 20 minutes.
-
-<p align="left">
-  <a href="Tutorial_12_notebook/">
-    <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
-    <br>
-    <strong>Tutorial 12: From raw data to a recommendation</strong>
-  </a>
-</p>
-
-[Download notebook (.ipynb)](https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/12_Integrated_Analysis_and_Exam_Preparation/Tutorial_12_notebook.ipynb)
-&nbsp;·&nbsp;
-[Read as markdown](Tutorial_12.md/)
-
----
-
-## Method choice
+A short method map is enough for most STA1 questions:
 
 ```mermaid
 flowchart TD
@@ -54,17 +23,41 @@ flowchart TD
   groups -->|Three or more| anova[One-way ANOVA]
 ```
 
-Always start with plots from Session 01. Always end with a sentence that a colleague in production or operations could use.
+The group project is the same kind of analysis at slightly larger scale. The oral exam starts from one assignment and then discusses the project.
 
----
+#### Key Concepts
 
-## Scope boundary
+- Method choice from the question, not from a favourite procedure
+- A complete workflow: import, plots, justified method, conclusion
+- Communicating uncertainty and assumptions
+- Relating an assignment to the project
+- The 20-minute oral format
 
-- Introduce new families of models
-- Replace the oral exam with a mock written paper
+!!! tip "Learning Objectives"
 
----
+    - Choose among descriptive methods, intervals, one- and two-sample tests, ANOVA, regression, and chi-square tests.
+    - Carry a data set from import and plots through a justified method to a written conclusion.
+    - Communicate uncertainty and assumptions to a non-specialist.
+    - Explain one assignment and the project in about 20 minutes.
 
-## Assignments
+<hr/>
 
-Submit the [project](../pages/project.md) after this session. The oral exam uses one assignment plus the project. The [assessment page](Exercises.md) is reserved for project material and supporting information.
+### Session Preparation:
+
+Brooks: [Chapter 12](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf)
+
+Revisit your six assignments and the [project](../pages/assignments.md#group-project). Bring questions about the oral exam.
+
+### Resources
+
+[Session material](https://github.com/RBrooksDK/STA1_26/tree/main/12_Integrated_Analysis_and_Exam_Preparation/session_material)
+
+[Tutorial 12: From raw data to a recommendation](Tutorial_12_notebook.ipynb)
+
+[Exam](../pages/exam.md)
+
+[Assignments and project](../pages/assignments.md)
+
+<hr/>
+
+### Exercises

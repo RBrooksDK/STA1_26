@@ -29,7 +29,7 @@
     
     
       
-        <title>10 — Simple Linear Regression - Statistics and Data Analysis for Engineers</title>
+        <title>Index - Statistics and Data Analysis for Engineers</title>
       
     
     
@@ -98,7 +98,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#10-simple-linear-regression" class="md-skip">
+        <a href="#session-preparation" class="md-skip">
           Skip to content
         </a>
       
@@ -131,7 +131,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              10 — Simple Linear Regression
+              Index
             
           </span>
         </div>
@@ -311,25 +311,6 @@
   
   
     <li class="md-tabs__item">
-      <a href="../pages/project/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Project
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
       <a href="../pages/exam/" class="md-tabs__link">
         
   
@@ -337,44 +318,6 @@
     
   
   Exam
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../pages/literature/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Literature
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../pages/conventions/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Conventions
 
       </a>
     </li>
@@ -1424,33 +1367,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/project/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Project
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../pages/exam/" class="md-nav__link">
         
   
@@ -1459,60 +1375,6 @@
     
   
     Exam
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pages/literature/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Literature
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pages/conventions/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Conventions
   
 
     
@@ -1596,8 +1458,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1609,7 +1469,7 @@
   <a href="#session-preparation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Session preparation
+        Session Preparation:
       
     </span>
   </a>
@@ -1617,10 +1477,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#session-focus" class="md-nav__link">
+  <a href="#resources" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Session focus
+        Resources
       
     </span>
   </a>
@@ -1628,21 +1488,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#scope-boundary" class="md-nav__link">
+  <a href="#exercises" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Scope boundary
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#assignments" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Assignments
+        Exercises
       
     </span>
   </a>
@@ -1669,57 +1518,49 @@
   
 
 
-<h1 id="10-simple-linear-regression">10 — Simple Linear Regression<a class="headerlink" href="#10-simple-linear-regression" title="Permanent link">&para;</a></h1>
-<h2 id="session-preparation">Session preparation<a class="headerlink" href="#session-preparation" title="Permanent link">&para;</a></h2>
-<p>Read Chapter 10, <em>Simple Linear Regression</em>, in the course textbook
-<a href="https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf"><em>Statistics and Data Analysis for Engineers</em></a>.
-The English note <a href="Calculating_metrics/">Calculating_metrics.md</a> can be used as an extra derivation sheet.</p>
-<p><strong>Syllabus and input</strong></p>
+<h1 align="center">Simple Linear Regression</h1>
+
+<p>Regression models how a response changes with a predictor: energy use with load, a calibrated reading with a reference, a quality measure with a process setting. We fit least squares, interpret slope and intercept with units, and inspect residuals.</p>
+<p><span class="arithmatex">\(R^2\)</span> measures fit, not causation. Statsmodels is used for inference: a test of the slope, a confidence interval for the mean response, and a prediction interval for a new observation. Scikit-learn is used for fitting and a simple train/test split; it does not replace a statistical summary for intervals and tests.</p>
+<h4 id="key-concepts">Key Concepts<a class="headerlink" href="#key-concepts" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Brooks, <em>Statistics and Data Analysis for Engineers</em>, Chapter 10</li>
-<li><a href="Calculating_metrics/">Calculating metrics</a>, optional derivation sheet</li>
-<li><a href="https://github.com/RBrooksDK/STA1_26/tree/main/10_Simple_Linear_Regression/session_material">Session material</a></li>
+<li>Least squares: <span class="arithmatex">\(\hat{y} = \hat{\beta}_0 + \hat{\beta}_1 x\)</span></li>
+<li>Interpretation of slope and intercept</li>
+<li><span class="arithmatex">\(R^2\)</span> and correlation</li>
+<li>Residual and QQ-plots</li>
+<li>Confidence interval for the mean versus prediction interval</li>
+<li>Statsmodels for inference; scikit-learn for fitting</li>
 </ul>
-<hr />
-<h2 id="session-focus">Session focus<a class="headerlink" href="#session-focus" title="Permanent link">&para;</a></h2>
-<p>Regression models how a response changes with a predictor. We fit least squares, interpret slope and intercept, inspect residuals, and distinguish a confidence interval for the mean response from a prediction interval for a new observation. Statsmodels is used for inference; scikit-learn is used for fitting and a simple train/test split.</p>
-<p>By the end of the session, you should be able to:</p>
+<div class="admonition tip">
+<p class="admonition-title">Learning Objectives</p>
 <ul>
-<li>fit <span class="arithmatex">\(\hat{y} = \hat{\beta}_0 + \hat{\beta}_1 x\)</span> and interpret the coefficients with units;</li>
-<li>report <span class="arithmatex">\(R^2\)</span> without treating it as proof of causation;</li>
-<li>test whether the slope differs from zero;</li>
-<li>read residual and QQ-plots;</li>
-<li>explain why scikit-learn does not replace a statistical summary for intervals and tests.</li>
+<li>Fit <span class="arithmatex">\(\hat{y} = \hat{\beta}_0 + \hat{\beta}_1 x\)</span> and interpret the coefficients with units.</li>
+<li>Report <span class="arithmatex">\(R^2\)</span> without treating it as proof of causation.</li>
+<li>Test whether the slope differs from zero.</li>
+<li>Read residual and QQ-plots.</li>
+<li>Explain why scikit-learn does not replace a statistical summary for intervals and tests.</li>
 </ul>
-<p align="left">
-  <a href="Tutorial_10_notebook/">
-    <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
-    <br>
-    <strong>Tutorial 10: Calibration and energy use</strong>
-  </a>
-</p>
+</div>
+<hr/>
 
-<p><a href="https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/10_Simple_Linear_Regression/Tutorial_10_notebook.ipynb">Download notebook (.ipynb)</a>
-&nbsp;·&nbsp;
-<a href="Tutorial_10/">Read as markdown</a></p>
-<hr />
-<h2 id="scope-boundary">Scope boundary<a class="headerlink" href="#scope-boundary" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Multiple, polynomial, or logistic regression</li>
-<li>Causal claims from an observational scatterplot</li>
-<li>Using <code>sklearn.metrics</code> as the only report of a regression in this course</li>
-</ul>
-<hr />
-<h2 id="assignments">Assignments<a class="headerlink" href="#assignments" title="Permanent link">&para;</a></h2>
-<p>This session feeds <strong><a href="../pages/assignments/">Assignment 6</a></strong> together with Session 11. The <a href="../pages/project/">project</a> is introduced here.</p>
-<p>The <a href="Exercises/">assessment page</a> is reserved for Assignment 6 material,
-which will be published during the semester.</p>
+<h3 id="session-preparation">Session Preparation:<a class="headerlink" href="#session-preparation" title="Permanent link">&para;</a></h3>
+<p>Brooks: <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf">Chapter 10</a></p>
+<h3 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h3>
+<p><a href="https://github.com/RBrooksDK/STA1_26/tree/main/10_Simple_Linear_Regression/session_material">Session material</a></p>
+<p><a href="Tutorial_10_notebook/">Tutorial 10: Calibration and energy use</a></p>
+<p><a href="Calculating_metrics/">Calculating metrics</a> (optional derivation sheet)</p>
+<hr/>
+
+<h3 id="exercises">Exercises<a class="headerlink" href="#exercises" title="Permanent link">&para;</a></h3>
 
 
 
 
 
 
+
+  
+  
 
 
 

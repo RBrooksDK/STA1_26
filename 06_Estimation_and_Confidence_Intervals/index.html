@@ -29,7 +29,7 @@
     
     
       
-        <title>06 — Estimation and Confidence Intervals - Statistics and Data Analysis for Engineers</title>
+        <title>Index - Statistics and Data Analysis for Engineers</title>
       
     
     
@@ -98,7 +98,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#06-estimation-and-confidence-intervals" class="md-skip">
+        <a href="#session-preparation" class="md-skip">
           Skip to content
         </a>
       
@@ -131,7 +131,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              06 — Estimation and Confidence Intervals
+              Index
             
           </span>
         </div>
@@ -311,25 +311,6 @@
   
   
     <li class="md-tabs__item">
-      <a href="../pages/project/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Project
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
       <a href="../pages/exam/" class="md-tabs__link">
         
   
@@ -337,44 +318,6 @@
     
   
   Exam
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../pages/literature/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Literature
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../pages/conventions/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Conventions
 
       </a>
     </li>
@@ -1424,33 +1367,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/project/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Project
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../pages/exam/" class="md-nav__link">
         
   
@@ -1459,60 +1375,6 @@
     
   
     Exam
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pages/literature/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Literature
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pages/conventions/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Conventions
   
 
     
@@ -1596,8 +1458,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1609,7 +1469,7 @@
   <a href="#session-preparation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Session preparation
+        Session Preparation:
       
     </span>
   </a>
@@ -1617,10 +1477,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#session-focus" class="md-nav__link">
+  <a href="#resources" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Session focus
+        Resources
       
     </span>
   </a>
@@ -1628,21 +1488,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#scope-boundary" class="md-nav__link">
+  <a href="#exercises" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Scope boundary
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#assignments" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Assignments
+        Exercises
       
     </span>
   </a>
@@ -1669,55 +1518,47 @@
   
 
 
-<h1 id="06-estimation-and-confidence-intervals">06 — Estimation and Confidence Intervals<a class="headerlink" href="#06-estimation-and-confidence-intervals" title="Permanent link">&para;</a></h1>
-<h2 id="session-preparation">Session preparation<a class="headerlink" href="#session-preparation" title="Permanent link">&para;</a></h2>
-<p>Read Chapter 6, <em>Estimation and Confidence Intervals</em>, in the course textbook
-<a href="https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf"><em>Statistics and Data Analysis for Engineers</em></a>.</p>
-<p><strong>Syllabus and input</strong></p>
+<h1 align="center">Estimation and Confidence Intervals</h1>
+
+<p>An estimate is a number; an interval says how precise that number is. After the CLT we can attach a margin of error to a mean or a proportion and talk about coverage rather than a single lucky sample.</p>
+<p>We distinguish an estimator from an estimate, construct <span class="arithmatex">\(z\)</span>- and <span class="arithmatex">\(t\)</span>-intervals for a mean and an approximate interval for a proportion, and add a bootstrap interval as a practical check. A 95% interval is a statement about the procedure, not a claim that “the parameter now lies in this interval with probability 0.95”. Width depends on <span class="arithmatex">\(n\)</span> and on the confidence level.</p>
+<h4 id="key-concepts">Key Concepts<a class="headerlink" href="#key-concepts" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Brooks, <em>Statistics and Data Analysis for Engineers</em>, Chapter 6</li>
-<li><a href="https://github.com/RBrooksDK/STA1_26/tree/main/06_Estimation_and_Confidence_Intervals/session_material">Session material</a></li>
+<li>Estimator versus estimate, and bias at an intuitive level</li>
+<li><span class="arithmatex">\(z\)</span>-interval and <span class="arithmatex">\(t\)</span>-interval for a mean</li>
+<li>Approximate interval for a proportion</li>
+<li>Coverage and correct interpretation</li>
+<li>How width depends on <span class="arithmatex">\(n\)</span> and confidence level</li>
 </ul>
-<hr />
-<h2 id="session-focus">Session focus<a class="headerlink" href="#session-focus" title="Permanent link">&para;</a></h2>
-<p>An estimate is a number; an interval says how precise that number is. We construct confidence intervals for a mean and for a proportion, interpret coverage correctly, and add a bootstrap interval as a practical check.</p>
-<p>By the end of the session, you should be able to:</p>
+<div class="admonition tip">
+<p class="admonition-title">Learning Objectives</p>
 <ul>
-<li>distinguish an estimator from an estimate, and discuss bias at an intuitive level;</li>
-<li>construct a <span class="arithmatex">\(z\)</span>-interval and a <span class="arithmatex">\(t\)</span>-interval for a mean;</li>
-<li>construct an approximate interval for a proportion;</li>
-<li>interpret a 95% interval without claiming that “the parameter lies in this interval with probability 0.95” after the data are seen;</li>
-<li>see how interval width depends on <span class="arithmatex">\(n\)</span> and on the confidence level.</li>
+<li>Distinguish an estimator from an estimate, and discuss bias at an intuitive level.</li>
+<li>Construct a <span class="arithmatex">\(z\)</span>-interval and a <span class="arithmatex">\(t\)</span>-interval for a mean.</li>
+<li>Construct an approximate interval for a proportion.</li>
+<li>Interpret a 95% interval without claiming that the parameter lies in this interval with probability 0.95 after the data are seen.</li>
+<li>See how interval width depends on <span class="arithmatex">\(n\)</span> and on the confidence level.</li>
 </ul>
-<p align="left">
-  <a href="Tutorial_06_notebook/">
-    <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
-    <br>
-    <strong>Tutorial 6: How precise is this measurement?</strong>
-  </a>
-</p>
+</div>
+<hr/>
 
-<p><a href="https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/06_Estimation_and_Confidence_Intervals/Tutorial_06_notebook.ipynb">Download notebook (.ipynb)</a>
-&nbsp;·&nbsp;
-<a href="Tutorial_06/">Read as markdown</a></p>
-<hr />
-<h2 id="scope-boundary">Scope boundary<a class="headerlink" href="#scope-boundary" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Maximum-likelihood theory or Bayesian estimation</li>
-<li>Prediction intervals (they appear with regression in Session 10)</li>
-<li>Treating bootstrap as a full extra chapter; it is a computational check</li>
-</ul>
-<hr />
-<h2 id="assignments">Assignments<a class="headerlink" href="#assignments" title="Permanent link">&para;</a></h2>
-<p>This session feeds <strong><a href="../pages/assignments/">Assignment 4</a></strong> together with Session 07.</p>
-<p>The <a href="Exercises/">assessment page</a> is reserved for Assignment 4 material,
-which will be published during the semester.</p>
+<h3 id="session-preparation">Session Preparation:<a class="headerlink" href="#session-preparation" title="Permanent link">&para;</a></h3>
+<p>Brooks: <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf">Chapter 6</a></p>
+<h3 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h3>
+<p><a href="https://github.com/RBrooksDK/STA1_26/tree/main/06_Estimation_and_Confidence_Intervals/session_material">Session material</a></p>
+<p><a href="Tutorial_06_notebook/">Tutorial 6: How precise is this measurement?</a></p>
+<hr/>
+
+<h3 id="exercises">Exercises<a class="headerlink" href="#exercises" title="Permanent link">&para;</a></h3>
 
 
 
 
 
 
+
+  
+  
 
 
 

@@ -1,54 +1,45 @@
-# 07 — Hypothesis Testing I: Principles and One-Sample Tests
-
-## Session preparation
-
-Read Chapter 7, *Hypothesis Testing I: Principles and One-Sample Tests*, in the course textbook
-[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
-
-**Syllabus and input**
-
-- Brooks, *Statistics and Data Analysis for Engineers*, Chapter 7
-- [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/07_Hypothesis_Testing_I_Principles_and_One_Sample_Tests/session_material)
-
+---
+tags:
+    - Hypothesis Testing
+    - p-value
+    - One-sample t-test
+    - Type I and Type II errors
 ---
 
-## Session focus
+<h1 align="center">Hypothesis Testing I: Principles and One-Sample Tests</h1>
 
-A test is a structured way to ask whether data are compatible with a specified claim. We introduce \(H_0\), \(H_1\), test statistics, \(p\)-values, type I and type II errors, and the one-sample \(t\)-test and proportion test.
+A test is a structured way to ask whether data are compatible with a specified claim. Process specifications, target means, and claimed defect rates are typical one-sample questions.
 
-By the end of the session, you should be able to:
+We write \(H_0\) and \(H_1\), compute a test statistic, and interpret the \(p\)-value as a tail probability under \(H_0\), not as \(P(H_0 \mid \text{data})\). Significance level \(\alpha\), type I and type II errors, and power are introduced at an intuitive level. The working procedures are the one-sample \(t\)-test and a one-sample test of a proportion. A two-sided test and a confidence interval are two views of the same comparison.
 
-- write \(H_0\) and \(H_1\) for a one-sample problem, one-sided or two-sided;
-- interpret a \(p\)-value as a tail probability under \(H_0\), not as \(P(H_0 \mid \text{data})\);
-- explain \(\alpha\), type I error, type II error, and power at an intuitive level;
-- perform a one-sample \(t\)-test and a one-sample test of a proportion in SciPy;
-- use the duality between a confidence interval and a two-sided test.
+#### Key Concepts
 
-<p align="left">
-  <a href="Tutorial_07_notebook/">
-    <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
-    <br>
-    <strong>Tutorial 7: Does the process meet the specification?</strong>
-  </a>
-</p>
+- \(H_0\), \(H_1\), one-sided and two-sided tests
+- Test statistics and \(p\)-values
+- \(\alpha\), type I error, type II error, and power
+- One-sample \(t\)-test and one-sample proportion test
+- Duality between a confidence interval and a two-sided test
 
-[Download notebook (.ipynb)](https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/07_Hypothesis_Testing_I_Principles_and_One_Sample_Tests/Tutorial_07_notebook.ipynb)
-&nbsp;·&nbsp;
-[Read as markdown](Tutorial_07.md/)
+!!! tip "Learning Objectives"
 
----
+    - Write \(H_0\) and \(H_1\) for a one-sample problem, one-sided or two-sided.
+    - Interpret a \(p\)-value as a tail probability under \(H_0\), not as \(P(H_0 \mid \text{data})\).
+    - Explain \(\alpha\), type I error, type II error, and power at an intuitive level.
+    - Perform a one-sample \(t\)-test and a one-sample test of a proportion in SciPy.
+    - Use the duality between a confidence interval and a two-sided test.
 
-## Scope boundary
+<hr/>
 
-- Two-sample and paired designs (Session 08)
-- Equating “not significant” with “no effect”
-- Computing power curves in full detail; we only need the idea
+### Session Preparation:
 
----
+Brooks: [Chapter 7](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf)
 
-## Assignments
+### Resources
 
-This session completes **[Assignment 4](../pages/assignments.md)**: confidence intervals and one-sample tests.
+[Session material](https://github.com/RBrooksDK/STA1_26/tree/main/07_Hypothesis_Testing_I_Principles_and_One_Sample_Tests/session_material)
 
-The [assessment page](Exercises.md) is reserved for Assignment 4 material,
-which will be published during the semester.
+[Tutorial 7: Does the process meet the specification?](Tutorial_07_notebook.ipynb)
+
+<hr/>
+
+### Exercises

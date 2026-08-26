@@ -29,7 +29,7 @@
     
     
       
-        <title>03 — Random Variables and Discrete Distributions - Statistics and Data Analysis for Engineers</title>
+        <title>Index - Statistics and Data Analysis for Engineers</title>
       
     
     
@@ -98,7 +98,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#03-random-variables-and-discrete-distributions" class="md-skip">
+        <a href="#session-preparation" class="md-skip">
           Skip to content
         </a>
       
@@ -131,7 +131,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              03 — Random Variables and Discrete Distributions
+              Index
             
           </span>
         </div>
@@ -311,25 +311,6 @@
   
   
     <li class="md-tabs__item">
-      <a href="../pages/project/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Project
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
       <a href="../pages/exam/" class="md-tabs__link">
         
   
@@ -337,44 +318,6 @@
     
   
   Exam
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../pages/literature/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Literature
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../pages/conventions/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Conventions
 
       </a>
     </li>
@@ -1424,33 +1367,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/project/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Project
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../pages/exam/" class="md-nav__link">
         
   
@@ -1459,60 +1375,6 @@
     
   
     Exam
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pages/literature/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Literature
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pages/conventions/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Conventions
   
 
     
@@ -1596,8 +1458,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1609,7 +1469,7 @@
   <a href="#session-preparation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Session preparation
+        Session Preparation:
       
     </span>
   </a>
@@ -1617,10 +1477,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#session-focus" class="md-nav__link">
+  <a href="#resources" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Session focus
+        Resources
       
     </span>
   </a>
@@ -1628,21 +1488,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#scope-boundary" class="md-nav__link">
+  <a href="#exercises" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Scope boundary
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#assignments" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Assignments
+        Exercises
       
     </span>
   </a>
@@ -1669,56 +1518,47 @@
   
 
 
-<h1 id="03-random-variables-and-discrete-distributions">03 — Random Variables and Discrete Distributions<a class="headerlink" href="#03-random-variables-and-discrete-distributions" title="Permanent link">&para;</a></h1>
-<h2 id="session-preparation">Session preparation<a class="headerlink" href="#session-preparation" title="Permanent link">&para;</a></h2>
-<p>Read Chapter 3, <em>Random Variables and Discrete Distributions</em>, in the course textbook
-<a href="https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf"><em>Statistics and Data Analysis for Engineers</em></a>.
-The binomial coefficient is introduced here, where the binomial model uses it.</p>
-<p><strong>Syllabus and input</strong></p>
+<h1 align="center">Random Variables and Discrete Distributions</h1>
+
+<p>A random variable is a numerical description of a random experiment. Once we have that language, packet-loss counts, defect counts, and other engineering tallies can be modelled rather than only listed.</p>
+<p>We use PMFs, CDFs, expectation, and variance, then choose among Bernoulli, binomial, and Poisson models. The binomial coefficient is introduced here because the binomial model needs it: it counts the number of ways to place <span class="arithmatex">\(k\)</span> successes among <span class="arithmatex">\(n\)</span> trials. Probabilities are computed in SciPy rather than by expanding every term by hand.</p>
+<h4 id="key-concepts">Key Concepts<a class="headerlink" href="#key-concepts" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Brooks, <em>Statistics and Data Analysis for Engineers</em>, Chapter 3</li>
-<li><a href="https://github.com/RBrooksDK/STA1_26/tree/main/03_Random_Variables_and_Discrete_Distributions/session_material">Session material</a></li>
+<li>Random variable <span class="arithmatex">\(X\)</span> versus observed value <span class="arithmatex">\(x\)</span></li>
+<li>PMF, CDF, expectation, and variance</li>
+<li>Bernoulli and binomial models</li>
+<li>Poisson counts</li>
+<li>The binomial coefficient <span class="arithmatex">\(\binom{n}{k}\)</span></li>
 </ul>
-<hr />
-<h2 id="session-focus">Session focus<a class="headerlink" href="#session-focus" title="Permanent link">&para;</a></h2>
-<p>A random variable is a numerical description of a random experiment. We use PMFs, expectation, and variance, then choose among Bernoulli, binomial, and Poisson models for engineering counts.</p>
-<p>By the end of the session, you should be able to:</p>
+<div class="admonition tip">
+<p class="admonition-title">Learning Objectives</p>
 <ul>
-<li>distinguish the random variable <span class="arithmatex">\(X\)</span> from an observed value <span class="arithmatex">\(x\)</span>;</li>
-<li>read a PMF and a CDF, and compute <span class="arithmatex">\(E[X]\)</span> and <span class="arithmatex">\(\operatorname{Var}(X)\)</span>;</li>
-<li>decide when a binomial or Poisson model is plausible;</li>
-<li>compute probabilities with SciPy rather than by expanding every term by hand;</li>
-<li>explain the binomial coefficient as “the number of ways to place <span class="arithmatex">\(k\)</span> successes among <span class="arithmatex">\(n\)</span> trials”.</li>
+<li>Distinguish the random variable <span class="arithmatex">\(X\)</span> from an observed value <span class="arithmatex">\(x\)</span>.</li>
+<li>Read a PMF and a CDF, and compute <span class="arithmatex">\(E[X]\)</span> and <span class="arithmatex">\(\operatorname{Var}(X)\)</span>.</li>
+<li>Decide when a binomial or Poisson model is plausible.</li>
+<li>Compute probabilities with SciPy rather than by expanding every term by hand.</li>
+<li>Explain the binomial coefficient as the number of ways to place <span class="arithmatex">\(k\)</span> successes among <span class="arithmatex">\(n\)</span> trials.</li>
 </ul>
-<p align="left">
-  <a href="Tutorial_03_notebook/">
-    <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
-    <br>
-    <strong>Tutorial 3: Packet loss and failure counts</strong>
-  </a>
-</p>
+</div>
+<hr/>
 
-<p><a href="https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/03_Random_Variables_and_Discrete_Distributions/Tutorial_03_notebook.ipynb">Download notebook (.ipynb)</a>
-&nbsp;·&nbsp;
-<a href="Tutorial_03/">Read as markdown</a></p>
-<hr />
-<h2 id="scope-boundary">Scope boundary<a class="headerlink" href="#scope-boundary" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Geometric and negative binomial as core syllabus (they may appear as extras)</li>
-<li>Jointly distributed random variables, covariance of sums, and moment-generating functions (SMP1)</li>
-<li>Deriving PMFs from first principles for every named family</li>
-</ul>
-<hr />
-<h2 id="assignments">Assignments<a class="headerlink" href="#assignments" title="Permanent link">&para;</a></h2>
-<p>This session completes <strong><a href="../pages/assignments/">Assignment 2</a></strong>: probability and discrete models.</p>
-<p>The <a href="Exercises/">assessment page</a> is reserved for Assignment 2 material,
-which will be published during the semester.</p>
+<h3 id="session-preparation">Session Preparation:<a class="headerlink" href="#session-preparation" title="Permanent link">&para;</a></h3>
+<p>Brooks: <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf">Chapter 3</a></p>
+<h3 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h3>
+<p><a href="https://github.com/RBrooksDK/STA1_26/tree/main/03_Random_Variables_and_Discrete_Distributions/session_material">Session material</a></p>
+<p><a href="Tutorial_03_notebook/">Tutorial 3: Packet loss and failure counts</a></p>
+<hr/>
+
+<h3 id="exercises">Exercises<a class="headerlink" href="#exercises" title="Permanent link">&para;</a></h3>
 
 
 
 
 
 
+
+  
+  
 
 
 

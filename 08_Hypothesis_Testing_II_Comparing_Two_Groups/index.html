@@ -29,7 +29,7 @@
     
     
       
-        <title>08 — Hypothesis Testing II: Comparing Two Groups - Statistics and Data Analysis for Engineers</title>
+        <title>Index - Statistics and Data Analysis for Engineers</title>
       
     
     
@@ -98,7 +98,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#08-hypothesis-testing-ii-comparing-two-groups" class="md-skip">
+        <a href="#session-preparation" class="md-skip">
           Skip to content
         </a>
       
@@ -131,7 +131,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              08 — Hypothesis Testing II: Comparing Two Groups
+              Index
             
           </span>
         </div>
@@ -311,25 +311,6 @@
   
   
     <li class="md-tabs__item">
-      <a href="../pages/project/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Project
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
       <a href="../pages/exam/" class="md-tabs__link">
         
   
@@ -337,44 +318,6 @@
     
   
   Exam
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../pages/literature/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Literature
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../pages/conventions/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Conventions
 
       </a>
     </li>
@@ -1424,33 +1367,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/project/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Project
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../pages/exam/" class="md-nav__link">
         
   
@@ -1459,60 +1375,6 @@
     
   
     Exam
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pages/literature/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Literature
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pages/conventions/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Conventions
   
 
     
@@ -1596,8 +1458,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1609,7 +1469,7 @@
   <a href="#session-preparation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Session preparation
+        Session Preparation:
       
     </span>
   </a>
@@ -1617,10 +1477,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#session-focus" class="md-nav__link">
+  <a href="#resources" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Session focus
+        Resources
       
     </span>
   </a>
@@ -1628,21 +1488,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#scope-boundary" class="md-nav__link">
+  <a href="#exercises" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Scope boundary
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#assignments" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Assignments
+        Exercises
       
     </span>
   </a>
@@ -1669,55 +1518,47 @@
   
 
 
-<h1 id="08-hypothesis-testing-ii-comparing-two-groups">08 — Hypothesis Testing II: Comparing Two Groups<a class="headerlink" href="#08-hypothesis-testing-ii-comparing-two-groups" title="Permanent link">&para;</a></h1>
-<h2 id="session-preparation">Session preparation<a class="headerlink" href="#session-preparation" title="Permanent link">&para;</a></h2>
-<p>Read Chapter 8, <em>Hypothesis Testing II: Comparing Two Groups</em>, in the course textbook
-<a href="https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf"><em>Statistics and Data Analysis for Engineers</em></a>.</p>
-<p><strong>Syllabus and input</strong></p>
-<ul>
-<li>Brooks, <em>Statistics and Data Analysis for Engineers</em>, Chapter 8</li>
-<li><a href="https://github.com/RBrooksDK/STA1_26/tree/main/08_Hypothesis_Testing_II_Comparing_Two_Groups/session_material">Session material</a></li>
-</ul>
-<hr />
-<h2 id="session-focus">Session focus<a class="headerlink" href="#session-focus" title="Permanent link">&para;</a></h2>
+<h1 align="center">Hypothesis Testing II: Comparing Two Groups</h1>
+
 <p>Many engineering questions compare two conditions: two servers, two suppliers, before and after a change. The design — independent samples versus paired observations — decides the test.</p>
-<p>By the end of the session, you should be able to:</p>
+<p>Independent groups use a two-sample <span class="arithmatex">\(t\)</span>-test, with Welch's version as the default when variances may differ. Paired observations use a paired <span class="arithmatex">\(t\)</span>-test on the differences. A confidence interval for the difference and an effect size keep the result from collapsing to a single <span class="arithmatex">\(p\)</span>-value. Statistical significance is not the same as practical importance.</p>
+<h4 id="key-concepts">Key Concepts<a class="headerlink" href="#key-concepts" title="Permanent link">&para;</a></h4>
 <ul>
-<li>choose between independent and paired data;</li>
-<li>perform a two-sample <span class="arithmatex">\(t\)</span>-test and Welch's <span class="arithmatex">\(t\)</span>-test;</li>
-<li>perform a paired <span class="arithmatex">\(t\)</span>-test;</li>
-<li>report a confidence interval for the difference and an effect size;</li>
-<li>distinguish statistical significance from practical importance.</li>
+<li>Independent samples versus paired observations</li>
+<li>Two-sample <span class="arithmatex">\(t\)</span>-test and Welch's <span class="arithmatex">\(t\)</span>-test</li>
+<li>Paired <span class="arithmatex">\(t\)</span>-test</li>
+<li>Confidence interval for a difference</li>
+<li>Statistical significance versus practical importance</li>
 </ul>
-<p align="left">
-  <a href="Tutorial_08_notebook/">
-    <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
-    <br>
-    <strong>Tutorial 8: A/B test of response times</strong>
-  </a>
-</p>
-
-<p><a href="https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/08_Hypothesis_Testing_II_Comparing_Two_Groups/Tutorial_08_notebook.ipynb">Download notebook (.ipynb)</a>
-&nbsp;·&nbsp;
-<a href="Tutorial_08/">Read as markdown</a></p>
-<hr />
-<h2 id="scope-boundary">Scope boundary<a class="headerlink" href="#scope-boundary" title="Permanent link">&para;</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Learning Objectives</p>
 <ul>
-<li>Tests of two variances as a standalone exam topic (Levene's test may appear as a diagnostic)</li>
-<li>Many uncorrected pairwise tests among several groups (Session 09)</li>
-<li>Claiming that independent and paired analyses of the same numbers are interchangeable</li>
+<li>Choose between independent and paired data.</li>
+<li>Perform a two-sample <span class="arithmatex">\(t\)</span>-test and Welch's <span class="arithmatex">\(t\)</span>-test.</li>
+<li>Perform a paired <span class="arithmatex">\(t\)</span>-test.</li>
+<li>Report a confidence interval for the difference and an effect size.</li>
+<li>Distinguish statistical significance from practical importance.</li>
 </ul>
-<hr />
-<h2 id="assignments">Assignments<a class="headerlink" href="#assignments" title="Permanent link">&para;</a></h2>
-<p>This session feeds <strong><a href="../pages/assignments/">Assignment 5</a></strong> together with Session 09.</p>
-<p>The <a href="Exercises/">assessment page</a> is reserved for Assignment 5 material,
-which will be published during the semester.</p>
+</div>
+<hr/>
+
+<h3 id="session-preparation">Session Preparation:<a class="headerlink" href="#session-preparation" title="Permanent link">&para;</a></h3>
+<p>Brooks: <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf">Chapter 8</a></p>
+<h3 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h3>
+<p><a href="https://github.com/RBrooksDK/STA1_26/tree/main/08_Hypothesis_Testing_II_Comparing_Two_Groups/session_material">Session material</a></p>
+<p><a href="Tutorial_08_notebook/">Tutorial 8: A/B test of response times</a></p>
+<hr/>
+
+<h3 id="exercises">Exercises<a class="headerlink" href="#exercises" title="Permanent link">&para;</a></h3>
 
 
 
 
 
 
+
+  
+  
 
 
 

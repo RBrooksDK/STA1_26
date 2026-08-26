@@ -29,7 +29,7 @@
     
     
       
-        <title>11 — Categorical Data and Chi-Square Tests - Statistics and Data Analysis for Engineers</title>
+        <title>Index - Statistics and Data Analysis for Engineers</title>
       
     
     
@@ -98,7 +98,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#11-categorical-data-and-chi-square-tests" class="md-skip">
+        <a href="#session-preparation" class="md-skip">
           Skip to content
         </a>
       
@@ -131,7 +131,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              11 — Categorical Data and Chi-Square Tests
+              Index
             
           </span>
         </div>
@@ -311,25 +311,6 @@
   
   
     <li class="md-tabs__item">
-      <a href="../pages/project/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Project
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
       <a href="../pages/exam/" class="md-tabs__link">
         
   
@@ -337,44 +318,6 @@
     
   
   Exam
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../pages/literature/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Literature
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../pages/conventions/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Conventions
 
       </a>
     </li>
@@ -1424,33 +1367,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../pages/project/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Project
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../pages/exam/" class="md-nav__link">
         
   
@@ -1459,60 +1375,6 @@
     
   
     Exam
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pages/literature/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Literature
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pages/conventions/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Conventions
   
 
     
@@ -1596,8 +1458,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1609,7 +1469,7 @@
   <a href="#session-preparation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Session preparation
+        Session Preparation:
       
     </span>
   </a>
@@ -1617,10 +1477,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#session-focus" class="md-nav__link">
+  <a href="#resources" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Session focus
+        Resources
       
     </span>
   </a>
@@ -1628,21 +1488,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#scope-boundary" class="md-nav__link">
+  <a href="#exercises" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Scope boundary
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#assignments" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Assignments
+        Exercises
       
     </span>
   </a>
@@ -1669,54 +1518,47 @@
   
 
 
-<h1 id="11-categorical-data-and-chi-square-tests">11 — Categorical Data and Chi-Square Tests<a class="headerlink" href="#11-categorical-data-and-chi-square-tests" title="Permanent link">&para;</a></h1>
-<h2 id="session-preparation">Session preparation<a class="headerlink" href="#session-preparation" title="Permanent link">&para;</a></h2>
-<p>Read Chapter 11, <em>Categorical Data and Chi-Square Tests</em>, in the course textbook
-<a href="https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf"><em>Statistics and Data Analysis for Engineers</em></a>.</p>
-<p><strong>Syllabus and input</strong></p>
-<ul>
-<li>Brooks, <em>Statistics and Data Analysis for Engineers</em>, Chapter 11</li>
-<li><a href="https://github.com/RBrooksDK/STA1_26/tree/main/11_Categorical_Data_and_Chi_Square_Tests/session_material">Session material</a></li>
-</ul>
-<hr />
-<h2 id="session-focus">Session focus<a class="headerlink" href="#session-focus" title="Permanent link">&para;</a></h2>
+<h1 align="center">Categorical Data and Chi-Square Tests</h1>
+
 <p>Not every engineering measurement is a real number. Defect types, line IDs, and pass/fail labels are categorical. Chi-square tests compare observed counts with expected counts, either against a specified distribution or in a two-way table.</p>
-<p>By the end of the session, you should be able to:</p>
+<p>A goodness-of-fit test asks whether one set of counts matches a claimed distribution. A test of independence asks whether two classifications are associated. Expected counts should not be too small, and standardised residuals show which cells drive a significant result. The conclusion is stated in terms of the engineering categories, not only <span class="arithmatex">\(\chi^2\)</span>.</p>
+<h4 id="key-concepts">Key Concepts<a class="headerlink" href="#key-concepts" title="Permanent link">&para;</a></h4>
 <ul>
-<li>form a contingency table and compute expected counts;</li>
-<li>perform a goodness-of-fit test and a test of independence;</li>
-<li>check the guideline that expected counts should not be too small;</li>
-<li>interpret standardised residuals;</li>
-<li>state a conclusion in terms of the engineering categories, not only <span class="arithmatex">\(\chi^2\)</span>.</li>
+<li>Contingency tables and expected counts</li>
+<li>Goodness-of-fit tests</li>
+<li>Tests of independence</li>
+<li>The guideline on expected counts</li>
+<li>Standardised residuals</li>
 </ul>
-<p align="left">
-  <a href="Tutorial_11_notebook/">
-    <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
-    <br>
-    <strong>Tutorial 11: Defect types across production lines</strong>
-  </a>
-</p>
-
-<p><a href="https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/11_Categorical_Data_and_Chi_Square_Tests/Tutorial_11_notebook.ipynb">Download notebook (.ipynb)</a>
-&nbsp;·&nbsp;
-<a href="Tutorial_11/">Read as markdown</a></p>
-<hr />
-<h2 id="scope-boundary">Scope boundary<a class="headerlink" href="#scope-boundary" title="Permanent link">&para;</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Learning Objectives</p>
 <ul>
-<li>Advanced categorical models beyond goodness-of-fit and independence tests</li>
-<li>Treating a significant independence test as identifying a causal mechanism</li>
+<li>Form a contingency table and compute expected counts.</li>
+<li>Perform a goodness-of-fit test and a test of independence.</li>
+<li>Check the guideline that expected counts should not be too small.</li>
+<li>Interpret standardised residuals.</li>
+<li>State a conclusion in terms of the engineering categories, not only <span class="arithmatex">\(\chi^2\)</span>.</li>
 </ul>
-<hr />
-<h2 id="assignments">Assignments<a class="headerlink" href="#assignments" title="Permanent link">&para;</a></h2>
-<p>This session completes <strong><a href="../pages/assignments/">Assignment 6</a></strong>: regression and categorical data.</p>
-<p>The <a href="Exercises/">assessment page</a> is reserved for Assignment 6 material,
-which will be published during the semester.</p>
+</div>
+<hr/>
+
+<h3 id="session-preparation">Session Preparation:<a class="headerlink" href="#session-preparation" title="Permanent link">&para;</a></h3>
+<p>Brooks: <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf">Chapter 11</a></p>
+<h3 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h3>
+<p><a href="https://github.com/RBrooksDK/STA1_26/tree/main/11_Categorical_Data_and_Chi_Square_Tests/session_material">Session material</a></p>
+<p><a href="Tutorial_11_notebook/">Tutorial 11: Defect types across production lines</a></p>
+<hr/>
+
+<h3 id="exercises">Exercises<a class="headerlink" href="#exercises" title="Permanent link">&para;</a></h3>
 
 
 
 
 
 
+
+  
+  
 
 
 

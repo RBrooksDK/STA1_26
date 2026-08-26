@@ -1,54 +1,45 @@
-# 08 — Hypothesis Testing II: Comparing Two Groups
-
-## Session preparation
-
-Read Chapter 8, *Hypothesis Testing II: Comparing Two Groups*, in the course textbook
-[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
-
-**Syllabus and input**
-
-- Brooks, *Statistics and Data Analysis for Engineers*, Chapter 8
-- [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/08_Hypothesis_Testing_II_Comparing_Two_Groups/session_material)
-
+---
+tags:
+    - Two-sample t-test
+    - Welch
+    - Paired t-test
+    - Effect size
 ---
 
-## Session focus
+<h1 align="center">Hypothesis Testing II: Comparing Two Groups</h1>
 
 Many engineering questions compare two conditions: two servers, two suppliers, before and after a change. The design — independent samples versus paired observations — decides the test.
 
-By the end of the session, you should be able to:
+Independent groups use a two-sample \(t\)-test, with Welch's version as the default when variances may differ. Paired observations use a paired \(t\)-test on the differences. A confidence interval for the difference and an effect size keep the result from collapsing to a single \(p\)-value. Statistical significance is not the same as practical importance.
 
-- choose between independent and paired data;
-- perform a two-sample \(t\)-test and Welch's \(t\)-test;
-- perform a paired \(t\)-test;
-- report a confidence interval for the difference and an effect size;
-- distinguish statistical significance from practical importance.
+#### Key Concepts
 
-<p align="left">
-  <a href="Tutorial_08_notebook/">
-    <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
-    <br>
-    <strong>Tutorial 8: A/B test of response times</strong>
-  </a>
-</p>
+- Independent samples versus paired observations
+- Two-sample \(t\)-test and Welch's \(t\)-test
+- Paired \(t\)-test
+- Confidence interval for a difference
+- Statistical significance versus practical importance
 
-[Download notebook (.ipynb)](https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/08_Hypothesis_Testing_II_Comparing_Two_Groups/Tutorial_08_notebook.ipynb)
-&nbsp;·&nbsp;
-[Read as markdown](Tutorial_08.md/)
+!!! tip "Learning Objectives"
 
----
+    - Choose between independent and paired data.
+    - Perform a two-sample \(t\)-test and Welch's \(t\)-test.
+    - Perform a paired \(t\)-test.
+    - Report a confidence interval for the difference and an effect size.
+    - Distinguish statistical significance from practical importance.
 
-## Scope boundary
+<hr/>
 
-- Tests of two variances as a standalone exam topic (Levene's test may appear as a diagnostic)
-- Many uncorrected pairwise tests among several groups (Session 09)
-- Claiming that independent and paired analyses of the same numbers are interchangeable
+### Session Preparation:
 
----
+Brooks: [Chapter 8](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf)
 
-## Assignments
+### Resources
 
-This session feeds **[Assignment 5](../pages/assignments.md)** together with Session 09.
+[Session material](https://github.com/RBrooksDK/STA1_26/tree/main/08_Hypothesis_Testing_II_Comparing_Two_Groups/session_material)
 
-The [assessment page](Exercises.md) is reserved for Assignment 5 material,
-which will be published during the semester.
+[Tutorial 8: A/B test of response times](Tutorial_08_notebook.ipynb)
+
+<hr/>
+
+### Exercises
