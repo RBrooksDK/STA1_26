@@ -60,7 +60,7 @@
 
 ??? question "Which book should I buy?"
 
-    Ross, *Introduction to Probability and Statistics for Engineers and Scientists*, 6th edition, is the main book from Session 03. Sessions 01–02 use Brooks, *Mathematics for Software Engineering*. Details are on the [Literature](literature.md) page.
+    Chapter 1 of Brooks, [*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf), is provided for Session 01. Session 02 currently uses Brooks, *Mathematics for Software Engineering*, and Ross, *Introduction to Probability and Statistics for Engineers and Scientists*, 6th edition, is the main book from Session 03. Details are on the [Literature](literature.md) page.
 
 ??? question "Why do tutorials sometimes disagree with SciPy's default arguments?"
 

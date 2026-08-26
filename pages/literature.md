@@ -1,8 +1,12 @@
 <h1 align="center">Literature</h1>
 
-Each session has **one primary text**. You are not asked to read both books on the same topic.
+Each session has **one primary text**. You are not asked to read several books
+on the same topic. The new course textbook is being published chapter by
+chapter; until a chapter is available, the existing mapping to Brooks and
+Ross remains in force.
 
-- **Sessions 1–2:** Richard Brooks, *Mathematics for Software Engineering*.
+- **Session 1:** Richard Brooks, [*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf), Chapter 1.
+- **Session 2:** Richard Brooks, *Mathematics for Software Engineering*.
 - **Sessions 3–12:** Sheldon M. Ross, *Introduction to Probability and Statistics for Engineers and Scientists*, 6th edition, Academic Press, ISBN 978-0-12-824346-6.
 
 Python notebooks on this site are the working material. The books supply definitions, extra explanations, and selected problems.
@@ -12,7 +16,7 @@ Python notebooks on this site are the working material. The books supply definit
 | Session | Primary text | Sections |
 | ---: | --- | --- |
 | 00 | Course site | This site and the Getting Started page |
-| 01 | Brooks | Chapter 6 (descriptive statistics). |
+| 01 | *Statistics and Data Analysis for Engineers* | [Chapter 1: Data and Descriptive Statistics](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf#page=7) |
 | 02 | Brooks | Chapters 4–5, selectively: events, probability rules, conditional probability, independence, Bayes. Skip general combinatorics. |
 | 03 | Ross | 4.1–4.2, 4.4, 4.6, 5.1–5.2, and optionally parts of 5.3 |
 | 04 | Ross | 5.4–5.6, used selectively without manual integration |
