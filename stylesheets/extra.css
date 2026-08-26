@@ -117,13 +117,14 @@ body, .md-typeset, .md-content, .md-main, .md-typeset p, .md-typeset li, .md-typ
   }
 }
 
-/* Video swap for light/dark theme */
-.video-dark { display: none; }
-[data-md-color-scheme="slate"] .video-dark { display: inline !important; }
+/* Video swap for light/dark theme.
+   Do not set display on .custom-video: it shares specificity with
+   .video-dark and would keep the dark clip visible in light mode. */
+.video-dark { display: none !important; }
+[data-md-color-scheme="slate"] .video-dark { display: block !important; }
 [data-md-color-scheme="slate"] .video-light { display: none !important; }
 
 .custom-video {
-  display: block;
   max-width: 100%;
   height: auto;
   margin-left: auto;
