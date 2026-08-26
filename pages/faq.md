@@ -8,7 +8,7 @@
 
 ??? question "Do I need MSE1 before STA1?"
 
-    The official description lists MSE1 as a prerequisite. This edition of STA1 nevertheless teaches descriptive statistics and the probability needed for inference from the beginning. If you have had MSE1, treat Sessions 01–02 as a fast recap.
+    The [official course description](https://my.via.dk/media/mitvia/semesteroverblik/kursusbeskrivelser/software-engineering/6.-og-7.-semester/it-sta1-1-0) lists MSE1 as a prerequisite. This edition of STA1 nevertheless teaches descriptive statistics and the probability needed for inference from the beginning. If you have had MSE1, treat Sessions 01–02 as a fast recap.
 
 ??? question "How many contact hours are there?"
 
@@ -48,7 +48,7 @@
 
 ??? question "Are the assignments graded separately?"
 
-    The final grade is an overall assessment of the assignment work and the oral examination, as stated in the course description.
+    The final grade is an overall assessment of the assignment work and the oral examination, as stated in the [course description](https://my.via.dk/media/mitvia/semesteroverblik/kursusbeskrivelser/software-engineering/6.-og-7.-semester/it-sta1-1-0).
 
 ??? question "May I use AI tools?"
 

@@ -10,7 +10,7 @@ The exam is a **20-minute oral examination**.
 
 It starts from **one of the six assignments** that the group completed during the semester. The examiner also discusses the **group project**.
 
-The final grade is an overall assessment of the assignment work and the oral examination. Internal assessment. Grading uses the Danish 7-point scale.
+The final grade is an overall assessment of the assignment work and the oral examination, as stated in the [course description](https://my.via.dk/media/mitvia/semesteroverblik/kursusbeskrivelser/software-engineering/6.-og-7.-semester/it-sta1-1-0). Internal assessment. Grading uses the Danish 7-point scale.
 
 You should be able to:
 
