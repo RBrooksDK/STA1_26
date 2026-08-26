@@ -31,4 +31,4 @@ Until the brief appears, use these defaults:
 
 ## Relation to the assignments
 
-The six assignments train individual methods. The project asks you to choose among them. You will not be asked to invent additional large projects besides this one and the six assignments named in the course description.
+The six assignments train individual methods. The project asks you to choose among them. You will not be asked to invent additional large projects besides this one and the six assignments named in the [course description](https://my.via.dk/media/mitvia/semesteroverblik/kursusbeskrivelser/software-engineering/6.-og-7.-semester/it-sta1-1-0).

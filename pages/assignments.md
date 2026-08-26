@@ -1,6 +1,6 @@
 <h1 align="center">Assignments</h1>
 
-The course description specifies **six practice-oriented group assignments** distributed through the semester. They connect statistical theory with engineering applications and form part of the exam basis.
+The [course description](https://my.via.dk/media/mitvia/semesteroverblik/kursusbeskrivelser/software-engineering/6.-og-7.-semester/it-sta1-1-0) specifies **six practice-oriented group assignments** distributed through the semester. They connect statistical theory with engineering applications and form part of the exam basis.
 
 The specific task texts will be published during the semester. This page fixes the framework.
 
