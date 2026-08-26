@@ -2,7 +2,8 @@
 
 The [course description](https://my.via.dk/media/mitvia/semesteroverblik/kursusbeskrivelser/software-engineering/6.-og-7.-semester/it-sta1-1-0) specifies **six practice-oriented group assignments** distributed through the semester. They connect statistical theory with engineering applications and form part of the exam basis.
 
-The specific task texts will be published during the semester. This page fixes the framework.
+Detailed task briefs will be published during the semester. Each brief will be
+available from the relevant session's assessment page.
 
 ## Purpose
 
@@ -14,7 +15,8 @@ Each assignment is a complete, small analysis that you should be able to defend 
 4. interpret the result, including assumptions and uncertainty;
 5. communicate a recommendation.
 
-Do not invent extra projects besides these six assignments and the [group project](project.md). Tutorial examples are teaching material, not extra student projects.
+Tutorial examples prepare you for the assignments; they are not additional
+assessment tasks.
 
 ## Cadence
 
@@ -29,7 +31,8 @@ Do not invent extra projects besides these six assignments and the [group projec
 
 ## Format
 
-Until the detailed briefs appear, use these defaults:
+The detailed brief for each assignment will confirm the requirements. Unless a
+brief says otherwise, use these defaults:
 
 - **Group size:** 2–4 students.
 - **Product:** a short Jupyter notebook (or a short report plus notebook) with a clear question, analysis, figures, and a written conclusion in ordinary language.
@@ -44,4 +47,6 @@ Until the detailed briefs appear, use these defaults:
 - Is Python used as a means of analysis, not as a black box?
 - Does the conclusion answer the engineering question and mention uncertainty?
 
-Each session page states which assignment it feeds. Exercises for individual practice will be added later and are separate from these six assignments.
+Each session page states which assignment it feeds. Its assessment page is
+reserved for the relevant assignment brief and supporting material; the course
+does not use those pages to introduce additional mandatory exercise sets.

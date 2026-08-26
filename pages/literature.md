@@ -12,7 +12,7 @@ Python notebooks on this site are the working material. The books supply definit
 | Session | Primary text | Sections |
 | ---: | --- | --- |
 | 00 | Course site | This site and the Getting Started page |
-| 01 | Brooks | Chapter 6 (descriptive statistics). Skip the incorrect LLN/histogram discussion if it has not yet been revised. |
+| 01 | Brooks | Chapter 6 (descriptive statistics). |
 | 02 | Brooks | Chapters 4–5, selectively: events, probability rules, conditional probability, independence, Bayes. Skip general combinatorics. |
 | 03 | Ross | 4.1–4.2, 4.4, 4.6, 5.1–5.2, and optionally parts of 5.3 |
 | 04 | Ross | 5.4–5.6, used selectively without manual integration |

@@ -43,7 +43,7 @@ By the end of the session, you should be able to:
 
 ---
 
-## What we do not do
+## Scope boundary
 
 - Geometric and negative binomial as core syllabus (they may appear as extras)
 - Jointly distributed random variables, covariance of sums, MGFs (Ross 4.3, 4.7–4.8)
@@ -55,4 +55,5 @@ By the end of the session, you should be able to:
 
 This session completes **[Assignment 2](../pages/assignments.md)**: probability and discrete models.
 
-Exercises will be added later in [Exercises.md](Exercises.md).
+The [assessment page](Exercises.md) is reserved for Assignment 2 material,
+which will be published during the semester.

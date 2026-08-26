@@ -157,7 +157,7 @@ nav:
     - "04 Continuous Distributions in Practice":
       - 04_Continuous_Distributions_in_Practice/README.md
       - "Tutorial 4 (notebook)": 04_Continuous_Distributions_in_Practice/Tutorial_04_notebook.ipynb
-    - "05 Sampling Distributions and the CLT":
+    - "05 Sampling Distributions and the Central Limit Theorem":
       - 05_Sampling_Distributions_and_the_CLT/README.md
       - "Tutorial 5 (notebook)": 05_Sampling_Distributions_and_the_CLT/Tutorial_05_notebook.ipynb
     - "06 Estimation and Confidence Intervals":
@@ -178,7 +178,7 @@ nav:
     - "11 Categorical Data and Chi-Square Tests":
       - 11_Categorical_Data_and_Chi_Square_Tests/README.md
       - "Tutorial 11 (notebook)": 11_Categorical_Data_and_Chi_Square_Tests/Tutorial_11_notebook.ipynb
-    - "12 Integrated Analysis and Exam Preparation":
+    - "12 Integrated Statistical Analysis and Exam Preparation":
       - 12_Integrated_Analysis_and_Exam_Preparation/README.md
       - "Tutorial 12 (notebook)": 12_Integrated_Analysis_and_Exam_Preparation/Tutorial_12_notebook.ipynb
   - Assignments: pages/assignments.md

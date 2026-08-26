@@ -1,4 +1,4 @@
-# 12 — Integrated Analysis and Exam Preparation
+# 12 — Integrated Statistical Analysis and Exam Preparation
 
 ## Session preparation
 
@@ -56,7 +56,7 @@ Always start with plots from Session 01. Always end with a sentence that a colle
 
 ---
 
-## What we do not do
+## Scope boundary
 
 - Introduce new families of models
 - Replace the oral exam with a mock written paper
@@ -65,4 +65,4 @@ Always start with plots from Session 01. Always end with a sentence that a colle
 
 ## Assignments
 
-Submit the [project](../pages/project.md) after this session. The oral exam uses one assignment plus the project.
+Submit the [project](../pages/project.md) after this session. The oral exam uses one assignment plus the project. The [assessment page](Exercises.md) is reserved for project material and supporting information.

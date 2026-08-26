@@ -39,7 +39,7 @@ By the end of the session, you should be able to:
 
 ---
 
-## What we do not do
+## Scope boundary
 
 - Manual integration of a PDF, or deriving a CDF from a PDF by hand
 - Deriving means and variances from integrals
@@ -52,4 +52,5 @@ By the end of the session, you should be able to:
 
 This session feeds **[Assignment 3](../pages/assignments.md)** together with Session 05.
 
-Exercises will be added later in [Exercises.md](Exercises.md).
+The [assessment page](Exercises.md) is reserved for Assignment 3 material,
+which will be published during the semester.

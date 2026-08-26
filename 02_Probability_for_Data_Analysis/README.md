@@ -39,7 +39,7 @@ By the end of the session, you should be able to:
 
 ---
 
-## What we do not do
+## Scope boundary
 
 - General combinatorics as a standalone topic
 - Joint distributions of several random variables (SMP1)
@@ -51,4 +51,5 @@ By the end of the session, you should be able to:
 
 This session feeds **[Assignment 2](../pages/assignments.md)** together with Session 03.
 
-Exercises will be added later in [Exercises.md](Exercises.md).
+The [assessment page](Exercises.md) is reserved for Assignment 2 material,
+which will be published during the semester.

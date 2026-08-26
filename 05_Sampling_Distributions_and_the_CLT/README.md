@@ -1,4 +1,4 @@
-# 05 — Sampling Distributions and the CLT
+# 05 — Sampling Distributions and the Central Limit Theorem
 
 ## Session preparation
 
@@ -39,7 +39,7 @@ By the end of the session, you should be able to:
 
 ---
 
-## What we do not do
+## Scope boundary
 
 - Finite-population corrections (Ross 6.6)
 - Proving the CLT
@@ -51,4 +51,5 @@ By the end of the session, you should be able to:
 
 This session completes **[Assignment 3](../pages/assignments.md)**: continuous models, sampling, and the CLT.
 
-Exercises will be added later in [Exercises.md](Exercises.md).
+The [assessment page](Exercises.md) is reserved for Assignment 3 material,
+which will be published during the semester.
