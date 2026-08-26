@@ -1,0 +1,9 @@
+mkdocs>=1.6,<2
+mkdocs-material>=9.1.6,<10
+# Pinned for CI stability with Python 3.12 (3.14 caused template errors in mkdocs-jupyter).
+mkdocs-jupyter==0.24.8
+nbconvert<8
+mkdocs-material-extensions>=1,<2
+pymdown-extensions>=10,<11
+mkdocs-same-dir>=0.1.2,<1
+git+https://github.com/RBrooksDK/mkdocs-quiz.git#egg=mkdocs-quiz

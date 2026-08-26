@@ -1,0 +1,19 @@
+# MkDocs build output
+_site/
+
+# Python virtual environment
+.venv/
+.venv-manim/
+
+# Manim render output
+media/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
