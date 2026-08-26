@@ -2,11 +2,14 @@
 
 ## Session preparation
 
-Read Ross 10.1–10.3. Only one-way ANOVA is core syllabus.
+Read Chapter 9, *Analysis of Variance*, in the course textbook
+[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
+Only one-way ANOVA is core syllabus.
 
 **Syllabus and input**
 
-- Ross 10.1–10.3: one-way ANOVA, the \(F\)-test, and pairwise comparisons
+- Brooks, *Statistics and Data Analysis for Engineers*, Chapter 9
+- [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/09_Analysis_of_Variance/session_material)
 
 ---
 
@@ -23,20 +26,20 @@ By the end of the session, you should be able to:
 - reuse boxplots from Session 01 as a diagnostic, not as a new plot type.
 
 <p align="left">
-  <a href="Tutorial_09_notebook.ipynb">
+  <a href="Tutorial_09_notebook/">
     <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
     <br>
     <strong>Tutorial 9: Several suppliers, one quality measure</strong>
   </a>
 </p>
 
-[Download notebook (.ipynb)](Tutorial_09_notebook.ipynb)
+[Download notebook (.ipynb)](https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/09_Analysis_of_Variance/Tutorial_09_notebook.ipynb)
 &nbsp;·&nbsp;
-[Read as markdown](Tutorial_09.md)
+[Read as markdown](Tutorial_09.md/)
 
 ---
 
-## What we do not do
+## Scope boundary
 
 - Two-way ANOVA and interactions
 - Treating a significant \(F\)-test as identifying *which* groups differ without a post-hoc analysis
@@ -47,4 +50,5 @@ By the end of the session, you should be able to:
 
 This session completes **[Assignment 5](../pages/assignments.md)**: comparing two and several groups.
 
-Exercises will be added later in [Exercises.md](Exercises.md).
+The [assessment page](Exercises.md) is reserved for Assignment 5 material,
+which will be published during the semester.

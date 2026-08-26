@@ -2,13 +2,13 @@
 
 ## Session preparation
 
-Read Ross 7.4, 8.4, and the two-sample part of 8.6.
+Read Chapter 8, *Hypothesis Testing II: Comparing Two Groups*, in the course textbook
+[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
 
 **Syllabus and input**
 
-- Ross 7.4 Estimating the difference in means of two normal populations
-- Ross 8.4 Testing the equality of means of two normal populations
-- Two-sample part of 8.6
+- Brooks, *Statistics and Data Analysis for Engineers*, Chapter 8
+- [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/08_Hypothesis_Testing_II_Comparing_Two_Groups/session_material)
 
 ---
 
@@ -25,20 +25,20 @@ By the end of the session, you should be able to:
 - distinguish statistical significance from practical importance.
 
 <p align="left">
-  <a href="Tutorial_08_notebook.ipynb">
+  <a href="Tutorial_08_notebook/">
     <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
     <br>
     <strong>Tutorial 8: A/B test of response times</strong>
   </a>
 </p>
 
-[Download notebook (.ipynb)](Tutorial_08_notebook.ipynb)
+[Download notebook (.ipynb)](https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/08_Hypothesis_Testing_II_Comparing_Two_Groups/Tutorial_08_notebook.ipynb)
 &nbsp;·&nbsp;
-[Read as markdown](Tutorial_08.md)
+[Read as markdown](Tutorial_08.md/)
 
 ---
 
-## What we do not do
+## Scope boundary
 
 - Tests of two variances as a standalone exam topic (Levene's test may appear as a diagnostic)
 - Many uncorrected pairwise tests among several groups (Session 09)
@@ -50,4 +50,5 @@ By the end of the session, you should be able to:
 
 This session feeds **[Assignment 5](../pages/assignments.md)** together with Session 09.
 
-Exercises will be added later in [Exercises.md](Exercises.md).
+The [assessment page](Exercises.md) is reserved for Assignment 5 material,
+which will be published during the semester.

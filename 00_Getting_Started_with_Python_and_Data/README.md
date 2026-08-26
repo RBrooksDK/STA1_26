@@ -9,6 +9,7 @@ This page is **self-study**. There is no classroom session 00. Work through it b
 - [Conventions](../pages/conventions.md): notation and Python style used in every later notebook
 - [Datasets](../pages/datasets.md): where files live and what they contain
 - [Literature](../pages/literature.md): which book belongs to which session
+- [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/00_Getting_Started_with_Python_and_Data/session_material)
 
 ---
 
@@ -71,12 +72,12 @@ pip install numpy pandas matplotlib scipy statsmodels scikit-learn openpyxl
 
 ## Notebook hygiene
 
-- Keep a seed whenever you simulate: `rng = np.random.default_rng(42)`.
+- Keep a seed whenever you simulate: `rng = np.random.default_rng(2026)`.
 - Write `ddof=1` when you use `np.std` or `np.var` on a **sample**.
 - Never name a Python variable `lambda`.
 - Put interpretation in a markdown cell after the code, not only in a `print`.
 
-## What we do not do
+## Scope boundary
 
 - We do not teach a full programming course. If Python is new, use Session 01's tutorial as extra practice on tables and plots.
 - We do not use R or Excel as the primary analysis tool.

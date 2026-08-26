@@ -419,25 +419,6 @@
   
 
       
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgCRcFyOD9zaTZE0MIeH7KyCAcoyBaddmF791Zj-ghekZ04?e=ahV2dL" class="md-tabs__link">
-        
-  
-  
-    
-  
-  General Resources STA
-
-      </a>
-    </li>
-  
-
-      
     </ul>
   </div>
 </nav>
@@ -916,7 +897,7 @@
   <span class="md-ellipsis">
     
   
-    05 Sampling Distributions and the CLT
+    05 Sampling Distributions and the Central Limit Theorem
   
 
     
@@ -938,7 +919,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    05 Sampling Distributions and the CLT
+    05 Sampling Distributions and the Central Limit Theorem
   
 
           </label>
@@ -1506,7 +1487,7 @@
   <span class="md-ellipsis">
     
   
-    12 Integrated Analysis and Exam Preparation
+    12 Integrated Statistical Analysis and Exam Preparation
   
 
     
@@ -1710,33 +1691,6 @@
     
   
     FAQ
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgCRcFyOD9zaTZE0MIeH7KyCAcoyBaddmF791Zj-ghekZ04?e=ahV2dL" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    General Resources STA
   
 
     
@@ -2599,18 +2553,18 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="tutorial-5-from-one-sample-to-many">Tutorial 5 — From one sample to many<a class="anchor-link" href="#tutorial-5-from-one-sample-to-many">¶</a></h1><h2 id="1-problem-context">1. Problem / context<a class="anchor-link" href="#1-problem-context">¶</a></h2><p>We have 180 thickness measurements. Management asks: “If we report the mean, how much would that mean jump if we repeated the whole sample?” That question is about the <strong>sampling distribution</strong> of (\bar{X}), not about the histogram of a single sample.</p>
-<h2 id="2-core-theory">2. Core theory<a class="anchor-link" href="#2-core-theory">¶</a></h2><p>(\bar{X}=\frac1n\sum_{i=1}^n X_i) is a random variable. If the (X_i) are i.i.d. with mean (\mu) and variance (\sigma^2), then</p>
-<p>[
+<h1 id="tutorial-5-from-one-sample-to-many">Tutorial 5 — From one sample to many<a class="anchor-link" href="#tutorial-5-from-one-sample-to-many">¶</a></h1><h2 id="1-problem-context">1. Problem / context<a class="anchor-link" href="#1-problem-context">¶</a></h2><p>We have 180 thickness measurements. Management asks: “If we report the mean, how much would that mean jump if we repeated the whole sample?” That question is about the <strong>sampling distribution</strong> of $\bar{X}$, not about the histogram of a single sample.</p>
+<h2 id="2-core-theory">2. Core theory<a class="anchor-link" href="#2-core-theory">¶</a></h2><p>$\bar{X}=\frac1n\sum_{i=1}^n X_i$ is a random variable. If the $X_i$ are i.i.d. with mean $\mu$ and variance $\sigma^2$, then</p>
+<p>$$
 E[\bar{X}]=\mu,
 \qquad
 \operatorname{Var}(\bar{X})=\frac{\sigma^2}{n},
 \qquad
 \operatorname{SE}(\bar{X})=\frac{\sigma}{\sqrt{n}}.
-]</p>
-<p>The <strong>central limit theorem</strong> says that for large (n), (\bar{X}) is approximately (N(\mu,\sigma^2/n)). Write the <strong>variance</strong> (\sigma^2/n) in the normal, and the standard error separately.</p>
+$$</p>
+<p>The <strong>central limit theorem</strong> says that for large $n$, $\bar{X}$ is approximately $N(\mu,\sigma^2/n)$. Write the <strong>variance</strong> $\sigma^2/n$ in the normal, and the standard error separately.</p>
 <p>The CLT does <strong>not</strong> say that a large sample makes the original measurements normal.</p>
-<h2 id="3-from-mathematics-to-python">3. From mathematics to Python<a class="anchor-link" href="#3-from-mathematics-to-python">¶</a></h2><p>We simulate many samples of size (n) from the observed thickness values (bootstrap-style resampling) or from a fitted model, store the means, and draw their histogram.</p>
+<h2 id="3-from-mathematics-to-python">3. From mathematics to Python<a class="anchor-link" href="#3-from-mathematics-to-python">¶</a></h2><p>We simulate many samples of size $n$ from the observed thickness values (bootstrap-style resampling) or from a fitted model, store the means, and draw their histogram.</p>
 <h2 id="4-python-implementation">4. Python implementation<a class="anchor-link" href="#4-python-implementation">¶</a></h2>
 </div>
 </div>
@@ -2806,13 +2760,13 @@ plt.show()
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="5-interpretation">5. Interpretation<a class="anchor-link" href="#5-interpretation">¶</a></h2><p>The left histogram is about <strong>plates</strong>. The right histogram is about <strong>means of 30 plates</strong>. The right one is narrower by about (\sqrt{30}) and closer to a normal curve. That is the CLT at work.</p>
+<h2 id="5-interpretation">5. Interpretation<a class="anchor-link" href="#5-interpretation">¶</a></h2><p>The left histogram is about <strong>plates</strong>. The right histogram is about <strong>means of 30 plates</strong>. The right one is narrower by about $\sqrt{30}$ and closer to a normal curve. That is the CLT at work.</p>
 <h2 id="6-common-mistakes-things-to-notice">6. Common mistakes / things to notice<a class="anchor-link" href="#6-common-mistakes-things-to-notice">¶</a></h2><ul>
-<li>Writing (\bar{X}\sim N(\mu,\sigma/\sqrt{n})). Use (N(\mu,\sigma^2/n)) and (\mathrm{SE}=\sigma/\sqrt{n}).</li>
-<li>Saying “the data are normal because (n) is large”.</li>
-<li>Using (n=2) and expecting a beautiful bell curve.</li>
+<li>Writing $\bar{X}\sim N(\mu,\sigma/\sqrt{n})$. Use $N(\mu,\sigma^2/n)$ and $\mathrm{SE}=\sigma/\sqrt{n}$.</li>
+<li>Saying “the data are normal because $n$ is large”.</li>
+<li>Using $n=2$ and expecting a beautiful bell curve.</li>
 </ul>
-<h2 id="7-short-worked-example">7. Short worked example<a class="anchor-link" href="#7-short-worked-example">¶</a></h2><p>If (\sigma=4.2) µm and we want (\mathrm{SE}(\bar{X})\le 0.5) µm, how large must (n) be?</p>
+<h2 id="7-short-worked-example">7. Short worked example<a class="anchor-link" href="#7-short-worked-example">¶</a></h2><p>If $\sigma=4.2$ µm and we want $\mathrm{SE}(\bar{X})\le 0.5$ µm, how large must $n$ be?</p>
 </div>
 </div>
 </div>
@@ -2868,7 +2822,7 @@ print("n at least", n_needed)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Conclusion in one sentence:</strong> The uncertainty of a reported mean shrinks like (1/\sqrt{n}); the CLT justifies a normal approximation for that mean even when a single thickness is only roughly bell-shaped.</p>
+<p><strong>Conclusion in one sentence:</strong> The uncertainty of a reported mean shrinks like $1/\sqrt{n}$; the CLT justifies a normal approximation for that mean even when a single thickness is only roughly bell-shaped.</p>
 </div>
 </div>
 </div>
@@ -2917,7 +2871,7 @@ print("n at least", n_needed)
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: 05 — Sampling Distributions and the CLT">
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: 05 — Sampling Distributions and the Central Limit Theorem">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2927,7 +2881,7 @@ print("n at least", n_needed)
                 Previous
               </span>
               <div class="md-ellipsis">
-                05 — Sampling Distributions and the CLT
+                05 — Sampling Distributions and the Central Limit Theorem
               </div>
             </div>
           </a>

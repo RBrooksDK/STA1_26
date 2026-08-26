@@ -2,15 +2,15 @@
 
 ## Session preparation
 
-Read Ross 9.1–9.2 and 9.4–9.6. The English note [Calculating_metrics.md](Calculating_metrics.md) can be used as an extra derivation sheet.
+Read Chapter 10, *Simple Linear Regression*, in the course textbook
+[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
+The English note [Calculating_metrics.md](Calculating_metrics.md) can be used as an extra derivation sheet.
 
 **Syllabus and input**
 
-- Ross 9.1 Introduction
-- Ross 9.2 Least squares estimation
-- Selected parts of 9.4 (inference)
-- Ross 9.5 \(R^2\) and correlation
-- Ross 9.6 Residual analysis
+- Brooks, *Statistics and Data Analysis for Engineers*, Chapter 10
+- [Calculating metrics](Calculating_metrics.md), optional derivation sheet
+- [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/10_Simple_Linear_Regression/session_material)
 
 ---
 
@@ -27,20 +27,20 @@ By the end of the session, you should be able to:
 - explain why scikit-learn does not replace a statistical summary for intervals and tests.
 
 <p align="left">
-  <a href="Tutorial_10_notebook.ipynb">
+  <a href="Tutorial_10_notebook/">
     <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
     <br>
     <strong>Tutorial 10: Calibration and energy use</strong>
   </a>
 </p>
 
-[Download notebook (.ipynb)](Tutorial_10_notebook.ipynb)
+[Download notebook (.ipynb)](https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/10_Simple_Linear_Regression/Tutorial_10_notebook.ipynb)
 &nbsp;·&nbsp;
-[Read as markdown](Tutorial_10.md)
+[Read as markdown](Tutorial_10.md/)
 
 ---
 
-## What we do not do
+## Scope boundary
 
 - Multiple, polynomial, or logistic regression
 - Causal claims from an observational scatterplot
@@ -52,4 +52,5 @@ By the end of the session, you should be able to:
 
 This session feeds **[Assignment 6](../pages/assignments.md)** together with Session 11. The [project](../pages/project.md) is introduced here.
 
-Exercises will be added later in [Exercises.md](Exercises.md).
+The [assessment page](Exercises.md) is reserved for Assignment 6 material,
+which will be published during the semester.

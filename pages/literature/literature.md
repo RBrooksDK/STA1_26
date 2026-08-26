@@ -1,42 +1,44 @@
 <h1 align="center">Literature</h1>
 
-Each session has **one primary text**. You are not asked to read both books on the same topic.
+STA1 uses one primary textbook throughout the course:
 
-- **Sessions 1–2:** Richard Brooks, *Mathematics for Software Engineering*.
-- **Sessions 3–12:** Sheldon M. Ross, *Introduction to Probability and Statistics for Engineers and Scientists*, 6th edition, Academic Press, ISBN 978-0-12-824346-6.
+Richard Brooks, [*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
 
-Python notebooks on this site are the working material. The books supply definitions, extra explanations, and selected problems.
+The book is written specifically for STA1. Its chapter order, notation, Python examples, and engineering cases follow the course directly. No textbook purchase is required. Chapters are released in the linked PDF as they are completed.
+
+Python tutorials and notebooks on this site are the working material. The textbook supplies definitions, explanations, worked examples, and chapter exercises.
 
 ## Session mapping
 
-| Session | Primary text | Sections |
-| ---: | --- | --- |
-| 00 | Course site | This site and the Getting Started page |
-| 01 | Brooks | Chapter 6 (descriptive statistics). Skip the incorrect LLN/histogram discussion if it has not yet been revised. |
-| 02 | Brooks | Chapters 4–5, selectively: events, probability rules, conditional probability, independence, Bayes. Skip general combinatorics. |
-| 03 | Ross | 4.1–4.2, 4.4, 4.6, 5.1–5.2, and optionally parts of 5.3 |
-| 04 | Ross | 5.4–5.6, used selectively without manual integration |
-| 05 | Ross | 6.1–6.3 and selected parts of 6.4–6.5 |
-| 06 | Ross | 7.1, 7.3, 7.5 |
-| 07 | Ross | 8.1–8.3 and the one-sample part of 8.6 |
-| 08 | Ross | 7.4, 8.4, and the two-sample part of 8.6 |
-| 09 | Ross | 10.1–10.3 (one-way ANOVA only) |
-| 10 | Ross | 9.1–9.2 and 9.4–9.6 |
-| 11 | Ross | 11.1–11.4 |
-| 12 | Both, plus course notebooks | Selected examples |
+| Session | Textbook chapter |
+| ---: | --- |
+| 00 | Course site and Getting Started page |
+| 01 | [Chapter 1: Data and Descriptive Statistics](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf#page=7) |
+| 02 | [Chapter 2: Probability for Data Analysis](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf#page=18) |
+| 03 | Chapter 3: Random Variables and Discrete Distributions |
+| 04 | Chapter 4: Continuous Distributions in Practice |
+| 05 | Chapter 5: Sampling Distributions and the Central Limit Theorem |
+| 06 | Chapter 6: Estimation and Confidence Intervals |
+| 07 | Chapter 7: Hypothesis Testing I — Principles and One-Sample Tests |
+| 08 | Chapter 8: Hypothesis Testing II — Comparing Two Groups |
+| 09 | Chapter 9: Analysis of Variance |
+| 10 | Chapter 10: Simple Linear Regression |
+| 11 | Chapter 11: Categorical Data and Chi-Square Tests |
+| 12 | Chapter 12: Integrated Statistical Analysis and Exam Preparation |
 
-## What we skip on purpose
+## Course boundaries
 
-From Ross, the course does **not** treat as core syllabus:
+The course deliberately prioritises practical data analysis. The following topics are not core syllabus:
 
-- jointly distributed random variables and covariance of sums (SMP1);
+- jointly distributed random variables and covariance of sums;
 - moment-generating functions;
 - maximum-likelihood theory and Bayesian estimation;
+- manual integration of probability densities;
 - two-way ANOVA and interactions;
 - multiple, polynomial, or logistic regression;
 - tests of variance as a standalone topic.
 
-From Brooks, permutation and combination catalogues are supplementary. The binomial coefficient appears in Session 03 where the binomial model needs it.
+General combinatorics is not a standalone topic. The binomial coefficient is introduced in Chapter 3 where the binomial model needs it.
 
 ## Python documentation
 

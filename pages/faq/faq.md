@@ -16,7 +16,7 @@
 
 ??? question "Are there mandatory exercises besides the assignments?"
 
-    Practice exercises will be added to each session later. They are for training. The six assignments and the project are the official products and the exam basis.
+    The six assignments and the group project are the course assessment activities. The assessment link on each session page is reserved for the relevant brief and supporting material; tutorials provide the regular practice.
 
 ??? question "Which programming language do we use?"
 
@@ -36,7 +36,7 @@
 
 ??? question "Where do I find slides and extra files?"
 
-    Session pages link to notes when they exist. Shared files live in [General Resources STA](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgCRcFyOD9zaTZE0MIeH7KyCAcoyBaddmF791Zj-ghekZ04?e=ahV2dL).
+    Session pages link to notes when they exist. Additional course materials are published on itslearning when needed.
 
 ---
 
@@ -60,7 +60,7 @@
 
 ??? question "Which book should I buy?"
 
-    Ross, *Introduction to Probability and Statistics for Engineers and Scientists*, 6th edition, is the main book from Session 03. Sessions 01–02 use Brooks, *Mathematics for Software Engineering*. Details are on the [Literature](literature.md) page.
+    No purchase is required. The course textbook, Brooks, [*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf), is provided online and follows the twelve sessions chapter by chapter. Details are on the [Literature](literature.md) page.
 
 ??? question "Why do tutorials sometimes disagree with SciPy's default arguments?"
 

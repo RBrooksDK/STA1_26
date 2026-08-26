@@ -2,13 +2,13 @@
 
 ## Session preparation
 
-Read Brooks, Chapters 4–5 **selectively**: sample spaces, events, probability rules, conditional probability, independence, and Bayes. Skip permutation and combination catalogues.
+Read Chapter 2, *Probability for Data Analysis*, in the new course textbook
+[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf#page=18).
 
 **Syllabus and input**
 
-- Brooks, Chapter 4: events and probability rules
-- Brooks, Chapter 5: conditional probability, independence, total probability, Bayes
-- Optional Ross 3.1–3.4 and 3.6–3.8
+- Brooks, *Statistics and Data Analysis for Engineers*, Chapter 2
+- [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/02_Probability_for_Data_Analysis/session_material)
 
 ---
 
@@ -25,20 +25,20 @@ By the end of the session, you should be able to:
 - apply the law of total probability and Bayes' theorem to a false-positive problem.
 
 <p align="left">
-  <a href="Tutorial_02_notebook.ipynb">
+  <a href="Tutorial_02_notebook/">
     <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
     <br>
-    <strong>Tutorial 2: False positives in an automatic test</strong>
+    <strong>Tutorial 2: Probability tools for automated inspection</strong>
   </a>
 </p>
 
-[Download notebook (.ipynb)](Tutorial_02_notebook.ipynb)
+[Download notebook (.ipynb)](https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/02_Probability_for_Data_Analysis/Tutorial_02_notebook.ipynb)
 &nbsp;·&nbsp;
-[Read as markdown](Tutorial_02.md)
+[Read as markdown](Tutorial_02.md/)
 
 ---
 
-## What we do not do
+## Scope boundary
 
 - General combinatorics as a standalone topic
 - Joint distributions of several random variables (SMP1)
@@ -50,4 +50,5 @@ By the end of the session, you should be able to:
 
 This session feeds **[Assignment 2](../pages/assignments.md)** together with Session 03.
 
-Exercises will be added later in [Exercises.md](Exercises.md).
+The [assessment page](Exercises.md) is reserved for Assignment 2 material,
+which will be published during the semester.

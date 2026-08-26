@@ -1,7 +1,6 @@
 <p align="center">
     <h1 align="center">Statistics and Data Analysis for Engineers - 2026</h1>
     <p align="center">Course page for <a href="https://my.via.dk/media/mitvia/semesteroverblik/kursusbeskrivelser/software-engineering/6.-og-7.-semester/it-sta1-1-0">STA1</a> at VIA University College</p>
-    <p align="center"><strong><a href="https://rbrooksdk.github.io/STA1_26">Checkout the homepage!</a></strong></p>
 </p>
 
 <p align="center">
@@ -22,7 +21,7 @@
 
 ## <i class="fas fa-vector-square" style="color:#6CA2C6"></i> Lectures and Course Organization
 
-STA1 is a **practical data-analysis course**. Contact time is short, so each session focuses on one statistical idea, one worked example, and a short live demonstration in Python. The tutorials, six assignments, and the group project carry most of the learning.
+STA1 is a **practical data-analysis course**. Each session focuses on one statistical idea, one worked engineering example, and a short Python demonstration. Tutorials, assignments, and the group project provide the main opportunity to practise.
 
 A typical 90-minute session looks like this:
 
@@ -31,7 +30,7 @@ A typical 90-minute session looks like this:
 3. A live Python demonstration that connects the formula to software.
 4. Time to start the tutorial or the current assignment.
 
-After class you work through the session tutorial and, at the indicated points in the semester, the corresponding assignment.
+After class, complete the session tutorial and work on the current assignment when it is released.
 
 STA1 is the sister course of [Stochastic Modelling and Processes (SMP1)](https://rbrooksdk.github.io/SMP1_26/). The overlap is intentional and limited:
 
@@ -52,7 +51,7 @@ The course contains **six practice-oriented group assignments** and one **small 
 | Assignment 6 | 11 | Regression and categorical data |
 | Project | 12 | A complete analysis of an engineering data set |
 
-See [Assignments](pages/assignments.md) and [Project](pages/project.md) for the framework. The specific task texts will be published during the semester.
+See [Assignments](pages/assignments.md) and [Project](pages/project.md) for the assessment overview. The detailed briefs will be published during the semester through the relevant session assessment pages.
 
 ## <i class="fas fa-wave-square" style="color:#6CA2C6"></i> Course Content and Learning Objectives
 
@@ -85,21 +84,10 @@ Python is used throughout with Pandas, NumPy, SciPy, Matplotlib, and, where it i
 
 ## <i class="fas fa-book-open" style="color:#6CA2C6"></i> Resources
 
-The course uses two books, with one primary text per session:
-
-- Richard Brooks, *Mathematics for Software Engineering*, Chapters 4–6, for Sessions 1–2.
-- Sheldon M. Ross, *Introduction to Probability and Statistics for Engineers and Scientists*, 6th edition, for Sessions 3–12.
+The course uses one purpose-built textbook:
+[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
+Its twelve chapters follow the twelve course sessions in the same order. Chapters are released as they are completed, and each session page links to the relevant chapter.
 
 The mapping from sessions to sections is on the [Literature](pages/literature.md) page. Notation and Python conventions are collected in [Conventions](pages/conventions.md). Data files live in `data/` and are catalogued under [Datasets](pages/datasets.md).
 
-Non-session specific resources can be found here:
-
-[General Resources STA](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgCRcFyOD9zaTZE0MIeH7KyCAcoyBaddmF791Zj-ghekZ04?e=ahV2dL)
-
-This folder is always accessible in the menu at the top.
-
 Install a working Python 3.10+ environment with Jupyter. The easiest route is [Anaconda](https://www.anaconda.com/products/distribution) or VS Code with the Jupyter extension. Session 00 walks through the setup.
-
-## Historical Notes
-
-STA1 is the English, engineering-oriented statistics course that sits beside SMP1. It replaces the former combined stochastic-modelling course with a practical statistics track: data, inference, ANOVA, regression, and categorical analysis.

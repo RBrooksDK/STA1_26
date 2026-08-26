@@ -1,15 +1,14 @@
-# 05 — Sampling Distributions and the CLT
+# 05 — Sampling Distributions and the Central Limit Theorem
 
 ## Session preparation
 
-Read Ross 6.1–6.3 and selected parts of 6.4–6.5.
+Read Chapter 5, *Sampling Distributions and the Central Limit Theorem*, in the course textbook
+[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
 
 **Syllabus and input**
 
-- Ross 6.1 Introduction
-- Ross 6.2 The sample mean
-- Ross 6.3 The central limit theorem
-- Selected parts of 6.4–6.5 (sample variance; sampling from a normal population)
+- Brooks, *Statistics and Data Analysis for Engineers*, Chapter 5
+- [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/05_Sampling_Distributions_and_the_CLT/session_material)
 
 ---
 
@@ -25,22 +24,22 @@ By the end of the session, you should be able to:
 - state when the CLT helps (means, large \(n\)) and when it does not (small \(n\), strong skew, interest in a single observation).
 
 <p align="left">
-  <a href="Tutorial_05_notebook.ipynb">
+  <a href="Tutorial_05_notebook/">
     <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
     <br>
     <strong>Tutorial 5: From one sample to many</strong>
   </a>
 </p>
 
-[Download notebook (.ipynb)](Tutorial_05_notebook.ipynb)
+[Download notebook (.ipynb)](https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/05_Sampling_Distributions_and_the_CLT/Tutorial_05_notebook.ipynb)
 &nbsp;·&nbsp;
-[Read as markdown](Tutorial_05.md)
+[Read as markdown](Tutorial_05.md/)
 
 ---
 
-## What we do not do
+## Scope boundary
 
-- Finite-population corrections (Ross 6.6)
+- Finite-population corrections
 - Proving the CLT
 - Confusing the distribution of the raw data with the distribution of the mean
 
@@ -50,4 +49,5 @@ By the end of the session, you should be able to:
 
 This session completes **[Assignment 3](../pages/assignments.md)**: continuous models, sampling, and the CLT.
 
-Exercises will be added later in [Exercises.md](Exercises.md).
+The [assessment page](Exercises.md) is reserved for Assignment 3 material,
+which will be published during the semester.

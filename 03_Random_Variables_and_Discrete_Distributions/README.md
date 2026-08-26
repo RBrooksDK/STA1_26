@@ -2,17 +2,14 @@
 
 ## Session preparation
 
-Read Ross 4.1–4.2, 4.4, 4.6 and 5.1–5.2. The binomial coefficient is introduced here, where the binomial model uses it.
+Read Chapter 3, *Random Variables and Discrete Distributions*, in the course textbook
+[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
+The binomial coefficient is introduced here, where the binomial model uses it.
 
 **Syllabus and input**
 
-- Ross 4.1 Random variables
-- Ross 4.2 Types of random variables
-- Ross 4.4 Expectation
-- Ross 4.6 Variance
-- Ross 5.1 Bernoulli and binomial
-- Ross 5.2 Poisson
-- Optional: selected parts of 5.3 (hypergeometric)
+- Brooks, *Statistics and Data Analysis for Engineers*, Chapter 3
+- [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/03_Random_Variables_and_Discrete_Distributions/session_material)
 
 ---
 
@@ -29,23 +26,23 @@ By the end of the session, you should be able to:
 - explain the binomial coefficient as “the number of ways to place \(k\) successes among \(n\) trials”.
 
 <p align="left">
-  <a href="Tutorial_03_notebook.ipynb">
+  <a href="Tutorial_03_notebook/">
     <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
     <br>
     <strong>Tutorial 3: Packet loss and failure counts</strong>
   </a>
 </p>
 
-[Download notebook (.ipynb)](Tutorial_03_notebook.ipynb)
+[Download notebook (.ipynb)](https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/03_Random_Variables_and_Discrete_Distributions/Tutorial_03_notebook.ipynb)
 &nbsp;·&nbsp;
-[Read as markdown](Tutorial_03.md)
+[Read as markdown](Tutorial_03.md/)
 
 ---
 
-## What we do not do
+## Scope boundary
 
 - Geometric and negative binomial as core syllabus (they may appear as extras)
-- Jointly distributed random variables, covariance of sums, MGFs (Ross 4.3, 4.7–4.8)
+- Jointly distributed random variables, covariance of sums, and moment-generating functions (SMP1)
 - Deriving PMFs from first principles for every named family
 
 ---
@@ -54,4 +51,5 @@ By the end of the session, you should be able to:
 
 This session completes **[Assignment 2](../pages/assignments.md)**: probability and discrete models.
 
-Exercises will be added later in [Exercises.md](Exercises.md).
+The [assessment page](Exercises.md) is reserved for Assignment 2 material,
+which will be published during the semester.

@@ -419,25 +419,6 @@
   
 
       
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgCRcFyOD9zaTZE0MIeH7KyCAcoyBaddmF791Zj-ghekZ04?e=ahV2dL" class="md-tabs__link">
-        
-  
-  
-    
-  
-  General Resources STA
-
-      </a>
-    </li>
-  
-
-      
     </ul>
   </div>
 </nav>
@@ -915,7 +896,7 @@
   <span class="md-ellipsis">
     
   
-    05 Sampling Distributions and the CLT
+    05 Sampling Distributions and the Central Limit Theorem
   
 
     
@@ -1506,7 +1487,7 @@
   <span class="md-ellipsis">
     
   
-    12 Integrated Analysis and Exam Preparation
+    12 Integrated Statistical Analysis and Exam Preparation
   
 
     
@@ -1710,33 +1691,6 @@
     
   
     FAQ
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgCRcFyOD9zaTZE0MIeH7KyCAcoyBaddmF791Zj-ghekZ04?e=ahV2dL" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    General Resources STA
   
 
     
@@ -2599,15 +2553,15 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="tutorial-9-several-suppliers-one-quality-measure">Tutorial 9 — Several suppliers, one quality measure<a class="anchor-link" href="#tutorial-9-several-suppliers-one-quality-measure">¶</a></h1><h2 id="1-problem-context">1. Problem / context<a class="anchor-link" href="#1-problem-context">¶</a></h2><p>Impurity levels are measured for three resins (<code>resin_impurities.xlsx</code>). Radar-scope filters are compared on intensity (<code>scope_filter_intensity.xlsx</code>). With three or more groups, many pairwise (t)-tests inflate the type I error. One-way ANOVA tests a global null; Tukey HSD then looks at pairs.</p>
+<h1 id="tutorial-9-several-suppliers-one-quality-measure">Tutorial 9 — Several suppliers, one quality measure<a class="anchor-link" href="#tutorial-9-several-suppliers-one-quality-measure">¶</a></h1><h2 id="1-problem-context">1. Problem / context<a class="anchor-link" href="#1-problem-context">¶</a></h2><p>Impurity levels are measured for three resins (<code>resin_impurities.xlsx</code>). Radar-scope filters are compared on intensity (<code>scope_filter_intensity.xlsx</code>). With three or more groups, many pairwise $t$-tests inflate the type I error. One-way ANOVA tests a global null; Tukey HSD then looks at pairs.</p>
 <p>Boxplots were taught in Session 01. Here they <strong>motivate</strong> ANOVA; they are not a new plot type.</p>
-<h2 id="2-core-theory">2. Core theory<a class="anchor-link" href="#2-core-theory">¶</a></h2><p>[
+<h2 id="2-core-theory">2. Core theory<a class="anchor-link" href="#2-core-theory">¶</a></h2><p>$$
 H_0:\mu_1=\mu_2=\cdots=\mu_k
 \quad\text{versus}\quad
 H_1:\text{at least one mean differs}.
-]</p>
-<p>The (F)-statistic compares <strong>between-group</strong> variation with <strong>within-group</strong> variation. Assumptions: independent observations, approximately normal groups, similar variances.</p>
-<p>A significant (F) does not name the pairs. <strong>Tukey HSD</strong> controls the family-wise error among pairwise mean comparisons.</p>
+$$</p>
+<p>The $F$-statistic compares <strong>between-group</strong> variation with <strong>within-group</strong> variation. Assumptions: independent observations, approximately normal groups, similar variances.</p>
+<p>A significant $F$ does not name the pairs. <strong>Tukey HSD</strong> controls the family-wise error among pairwise mean comparisons.</p>
 <h2 id="3-from-mathematics-to-python">3. From mathematics to Python<a class="anchor-link" href="#3-from-mathematics-to-python">¶</a></h2><table>
 <thead>
 <tr>
@@ -2886,10 +2840,10 @@ print(f_oneway(*[g["intensity"].to_numpy() for _, g in scope.groupby("filter")])
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="5-interpretation">5. Interpretation<a class="anchor-link" href="#5-interpretation">¶</a></h2><p>Read the ANOVA table: large (F) and small (p) mean the group means are not all compatible with a single common mean, given the within-group noise. Then read Tukey: which pairs have confidence intervals for the difference that exclude zero? State the conclusion in terms of resin types or filters, not only “ANOVA was significant”.</p>
+<h2 id="5-interpretation">5. Interpretation<a class="anchor-link" href="#5-interpretation">¶</a></h2><p>Read the ANOVA table: large $F$ and small $p$ mean the group means are not all compatible with a single common mean, given the within-group noise. Then read Tukey: which pairs have confidence intervals for the difference that exclude zero? State the conclusion in terms of resin types or filters, not only “ANOVA was significant”.</p>
 <h2 id="6-common-mistakes-things-to-notice">6. Common mistakes / things to notice<a class="anchor-link" href="#6-common-mistakes-things-to-notice">¶</a></h2><ul>
-<li>Six uncorrected (t)-tests among four groups.</li>
-<li>Stopping after a significant (F) without pairwise follow-up when the question is “which supplier?”.</li>
+<li>Six uncorrected $t$-tests among four groups.</li>
+<li>Stopping after a significant $F$ without pairwise follow-up when the question is “which supplier?”.</li>
 <li>Two-way ANOVA (not in STA1).</li>
 </ul>
 <h2 id="7-short-worked-example">7. Short worked example<a class="anchor-link" href="#7-short-worked-example">¶</a></h2><p>If Tukey finds only resin I versus III different, a correct engineering sentence is: “We have evidence of a mean impurity difference between I and III; II is not distinguished from the others at 5% family-wise error.”</p>

@@ -419,25 +419,6 @@
   
 
       
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgCRcFyOD9zaTZE0MIeH7KyCAcoyBaddmF791Zj-ghekZ04?e=ahV2dL" class="md-tabs__link">
-        
-  
-  
-    
-  
-  General Resources STA
-
-      </a>
-    </li>
-  
-
-      
     </ul>
   </div>
 </nav>
@@ -915,7 +896,7 @@
   <span class="md-ellipsis">
     
   
-    05 Sampling Distributions and the CLT
+    05 Sampling Distributions and the Central Limit Theorem
   
 
     
@@ -1336,7 +1317,7 @@
   <span class="md-ellipsis">
     
   
-    12 Integrated Analysis and Exam Preparation
+    12 Integrated Statistical Analysis and Exam Preparation
   
 
     
@@ -1358,7 +1339,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    12 Integrated Analysis and Exam Preparation
+    12 Integrated Statistical Analysis and Exam Preparation
   
 
           </label>
@@ -1710,33 +1691,6 @@
     
   
     FAQ
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgCRcFyOD9zaTZE0MIeH7KyCAcoyBaddmF791Zj-ghekZ04?e=ahV2dL" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    General Resources STA
   
 
     
@@ -2604,7 +2558,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <h2 id="2-core-theory">2. Core theory<a class="anchor-link" href="#2-core-theory">¶</a></h2><p>Method choice (see also Session 12):</p>
 <ul>
 <li>Numeric response, no predictor, one target value → CI / one-sample test.</li>
-<li>Two groups → two-sample or paired (t).</li>
+<li>Two groups → two-sample or paired $t$.</li>
 <li>Three or more groups → ANOVA.</li>
 <li>Numeric predictor → simple linear regression.</li>
 <li>Categories → chi-square.</li>
@@ -2924,18 +2878,18 @@ late mean 254.56040000000002 early mean 250.22873548387096
 <ol>
 <li>State the question (on-target mean? line effect? drift?).</li>
 <li>Justify each test and its assumptions.</li>
-<li>Report estimates, intervals, and (p)-values.</li>
+<li>Report estimates, intervals, and $p$-values.</li>
 <li>Recommend an action (investigate late samples / do not retarget the mean / compare lines with a designed experiment).</li>
 </ol>
 <p>The run chart is essential: a two-sample test of lines can be misleading if the real issue is <strong>time order</strong>.</p>
 <h2 id="6-common-mistakes-things-to-notice">6. Common mistakes / things to notice<a class="anchor-link" href="#6-common-mistakes-things-to-notice">¶</a></h2><ul>
 <li>Running every test in the course on the same data without a question (“p-hacking”).</li>
-<li>Hiding a run chart and only reporting a global (t)-test.</li>
+<li>Hiding a run chart and only reporting a global $t$-test.</li>
 <li>Delivering Python output with no recommendation.</li>
 </ul>
 <h2 id="7-short-worked-example">7. Short worked example<a class="anchor-link" href="#7-short-worked-example">¶</a></h2><p>Write the oral-exam paragraph (example structure):</p>
 <blockquote>
-<p>We asked whether mean thickness matches 250 µm and whether lines A and B differ. Descriptive plots show a compact distribution and a possible rise in later sample IDs. A one-sample (t)-test addresses the target; a Welch test compares lines. Because later IDs look shifted, we also compared early versus late samples. Any recommendation to retarget the process should wait until the late-sample drift is understood; otherwise we would be fitting a mean that is a mixture of two regimes.</p>
+<p>We asked whether mean thickness matches 250 µm and whether lines A and B differ. Descriptive plots show a compact distribution and a possible rise in later sample IDs. A one-sample $t$-test addresses the target; a Welch test compares lines. Because later IDs look shifted, we also compared early versus late samples. Any recommendation to retarget the process should wait until the late-sample drift is understood; otherwise we would be fitting a mean that is a mixture of two regimes.</p>
 </blockquote>
 <p><strong>Conclusion in one sentence:</strong> A project-quality analysis starts with a question and a picture, chooses one or two methods on purpose, reports uncertainty, and ends with an engineering recommendation — that is also what the oral exam is looking for.</p>
 </div>
@@ -2986,7 +2940,7 @@ late mean 254.56040000000002 early mean 250.22873548387096
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: 12 — Integrated Analysis and Exam Preparation">
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: 12 — Integrated Statistical Analysis and Exam Preparation">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2996,7 +2950,7 @@ late mean 254.56040000000002 early mean 250.22873548387096
                 Previous
               </span>
               <div class="md-ellipsis">
-                12 — Integrated Analysis and Exam Preparation
+                12 — Integrated Statistical Analysis and Exam Preparation
               </div>
             </div>
           </a>

@@ -2,14 +2,13 @@
 
 ## Session preparation
 
-Read Ross 11.1–11.4.
+Read Chapter 11, *Categorical Data and Chi-Square Tests*, in the course textbook
+[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
 
 **Syllabus and input**
 
-- Ross 11.1 Introduction
-- Ross 11.2 Goodness-of-fit with specified parameters
-- Ross 11.3 Goodness-of-fit with estimated parameters
-- Ross 11.4 Independence in contingency tables
+- Brooks, *Statistics and Data Analysis for Engineers*, Chapter 11
+- [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/11_Categorical_Data_and_Chi_Square_Tests/session_material)
 
 ---
 
@@ -26,22 +25,22 @@ By the end of the session, you should be able to:
 - state a conclusion in terms of the engineering categories, not only \(\chi^2\).
 
 <p align="left">
-  <a href="Tutorial_11_notebook.ipynb">
+  <a href="Tutorial_11_notebook/">
     <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
     <br>
     <strong>Tutorial 11: Defect types across production lines</strong>
   </a>
 </p>
 
-[Download notebook (.ipynb)](Tutorial_11_notebook.ipynb)
+[Download notebook (.ipynb)](https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/11_Categorical_Data_and_Chi_Square_Tests/Tutorial_11_notebook.ipynb)
 &nbsp;·&nbsp;
-[Read as markdown](Tutorial_11.md)
+[Read as markdown](Tutorial_11.md/)
 
 ---
 
-## What we do not do
+## Scope boundary
 
-- Ross 11.5–11.6
+- Advanced categorical models beyond goodness-of-fit and independence tests
 - Treating a significant independence test as identifying a causal mechanism
 
 ---
@@ -50,4 +49,5 @@ By the end of the session, you should be able to:
 
 This session completes **[Assignment 6](../pages/assignments.md)**: regression and categorical data.
 
-Exercises will be added later in [Exercises.md](Exercises.md).
+The [assessment page](Exercises.md) is reserved for Assignment 6 material,
+which will be published during the semester.

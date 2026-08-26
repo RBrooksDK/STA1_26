@@ -1,14 +1,17 @@
-# 12 — Integrated Analysis and Exam Preparation
+# 12 — Integrated Statistical Analysis and Exam Preparation
 
 ## Session preparation
 
+Read Chapter 12, *Integrated Statistical Analysis and Exam Preparation*, in the course textbook
+[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
 Revisit the [method map](#method-choice) below, your six assignments, and the [project framework](../pages/project.md). Bring questions about the oral exam.
 
 **Syllabus and input**
 
-- Selected examples from earlier Ross and Brooks chapters
+- Brooks, *Statistics and Data Analysis for Engineers*, Chapter 12
 - Course tutorials 01–11
 - [Exam page](../pages/exam.md)
+- [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/12_Integrated_Analysis_and_Exam_Preparation/session_material)
 
 ---
 
@@ -24,16 +27,16 @@ By the end of the session, you should be able to:
 - explain one assignment and the project in about 20 minutes.
 
 <p align="left">
-  <a href="Tutorial_12_notebook.ipynb">
+  <a href="Tutorial_12_notebook/">
     <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
     <br>
     <strong>Tutorial 12: From raw data to a recommendation</strong>
   </a>
 </p>
 
-[Download notebook (.ipynb)](Tutorial_12_notebook.ipynb)
+[Download notebook (.ipynb)](https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/12_Integrated_Analysis_and_Exam_Preparation/Tutorial_12_notebook.ipynb)
 &nbsp;·&nbsp;
-[Read as markdown](Tutorial_12.md)
+[Read as markdown](Tutorial_12.md/)
 
 ---
 
@@ -55,7 +58,7 @@ Always start with plots from Session 01. Always end with a sentence that a colle
 
 ---
 
-## What we do not do
+## Scope boundary
 
 - Introduce new families of models
 - Replace the oral exam with a mock written paper
@@ -64,4 +67,4 @@ Always start with plots from Session 01. Always end with a sentence that a colle
 
 ## Assignments
 
-Submit the [project](../pages/project.md) after this session. The oral exam uses one assignment plus the project.
+Submit the [project](../pages/project.md) after this session. The oral exam uses one assignment plus the project. The [assessment page](Exercises.md) is reserved for project material and supporting information.

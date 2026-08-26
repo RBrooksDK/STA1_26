@@ -419,25 +419,6 @@
   
 
       
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgCRcFyOD9zaTZE0MIeH7KyCAcoyBaddmF791Zj-ghekZ04?e=ahV2dL" class="md-tabs__link">
-        
-  
-  
-    
-  
-  General Resources STA
-
-      </a>
-    </li>
-  
-
-      
     </ul>
   </div>
 </nav>
@@ -907,33 +888,6 @@
   
 
     
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgCRcFyOD9zaTZE0MIeH7KyCAcoyBaddmF791Zj-ghekZ04?e=ahV2dL" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    General Resources STA
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -1126,6 +1080,10 @@
 <td><span class="arithmatex">\(\bar{X}\)</span>, <span class="arithmatex">\(S^2\)</span></td>
 </tr>
 <tr>
+<td>Population proportion / sample proportion</td>
+<td><span class="arithmatex">\(p\)</span>, <span class="arithmatex">\(\hat{p}\)</span></td>
+</tr>
+<tr>
 <td>PMF</td>
 <td><span class="arithmatex">\(p_X(k) = P(X = k)\)</span></td>
 </tr>
@@ -1136,6 +1094,14 @@
 <tr>
 <td>CDF</td>
 <td><span class="arithmatex">\(F_X(x) = P(X \le x)\)</span></td>
+</tr>
+<tr>
+<td>Expected value / variance</td>
+<td><span class="arithmatex">\(E[X]\)</span>, <span class="arithmatex">\(\operatorname{Var}(X)\)</span></td>
+</tr>
+<tr>
+<td>Standard error</td>
+<td><span class="arithmatex">\(\operatorname{SE}(\hat\theta)\)</span></td>
 </tr>
 </tbody>
 </table>
@@ -1194,7 +1160,7 @@ P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}.
 </span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
 </span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
 </span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="n">DATA</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">"../data"</span><span class="p">)</span>   <span class="c1"># from a session folder; Path("data") from the repo root</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="n">rng</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="n">rng</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">(</span><span class="mi">2026</span><span class="p">)</span>
 </span></code></pre></div>
 <p>Rules:</p>
 <ul>
@@ -1211,6 +1177,7 @@ P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}.
 <li><strong>Sample space</strong> vs <strong>sample</strong>: all possible outcomes of a random experiment versus the data you actually collected. These two uses of “sample” are distinguished explicitly in Session 03.</li>
 <li><strong>Estimator</strong> vs <strong>estimate</strong>: a random variable computed from a sample versus the number you obtained.</li>
 <li><strong>Statistical significance</strong> vs <strong>practical importance</strong>: a small <span class="arithmatex">\(p\)</span>-value is not automatically an engineering problem, and a large effect can fail to be significant in a small sample.</li>
+<li><strong>Confidence interval</strong> vs <strong>prediction interval</strong>: uncertainty about a parameter or mean response is different from uncertainty about one new observation.</li>
 </ul>
 
 

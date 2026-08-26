@@ -419,25 +419,6 @@
   
 
       
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgCRcFyOD9zaTZE0MIeH7KyCAcoyBaddmF791Zj-ghekZ04?e=ahV2dL" class="md-tabs__link">
-        
-  
-  
-    
-  
-  General Resources STA
-
-      </a>
-    </li>
-  
-
-      
     </ul>
   </div>
 </nav>
@@ -729,10 +710,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-we-do-not-do" class="md-nav__link">
+  <a href="#scope-boundary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What we do not do
+        Scope boundary
       
     </span>
   </a>
@@ -1039,7 +1020,7 @@
   <span class="md-ellipsis">
     
   
-    05 Sampling Distributions and the CLT
+    05 Sampling Distributions and the Central Limit Theorem
   
 
     
@@ -1459,7 +1440,7 @@
   <span class="md-ellipsis">
     
   
-    12 Integrated Analysis and Exam Preparation
+    12 Integrated Statistical Analysis and Exam Preparation
   
 
     
@@ -1675,33 +1656,6 @@
   
 
     
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgCRcFyOD9zaTZE0MIeH7KyCAcoyBaddmF791Zj-ghekZ04?e=ahV2dL" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    General Resources STA
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -1784,10 +1738,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-we-do-not-do" class="md-nav__link">
+  <a href="#scope-boundary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What we do not do
+        Scope boundary
       
     </span>
   </a>
@@ -1833,6 +1787,7 @@
 <li><a href="../pages/conventions/">Conventions</a>: notation and Python style used in every later notebook</li>
 <li><a href="../pages/datasets/">Datasets</a>: where files live and what they contain</li>
 <li><a href="../pages/literature/">Literature</a>: which book belongs to which session</li>
+<li><a href="https://github.com/RBrooksDK/STA1_26/tree/main/00_Getting_Started_with_Python_and_Data/session_material">Session material</a></li>
 </ul>
 <hr />
 <h2 id="session-focus">Session focus<a class="headerlink" href="#session-focus" title="Permanent link">&para;</a></h2>
@@ -1907,12 +1862,12 @@
 <p><code>openpyxl</code> is required for <code>.xlsx</code> files.</p>
 <h2 id="notebook-hygiene">Notebook hygiene<a class="headerlink" href="#notebook-hygiene" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Keep a seed whenever you simulate: <code>rng = np.random.default_rng(42)</code>.</li>
+<li>Keep a seed whenever you simulate: <code>rng = np.random.default_rng(2026)</code>.</li>
 <li>Write <code>ddof=1</code> when you use <code>np.std</code> or <code>np.var</code> on a <strong>sample</strong>.</li>
 <li>Never name a Python variable <code>lambda</code>.</li>
 <li>Put interpretation in a markdown cell after the code, not only in a <code>print</code>.</li>
 </ul>
-<h2 id="what-we-do-not-do">What we do not do<a class="headerlink" href="#what-we-do-not-do" title="Permanent link">&para;</a></h2>
+<h2 id="scope-boundary">Scope boundary<a class="headerlink" href="#scope-boundary" title="Permanent link">&para;</a></h2>
 <ul>
 <li>We do not teach a full programming course. If Python is new, use Session 01's tutorial as extra practice on tables and plots.</li>
 <li>We do not use R or Excel as the primary analysis tool.</li>

@@ -25,7 +25,7 @@
     
     
       
-        <title>Tutorial 2 — False positives in an automatic test - Statistics and Data Analysis for Engineers</title>
+        <title>Tutorial 2 — Probability tools for automated inspection - Statistics and Data Analysis for Engineers</title>
       
     
     
@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tutorial-2-false-positives-in-an-automatic-test" class="md-skip">
+        <a href="#tutorial-2-probability-tools-for-automated-inspection" class="md-skip">
           Skip to content
         </a>
       
@@ -127,7 +127,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Tutorial 2 — False positives in an automatic test
+              Tutorial 2 — Probability tools for automated inspection
             
           </span>
         </div>
@@ -407,25 +407,6 @@
     
   
   FAQ
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgCRcFyOD9zaTZE0MIeH7KyCAcoyBaddmF791Zj-ghekZ04?e=ahV2dL" class="md-tabs__link">
-        
-  
-  
-    
-  
-  General Resources STA
 
       </a>
     </li>
@@ -775,33 +756,6 @@
   
 
     
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgCRcFyOD9zaTZE0MIeH7KyCAcoyBaddmF791Zj-ghekZ04?e=ahV2dL" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    General Resources STA
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -840,10 +794,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-core-theory" class="md-nav__link">
+  <a href="#2-events-and-probability-rules" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Core theory
+        2. Events and probability rules
       
     </span>
   </a>
@@ -851,10 +805,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-from-mathematics-to-python" class="md-nav__link">
+  <a href="#3-natural-frequencies-and-a-contingency-table" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. From mathematics to Python
+        3. Natural frequencies and a contingency table
       
     </span>
   </a>
@@ -862,10 +816,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-python-implementation" class="md-nav__link">
+  <a href="#4-independence-is-not-mutual-exclusivity" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Python implementation
+        4. Independence is not mutual exclusivity
       
     </span>
   </a>
@@ -873,10 +827,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-interpretation" class="md-nav__link">
+  <a href="#5-total-probability-and-bayes-theorem" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Interpretation
+        5. Total probability and Bayes' theorem
       
     </span>
   </a>
@@ -884,10 +838,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-common-mistakes-things-to-notice" class="md-nav__link">
+  <a href="#6-the-base-rate-effect" class="md-nav__link">
     <span class="md-ellipsis">
       
-        6. Common mistakes / things to notice
+        6. The base-rate effect
       
     </span>
   </a>
@@ -895,10 +849,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#7-short-worked-example" class="md-nav__link">
+  <a href="#7-exact-probability-and-simulation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7. Short worked example
+        7. Exact probability and simulation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-engineering-improvement-and-interpretation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Engineering improvement and interpretation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-check-your-understanding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Check your understanding
       
     </span>
   </a>
@@ -925,105 +901,189 @@
   
 
 
-<h1 id="tutorial-2-false-positives-in-an-automatic-test">Tutorial 2 — False positives in an automatic test<a class="headerlink" href="#tutorial-2-false-positives-in-an-automatic-test" title="Permanent link">&para;</a></h1>
+<h1 id="tutorial-2-probability-tools-for-automated-inspection">Tutorial 2 — Probability tools for automated inspection<a class="headerlink" href="#tutorial-2-probability-tools-for-automated-inspection" title="Permanent link">&para;</a></h1>
 <h2 id="1-problem-context">1. Problem / context<a class="headerlink" href="#1-problem-context" title="Permanent link">&para;</a></h2>
-<p>A vision system flags solder defects. Historically 2% of boards are defective. The detector catches 95% of defective boards (sensitivity) but also flags 8% of good boards (false-positive rate). If a board is flagged, what is the probability that it is actually defective?</p>
-<p>This is Bayes' theorem in an engineering setting.</p>
-<h2 id="2-core-theory">2. Core theory<a class="headerlink" href="#2-core-theory" title="Permanent link">&para;</a></h2>
-<p>Let <span class="arithmatex">\(D\)</span> be the event that a board is defective and <span class="arithmatex">\(F\)</span> the event that it is flagged.</p>
+<p>An automated vision system flags possible solder defects on circuit boards. Historically, 2% of boards are defective. The system flags 95% of defective boards, but it also flags 8% of good boards.</p>
+<p>We will use this one engineering case to practise the complete Session 2 workflow:</p>
+<ol>
+<li>define outcomes and events;</li>
+<li>use complements, unions, and intersections;</li>
+<li>read conditional probabilities from a contingency table;</li>
+<li>distinguish independence from mutual exclusivity;</li>
+<li>combine paths with total probability;</li>
+<li>reverse the conditioning with Bayes' theorem;</li>
+<li>verify the calculation in Python and by simulation.</li>
+</ol>
+<p>Let <span class="arithmatex">\(D\)</span> mean that a board is defective and <span class="arithmatex">\(F\)</span> mean that it is flagged. The model inputs are</p>
 <div class="arithmatex">\[
-P(D\mid F)=\frac{P(F\mid D)P(D)}{P(F)},
-\qquad
-P(F)=P(F\mid D)P(D)+P(F\mid D^c)P(D^c).
+P(D)=0.02,\qquad P(F\mid D)=0.95,\qquad P(F\mid D^c)=0.08.
 \]</div>
-<p>Here <span class="arithmatex">\(P(F\mid D)=0.95\)</span> is <strong>sensitivity</strong>, and <span class="arithmatex">\(P(F\mid D^c)=0.08\)</span> is the <strong>false-positive rate</strong>. The quantity we want, <span class="arithmatex">\(P(D\mid F)\)</span>, is the <strong>positive predictive value</strong>. These three numbers are not the same.</p>
-<p>Independence would mean <span class="arithmatex">\(P(F\mid D)=P(F)\)</span>, which is false here: the flag is designed to depend on the defect.</p>
-<h2 id="3-from-mathematics-to-python">3. From mathematics to Python<a class="headerlink" href="#3-from-mathematics-to-python" title="Permanent link">&para;</a></h2>
-<p>We can compute the formula directly, or simulate many boards and count.</p>
-<table>
-<thead>
-<tr>
-<th>Piece</th>
-<th>Symbol</th>
-<th>Code idea</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Base rate</td>
-<td><span class="arithmatex">\(P(D)\)</span></td>
-<td><code>p_d = 0.02</code></td>
-</tr>
-<tr>
-<td>Sensitivity</td>
-<td><span class="arithmatex">\(P(F\mid D)\)</span></td>
-<td><code>sens = 0.95</code></td>
-</tr>
-<tr>
-<td>False-positive rate</td>
-<td><span class="arithmatex">\(P(F\mid D^c)\)</span></td>
-<td><code>fpr = 0.08</code></td>
-</tr>
-<tr>
-<td>PPV</td>
-<td><span class="arithmatex">\(P(D\mid F)\)</span></td>
-<td>Bayes formula, or <code>defective[flagged].mean()</code> in a simulation</td>
-</tr>
-</tbody>
-</table>
-<h2 id="4-python-implementation">4. Python implementation<a class="headerlink" href="#4-python-implementation" title="Permanent link">&para;</a></h2>
+<h2 id="2-events-and-probability-rules">2. Events and probability rules<a class="headerlink" href="#2-events-and-probability-rules" title="Permanent link">&para;</a></h2>
+<p>If we record both the physical condition and the system decision, a suitable sample space is</p>
+<div class="arithmatex">\[
+S=\{D\cap F,\ D\cap F^c,\ D^c\cap F,\ D^c\cap F^c\}.
+\]</div>
+<p>The complement <span class="arithmatex">\(F^c\)</span> means “not flagged”. The union <span class="arithmatex">\(D\cup F\)</span> means “defective or flagged, including both”, while <span class="arithmatex">\(D\cap F\)</span> means “defective and flagged”.</p>
+<p>The multiplication rule gives the four path probabilities. The addition rule then combines mutually exclusive paths.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">p_d</span><span class="p">,</span> <span class="n">sens</span><span class="p">,</span> <span class="n">fpr</span> <span class="o">=</span> <span class="mf">0.02</span><span class="p">,</span> <span class="mf">0.95</span><span class="p">,</span> <span class="mf">0.08</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">p_f</span> <span class="o">=</span> <span class="n">sens</span> <span class="o">*</span> <span class="n">p_d</span> <span class="o">+</span> <span class="n">fpr</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">p_d</span><span class="p">)</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">ppv</span> <span class="o">=</span> <span class="n">sens</span> <span class="o">*</span> <span class="n">p_d</span> <span class="o">/</span> <span class="n">p_f</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"P(F) = </span><span class="si">{</span><span class="n">p_f</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"P(D | F) = </span><span class="si">{</span><span class="n">ppv</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">p_defect</span> <span class="o">=</span> <span class="mf">0.02</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">sensitivity</span> <span class="o">=</span> <span class="mf">0.95</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">false_positive_rate</span> <span class="o">=</span> <span class="mf">0.08</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="n">p_defect_and_flag</span> <span class="o">=</span> <span class="n">p_defect</span> <span class="o">*</span> <span class="n">sensitivity</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="n">p_good_and_flag</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">p_defect</span><span class="p">)</span> <span class="o">*</span> <span class="n">false_positive_rate</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="n">p_flag</span> <span class="o">=</span> <span class="n">p_defect_and_flag</span> <span class="o">+</span> <span class="n">p_good_and_flag</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="n">p_not_flag</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">p_flag</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="n">p_defect_or_flag</span> <span class="o">=</span> <span class="n">p_defect</span> <span class="o">+</span> <span class="n">p_flag</span> <span class="o">-</span> <span class="n">p_defect_and_flag</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    <span class="p">{</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>        <span class="s2">"P(D and F)"</span><span class="p">:</span> <span class="n">p_defect_and_flag</span><span class="p">,</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>        <span class="s2">"P(F)"</span><span class="p">:</span> <span class="n">p_flag</span><span class="p">,</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>        <span class="s2">"P(not F)"</span><span class="p">:</span> <span class="n">p_not_flag</span><span class="p">,</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>        <span class="s2">"P(D or F)"</span><span class="p">:</span> <span class="n">p_defect_or_flag</span><span class="p">,</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>    <span class="p">}</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="p">)</span>
 </span></code></pre></div>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">rng</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">100_000</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">defective</span> <span class="o">=</span> <span class="n">rng</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">p_d</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">flagged</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="n">defective</span><span class="p">,</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="n">rng</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">sens</span><span class="p">,</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="n">rng</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">fpr</span><span class="p">,</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="p">)</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="n">sim_ppv</span> <span class="o">=</span> <span class="n">defective</span><span class="p">[</span><span class="n">flagged</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Simulated P(D | F) = </span><span class="si">{</span><span class="n">sim_ppv</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2"> based on </span><span class="si">{</span><span class="n">flagged</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="si">}</span><span class="s2"> flags"</span><span class="p">)</span>
+<p>Before continuing, explain why <span class="arithmatex">\(P(D\cup F)\)</span> is not <span class="arithmatex">\(P(D)+P(F)\)</span>. Which boards would otherwise be counted twice?</p>
+<h2 id="3-natural-frequencies-and-a-contingency-table">3. Natural frequencies and a contingency table<a class="headerlink" href="#3-natural-frequencies-and-a-contingency-table" title="Permanent link">&para;</a></h2>
+<p>Probabilities are often easier to interpret as expected counts. For a hypothetical batch of 10,000 boards, the model gives 200 defective and 9,800 good boards. These are model-based expected counts, not newly observed data.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">10_000</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">n_defective</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">n</span> <span class="o">*</span> <span class="n">p_defect</span><span class="p">)</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">n_good</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="n">n_defective</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">true_positive</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">n_defective</span> <span class="o">*</span> <span class="n">sensitivity</span><span class="p">)</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="n">false_negative</span> <span class="o">=</span> <span class="n">n_defective</span> <span class="o">-</span> <span class="n">true_positive</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="n">false_positive</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">n_good</span> <span class="o">*</span> <span class="n">false_positive_rate</span><span class="p">)</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="n">true_negative</span> <span class="o">=</span> <span class="n">n_good</span> <span class="o">-</span> <span class="n">false_positive</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="n">table</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>    <span class="p">{</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>        <span class="s2">"flagged"</span><span class="p">:</span> <span class="p">[</span><span class="n">true_positive</span><span class="p">,</span> <span class="n">false_positive</span><span class="p">],</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>        <span class="s2">"not_flagged"</span><span class="p">:</span> <span class="p">[</span><span class="n">false_negative</span><span class="p">,</span> <span class="n">true_negative</span><span class="p">],</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    <span class="p">},</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s2">"defective"</span><span class="p">,</span> <span class="s2">"good"</span><span class="p">],</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="p">)</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="n">table</span><span class="p">[</span><span class="s2">"total"</span><span class="p">]</span> <span class="o">=</span> <span class="n">table</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="n">table</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s2">"total"</span><span class="p">]</span> <span class="o">=</span> <span class="n">table</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="n">table</span>
 </span></code></pre></div>
-<p>A two-way table for 10,000 boards:</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">n_table</span> <span class="o">=</span> <span class="mi">10_000</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">n_def</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">p_d</span> <span class="o">*</span> <span class="n">n_table</span><span class="p">))</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">n_ok</span> <span class="o">=</span> <span class="n">n_table</span> <span class="o">-</span> <span class="n">n_def</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">tp</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">sens</span> <span class="o">*</span> <span class="n">n_def</span><span class="p">))</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">fn</span> <span class="o">=</span> <span class="n">n_def</span> <span class="o">-</span> <span class="n">tp</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="n">fp</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">fpr</span> <span class="o">*</span> <span class="n">n_ok</span><span class="p">))</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="n">tn</span> <span class="o">=</span> <span class="n">n_ok</span> <span class="o">-</span> <span class="n">fp</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="n">table</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    <span class="p">{</span><span class="s2">"flagged"</span><span class="p">:</span> <span class="p">[</span><span class="n">tp</span><span class="p">,</span> <span class="n">fp</span><span class="p">],</span> <span class="s2">"not flagged"</span><span class="p">:</span> <span class="p">[</span><span class="n">fn</span><span class="p">,</span> <span class="n">tn</span><span class="p">]},</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s2">"defective"</span><span class="p">,</span> <span class="s2">"good"</span><span class="p">],</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="p">)</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="n">table</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s2">"total"</span><span class="p">]</span> <span class="o">=</span> <span class="n">table</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="n">table</span><span class="p">[</span><span class="s2">"total"</span><span class="p">]</span> <span class="o">=</span> <span class="n">table</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="n">table</span>
+<p>A conditional probability restricts the denominator to the stated reference group. Compare the denominators below.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">sensitivity_from_table</span> <span class="o">=</span> <span class="p">(</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="n">table</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s2">"defective"</span><span class="p">,</span> <span class="s2">"flagged"</span><span class="p">]</span> <span class="o">/</span> <span class="n">table</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s2">"defective"</span><span class="p">,</span> <span class="s2">"total"</span><span class="p">]</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">)</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">false_positive_rate_from_table</span> <span class="o">=</span> <span class="p">(</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="n">table</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s2">"good"</span><span class="p">,</span> <span class="s2">"flagged"</span><span class="p">]</span> <span class="o">/</span> <span class="n">table</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s2">"good"</span><span class="p">,</span> <span class="s2">"total"</span><span class="p">]</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="p">)</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="n">positive_predictive_value</span> <span class="o">=</span> <span class="p">(</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="n">table</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s2">"defective"</span><span class="p">,</span> <span class="s2">"flagged"</span><span class="p">]</span> <span class="o">/</span> <span class="n">table</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s2">"total"</span><span class="p">,</span> <span class="s2">"flagged"</span><span class="p">]</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="p">)</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    <span class="p">{</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>        <span class="s2">"P(F | D), sensitivity"</span><span class="p">:</span> <span class="n">sensitivity_from_table</span><span class="p">,</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>        <span class="s2">"P(F | not D), false-positive rate"</span><span class="p">:</span> <span class="n">false_positive_rate_from_table</span><span class="p">,</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>        <span class="s2">"P(D | F), positive predictive value"</span><span class="p">:</span> <span class="n">positive_predictive_value</span><span class="p">,</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>    <span class="p">}</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="p">)</span>
 </span></code></pre></div>
-<h2 id="5-interpretation">5. Interpretation<a class="headerlink" href="#5-interpretation" title="Permanent link">&para;</a></h2>
-<p>Even with 95% sensitivity, most flags can be <strong>false</strong> if defects are rare. The positive predictive value is far below 0.95. That is not a bug in Bayes' theorem; it is the base-rate effect. A process engineer who treats every flag as a confirmed defect will over-scrap good boards.</p>
-<h2 id="6-common-mistakes-things-to-notice">6. Common mistakes / things to notice<a class="headerlink" href="#6-common-mistakes-things-to-notice" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Confusing sensitivity <span class="arithmatex">\(P(F\mid D)\)</span> with PPV <span class="arithmatex">\(P(D\mid F)\)</span>.</li>
-<li>Saying “probability 0 means impossible”. For continuous measurements that will be false (Session 04); here the events are discrete and the warning is less urgent.</li>
-<li>Calling mutually exclusive events independent. If <span class="arithmatex">\(D\)</span> and <span class="arithmatex">\(D^c\)</span> both have positive probability they cannot be independent.</li>
-</ul>
-<h2 id="7-short-worked-example">7. Short worked example<a class="headerlink" href="#7-short-worked-example" title="Permanent link">&para;</a></h2>
-<p>Suppose the false-positive rate is improved to 1% while everything else stays the same.</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">fpr2</span> <span class="o">=</span> <span class="mf">0.01</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">p_f2</span> <span class="o">=</span> <span class="n">sens</span> <span class="o">*</span> <span class="n">p_d</span> <span class="o">+</span> <span class="n">fpr2</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">p_d</span><span class="p">)</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">ppv2</span> <span class="o">=</span> <span class="n">sens</span> <span class="o">*</span> <span class="n">p_d</span> <span class="o">/</span> <span class="n">p_f2</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"New P(D | F) = </span><span class="si">{</span><span class="n">ppv2</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<p>The same numerator, 190, appears in both <span class="arithmatex">\(P(F\mid D)\)</span> and <span class="arithmatex">\(P(D\mid F)\)</span>, but their denominators answer different questions.</p>
+<h2 id="4-independence-is-not-mutual-exclusivity">4. Independence is not mutual exclusivity<a class="headerlink" href="#4-independence-is-not-mutual-exclusivity" title="Permanent link">&para;</a></h2>
+<p>If <span class="arithmatex">\(D\)</span> and <span class="arithmatex">\(F\)</span> were independent, learning that a board is defective would not change its probability of being flagged:</p>
+<div class="arithmatex">\[
+P(F\mid D)=P(F),
+\]</div>
+<p>or equivalently <span class="arithmatex">\(P(D\cap F)=P(D)P(F)\)</span>. Check both sides.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">independence_check</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="p">{</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>        <span class="s2">"P(F | D)"</span><span class="p">:</span> <span class="n">sensitivity</span><span class="p">,</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>        <span class="s2">"P(F)"</span><span class="p">:</span> <span class="n">p_flag</span><span class="p">,</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>        <span class="s2">"P(D and F)"</span><span class="p">:</span> <span class="n">p_defect_and_flag</span><span class="p">,</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>        <span class="s2">"P(D)P(F)"</span><span class="p">:</span> <span class="n">p_defect</span> <span class="o">*</span> <span class="n">p_flag</span><span class="p">,</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    <span class="p">}</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="p">)</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="n">independence_check</span>
 </span></code></pre></div>
-<p><strong>Conclusion in one sentence:</strong> After a flag, the probability that the board is actually defective is much lower than the 95% sensitivity, because defects are rare; reducing the false-positive rate is what raises the positive predictive value.</p>
+<p>The events are clearly dependent. They are not mutually exclusive either: a board can be both defective and flagged, so <span class="arithmatex">\(P(D\cap F)&gt;0\)</span>.</p>
+<h2 id="5-total-probability-and-bayes-theorem">5. Total probability and Bayes' theorem<a class="headerlink" href="#5-total-probability-and-bayes-theorem" title="Permanent link">&para;</a></h2>
+<p>The flagged boards arrive through two mutually exclusive paths:</p>
+<div class="arithmatex">\[
+P(F)=P(F\mid D)P(D)+P(F\mid D^c)P(D^c)=0.0974.
+\]</div>
+<p>Bayes' theorem reverses the conditioning:</p>
+<div class="arithmatex">\[
+P(D\mid F)
+=\frac{P(F\mid D)P(D)}{P(F)}
+=\frac{0.95(0.02)}{0.95(0.02)+0.08(0.98)}
+\approx 0.195.
+\]</div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">ppv</span> <span class="o">=</span> <span class="n">sensitivity</span> <span class="o">*</span> <span class="n">p_defect</span> <span class="o">/</span> <span class="n">p_flag</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"P(flag) = </span><span class="si">{</span><span class="n">p_flag</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"P(defect | flag) = </span><span class="si">{</span><span class="n">ppv</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Although sensitivity is 95%, a flagged board has only about a 19.5% probability of being defective. The large population of good boards produces many more false alarms than the small population of defective boards produces true alarms.</p>
+<h2 id="6-the-base-rate-effect">6. The base-rate effect<a class="headerlink" href="#6-the-base-rate-effect" title="Permanent link">&para;</a></h2>
+<p>Hold sensitivity and false-positive rate fixed, and vary only the defect base rate.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">base_rates</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.20</span><span class="p">,</span> <span class="mi">401</span><span class="p">)</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">ppv_curve</span> <span class="o">=</span> <span class="p">(</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="n">sensitivity</span> <span class="o">*</span> <span class="n">base_rates</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="o">/</span> <span class="p">(</span><span class="n">sensitivity</span> <span class="o">*</span> <span class="n">base_rates</span> <span class="o">+</span> <span class="n">false_positive_rate</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">base_rates</span><span class="p">))</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="p">)</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mf">4.5</span><span class="p">))</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">base_rates</span><span class="p">,</span> <span class="n">ppv_curve</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">"Positive predictive value"</span><span class="p">)</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">([</span><span class="n">p_defect</span><span class="p">],</span> <span class="p">[</span><span class="n">ppv</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s2">"tab:orange"</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">"Worked example"</span><span class="p">)</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">p_defect</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">"0.35"</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">"--"</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s2">"Defect base rate"</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s2">"Positive predictive value"</span><span class="p">)</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.20</span><span class="p">)</span>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.80</span><span class="p">)</span>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<p>The detector has the same sensitivity and false-positive rate throughout the plot, yet its predictive value changes substantially. Performance measures must therefore be interpreted together with the population in which the system is used.</p>
+<h2 id="7-exact-probability-and-simulation">7. Exact probability and simulation<a class="headerlink" href="#7-exact-probability-and-simulation" title="Permanent link">&para;</a></h2>
+<p>Simulation checks the long-run interpretation; it does not replace the exact calculation.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">rng</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">(</span><span class="mi">2026</span><span class="p">)</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">n_sim</span> <span class="o">=</span> <span class="mi">100_000</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">defective</span> <span class="o">=</span> <span class="n">rng</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="n">n_sim</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">p_defect</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="n">flagged</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    <span class="n">defective</span><span class="p">,</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>    <span class="n">rng</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="n">n_sim</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">sensitivity</span><span class="p">,</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>    <span class="n">rng</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="n">n_sim</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">false_positive_rate</span><span class="p">,</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="p">)</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="n">simulated_ppv</span> <span class="o">=</span> <span class="n">defective</span><span class="p">[</span><span class="n">flagged</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Exact P(defect | flag) = </span><span class="si">{</span><span class="n">ppv</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Simulated P(defect | flag) = </span><span class="si">{</span><span class="n">simulated_ppv</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Number of simulated flags = </span><span class="si">{</span><span class="n">flagged</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Run the cell again with <span class="arithmatex">\(n_{\mathrm{sim}}=1{,}000\)</span>, <span class="arithmatex">\(10{,}000\)</span>, and <span class="arithmatex">\(1{,}000{,}000\)</span>. The estimates fluctuate, but the fluctuation generally becomes smaller as the sample size grows.</p>
+<h2 id="8-engineering-improvement-and-interpretation">8. Engineering improvement and interpretation<a class="headerlink" href="#8-engineering-improvement-and-interpretation" title="Permanent link">&para;</a></h2>
+<p>Suppose the false-positive rate is reduced from 8% to 1%, while sensitivity remains 95%.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">improved_fpr</span> <span class="o">=</span> <span class="mf">0.01</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">improved_p_flag</span> <span class="o">=</span> <span class="p">(</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    <span class="n">sensitivity</span> <span class="o">*</span> <span class="n">p_defect</span> <span class="o">+</span> <span class="n">improved_fpr</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">p_defect</span><span class="p">)</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="p">)</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">improved_ppv</span> <span class="o">=</span> <span class="n">sensitivity</span> <span class="o">*</span> <span class="n">p_defect</span> <span class="o">/</span> <span class="n">improved_p_flag</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Original PPV = </span><span class="si">{</span><span class="n">ppv</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Improved PPV = </span><span class="si">{</span><span class="n">improved_ppv</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span></code></pre></div>
+<p>A flag is evidence, not proof. Whether a board should be scrapped, retested, or accepted also depends on the costs of missed defects, unnecessary scrap, and confirmation.</p>
+<h2 id="9-check-your-understanding">9. Check your understanding<a class="headerlink" href="#9-check-your-understanding" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Use the table to compute <span class="arithmatex">\(P(F^c\mid D)\)</span> and <span class="arithmatex">\(P(D^c\mid F^c)\)</span>. State each denominator in words.</li>
+<li>Explain why <span class="arithmatex">\(F\)</span> and <span class="arithmatex">\(F^c\)</span> are mutually exclusive but not independent.</li>
+<li>Change the defect base rate to 10% without changing the detector. Recompute <span class="arithmatex">\(P(F)\)</span> and <span class="arithmatex">\(P(D\mid F)\)</span>.</li>
+<li>A colleague claims: “The detector is 95% accurate, so 95% of its flags are correct.” Correct the statement using the appropriate probability notation.</li>
+<li>Describe one piece of real operating data you would monitor before trusting this model in a new production line.</li>
+</ol>
+<p><strong>Conclusion:</strong> Tables, trees, and Bayes' theorem are three views of the same probability model. The essential discipline is to identify the event after the conditioning bar and use the correct reference group.</p>
 
 
 

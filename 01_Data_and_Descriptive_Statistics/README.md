@@ -2,17 +2,16 @@
 
 ## Session preparation
 
-Read Brooks, *Mathematics for Software Engineering*, Chapter 6 (descriptive statistics). Skim the [Conventions](../pages/conventions.md) page, especially population versus sample and \(n-1\).
+Read Chapter 1, *Data and Descriptive Statistics*, in the new course textbook
+[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf#page=7).
+Skim the [Conventions](../pages/conventions.md) page, especially population
+versus sample and \(n-1\).
 
 **Syllabus and input**
 
-- Brooks, Chapter 6: data types, summaries, histograms, and boxplots
-- Ross 1.2–1.4 and 2.1–2.3 as optional extra reading
+- Brooks, *Statistics and Data Analysis for Engineers*, Chapter 1
 - [Dataset catalogue](../pages/datasets.md): `sensor_thickness.csv`
-
-**Existing course material**
-
-- Tutorial 1 (below)
+- [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/01_Data_and_Descriptive_Statistics/session_material)
 
 ---
 
@@ -29,20 +28,20 @@ By the end of the session, you should be able to:
 - describe distribution shape (symmetry, skew, unimodal versus multimodal).
 
 <p align="left">
-  <a href="Tutorial_01_notebook.ipynb">
+  <a href="Tutorial_01_notebook/">
     <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
     <br>
     <strong>Tutorial 1: Characterising sensor measurements</strong>
   </a>
 </p>
 
-[Download notebook (.ipynb)](Tutorial_01_notebook.ipynb)
+[Download notebook (.ipynb)](https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/01_Data_and_Descriptive_Statistics/Tutorial_01_notebook.ipynb)
 &nbsp;·&nbsp;
-[Read as markdown](Tutorial_01.md)
+[Read as markdown](Tutorial_01.md/)
 
 ---
 
-## What we do not do
+## Scope boundary
 
 - Chebyshev's inequality and formal estimation theory
 - Inferential claims from a plot alone
@@ -54,4 +53,5 @@ By the end of the session, you should be able to:
 
 This session feeds **[Assignment 1](../pages/assignments.md)**: data, preprocessing, and descriptive analysis.
 
-Exercises will be added later in [Exercises.md](Exercises.md).
+The [assessment page](Exercises.md) is reserved for Assignment 1 material,
+which will be published during the semester.
