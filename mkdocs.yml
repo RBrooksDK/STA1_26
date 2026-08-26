@@ -1,0 +1,188 @@
+# Project information
+site_name: Statistics and Data Analysis for Engineers
+site_url: https://rbrooksdk.github.io/STA1_26
+site_author: Richard Brooks
+site_description: Course page for Statistics and Data Analysis for Engineers at VIA University College
+docs_dir: .
+site_dir: _site
+exclude_docs: |
+  manim/**
+  tools/**
+  source_map.md
+
+validation:
+  omitted_files: ignore
+  absolute_links: warn
+  unrecognized_links: warn
+
+# Repository information
+repo_name: Github
+repo_url: https://github.com/RBrooksDK/STA1_26
+
+# Copyright
+copyright: Copyright &copy; 2026 Richard Brooks
+
+# Configurations
+theme:
+  name: material
+  language: en
+  default_theme: default
+  favicon: figures/vialogo_white.png
+  logo: figures/vialogo.png
+  icon:
+    repo: fontawesome/brands/github
+    annotation: material/chevron-right-circle
+  features:
+    - announce.dismiss
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.prune
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+  palette:
+    - scheme: default
+      accent: orange
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - scheme: slate
+      primary: custom
+      accent: orange
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to light mode
+  font:
+    text: "VIA Type"
+    code: "Roboto Mono"
+
+plugins:
+  - same-dir
+  - blog
+  - search
+  - mkdocs-jupyter:
+      include_source: true
+      execute: false
+  - mkdocs_quiz:
+      lang: en
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js
+
+extra:
+  status:
+    new: Recently added
+    deprecated: Deprecated
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+    - icon: material/email
+      link: mailto:rib@via.dk
+    - icon: fontawesome/brands/github
+      link: https://github.com/RBrooksDK/
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/rbrooks-dk/
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: README.md
+  - Sessions:
+    - Sessions/README.md
+    - 00 Getting Started with Python and Data: 00_Getting_Started_with_Python_and_Data/README.md
+    - "01 Data and Descriptive Statistics":
+      - 01_Data_and_Descriptive_Statistics/README.md
+      - "Tutorial 1 (notebook)": 01_Data_and_Descriptive_Statistics/Tutorial_01_notebook.ipynb
+    - "02 Probability for Data Analysis":
+      - 02_Probability_for_Data_Analysis/README.md
+      - "Tutorial 2 (notebook)": 02_Probability_for_Data_Analysis/Tutorial_02_notebook.ipynb
+    - "03 Random Variables and Discrete Distributions":
+      - 03_Random_Variables_and_Discrete_Distributions/README.md
+      - "Tutorial 3 (notebook)": 03_Random_Variables_and_Discrete_Distributions/Tutorial_03_notebook.ipynb
+    - "04 Continuous Distributions in Practice":
+      - 04_Continuous_Distributions_in_Practice/README.md
+      - "Tutorial 4 (notebook)": 04_Continuous_Distributions_in_Practice/Tutorial_04_notebook.ipynb
+    - "05 Sampling Distributions and the CLT":
+      - 05_Sampling_Distributions_and_the_CLT/README.md
+      - "Tutorial 5 (notebook)": 05_Sampling_Distributions_and_the_CLT/Tutorial_05_notebook.ipynb
+    - "06 Estimation and Confidence Intervals":
+      - 06_Estimation_and_Confidence_Intervals/README.md
+      - "Tutorial 6 (notebook)": 06_Estimation_and_Confidence_Intervals/Tutorial_06_notebook.ipynb
+    - "07 Hypothesis Testing I":
+      - 07_Hypothesis_Testing_I_Principles_and_One_Sample_Tests/README.md
+      - "Tutorial 7 (notebook)": 07_Hypothesis_Testing_I_Principles_and_One_Sample_Tests/Tutorial_07_notebook.ipynb
+    - "08 Hypothesis Testing II":
+      - 08_Hypothesis_Testing_II_Comparing_Two_Groups/README.md
+      - "Tutorial 8 (notebook)": 08_Hypothesis_Testing_II_Comparing_Two_Groups/Tutorial_08_notebook.ipynb
+    - "09 Analysis of Variance":
+      - 09_Analysis_of_Variance/README.md
+      - "Tutorial 9 (notebook)": 09_Analysis_of_Variance/Tutorial_09_notebook.ipynb
+    - "10 Simple Linear Regression":
+      - 10_Simple_Linear_Regression/README.md
+      - "Tutorial 10 (notebook)": 10_Simple_Linear_Regression/Tutorial_10_notebook.ipynb
+    - "11 Categorical Data and Chi-Square Tests":
+      - 11_Categorical_Data_and_Chi_Square_Tests/README.md
+      - "Tutorial 11 (notebook)": 11_Categorical_Data_and_Chi_Square_Tests/Tutorial_11_notebook.ipynb
+    - "12 Integrated Analysis and Exam Preparation":
+      - 12_Integrated_Analysis_and_Exam_Preparation/README.md
+      - "Tutorial 12 (notebook)": 12_Integrated_Analysis_and_Exam_Preparation/Tutorial_12_notebook.ipynb
+  - Assignments: pages/assignments.md
+  - Project: pages/project.md
+  - Exam: pages/exam.md
+  - Literature: pages/literature.md
+  - Conventions: pages/conventions.md
+  - Datasets: pages/datasets.md
+  - FAQ: pages/faq.md
+  - General Resources STA: https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgCRcFyOD9zaTZE0MIeH7KyCAcoyBaddmF791Zj-ghekZ04?e=ahV2dL

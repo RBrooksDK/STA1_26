@@ -1,0 +1,61 @@
+{
+  "seed": 2026,
+  "datasets": [
+    {
+      "file": "sensor_thickness.csv",
+      "n": 180,
+      "mu": 250.0,
+      "sigma": 4.2,
+      "late_shift_um": 3.5
+    },
+    {
+      "file": "response_times.csv",
+      "n": 60,
+      "mu_a": 118.0,
+      "mu_b_independent": 109.0,
+      "paired_mean_improvement_ms": 8.0
+    },
+    {
+      "file": "component_lifetimes.csv",
+      "n": 80,
+      "rate_per_hour": 0.0025,
+      "mean_h": 400.0
+    },
+    {
+      "file": "energy_load.csv",
+      "n": 40,
+      "beta0": 12.0,
+      "beta1": 0.38,
+      "sigma": 3.5
+    },
+    {
+      "file": "defect_types.csv",
+      "n_per_line": 120,
+      "probabilities": {
+        "L1": [
+          0.45,
+          0.2,
+          0.25,
+          0.1
+        ],
+        "L2": [
+          0.5,
+          0.25,
+          0.15,
+          0.1
+        ],
+        "L3": [
+          0.4,
+          0.35,
+          0.15,
+          0.1
+        ]
+      }
+    },
+    {
+      "file": "packet_loss.csv",
+      "n": 200,
+      "p_loss": 0.04
+    }
+  ]
+}
