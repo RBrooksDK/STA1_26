@@ -9,6 +9,7 @@ Read Brooks, Chapters 4–5 **selectively**: sample spaces, events, probability 
 - Brooks, Chapter 4: events and probability rules
 - Brooks, Chapter 5: conditional probability, independence, total probability, Bayes
 - Optional Ross 3.1–3.4 and 3.6–3.8
+- [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/02_Probability_for_Data_Analysis/session_material)
 
 ---
 
@@ -25,16 +26,16 @@ By the end of the session, you should be able to:
 - apply the law of total probability and Bayes' theorem to a false-positive problem.
 
 <p align="left">
-  <a href="Tutorial_02_notebook.ipynb">
+  <a href="Tutorial_02_notebook/">
     <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
     <br>
     <strong>Tutorial 2: False positives in an automatic test</strong>
   </a>
 </p>
 
-[Download notebook (.ipynb)](Tutorial_02_notebook.ipynb)
+[Download notebook (.ipynb)](https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/02_Probability_for_Data_Analysis/Tutorial_02_notebook.ipynb)
 &nbsp;·&nbsp;
-[Read as markdown](Tutorial_02.md)
+[Read as markdown](Tutorial_02.md/)
 
 ---
 

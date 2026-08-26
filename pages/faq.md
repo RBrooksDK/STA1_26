@@ -36,7 +36,7 @@
 
 ??? question "Where do I find slides and extra files?"
 
-    Session pages link to notes when they exist. Shared files live in [General Resources STA](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgCRcFyOD9zaTZE0MIeH7KyCAcoyBaddmF791Zj-ghekZ04?e=ahV2dL).
+    Session pages link to notes when they exist. Additional course materials are published on itslearning when needed.
 
 ---
 

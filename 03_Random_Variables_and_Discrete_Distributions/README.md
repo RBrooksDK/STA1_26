@@ -13,6 +13,7 @@ Read Ross 4.1–4.2, 4.4, 4.6 and 5.1–5.2. The binomial coefficient is introdu
 - Ross 5.1 Bernoulli and binomial
 - Ross 5.2 Poisson
 - Optional: selected parts of 5.3 (hypergeometric)
+- [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/03_Random_Variables_and_Discrete_Distributions/session_material)
 
 ---
 
@@ -29,16 +30,16 @@ By the end of the session, you should be able to:
 - explain the binomial coefficient as “the number of ways to place \(k\) successes among \(n\) trials”.
 
 <p align="left">
-  <a href="Tutorial_03_notebook.ipynb">
+  <a href="Tutorial_03_notebook/">
     <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
     <br>
     <strong>Tutorial 3: Packet loss and failure counts</strong>
   </a>
 </p>
 
-[Download notebook (.ipynb)](Tutorial_03_notebook.ipynb)
+[Download notebook (.ipynb)](https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/03_Random_Variables_and_Discrete_Distributions/Tutorial_03_notebook.ipynb)
 &nbsp;·&nbsp;
-[Read as markdown](Tutorial_03.md)
+[Read as markdown](Tutorial_03.md/)
 
 ---
 

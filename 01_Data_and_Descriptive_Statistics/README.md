@@ -9,10 +9,7 @@ Read Brooks, *Mathematics for Software Engineering*, Chapter 6 (descriptive stat
 - Brooks, Chapter 6: data types, summaries, histograms, and boxplots
 - Ross 1.2–1.4 and 2.1–2.3 as optional extra reading
 - [Dataset catalogue](../pages/datasets.md): `sensor_thickness.csv`
-
-**Existing course material**
-
-- Tutorial 1 (below)
+- [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/01_Data_and_Descriptive_Statistics/session_material)
 
 ---
 
@@ -29,16 +26,16 @@ By the end of the session, you should be able to:
 - describe distribution shape (symmetry, skew, unimodal versus multimodal).
 
 <p align="left">
-  <a href="Tutorial_01_notebook.ipynb">
+  <a href="Tutorial_01_notebook/">
     <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
     <br>
     <strong>Tutorial 1: Characterising sensor measurements</strong>
   </a>
 </p>
 
-[Download notebook (.ipynb)](Tutorial_01_notebook.ipynb)
+[Download notebook (.ipynb)](https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/01_Data_and_Descriptive_Statistics/Tutorial_01_notebook.ipynb)
 &nbsp;·&nbsp;
-[Read as markdown](Tutorial_01.md)
+[Read as markdown](Tutorial_01.md/)
 
 ---
 

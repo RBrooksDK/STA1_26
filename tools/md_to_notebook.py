@@ -19,6 +19,23 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 FENCE = re.compile(r"^```(?:python)?\s*$", re.IGNORECASE)
+DISPLAY_MATH = re.compile(r"\\\[([\s\S]*?)\\\]")
+INLINE_MATH = re.compile(r"\\\(([\s\S]*?)\\\)")
+
+
+def notebook_math_delimiters(text: str) -> str:
+    """Use $ delimiters in notebooks so nbconvert HTML keeps math for MathJax."""
+
+    def display_repl(match: re.Match[str]) -> str:
+        body = match.group(1).strip()
+        return f"$$\n{body}\n$$"
+
+    def inline_repl(match: re.Match[str]) -> str:
+        return f"${match.group(1).strip()}$"
+
+    text = DISPLAY_MATH.sub(display_repl, text)
+    text = INLINE_MATH.sub(inline_repl, text)
+    return text
 
 
 def md_to_cells(text: str) -> list[dict]:
@@ -31,6 +48,7 @@ def md_to_cells(text: str) -> list[dict]:
         content = "\n".join(buf).strip("\n")
         buf.clear()
         if content.strip():
+            content = notebook_math_delimiters(content)
             cells.append(
                 {
                     "cell_type": "markdown",
@@ -103,14 +121,50 @@ def write_notebook(md_path: Path, nb_path: Path | None = None) -> Path:
     return nb_path
 
 
+def patch_notebook_math(nb_path: Path) -> bool:
+    nb = json.loads(nb_path.read_text(encoding="utf-8"))
+    changed = False
+    for cell in nb.get("cells", []):
+        if cell.get("cell_type") != "markdown":
+            continue
+        original = "".join(cell.get("source", []))
+        updated = notebook_math_delimiters(original)
+        if updated != original:
+            cell["source"] = _as_source(updated)
+            changed = True
+    if changed:
+        nb_path.write_text(
+            json.dumps(nb, indent=1, ensure_ascii=False) + "\n", encoding="utf-8"
+        )
+    return changed
+
+
 def discover() -> list[Path]:
     return sorted(ROOT.glob("*/Tutorial_*.md"))
+
+
+def discover_notebooks() -> list[Path]:
+    return sorted(ROOT.glob("*/Tutorial_*_notebook.ipynb"))
 
 
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--file", type=Path, default=None)
+    parser.add_argument(
+        "--patch-math",
+        action="store_true",
+        help="Convert \\(...\\) and \\[...\\] to $ delimiters in existing notebooks",
+    )
     args = parser.parse_args()
+
+    if args.patch_math:
+        paths = [args.file] if args.file else discover_notebooks()
+        for nb in paths:
+            nb = nb if nb.is_absolute() else ROOT / nb
+            if patch_notebook_math(nb):
+                print(f"patched {nb.relative_to(ROOT)}")
+        return
+
     paths = [args.file] if args.file else discover()
     for md in paths:
         md = md if md.is_absolute() else ROOT / md

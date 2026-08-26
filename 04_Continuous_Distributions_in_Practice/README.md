@@ -9,6 +9,7 @@ Read Ross 5.4–5.6 **selectively**. You must understand the models and compute 
 - Ross 5.4 Uniform
 - Ross 5.5 Normal
 - Ross 5.6 Exponential
+- [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/04_Continuous_Distributions_in_Practice/session_material)
 
 ---
 
@@ -25,16 +26,16 @@ By the end of the session, you should be able to:
 - read a QQ-plot as a diagnostic, not as a proof of normality.
 
 <p align="left">
-  <a href="Tutorial_04_notebook.ipynb">
+  <a href="Tutorial_04_notebook/">
     <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
     <br>
     <strong>Tutorial 4: Response times and component lifetimes</strong>
   </a>
 </p>
 
-[Download notebook (.ipynb)](Tutorial_04_notebook.ipynb)
+[Download notebook (.ipynb)](https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/04_Continuous_Distributions_in_Practice/Tutorial_04_notebook.ipynb)
 &nbsp;·&nbsp;
-[Read as markdown](Tutorial_04.md)
+[Read as markdown](Tutorial_04.md/)
 
 ---
 

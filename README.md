@@ -92,12 +92,6 @@ The course uses two books, with one primary text per session:
 
 The mapping from sessions to sections is on the [Literature](pages/literature.md) page. Notation and Python conventions are collected in [Conventions](pages/conventions.md). Data files live in `data/` and are catalogued under [Datasets](pages/datasets.md).
 
-Non-session specific resources can be found here:
-
-[General Resources STA](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgCRcFyOD9zaTZE0MIeH7KyCAcoyBaddmF791Zj-ghekZ04?e=ahV2dL)
-
-This folder is always accessible in the menu at the top.
-
 Install a working Python 3.10+ environment with Jupyter. The easiest route is [Anaconda](https://www.anaconda.com/products/distribution) or VS Code with the Jupyter extension. Session 00 walks through the setup.
 
 ## Historical Notes

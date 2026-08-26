@@ -10,6 +10,7 @@ Read Ross 11.1–11.4.
 - Ross 11.2 Goodness-of-fit with specified parameters
 - Ross 11.3 Goodness-of-fit with estimated parameters
 - Ross 11.4 Independence in contingency tables
+- [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/11_Categorical_Data_and_Chi_Square_Tests/session_material)
 
 ---
 
@@ -26,16 +27,16 @@ By the end of the session, you should be able to:
 - state a conclusion in terms of the engineering categories, not only \(\chi^2\).
 
 <p align="left">
-  <a href="Tutorial_11_notebook.ipynb">
+  <a href="Tutorial_11_notebook/">
     <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
     <br>
     <strong>Tutorial 11: Defect types across production lines</strong>
   </a>
 </p>
 
-[Download notebook (.ipynb)](Tutorial_11_notebook.ipynb)
+[Download notebook (.ipynb)](https://raw.githubusercontent.com/RBrooksDK/STA1_26/main/11_Categorical_Data_and_Chi_Square_Tests/Tutorial_11_notebook.ipynb)
 &nbsp;·&nbsp;
-[Read as markdown](Tutorial_11.md)
+[Read as markdown](Tutorial_11.md/)
 
 ---
 
