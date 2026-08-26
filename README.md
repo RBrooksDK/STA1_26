@@ -1,6 +1,6 @@
 <p align="center">
     <h1 align="center">Statistics and Data Analysis for Engineers - 2026</h1>
-    <p align="center">Course page for <a href="https://www.via.dk">STA1</a> at VIA University College</p>
+    <p align="center">Course page for <a href="https://my.via.dk/media/mitvia/semesteroverblik/kursusbeskrivelser/software-engineering/6.-og-7.-semester/it-sta1-1-0">STA1</a> at VIA University College</p>
     <p align="center"><strong><a href="https://rbrooksdk.github.io/STA1_26">Checkout the homepage!</a></strong></p>
 </p>
 
@@ -40,7 +40,7 @@ STA1 is the sister course of [Stochastic Modelling and Processes (SMP1)](https:/
 
 ## <i class="fas fa-clipboard-list" style="color:#6CA2C6"></i> Assignments and Project
 
-The course contains **six practice-oriented group assignments** and one **small group project**. These are the official learning activities from the course description. They are also the basis of the exam.
+The course contains **six practice-oriented group assignments** and one **small group project**. These are the official learning activities from the [course description](https://my.via.dk/media/mitvia/semesteroverblik/kursusbeskrivelser/software-engineering/6.-og-7.-semester/it-sta1-1-0). They are also the basis of the exam.
 
 | Activity | After session | Focus |
 | ---: | ---: | --- |
