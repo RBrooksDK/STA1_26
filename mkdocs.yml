@@ -9,6 +9,7 @@ exclude_docs: |
   manim/**
   tools/**
   source_map.md
+  _site/**
 
 validation:
   omitted_files: ignore
