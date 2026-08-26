@@ -80,6 +80,10 @@ SMP1 and keep the workload realistic.
   the canonical explanation of theory.  The website should orient students,
   link material, and host concise teaching support rather than duplicate an
   entire chapter.
+- Existing tutorials and notebooks are provisional source material rather
+  than fixed requirements. Select the clearest correct example from the MSE
+  book, other Brooks-authored material, or new work, then revise the tutorial
+  to match the reviewed chapter.
 - Every mathematical claim, formula, notation choice, and code result is
   checked before publication.
 - Use original prose, original examples, and appropriately licensed/open data.

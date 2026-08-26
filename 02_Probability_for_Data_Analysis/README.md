@@ -2,12 +2,13 @@
 
 ## Session preparation
 
-Read Brooks, Chapters 4–5 **selectively**: sample spaces, events, probability rules, conditional probability, independence, and Bayes. Skip permutation and combination catalogues.
+Read Chapter 2, *Probability for Data Analysis*, in the new course textbook
+[*Statistics and Data Analysis for Engineers*](https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf#page=18).
 
 **Syllabus and input**
 
-- Brooks, Chapter 4: events and probability rules
-- Brooks, Chapter 5: conditional probability, independence, total probability, Bayes
+- Brooks, *Statistics and Data Analysis for Engineers*, Chapter 2
+- *Mathematics for Software Engineering*, Chapters 4–5, as aligned source material and optional recap
 - Optional Ross 3.1–3.4 and 3.6–3.8
 - [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/02_Probability_for_Data_Analysis/session_material)
 
@@ -29,7 +30,7 @@ By the end of the session, you should be able to:
   <a href="Tutorial_02_notebook/">
     <img src="../figures/Python-logo-notext.svg.png" alt="Python tutorial" width="100" />
     <br>
-    <strong>Tutorial 2: False positives in an automatic test</strong>
+    <strong>Tutorial 2: Probability tools for automated inspection</strong>
   </a>
 </p>
 

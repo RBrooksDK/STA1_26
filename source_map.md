@@ -18,6 +18,12 @@ Use sources in this order:
 
 Ross is a scope and verification source. Do not copy its prose, figures, examples, or exercises. Brooks-authored material may be revised and reused, but it must still be checked for correctness, notation, level, and fit with the new course.
 
+Existing STA1 tutorials and notebooks are inputs, not curriculum authorities.
+They may be reorganised, replaced, or rewritten when the MSE book, another
+Brooks-authored example, or a newly designed example gives a clearer and more
+correct learning progression. The final tutorial must follow the reviewed
+textbook chapter and session contract, not constrain them.
+
 ## Structural correspondence
 
 | Course item | Textbook item |
@@ -62,6 +68,7 @@ Ross is a scope and verification source. Do not copy its prose, figures, example
 - **Ross check:** 3.1–3.4 and 3.6–3.8
 - **Core:** events, rules, conditional probability, independence, total probability, Bayes, contingency tables and probability trees
 - **Boundary:** no standalone combinatorics catalogue; joint-distribution theory remains in SMP1
+- **Implemented draft:** the textbook and tutorial use one automated optical-inspection case throughout. The tutorial follows the reviewed chapter from event algebra and contingency tables through independence, Bayes, base-rate sensitivity, and simulation; it is a downstream practice layer rather than a source constraint.
 
 ### Chapter 3 — Random Variables and Discrete Distributions
 
