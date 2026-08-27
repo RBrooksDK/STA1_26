@@ -22,9 +22,13 @@
 
     Python. The core libraries are NumPy, Pandas, SciPy, and Matplotlib. Statsmodels is used for inference. Scikit-learn appears in Session 10 for fitting a simple prediction model, not as a replacement for statistical tests.
 
+??? question "How do I install Python and Jupyter?"
+
+    Follow [Session 00](../00_Getting_Started_with_Python_and_Data/README.md): install Python from [python.org](https://www.python.org/downloads/), then Visual Studio Code, then the Python and Jupyter extensions. There are separate steps for Windows and macOS.
+
 ??? question "Where are the data files?"
 
-    In the `data/` folder of the repository. They are catalogued on the [Datasets](datasets.md) page. From a session notebook, load them with a path such as `Path("../data/sensor_thickness.csv")`.
+    Download the [data folder](https://download-directory.github.io/?url=https://github.com/RBrooksDK/STA1_26/tree/main/data) (no Git required) and follow [Session 00](../00_Getting_Started_with_Python_and_Data/README.md). The files are catalogued on the [Datasets](datasets.md) page. The folder is updated during the semester; if a file is missing, download it again. From a notebook next to `data/`, use `Path("data/sensor_thickness.csv")`.
 
 ---
 
