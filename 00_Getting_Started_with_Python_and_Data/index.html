@@ -98,7 +98,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#session-preparation" class="md-skip">
+        <a href="#1-install-python" class="md-skip">
           Skip to content
         </a>
       
@@ -594,10 +594,65 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#session-preparation" class="md-nav__link">
+  <a href="#1-install-python" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Session Preparation:
+        1. Install Python
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-install-visual-studio-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Install Visual Studio Code
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-install-the-python-and-jupyter-extensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Install the Python and Jupyter extensions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-install-the-course-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Install the course packages
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-check-that-a-notebook-runs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Check that a notebook runs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-with-course-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Working with course data
       
     </span>
   </a>
@@ -609,17 +664,6 @@
     <span class="md-ellipsis">
       
         Resources
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exercises" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exercises
       
     </span>
   </a>
@@ -1495,10 +1539,65 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#session-preparation" class="md-nav__link">
+  <a href="#1-install-python" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Session Preparation:
+        1. Install Python
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-install-visual-studio-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Install Visual Studio Code
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-install-the-python-and-jupyter-extensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Install the Python and Jupyter extensions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-install-the-course-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Install the course packages
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-check-that-a-notebook-runs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Check that a notebook runs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-with-course-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Working with course data
       
     </span>
   </a>
@@ -1510,17 +1609,6 @@
     <span class="md-ellipsis">
       
         Resources
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exercises" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exercises
       
     </span>
   </a>
@@ -1549,50 +1637,161 @@
 
 <h1 align="center">Getting Started with Python and Data</h1>
 
-<p>This page is <strong>self-study</strong>. There is no classroom session 00. Work through it before Session 01 so that class time can be spent on statistics, not on installing packages.</p>
-<p>The aim is a working analysis environment and a shared language for the rest of the course. Install Python 3.10+ with Jupyter — Anaconda or VS Code with the Jupyter extension is enough — and confirm that you can import NumPy, Pandas, SciPy, and Matplotlib, then load a CSV file from the course <code>data/</code> folder.</p>
-<p>From a session folder the data directory is one level up:</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">DATA</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">"../data"</span><span class="p">)</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">DATA</span> <span class="o">/</span> <span class="s2">"sensor_thickness.csv"</span><span class="p">)</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<p>This page is <strong>self-study</strong>. There is no classroom session 00. Work through it before Session 01 so that class time can be spent on statistics, not on installing software.</p>
+<p>You need three pieces that work together:</p>
+<ol>
+<li><strong>Python</strong> from <a href="https://www.python.org/downloads/">python.org</a> — the program that runs your code.</li>
+<li><strong>Visual Studio Code</strong> from <a href="https://code.visualstudio.com/download">code.visualstudio.com</a> — the editor.</li>
+<li>The <strong>Python</strong> and <strong>Jupyter</strong> extensions in VS Code — so you can open <code>.ipynb</code> notebooks and run cells.</li>
+</ol>
+<p>VS Code does not include Python. Install Python first, then the editor, then the extensions. When that works, install the course packages and load a CSV file from <code>data/</code>. Complete the installation below before Session 01. Use the section for your operating system, then continue with the shared VS Code and Jupyter steps.</p>
+<p>The written steps are the course standard. The videos are optional extra help; follow the text if a video shows a slightly different Python version number.</p>
+<h3 id="1-install-python">1. Install Python<a class="headerlink" href="#1-install-python" title="Permanent link">&para;</a></h3>
+<p>Download a <strong>current Python 3.12 or newer</strong> from the official site. The big yellow button on <a href="https://www.python.org/downloads/">python.org/downloads</a> is the right file.</p>
+<h4 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Open <a href="https://www.python.org/downloads/">python.org/downloads</a> and download the Windows installer (64-bit).</li>
+<li>Run the installer.</li>
+<li>On the first page, tick <strong>Add python.exe to PATH</strong>. This is the step that usually goes wrong. Do it before you click Install.</li>
+<li>Click <strong>Install Now</strong> and finish the wizard.</li>
+<li>Close any terminal that was already open. Open a <strong>new</strong> Command Prompt or PowerShell.</li>
+<li>Check the install:</li>
+</ol>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>py --version
 </span></code></pre></div>
-<p>If you work from the repository root, use <code>Path("data")</code> instead. <code>openpyxl</code> is required for <code>.xlsx</code> files.</p>
-<h4 id="key-concepts">Key Concepts<a class="headerlink" href="#key-concepts" title="Permanent link">&para;</a></h4>
-<ul>
-<li>Python, Jupyter, and the course package stack</li>
-<li>Loading CSV and Excel files from <code>data/</code></li>
-<li>Random variables versus observed values</li>
-<li>Sample standard deviation with <span class="arithmatex">\(n-1\)</span></li>
-<li>Seeds, <code>ddof=1</code>, and notebook hygiene</li>
-</ul>
-<div class="admonition tip">
-<p class="admonition-title">Learning Objectives</p>
-<ul>
-<li>Run Python 3.10+ with Jupyter in VS Code or Anaconda.</li>
-<li>Import NumPy, Pandas, SciPy, and Matplotlib.</li>
-<li>Load a CSV file from the course <code>data/</code> folder.</li>
-<li>Distinguish a random variable <span class="arithmatex">\(X\)</span> from an observed value <span class="arithmatex">\(x\)</span>.</li>
-<li>Compute a sample standard deviation with <span class="arithmatex">\(n-1\)</span> degrees of freedom.</li>
-</ul>
+<p>You should see a Python 3 version, for example <code>Python 3.13.5</code>. The Windows launcher <code>py</code> is more reliable than typing <code>python</code>, which can still open the Microsoft Store stub.</p>
+<p>If <code>py</code> is not recognised, re-run the installer, choose <strong>Modify</strong>, and enable <strong>Add python.exe to PATH</strong>. Then open a new terminal and try again.</p>
+<p>Do <strong>not</strong> install Python from the Microsoft Store for this course. Use python.org.</p>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
+    <iframe
+        src="https://www.youtube.com/embed/jfUMPHJpSdo"
+        title="Install Python on Windows from python.org"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+        allow="autoplay; encrypted-media; picture-in-picture"
+        allowfullscreen>
+    </iframe>
 </div>
-<hr/>
 
-<h3 id="session-preparation">Session Preparation:<a class="headerlink" href="#session-preparation" title="Permanent link">&para;</a></h3>
-<p>This is self-study. Complete it before Session 01.</p>
-<p>Install extras if needed:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pip install numpy pandas matplotlib scipy statsmodels scikit-learn openpyxl
+<h4 id="macos">macOS<a class="headerlink" href="#macos" title="Permanent link">&para;</a></h4>
+<p>macOS may already have a <code>python3</code> command. That system copy is <strong>not</strong> the one we want. Install a current Python from python.org.</p>
+<ol>
+<li>Open <a href="https://www.python.org/downloads/">python.org/downloads</a> and download the <strong>macOS 64-bit universal installer</strong>.</li>
+<li>Open the <code>.pkg</code> file and click through Continue, Agree, and Install. Enter your Mac password when asked.</li>
+<li>When the installer finishes, open the folder it shows. Double-click <strong>Install Certificates.command</strong> and wait until the Terminal window says the process completed. Then double-click <strong>Update Shell Profile.command</strong> if it is there. These two scripts make <code>pip</code> and HTTPS downloads work.</li>
+<li>Quit Terminal completely and open a <strong>new</strong> Terminal window.</li>
+<li>Check the install:</li>
+</ol>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python3 --version
 </span></code></pre></div>
+<p>You should see the version you just installed (3.12 or newer), not an old 3.9 leftover.</p>
+<p>On a Mac, type <code>python3</code> and <code>pip3</code>. The command <code>python</code> often does nothing useful.</p>
+<p>If <code>python3 --version</code> still shows an old version, close Terminal and open it again. The installer updates your shell profile only for new windows.</p>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
+    <iframe
+        src="https://www.youtube.com/embed/-J0RYcVR3T0"
+        title="Install Python on macOS from python.org"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+        allow="autoplay; encrypted-media; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+</div>
+
+<h3 id="2-install-visual-studio-code">2. Install Visual Studio Code<a class="headerlink" href="#2-install-visual-studio-code" title="Permanent link">&para;</a></h3>
+<p>Download VS Code from <a href="https://code.visualstudio.com/download">code.visualstudio.com/download</a>. Pick the installer for your operating system.</p>
+<h4 id="windows_1">Windows<a class="headerlink" href="#windows_1" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Run the installer.</li>
+<li>Tick <strong>Add to PATH</strong> (and the desktop icon if you want one).</li>
+<li>Finish, then start VS Code from the Start menu.</li>
+</ol>
+<h4 id="macos_1">macOS<a class="headerlink" href="#macos_1" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Open the downloaded <code>.dmg</code> file and drag <strong>Visual Studio Code</strong> into <strong>Applications</strong>.</li>
+<li>Open VS Code from Applications (right-click → Open the first time if macOS warns about an app from the internet).</li>
+<li>Open the Command Palette with <span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-p">P</kbd></span> and run <strong>Shell Command: Install 'code' command in PATH</strong>. That lets you type <code>code .</code> in Terminal later.</li>
+</ol>
+<h3 id="3-install-the-python-and-jupyter-extensions">3. Install the Python and Jupyter extensions<a class="headerlink" href="#3-install-the-python-and-jupyter-extensions" title="Permanent link">&para;</a></h3>
+<p>These steps are the same on Windows and macOS.</p>
+<ol>
+<li>In VS Code, open Extensions with <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-x">X</kbd></span> (Windows) or <span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-x">X</kbd></span> (macOS).</li>
+<li>Search for <strong>Python</strong> and install the extension published by <strong>Microsoft</strong> (<code>ms-python.python</code>). It usually offers the Jupyter extension as well.</li>
+<li>Search for <strong>Jupyter</strong> and install the extension published by <strong>Microsoft</strong> (<code>ms-toolsai.jupyter</code>) if it is not already installed.</li>
+</ol>
+<p>You now have an editor that can open notebooks. You still need a Python kernel and the course packages.</p>
+<p>The video below shows the notebook editor in VS Code (creating a notebook, cells, and running code). Install Python first, as in the sections above, then follow the same clicks in your own VS Code.</p>
+<p>The owner has disabled playback on other websites, so the embedded player will not start here. Click <strong>Watch on YouTube</strong> in the player, or open the <a href="https://www.youtube.com/watch?v=_C0vbLV6WdA">video on YouTube</a> directly.</p>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
+    <iframe
+        src="https://www.youtube.com/embed/_C0vbLV6WdA"
+        title="Jupyter notebooks in Visual Studio Code"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+        allow="autoplay; encrypted-media; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+</div>
+
+<h3 id="4-install-the-course-packages">4. Install the course packages<a class="headerlink" href="#4-install-the-course-packages" title="Permanent link">&para;</a></h3>
+<p>Open a terminal <strong>inside VS Code</strong>: Terminal → New Terminal.</p>
+<p><strong>Windows:</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>py -m pip install --upgrade pip
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>py -m pip install numpy pandas matplotlib scipy statsmodels scikit-learn openpyxl ipykernel
+</span></code></pre></div>
+<p><strong>macOS:</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>python3 -m pip install --upgrade pip
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>python3 -m pip install numpy pandas matplotlib scipy statsmodels scikit-learn openpyxl ipykernel
+</span></code></pre></div>
+<p><code>ipykernel</code> is what VS Code uses to run notebook cells. If a notebook offers no kernel, this package is usually missing.</p>
+<h3 id="5-check-that-a-notebook-runs">5. Check that a notebook runs<a class="headerlink" href="#5-check-that-a-notebook-runs" title="Permanent link">&para;</a></h3>
+<ol>
+<li>In VS Code, use File → Open Folder and open the <code>STA1_26</code> course folder (or a new empty folder if you have not cloned the repository yet).</li>
+<li>Open the Command Palette: <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-p">P</kbd></span> (Windows) or <span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-p">P</kbd></span> (macOS).</li>
+<li>Run <strong>Create: New Jupyter Notebook</strong>.</li>
+<li>In the top right, click <strong>Select Kernel</strong> → <strong>Python Environments</strong> and pick the Python 3.12+ interpreter you installed.</li>
+<li>In the first cell, run:</li>
+</ol>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="kn">import</span><span class="w"> </span><span class="nn">scipy</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">version</span><span class="p">)</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"numpy"</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"pandas"</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Use the play button to the left of the cell, or <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-enter">Enter</kbd></span>.</p>
+<p>If the cell runs and prints version numbers, the setup is done. Save the notebook if you want; you do not need to keep it.</p>
+<div class="admonition warning">
+<p class="admonition-title">Kernel not found</p>
+<p>If VS Code cannot see Python, close VS Code and open it again after the Python install. Then run <strong>Python: Select Interpreter</strong> from the Command Palette and choose the python.org install, not an old Apple or Store copy.</p>
+</div>
+<h3 id="working-with-course-data">Working with course data<a class="headerlink" href="#working-with-course-data" title="Permanent link">&para;</a></h3>
+<p>You do not need Git. The CSV and Excel files live in the course <code>data</code> folder on GitHub. Download that folder onto your computer and point your notebook at it.</p>
+<ol>
+<li>Download the folder: <a href="https://download-directory.github.io/?url=https://github.com/RBrooksDK/STA1_26/tree/main/data">Download data folder</a>.</li>
+<li>Unzip the file. You should see files such as <code>sensor_thickness.csv</code>. If they are not already inside a folder named <code>data</code>, put them in one.</li>
+<li>In VS Code, use File → Open Folder and open the folder that <strong>contains</strong> <code>data</code> (the parent folder, not a single CSV).</li>
+</ol>
+<p>You can also browse the files on GitHub: <a href="https://github.com/RBrooksDK/STA1_26/tree/main/data">data/</a>.</p>
+<p>The <code>data</code> folder will be updated during the semester as new files are added. If a tutorial or assignment asks for a file you do not have, download the folder again and replace your old <code>data</code> folder with the new one.</p>
+<p>Then load a file:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">DATA</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">"data"</span><span class="p">)</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">DATA</span> <span class="o">/</span> <span class="s2">"sensor_thickness.csv"</span><span class="p">)</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</span></code></pre></div>
+<p>If your notebook sits inside a session folder (<code>01_Data_and_Descriptive_Statistics</code> and so on), go one level up instead: <code>DATA = Path("../data")</code>. <code>openpyxl</code> is required for <code>.xlsx</code> files.</p>
 <p>When you simulate, keep a seed: <code>rng = np.random.default_rng(2026)</code>. Write <code>ddof=1</code> when you use <code>np.std</code> or <code>np.var</code> on a <strong>sample</strong>. Never name a Python variable <code>lambda</code>. Put interpretation in a markdown cell after the code, not only in a <code>print</code>.</p>
 <h3 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/RBrooksDK/STA1_26/tree/main/00_Getting_Started_with_Python_and_Data/session_material">Session material</a></p>
 <p><a href="../pages/datasets/">Datasets</a></p>
-<p><a href="https://www.anaconda.com/products/distribution">Anaconda</a></p>
-<hr/>
-
-<h3 id="exercises">Exercises<a class="headerlink" href="#exercises" title="Permanent link">&para;</a></h3>
+<p><a href="https://download-directory.github.io/?url=https://github.com/RBrooksDK/STA1_26/tree/main/data">Download data folder</a></p>
+<p><a href="https://www.python.org/downloads/">Python downloads</a></p>
+<p><a href="https://code.visualstudio.com/download">Visual Studio Code</a></p>
+<p><a href="https://code.visualstudio.com/docs/datascience/jupyter-notebooks">Jupyter in VS Code</a></p>
+<p><a href="https://code.visualstudio.com/docs/python/python-tutorial">Getting started with Python in VS Code</a></p>
 
 
 

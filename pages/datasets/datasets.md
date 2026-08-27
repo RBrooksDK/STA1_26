@@ -1,6 +1,8 @@
 <h1 align="center">Datasets</h1>
 
-All course files live in the repository folder `data/`. From a session notebook:
+All course files live in the folder `data/` on GitHub. You do not need Git: [download the data folder](https://download-directory.github.io/?url=https://github.com/RBrooksDK/STA1_26/tree/main/data), unzip it, and keep a folder named `data` next to your notebook. Session 00 has the full steps. If a file is missing later in the semester, download the folder again and replace the old copy.
+
+From a session notebook:
 
 ```python
 from pathlib import Path

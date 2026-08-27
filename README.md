@@ -92,4 +92,4 @@ The textbook is a work in progress and will be updated throughout the course as 
 
 Each session page states the matching textbook chapter. Data files live in `data/` and are catalogued under [Datasets](pages/datasets.md).
 
-Install a working Python 3.10+ environment with Jupyter. The easiest route is [Anaconda](https://www.anaconda.com/products/distribution) or VS Code with the Jupyter extension. Session 00 walks through the setup.
+Install Python from python.org, then Visual Studio Code, then the Jupyter extension. The step-by-step guide — Windows and macOS — is [Session 00](00_Getting_Started_with_Python_and_Data/README.md).
