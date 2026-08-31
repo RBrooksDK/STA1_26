@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../figures/vialogo_white.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -33,7 +33,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -1487,17 +1487,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#exercises" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exercises
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1522,15 +1511,10 @@
 
 <p>The last session is synthesis: choose a method, run a complete analysis from raw data to a recommendation, and practise the oral format. Always start with plots from Session 01. Always end with a sentence that a colleague in production or operations could use.</p>
 <p>A short method map is enough for most STA1 questions:</p>
-<pre class="mermaid"><code>flowchart TD
-  q[What is the question?] --&gt; num{Numeric response?}
-  num --&gt;|No, counts or labels| cat[Chi-square GOF or independence]
-  num --&gt;|Yes| pred{Is there a predictor?}
-  pred --&gt;|Yes, one numeric x| reg[Simple linear regression]
-  pred --&gt;|No| groups{How many groups?}
-  groups --&gt;|One sample vs a target| one[CI or one-sample test]
-  groups --&gt;|Two groups| two[Two-sample or paired t]
-  groups --&gt;|Three or more| anova[One-way ANOVA]</code></pre>
+<p align="center">
+  <img src="../figures/sta_method_map.svg" alt="Flowchart for choosing a statistical method" style="width: 100%; max-width: 800px;">
+</p>
+
 <p>The group project is the same kind of analysis at slightly larger scale. The oral exam starts from one assignment and then discusses the project.</p>
 <h4 id="key-concepts">Key Concepts<a class="headerlink" href="#key-concepts" title="Permanent link">&para;</a></h4>
 <ul>
@@ -1557,11 +1541,9 @@
 <h3 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/RBrooksDK/STA1_26/tree/main/12_Integrated_Analysis_and_Exam_Preparation/session_material">Session material</a></p>
 <p><a href="Tutorial_12_notebook/">Tutorial 12: From raw data to a recommendation</a></p>
+<p>The tutorial is a guided integrated analysis of the synthetic benchmark <code>system_benchmark.csv</code>. It is not the final-project brief.</p>
 <p><a href="../pages/exam/">Exam</a></p>
 <p><a href="../pages/assignments/">Assignments and project</a></p>
-<hr/>
-
-<h3 id="exercises">Exercises<a class="headerlink" href="#exercises" title="Permanent link">&para;</a></h3>
 
 
 
@@ -1706,7 +1688,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.expand", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.prune", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="../javascripts/mathjax.js"></script>
       

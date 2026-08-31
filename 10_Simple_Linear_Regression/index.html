@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../figures/vialogo_white.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -33,7 +33,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -1184,7 +1184,7 @@
   <span class="md-ellipsis">
     
   
-    Tutorial 10 — Calibration and energy use
+    Tutorial 10 — Energy use and processor load
   
 
     
@@ -1487,17 +1487,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#exercises" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exercises
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1521,7 +1510,7 @@
 <h1 align="center">Simple Linear Regression</h1>
 
 <p>Regression models how a response changes with a predictor: energy use with load, a calibrated reading with a reference, a quality measure with a process setting. We fit least squares, interpret slope and intercept with units, and inspect residuals.</p>
-<p><span class="arithmatex">\(R^2\)</span> measures fit, not causation. Statsmodels is used for inference: a test of the slope, a confidence interval for the mean response, and a prediction interval for a new observation. Scikit-learn is used for fitting and a simple train/test split; it does not replace a statistical summary for intervals and tests.</p>
+<p><span class="arithmatex">\(R^2\)</span> measures the fraction of observed squared variation accounted for by the line; it is not causation. Statsmodels is used for inference: a test of the slope, a confidence interval for the mean response, and a prediction interval for a new observation. This session is a statistical regression analysis, not a machine-learning prediction lab.</p>
 <h4 id="key-concepts">Key Concepts<a class="headerlink" href="#key-concepts" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Least squares: <span class="arithmatex">\(\hat{y} = \hat{\beta}_0 + \hat{\beta}_1 x\)</span></li>
@@ -1529,7 +1518,7 @@
 <li><span class="arithmatex">\(R^2\)</span> and correlation</li>
 <li>Residual and QQ-plots</li>
 <li>Confidence interval for the mean versus prediction interval</li>
-<li>Statsmodels for inference; scikit-learn for fitting</li>
+<li>Statsmodels for fitting, inference, diagnostics, and intervals</li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Learning Objectives</p>
@@ -1538,7 +1527,7 @@
 <li>Report <span class="arithmatex">\(R^2\)</span> without treating it as proof of causation.</li>
 <li>Test whether the slope differs from zero.</li>
 <li>Read residual and QQ-plots.</li>
-<li>Explain why scikit-learn does not replace a statistical summary for intervals and tests.</li>
+<li>Distinguish a confidence interval for the mean response from a prediction interval for one new observation.</li>
 </ul>
 </div>
 <hr/>
@@ -1547,11 +1536,7 @@
 <p>Brooks: <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf">Chapter 10</a></p>
 <h3 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/RBrooksDK/STA1_26/tree/main/10_Simple_Linear_Regression/session_material">Session material</a></p>
-<p><a href="Tutorial_10_notebook/">Tutorial 10: Calibration and energy use</a></p>
-<p><a href="Calculating_metrics/">Calculating metrics</a> (optional derivation sheet)</p>
-<hr/>
-
-<h3 id="exercises">Exercises<a class="headerlink" href="#exercises" title="Permanent link">&para;</a></h3>
+<p><a href="Tutorial_10_notebook/">Tutorial 10: Energy use and processor load</a></p>
 
 
 
@@ -1609,13 +1594,13 @@
         
         
           
-          <a href="Tutorial_10_notebook/" class="md-footer__link md-footer__link--next" aria-label="Next: Tutorial 10 — Calibration and energy use">
+          <a href="Tutorial_10_notebook/" class="md-footer__link md-footer__link--next" aria-label="Next: Tutorial 10 — Energy use and processor load">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Tutorial 10 — Calibration and energy use
+                Tutorial 10 — Energy use and processor load
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1696,7 +1681,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.expand", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.prune", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="../javascripts/mathjax.js"></script>
       

@@ -1,0 +1,10 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/GitHub/STA1_26/media/videos/sta_intro/1080p60/partial_movie_files/StatsIntroDark/614868762_2420122180_2858913570.mp4'
+file 'file:C:/GitHub/STA1_26/media/videos/sta_intro/1080p60/partial_movie_files/StatsIntroDark/1697485102_4143779030_2518428240.mp4'
+file 'file:C:/GitHub/STA1_26/media/videos/sta_intro/1080p60/partial_movie_files/StatsIntroDark/1697485102_3105177368_3706168300.mp4'
+file 'file:C:/GitHub/STA1_26/media/videos/sta_intro/1080p60/partial_movie_files/StatsIntroDark/1697485102_1346246266_2404578509.mp4'
+file 'file:C:/GitHub/STA1_26/media/videos/sta_intro/1080p60/partial_movie_files/StatsIntroDark/1697485102_2314545102_643674476.mp4'
+file 'file:C:/GitHub/STA1_26/media/videos/sta_intro/1080p60/partial_movie_files/StatsIntroDark/1697485102_770074157_1519162082.mp4'
+file 'file:C:/GitHub/STA1_26/media/videos/sta_intro/1080p60/partial_movie_files/StatsIntroDark/1697485102_844664932_1320877046.mp4'
+file 'file:C:/GitHub/STA1_26/media/videos/sta_intro/1080p60/partial_movie_files/StatsIntroDark/1697485102_944664477_1037982242.mp4'
+file 'file:C:/GitHub/STA1_26/media/videos/sta_intro/1080p60/partial_movie_files/StatsIntroDark/1697485102_1480462556_3789232718.mp4'

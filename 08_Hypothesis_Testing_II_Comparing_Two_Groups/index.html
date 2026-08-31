@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../figures/vialogo_white.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -33,7 +33,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -1487,17 +1487,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#exercises" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exercises
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1521,12 +1510,13 @@
 <h1 align="center">Hypothesis Testing II: Comparing Two Groups</h1>
 
 <p>Many engineering questions compare two conditions: two servers, two suppliers, before and after a change. The design — independent samples versus paired observations — decides the test.</p>
-<p>Independent groups use a two-sample <span class="arithmatex">\(t\)</span>-test, with Welch's version as the default when variances may differ. Paired observations use a paired <span class="arithmatex">\(t\)</span>-test on the differences. A confidence interval for the difference and an effect size keep the result from collapsing to a single <span class="arithmatex">\(p\)</span>-value. Statistical significance is not the same as practical importance.</p>
+<p>Independent groups use <strong>Welch's</strong> two-sample <span class="arithmatex">\(t\)</span> procedure as the default; a preliminary variance test is not used to choose automatically between pooled and Welch analyses. Paired observations use a paired <span class="arithmatex">\(t\)</span>-test on the differences. For independent binary outcomes, we compare two proportions through a risk difference and its uncertainty. A confidence interval for the difference in engineering units keeps the result from collapsing to a single <span class="arithmatex">\(p\)</span>-value. Statistical significance is not the same as practical importance.</p>
 <h4 id="key-concepts">Key Concepts<a class="headerlink" href="#key-concepts" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Independent samples versus paired observations</li>
 <li>Two-sample <span class="arithmatex">\(t\)</span>-test and Welch's <span class="arithmatex">\(t\)</span>-test</li>
 <li>Paired <span class="arithmatex">\(t\)</span>-test</li>
+<li>Comparison of two independent proportions</li>
 <li>Confidence interval for a difference</li>
 <li>Statistical significance versus practical importance</li>
 </ul>
@@ -1534,8 +1524,9 @@
 <p class="admonition-title">Learning Objectives</p>
 <ul>
 <li>Choose between independent and paired data.</li>
-<li>Perform a two-sample <span class="arithmatex">\(t\)</span>-test and Welch's <span class="arithmatex">\(t\)</span>-test.</li>
+<li>Perform Welch's two-sample <span class="arithmatex">\(t\)</span>-test as the default for independent groups.</li>
 <li>Perform a paired <span class="arithmatex">\(t\)</span>-test.</li>
+<li>Compare two independent proportions and report a risk difference with uncertainty.</li>
 <li>Report a confidence interval for the difference and an effect size.</li>
 <li>Distinguish statistical significance from practical importance.</li>
 </ul>
@@ -1547,9 +1538,6 @@
 <h3 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/RBrooksDK/STA1_26/tree/main/08_Hypothesis_Testing_II_Comparing_Two_Groups/session_material">Session material</a></p>
 <p><a href="Tutorial_08_notebook/">Tutorial 8: A/B test of response times</a></p>
-<hr/>
-
-<h3 id="exercises">Exercises<a class="headerlink" href="#exercises" title="Permanent link">&para;</a></h3>
 
 
 
@@ -1694,7 +1682,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.expand", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.prune", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="../javascripts/mathjax.js"></script>
       

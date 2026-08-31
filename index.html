@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="figures/vialogo_white.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -31,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
@@ -511,6 +511,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#using-ai-in-this-course" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using AI in this course
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#expected-workload" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -800,6 +811,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#using-ai-in-this-course" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using AI in this course
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#expected-workload" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -857,26 +879,20 @@
 <ul>
 <li><strong>Course Responsible:</strong> <a href="https://rbrooksdk.github.io">Richard Brooks</a>, <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#105;&#98;&#64;&#118;&#105;&#97;&#46;&#100;&#107;">&#114;&#105;&#98;&#64;&#118;&#105;&#97;&#46;&#100;&#107;</a></li>
 <li><strong>Credits:</strong> 5 ECTS (European Credit Transfer System), equivalent to about 135 working hours</li>
-<li><strong>Sessions:</strong> 12 sessions of <span class="arithmatex">\(2 \times 45\)</span> minutes, plus independent work on tutorials, assignments, and the project</li>
+<li><strong>Sessions:</strong> 12 lectures of <span class="arithmatex">\(2 \times 45\)</span> minutes, plus independent work on tutorials, assignments, and the project</li>
 <li><strong>Level:</strong> Bachelor — practical statistics for software and engineering students</li>
 <li><strong>Assessment:</strong> 20-minute oral exam based on one of the six assignments and a discussion of the group project</li>
 <li><strong>Recommended prerequisites:</strong> Mathematics at the programme admission level. The course itself introduces descriptive statistics and the probability needed for inference.</li>
 </ul>
 <h2 id="lectures-and-course-organization"><i class="fas fa-vector-square" style="color:#6CA2C6"></i> Lectures and Course Organization<a class="headerlink" href="#lectures-and-course-organization" title="Permanent link">&para;</a></h2>
-<p>STA1 is a <strong>practical data-analysis course</strong>. Each session focuses on one statistical idea, one worked engineering example, and a short Python demonstration. Tutorials, assignments, and the group project provide the main opportunity to practise.</p>
-<p>A typical 90-minute session looks like this:</p>
+<p>STA1 is a <strong>practical data-analysis course</strong>. The work is organised in three layers:</p>
 <ol>
-<li>A short recap of the previous session.</li>
-<li>The statistical problem of the day, with one carefully chosen engineering example.</li>
-<li>A live Python demonstration that connects the formula to software.</li>
-<li>Time to start the tutorial or the current assignment.</li>
+<li><strong>The textbook</strong> delivers the theory: definitions, assumptions, notation, and the statistical arguments.</li>
+<li><strong>The tutorials</strong> translate that theory into practice in Python: computation, visualisation, and interpretation of a worked engineering example.</li>
+<li><strong>The assignments</strong> are where you use the methods independently. They replace in-class exercises, and they are the exam assignments.</li>
 </ol>
-<p>After class, complete the session tutorial and work on the current assignment when it is released.</p>
-<p>STA1 is the sister course of <a href="https://rbrooksdk.github.io/SMP1_26/">Stochastic Modelling and Processes (SMP1)</a>. The overlap is intentional and limited:</p>
-<ul>
-<li><strong>STA1</strong> asks: <em>What can we conclude from observed data?</em></li>
-<li><strong>SMP1</strong> asks: <em>How do we model and simulate systems that evolve under uncertainty?</em></li>
-</ul>
+<p><strong>Lectures</strong> present theory, examples, and discussion. There are no separate exercise sheets in class. After the lecture you work independently on the current assignment and, later, the group project.</p>
+<p>Each session has a matching textbook chapter and a Python tutorial. Read the chapter, work through the tutorial, then apply the same ideas in the assignment.</p>
 <h2 id="assignments-and-project"><i class="fas fa-clipboard-list" style="color:#6CA2C6"></i> Assignments and Project<a class="headerlink" href="#assignments-and-project" title="Permanent link">&para;</a></h2>
 <p>The course contains <strong>six practice-oriented group assignments</strong> and one <strong>small group project</strong>. These are the official learning activities from the <a href="https://my.via.dk/media/mitvia/semesteroverblik/kursusbeskrivelser/software-engineering/6.-og-7.-semester/it-sta1-1-0">course description</a>. They are also the basis of the exam.</p>
 <table>
@@ -940,7 +956,19 @@
 <li><strong>Categorical data</strong>: use contingency tables and chi-square tests.</li>
 <li><strong>Engineering communication</strong>: select methods, state assumptions, and present results so that a technical or non-technical stakeholder can act on them.</li>
 </ul>
-<p>Python is used throughout with Pandas, NumPy, SciPy, Matplotlib, and, where it is statistically appropriate, scikit-learn.</p>
+<p>Python is used throughout with Pandas, NumPy, SciPy, Matplotlib, and statsmodels.</p>
+<h2 id="using-ai-in-this-course"><i class="fas fa-robot" style="color:#6CA2C6"></i> Using AI in this course<a class="headerlink" href="#using-ai-in-this-course" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><em>The better we are without AI, the stronger we become with it.</em></p>
+</blockquote>
+<p>AI is not something you need to hide in this course. Quite the opposite: you are strongly encouraged to use it. Tools such as ChatGPT, Copilot, Claude, and Gemini are becoming part of how engineers work.</p>
+<p>But there is a difference between <strong>using AI to learn</strong> and <strong>using AI instead of learning</strong>.</p>
+<p>Use AI when you are stuck. Ask it to explain a concept differently. Let it give you another example. Ask why your solution does not work. Discuss different approaches with it. Use it to check an answer you have already worked out, validate an assignment, or challenge your reasoning.</p>
+<p>In other words: make AI your tutor, sparring partner and rubber duck — not your substitute.</p>
+<p>You are also welcome to use AI to help write all the Python code in the course. In practice, this is increasingly how software is developed. The important part is that you understand exactly what the code does — in detail. You should be able to explain the individual steps, the functions being used, the inputs and outputs, and why the code produces the result it does. AI may write the code; you are still responsible for understanding it.</p>
+<p>A useful rule of thumb is: Think first. Ask AI second. Think again afterwards.</p>
+<p>The stronger your own understanding becomes, the better you become at asking questions, evaluating answers, spotting mistakes and using AI intelligently.</p>
+<p>The better we are without AI, the stronger we become with it.</p>
 <h2 id="expected-workload"><i class="fas fa-clock" style="color:#6CA2C6"></i> Expected Workload<a class="headerlink" href="#expected-workload" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -980,7 +1008,7 @@
 <p>The course uses the purpose-built textbook
 <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf"><em>Statistics and Data Analysis for Engineers</em></a>.
 Its twelve chapters follow the twelve course sessions in the same order.</p>
-<p>The textbook is a work in progress and will be updated throughout the course as chapters are completed and explanations, examples, and exercises are refined. Please use the online version whenever possible. A downloaded copy will not update automatically; if you keep one locally, remember to replace it regularly with the newest version.</p>
+<p>The textbook is a work in progress and may be updated throughout the course as explanations and worked examples are refined. Please use the online version whenever possible. A downloaded copy will not update automatically; if you keep one locally, remember to replace it regularly with the newest version.</p>
 <p>Each session page states the matching textbook chapter. Data files live in <code>data/</code> and are catalogued under <a href="pages/datasets/">Datasets</a>.</p>
 <p>Install Python from python.org, then Visual Studio Code, then the Jupyter extension. The step-by-step guide — Windows and macOS — is <a href="00_Getting_Started_with_Python_and_Data/">Session 00</a>.</p>
 
@@ -1108,7 +1136,7 @@ Its twelve chapters follow the twelve course sessions in the same order.</p>
       <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.expand", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.prune", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="javascripts/mathjax.js"></script>
       

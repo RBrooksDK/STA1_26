@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../figures/vialogo_white.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -33,7 +33,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -760,7 +760,7 @@
 <p>All course files live in the folder <code>data/</code> on GitHub. You do not need Git: <a href="https://download-directory.github.io/?url=https://github.com/RBrooksDK/STA1_26/tree/main/data">download the data folder</a>, unzip it, and keep a folder named <code>data</code> next to your notebook. Session 00 has the full steps. If a file is missing later in the semester, download the folder again and replace the old copy.</p>
 <p>From a session notebook:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">DATA</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">"../data"</span><span class="p">)</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">DATA</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;../data&quot;</span><span class="p">)</span>
 </span></code></pre></div>
 <p>Synthetic files are generated reproducibly by <code>tools/generate_datasets.py</code> with seed <code>2026</code>. Analyse them as measurements whose generating parameters are unknown.</p>
 <h2 id="files">Files<a class="headerlink" href="#files" title="Permanent link">&para;</a></h2>
@@ -780,7 +780,7 @@
 <td>Synthetic</td>
 <td>180</td>
 <td><code>sample_id</code>, <code>line</code> (A/B), <code>thickness_um</code>, <code>shift_um</code></td>
-<td>Sessions 01, 05, 06, 07, 12</td>
+<td>Sessions 01, 06, 07</td>
 </tr>
 <tr>
 <td><code>packet_loss.csv</code></td>
@@ -818,36 +818,50 @@
 <td>Session 11</td>
 </tr>
 <tr>
+<td><code>supplier_impurity.csv</code></td>
+<td>Synthetic</td>
+<td>72</td>
+<td><code>sample_id</code>, <code>supplier</code> (A/B/C), <code>impurity_mg_kg</code></td>
+<td>Session 09</td>
+</tr>
+<tr>
+<td><code>system_benchmark.csv</code></td>
+<td>Synthetic</td>
+<td>120</td>
+<td><code>run_id</code>, <code>configuration</code>, <code>load_pct</code>, <code>latency_ms</code>, <code>energy_kwh</code>, <code>incident</code></td>
+<td>Session 12</td>
+</tr>
+<tr>
 <td><code>batteries.xlsx</code></td>
 <td>STA_26</td>
 <td>30</td>
 <td><code>Producer 1</code>, <code>Producer 2</code> (lifetimes)</td>
-<td>Session 08 extra</td>
+<td>Extra</td>
 </tr>
 <tr>
 <td><code>cpu_order_lines.xlsx</code></td>
 <td>STA_26</td>
 <td>31</td>
 <td><code>Sample</code>, <code>CPU_utilisation</code>, <code>Order_lines_per_day</code></td>
-<td>Session 10 extra</td>
+<td>Extra</td>
 </tr>
 <tr>
 <td><code>resin_impurities.xlsx</code></td>
 <td>STA_26</td>
 <td>15</td>
 <td><code>resin</code>, <code>impurity</code></td>
-<td>Session 09</td>
+<td>Extra</td>
 </tr>
 <tr>
 <td><code>scope_filter_intensity.xlsx</code></td>
 <td>STA_26</td>
 <td>60</td>
 <td><code>filter</code>, <code>intensity</code></td>
-<td>Session 09</td>
+<td>Extra</td>
 </tr>
 </tbody>
 </table>
-<p><code>shift_um</code> in <code>sensor_thickness.csv</code> documents a late production drift used in Session 12. Do not use it as a predictor in earlier sessions; treat <code>thickness_um</code> as the measurement.</p>
+<p><code>shift_um</code> in <code>sensor_thickness.csv</code> documents a late production drift used when generating the file. Do not use it as a predictor in Sessions 01--07; treat <code>thickness_um</code> as the measurement.</p>
 <h2 id="regenerating-the-synthetic-files">Regenerating the synthetic files<a class="headerlink" href="#regenerating-the-synthetic-files" title="Permanent link">&para;</a></h2>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python tools/generate_datasets.py
 </span></code></pre></div>
@@ -993,7 +1007,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.expand", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.prune", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       

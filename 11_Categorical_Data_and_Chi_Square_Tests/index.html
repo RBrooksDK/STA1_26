@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../figures/vialogo_white.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -33,7 +33,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -1487,17 +1487,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#exercises" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exercises
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1521,22 +1510,25 @@
 <h1 align="center">Categorical Data and Chi-Square Tests</h1>
 
 <p>Not every engineering measurement is a real number. Defect types, line IDs, and pass/fail labels are categorical. Chi-square tests compare observed counts with expected counts, either against a specified distribution or in a two-way table.</p>
-<p>A goodness-of-fit test asks whether one set of counts matches a claimed distribution. A test of independence asks whether two classifications are associated. Expected counts should not be too small, and standardised residuals show which cells drive a significant result. The conclusion is stated in terms of the engineering categories, not only <span class="arithmatex">\(\chi^2\)</span>.</p>
+<p>A goodness-of-fit test asks whether one set of counts matches a claimed distribution. Tests of independence and homogeneity use the same Pearson calculation but answer different questions because their study designs differ. Expected counts should not be too small; conditional proportions and adjusted residuals locate the important patterns, while Cramér's <span class="arithmatex">\(V\)</span> describes their magnitude. Sparse tables may require pooling based on subject-matter meaning, simulation, or an exact alternative. The conclusion is stated in terms of the engineering categories, not only <span class="arithmatex">\(\chi^2\)</span>.</p>
 <h4 id="key-concepts">Key Concepts<a class="headerlink" href="#key-concepts" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Contingency tables and expected counts</li>
 <li>Goodness-of-fit tests</li>
-<li>Tests of independence</li>
+<li>Tests of independence and homogeneity</li>
 <li>The guideline on expected counts</li>
-<li>Standardised residuals</li>
+<li>Pearson and adjusted residuals</li>
+<li>Cramér's <span class="arithmatex">\(V\)</span> and sparse-table alternatives</li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Learning Objectives</p>
 <ul>
 <li>Form a contingency table and compute expected counts.</li>
-<li>Perform a goodness-of-fit test and a test of independence.</li>
+<li>Distinguish goodness-of-fit, independence, and homogeneity from the study design.</li>
+<li>Perform a goodness-of-fit test and a contingency-table test.</li>
 <li>Check the guideline that expected counts should not be too small.</li>
-<li>Interpret standardised residuals.</li>
+<li>Interpret adjusted residuals and Cramér's <span class="arithmatex">\(V\)</span>.</li>
+<li>Explain when pooling, simulation, or an exact alternative may be needed.</li>
 <li>State a conclusion in terms of the engineering categories, not only <span class="arithmatex">\(\chi^2\)</span>.</li>
 </ul>
 </div>
@@ -1547,9 +1539,6 @@
 <h3 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/RBrooksDK/STA1_26/tree/main/11_Categorical_Data_and_Chi_Square_Tests/session_material">Session material</a></p>
 <p><a href="Tutorial_11_notebook/">Tutorial 11: Defect types across production lines</a></p>
-<hr/>
-
-<h3 id="exercises">Exercises<a class="headerlink" href="#exercises" title="Permanent link">&para;</a></h3>
 
 
 
@@ -1590,7 +1579,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../10_Simple_Linear_Regression/Tutorial_10_notebook/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Tutorial 10 — Calibration and energy use">
+          <a href="../10_Simple_Linear_Regression/Tutorial_10_notebook/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Tutorial 10 — Energy use and processor load">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1600,7 +1589,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Tutorial 10 — Calibration and energy use
+                Tutorial 10 — Energy use and processor load
               </div>
             </div>
           </a>
@@ -1694,7 +1683,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.expand", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.prune", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="../javascripts/mathjax.js"></script>
       

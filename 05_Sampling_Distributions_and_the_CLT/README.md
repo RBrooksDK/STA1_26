@@ -9,7 +9,7 @@ tags:
 
 A statistic such as \(\bar{X}\) is itself a random variable. Its distribution — the sampling distribution — is the reason later confidence intervals and tests work. One sample gives one \(\bar{x}\); many samples give a distribution of \(\bar{x}\).
 
-The standard error of the mean is \(\operatorname{SE}(\bar{X}) = \sigma / \sqrt{n}\). When the CLT applies we write \(\bar{X} \sim N(\mu, \sigma^2 / n)\), never \(N(\mu, \sigma / \sqrt{n})\). The theorem is demonstrated by simulation, not proved. It helps for means and reasonably large \(n\); it does not turn a single skewed observation into a normal one.
+The standard error of the mean is \(\operatorname{SE}(\bar{X}) = \sigma / \sqrt{n}\). When the observations are i.i.d. normal, \(\bar{X} \sim N(\mu, \sigma^2 / n)\) for every \(n\). For a non-normal i.i.d. population the CLT gives \(\bar{X} \approx N(\mu, \sigma^2 / n)\), never \(N(\mu, \sigma / \sqrt{n})\). The theorem is demonstrated by simulation, not proved. It helps for means and reasonably large \(n\); it does not turn a single skewed observation into a normal one.
 
 #### Key Concepts
 
@@ -37,7 +37,3 @@ Brooks: [Chapter 5](https://docs.google.com/viewer?url=https://raw.githubusercon
 [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/05_Sampling_Distributions_and_the_CLT/session_material)
 
 [Tutorial 5: From one sample to many](Tutorial_05_notebook.ipynb)
-
-<hr/>
-
-### Exercises

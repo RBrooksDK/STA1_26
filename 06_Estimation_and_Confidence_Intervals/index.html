@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../figures/vialogo_white.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -33,7 +33,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -1487,17 +1487,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#exercises" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exercises
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1521,12 +1510,12 @@
 <h1 align="center">Estimation and Confidence Intervals</h1>
 
 <p>An estimate is a number; an interval says how precise that number is. After the CLT we can attach a margin of error to a mean or a proportion and talk about coverage rather than a single lucky sample.</p>
-<p>We distinguish an estimator from an estimate, construct <span class="arithmatex">\(z\)</span>- and <span class="arithmatex">\(t\)</span>-intervals for a mean and an approximate interval for a proportion, and add a bootstrap interval as a practical check. A 95% interval is a statement about the procedure, not a claim that “the parameter now lies in this interval with probability 0.95”. Width depends on <span class="arithmatex">\(n\)</span> and on the confidence level.</p>
+<p>We distinguish an estimator from an estimate, construct a <span class="arithmatex">\(t\)</span>-interval for a mean when <span class="arithmatex">\(\sigma\)</span> is unknown, mention a <span class="arithmatex">\(z\)</span>-interval only when population <span class="arithmatex">\(\sigma\)</span> is known, and use a <strong>Wilson</strong> interval as the practical default for a proportion. The Wald interval is shown only to explain why it can fail. A bootstrap interval is a computational check. A 95% interval is a statement about the procedure, not a claim that “the parameter now lies in this interval with probability 0.95”. Width depends on <span class="arithmatex">\(n\)</span> and on the confidence level.</p>
 <h4 id="key-concepts">Key Concepts<a class="headerlink" href="#key-concepts" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Estimator versus estimate, and bias at an intuitive level</li>
-<li><span class="arithmatex">\(z\)</span>-interval and <span class="arithmatex">\(t\)</span>-interval for a mean</li>
-<li>Approximate interval for a proportion</li>
+<li><span class="arithmatex">\(z\)</span>-interval (known <span class="arithmatex">\(\sigma\)</span>) and <span class="arithmatex">\(t\)</span>-interval (unknown <span class="arithmatex">\(\sigma\)</span>) for a mean</li>
+<li>Wilson interval for a proportion (practical default; Wald as a contrast)</li>
 <li>Coverage and correct interpretation</li>
 <li>How width depends on <span class="arithmatex">\(n\)</span> and confidence level</li>
 </ul>
@@ -1534,8 +1523,8 @@
 <p class="admonition-title">Learning Objectives</p>
 <ul>
 <li>Distinguish an estimator from an estimate, and discuss bias at an intuitive level.</li>
-<li>Construct a <span class="arithmatex">\(z\)</span>-interval and a <span class="arithmatex">\(t\)</span>-interval for a mean.</li>
-<li>Construct an approximate interval for a proportion.</li>
+<li>Construct a <span class="arithmatex">\(t\)</span>-interval for a mean, and a <span class="arithmatex">\(z\)</span>-interval only when <span class="arithmatex">\(\sigma\)</span> is known.</li>
+<li>Construct a Wilson interval for a proportion.</li>
 <li>Interpret a 95% interval without claiming that the parameter lies in this interval with probability 0.95 after the data are seen.</li>
 <li>See how interval width depends on <span class="arithmatex">\(n\)</span> and on the confidence level.</li>
 </ul>
@@ -1547,9 +1536,6 @@
 <h3 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/RBrooksDK/STA1_26/tree/main/06_Estimation_and_Confidence_Intervals/session_material">Session material</a></p>
 <p><a href="Tutorial_06_notebook/">Tutorial 6: How precise is this measurement?</a></p>
-<hr/>
-
-<h3 id="exercises">Exercises<a class="headerlink" href="#exercises" title="Permanent link">&para;</a></h3>
 
 
 
@@ -1694,7 +1680,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.expand", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.prune", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="../javascripts/mathjax.js"></script>
       

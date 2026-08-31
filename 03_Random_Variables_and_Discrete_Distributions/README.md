@@ -40,7 +40,3 @@ Brooks: [Chapter 3](https://docs.google.com/viewer?url=https://raw.githubusercon
 [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/03_Random_Variables_and_Discrete_Distributions/session_material)
 
 [Tutorial 3: Packet loss and failure counts](Tutorial_03_notebook.ipynb)
-
-<hr/>
-
-### Exercises

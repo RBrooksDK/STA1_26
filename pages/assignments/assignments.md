@@ -2,6 +2,8 @@
 
 The [course description](https://my.via.dk/media/mitvia/semesteroverblik/kursusbeskrivelser/software-engineering/6.-og-7.-semester/it-sta1-1-0) specifies **six practice-oriented group assignments** and a **small group project** distributed through the semester. They connect statistical theory with engineering applications and form the exam basis.
 
+There are no in-class exercise sheets. The textbook supplies the theory, the tutorials translate it into Python, and the assignments are where you use the methods independently.
+
 Detailed task briefs will be published during the semester.
 
 ## Purpose
@@ -36,7 +38,7 @@ The detailed brief for each assignment will confirm the requirements. Unless a b
 - **Product:** a short Jupyter notebook (or a short report plus notebook) with a clear question, analysis, figures, and a written conclusion in ordinary language.
 - **Length:** enough to be discussed in 20 minutes — typically a few pages of narrative, not a dump of Python output.
 - **Language:** English.
-- **Tools:** Python with Pandas, NumPy, SciPy, Matplotlib, and, where relevant, statsmodels or scikit-learn.
+- **Tools:** Python with Pandas, NumPy, SciPy, Matplotlib, and, where relevant, statsmodels.
 
 ## What is assessed
 
@@ -47,17 +49,21 @@ The detailed brief for each assignment will confirm the requirements. Unless a b
 
 ## Group project
 
-At the end of the course you complete a **small group project**. You analyse a more comprehensive engineering data set, apply relevant statistical methods, and present the findings. The project is part of the oral exam together with one of the six assignments.
+At the end of the course you complete a **small group project**. You analyse a more comprehensive engineering data set, apply relevant statistical methods, and present the findings. The project is discussed during the oral examination together with one of the six assignments.
 
 The project is the course's synthesis: a full data-analysis workflow from raw measurements to a decision. You should be able to formulate an engineering question, import and preprocess data, select methods from across the course, implement the analysis in Python, and communicate results, assumptions, limitations, and uncertainty.
 
-The project is introduced in [Session 10](../10_Simple_Linear_Regression/README.md) and submitted after [Session 12](../12_Integrated_Analysis_and_Exam_Preparation/README.md). Session 12 is organised around a complete worked analysis in the same spirit as the project.
+The complete analysis workflow is developed in Brooks, Chapter 12 and practised in [Tutorial 12](../12_Integrated_Analysis_and_Exam_Preparation/Tutorial_12_notebook.ipynb). The detailed project brief will be published separately, but the following minimum requirements are fixed.
 
-Unless the brief says otherwise:
+- **Deadline:** June 1.
+- **Group size:** 2--4 students. Any deviation must be discussed with R. Brooks before the final session, Session 12.
+- **Workload:** approximately 25 hours per student.
+- **Product:** one Jupyter notebook in English. Explanations, reasoning, interpretation, and conclusions must be written in Markdown cells, while Python belongs in code cells.
+- **Executed notebook:** every code cell must be executed before submission so that all output, tables, and figures are visible.
+- **Methods:** at least three statistical methods from three different sessions or textbook chapters, excluding Session/Chapter 12.
+- **Coherence:** every method must answer a stated question and contribute to one coherent engineering investigation rather than three unrelated tests.
+- **Workflow:** the project must comply with Brooks, Chapter 12 and Tutorial 12.
 
-- **Group size:** the same groups as for the assignments.
-- **Product:** a short report supported by a Jupyter notebook, or a well-written notebook that can stand as the report.
-- **Scope:** one coherent engineering data set, not six disconnected analyses.
-- **Language:** English.
+The project is not graded separately, but it contributes to the overall course grade through the oral examination. The same assessment principle applies to all six assignments: they are not separately graded, but form part of the overall exam basis and grade.
 
 The six assignments train individual methods. The project asks you to choose among them and use them in one coherent analysis.

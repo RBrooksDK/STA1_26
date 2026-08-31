@@ -10,7 +10,7 @@ tags:
 
 Regression models how a response changes with a predictor: energy use with load, a calibrated reading with a reference, a quality measure with a process setting. We fit least squares, interpret slope and intercept with units, and inspect residuals.
 
-\(R^2\) measures fit, not causation. Statsmodels is used for inference: a test of the slope, a confidence interval for the mean response, and a prediction interval for a new observation. Scikit-learn is used for fitting and a simple train/test split; it does not replace a statistical summary for intervals and tests.
+\(R^2\) measures the fraction of observed squared variation accounted for by the line; it is not causation. Statsmodels is used for inference: a test of the slope, a confidence interval for the mean response, and a prediction interval for a new observation. This session is a statistical regression analysis, not a machine-learning prediction lab.
 
 #### Key Concepts
 
@@ -19,7 +19,7 @@ Regression models how a response changes with a predictor: energy use with load,
 - \(R^2\) and correlation
 - Residual and QQ-plots
 - Confidence interval for the mean versus prediction interval
-- Statsmodels for inference; scikit-learn for fitting
+- Statsmodels for fitting, inference, diagnostics, and intervals
 
 !!! tip "Learning Objectives"
 
@@ -27,7 +27,7 @@ Regression models how a response changes with a predictor: energy use with load,
     - Report \(R^2\) without treating it as proof of causation.
     - Test whether the slope differs from zero.
     - Read residual and QQ-plots.
-    - Explain why scikit-learn does not replace a statistical summary for intervals and tests.
+    - Distinguish a confidence interval for the mean response from a prediction interval for one new observation.
 
 <hr/>
 
@@ -39,10 +39,4 @@ Brooks: [Chapter 10](https://docs.google.com/viewer?url=https://raw.githubuserco
 
 [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/10_Simple_Linear_Regression/session_material)
 
-[Tutorial 10: Calibration and energy use](Tutorial_10_notebook.ipynb)
-
-[Calculating metrics](Calculating_metrics.md/) (optional derivation sheet)
-
-<hr/>
-
-### Exercises
+[Tutorial 10: Energy use and processor load](Tutorial_10_notebook.ipynb)
