@@ -2,25 +2,21 @@
 
 ### General information
 
-??? question "How does STA1 relate to SMP1?"
-
-    STA1 is the practical statistics course. SMP1 is the more mathematical course on probability models and stochastic processes. About 25–30% of the language overlaps (events, random variables, standard distributions). The purpose differs: STA1 analyses observed data; SMP1 models dependence and processes. Time series belong to SMP1.
-
 ??? question "Do I need MSE1 before STA1?"
 
     The [official course description](https://my.via.dk/media/mitvia/semesteroverblik/kursusbeskrivelser/software-engineering/6.-og-7.-semester/it-sta1-1-0) lists MSE1 as a prerequisite. This edition of STA1 nevertheless teaches descriptive statistics and the probability needed for inference from the beginning. If you have had MSE1, treat Sessions 01–02 as a fast recap.
 
 ??? question "How many contact hours are there?"
 
-    Twelve sessions of \(2 \times 45\) minutes, so 18 hours in class. The remaining workload is tutorials, six assignments, the project, and exam preparation. See the workload table on the home page.
+    Twelve lectures of \(2 \times 45\) minutes, so 18 hours in class. The remaining workload is tutorials, six assignments, the project, and exam preparation. See the workload table on the home page.
 
-??? question "Are there mandatory exercises besides the assignments?"
+??? question "Are there exercises besides the assignments?"
 
-    The six assignments and the group project are the course assessment activities. Tutorials provide the regular practice. Exercises will be added to the session pages later.
+    No. There are no separate exercise sheets. The textbook delivers the theory, the tutorials translate it into Python, and the six assignments (plus the group project) are where you apply the methods independently. Those assignments are also the exam basis.
 
 ??? question "Which programming language do we use?"
 
-    Python. The core libraries are NumPy, Pandas, SciPy, and Matplotlib. Statsmodels is used for inference. Scikit-learn appears in Session 10 for fitting a simple prediction model, not as a replacement for statistical tests.
+    Python. The core libraries are NumPy, Pandas, SciPy, and Matplotlib. Statsmodels is used for statistical models, inference, ANOVA, and regression.
 
 ??? question "How do I install Python and Jupyter?"
 
@@ -52,11 +48,11 @@
 
 ??? question "Are the assignments graded separately?"
 
-    The final grade is an overall assessment of the assignment work and the oral examination, as stated in the [course description](https://my.via.dk/media/mitvia/semesteroverblik/kursusbeskrivelser/software-engineering/6.-og-7.-semester/it-sta1-1-0).
+    No assignment or project is graded separately. The six assignments and the group project form part of the basis for the oral examination and contribute to the overall course grade, as described in the [course description](https://my.via.dk/media/mitvia/semesteroverblik/kursusbeskrivelser/software-engineering/6.-og-7.-semester/it-sta1-1-0).
 
 ??? question "May I use AI tools?"
 
-    During the oral exam, no tools are allowed. For coursework, follow the programme rules announced on itslearning. You must be able to explain every figure and number in your assignment.
+    Yes — for coursework you are strongly encouraged to use AI as a tutor, not as a substitute. The full policy is [Using AI in this course](../README.md#using-ai-in-this-course) on the home page. During the oral exam, no tools are allowed. You must be able to explain every figure, number, and line of code in your assignment.
 
 ---
 

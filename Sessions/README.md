@@ -1,8 +1,10 @@
 # Sessions
 
-STA1 consists of 12 sessions of two lessons (\(2 \times 45\) minutes). Each meeting introduces one idea and one engineering example. The corresponding Python tutorial and, later, the assignments carry most of the practice.
+STA1 consists of 12 lectures of two lessons (\(2 \times 45\) minutes). Each lecture presents theory, examples, and discussion for one topic. There are no in-class exercise sheets.
 
-Before class, read the specified Brooks chapter and look at the tutorial. After class, finish the tutorial and work on the current assignment.
+The textbook chapter delivers the theory. The Python tutorial translates it into practice. After class you work independently on the current assignment, which is also exam work.
+
+Before class, read the specified Brooks chapter and look at the tutorial. After class, finish the tutorial and continue the assignment.
 
 | Session | Topic | Feeds |
 | ---: | --- | --- |
@@ -19,12 +21,3 @@ Before class, read the specified Brooks chapter and look at the tutorial. After 
 | 10 | [Simple Linear Regression](../10_Simple_Linear_Regression/README.md) | Assignment 6 |
 | 11 | [Categorical Data and Chi-Square Tests](../11_Categorical_Data_and_Chi_Square_Tests/README.md) | Assignment 6 |
 | 12 | [Integrated Statistical Analysis and Exam Preparation](../12_Integrated_Analysis_and_Exam_Preparation/README.md) | Project |
-
-## How STA1 differs from SMP1
-
-Sessions 02–04 share language with SMP1: events, random variables, and standard distributions. The purpose is different.
-
-- In **STA1** a distribution is a tool for analysing data and making a decision.
-- In **SMP1** a distribution is an object whose properties are derived, transformed, and simulated.
-
-Time series, Markov chains, joint distributions, and Monte Carlo modelling belong to SMP1, not to STA1.

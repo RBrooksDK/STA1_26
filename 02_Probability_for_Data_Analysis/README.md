@@ -40,7 +40,3 @@ Brooks: [Chapter 2](https://docs.google.com/viewer?url=https://raw.githubusercon
 [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/02_Probability_for_Data_Analysis/session_material)
 
 [Tutorial 2: Probability tools for automated inspection](Tutorial_02_notebook.ipynb)
-
-<hr/>
-
-### Exercises

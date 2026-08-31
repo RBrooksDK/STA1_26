@@ -1,12 +1,12 @@
-# Tutorial 10 — Calibration and energy use
+# Tutorial 10 — Energy use and processor load
 
 ## 1. Problem / context
 
-Daily energy use (kWh) is plotted against CPU load (%). We want a fitted line, a reading of the slope in kWh per percentage point, residual checks, and a prediction for a new day at 70% load. A second example is warehouse CPU versus order lines (`cpu_order_lines.xlsx`).
+Facilities want to know how daily energy use (kWh) changes with CPU load (%) on a set of one-day benchmark runs. The file is `energy_load.csv`. Each row is one day: that is the observational unit. The quantitative response is `energy_kwh`; the quantitative predictor is `cpu_load_pct`.
 
-Statsmodels is the inference tool. Scikit-learn is used only to fit a prediction model and to illustrate a train/test split — it does not produce \(t\)-tests or confidence intervals for \(\beta_1\).
+This is a **statistics** tutorial: a conditional-mean model, residuals, inference for the slope, and the distinction between a mean-response interval and a prediction interval. Brooks Chapter 10 is the theory. We use **statsmodels**. We do not use scikit-learn, train/test splits, or a machine-learning framing.
 
-## 2. Core theory
+## 2. What we will compute
 
 \[
 Y=\beta_0+\beta_1 x+\varepsilon,
@@ -14,37 +14,44 @@ Y=\beta_0+\beta_1 x+\varepsilon,
 \hat y=\hat\beta_0+\hat\beta_1 x.
 \]
 
-Least squares minimises \(\sum(y_i-\hat y_i)^2\). \(R^2\) is the fraction of variance in \(y\) associated with the line; it is not causation.
+\(\hat y\) is the fitted mean energy at load \(x\). A residual is \(y_i-\hat y_i\).
 
-A **confidence interval** for the mean response at \(x_0\) is narrower than a **prediction interval** for a new observation at \(x_0\).
+- The **slope** \(\beta_1\) is the change in mean energy (kWh) associated with a one percentage-point difference in load. The **intercept** is the mean energy at 0% load; that point is outside the observed range, so we will not treat \(\hat\beta_0\) as an operating figure.
+- **Pearson** \(r\) measures direction and strength of **linear** association, from \(-1\) to \(1\). There is no universal cutoff for “strong”. Correlation is not causation.
+- \(R^2\) is the fraction of observed squared variation in \(y\) about \(\bar y\) accounted for by the fitted line. It is not the probability that the model is correct, not causation, and not a universal measure of prediction quality.
+- For simple linear regression **with an intercept**, \(R^2=r^2\). That identity need not hold for a no-intercept fit.
+- Residual-versus-fitted, residual-versus-order, and a QQ-plot of residuals address linearity, constant spread, and the normal-error approximation used for \(t\) intervals. They do not establish representative sampling or independence of days.
+- An unusual point is investigated, not deleted automatically.
+- At a load \(x_0\) **inside the observed range**, a confidence interval for the mean response is narrower than a prediction interval for one new day. We do not extrapolate outside the observed loads without a defensible engineering model.
 
-Residual plots should look patternless. A QQ-plot of residuals checks the normal-error approximation used for inference.
-
-Detailed algebraic forms are in [Calculating_metrics.md](Calculating_metrics.md).
-
-## 3. From mathematics to Python
-
-| Task | Tool |
-| --- | --- |
-| Inference, CI, residual diagnostics | `statsmodels.api.OLS` |
-| Prediction API, train/test | `sklearn.linear_model.LinearRegression` |
-
-## 4. Python implementation
+## 3. Python implementation
 
 ```python
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from pathlib import Path
+from scipy.stats import pearsonr, probplot
 import statsmodels.api as sm
-from sklearn.linear_model import LinearRegression
-from sklearn.model_selection import train_test_split
 
-candidates = [Path("data"), Path("../data")]
+candidates = [Path("data"), Path("../data"), Path.cwd() / "data"]
 DATA = next(p for p in candidates if p.exists())
 df = pd.read_csv(DATA / "energy_load.csv")
+print(df.head())
+print(df[["cpu_load_pct", "energy_kwh"]].describe())
+print("observed load range (%):", df["cpu_load_pct"].min(), "to", df["cpu_load_pct"].max())
+```
+
+```python
 x = df["cpu_load_pct"]
 y = df["energy_kwh"]
+fig, ax = plt.subplots(figsize=(6.5, 3.8))
+ax.scatter(x, y, color="#6CA2C6")
+ax.set_xlabel("CPU load (%)")
+ax.set_ylabel("Energy (kWh)")
+ax.set_title("Daily energy use against processor load")
+plt.tight_layout()
+plt.show()
 ```
 
 ```python
@@ -53,66 +60,100 @@ ols = sm.OLS(y, X).fit()
 print(ols.summary())
 ```
 
+Extract the quantities we will report. Do not treat the software dump as the conclusion.
+
 ```python
-fig, axes = plt.subplots(1, 3, figsize=(12, 3.5))
-axes[0].scatter(x, y, color="#6CA2C6")
-xx = np.linspace(x.min(), x.max(), 50)
-axes[0].plot(xx, ols.predict(sm.add_constant(xx)), color="#FF8C00")
-axes[0].set_xlabel("CPU load (%)")
-axes[0].set_ylabel("Energy (kWh)")
-axes[0].set_title("Fitted line")
+r, _ = pearsonr(x, y)
+slope = ols.params["cpu_load_pct"]
+slope_ci = ols.conf_int().loc["cpu_load_pct"]
+print(f"intercept = {ols.params['const']:.3f} kWh  (x = 0% is outside the observed range)")
+print(f"slope     = {slope:.4f} kWh per percentage point")
+print(f"SE(slope) = {ols.bse['cpu_load_pct']:.4f}")
+print(f"95% CI    = [{slope_ci.iloc[0]:.4f}, {slope_ci.iloc[1]:.4f}]")
+print(f"t = {ols.tvalues['cpu_load_pct']:.2f}, df = {int(ols.df_resid)}, p = {ols.pvalues['cpu_load_pct']:.4g}")
+print(f"residual SD s = {np.sqrt(ols.scale):.3f} kWh")
+print(f"R-squared = {ols.rsquared:.3f}")
+print(f"Pearson r = {r:.3f}, r^2 = {r**2:.3f}")
+print("R^2 equals r^2 for this intercept model?", np.isclose(ols.rsquared, r**2))
+```
 
-fitted = ols.fittedvalues
-resid = ols.resid
-axes[1].scatter(fitted, resid, color="#6CA2C6")
-axes[1].axhline(0, color="grey")
-axes[1].set_xlabel("Fitted")
-axes[1].set_ylabel("Residual")
-axes[1].set_title("Residuals vs fitted")
+```python
+xx = np.linspace(x.min(), x.max(), 80)
+fig, ax = plt.subplots(figsize=(6.5, 3.8))
+ax.scatter(x, y, color="#6CA2C6", label="observed days")
+ax.plot(xx, ols.predict(sm.add_constant(xx)), color="#FF8C00", label="least-squares line")
+ax.set_xlabel("CPU load (%)")
+ax.set_ylabel("Energy (kWh)")
+ax.set_title("Fitted conditional-mean line")
+ax.legend()
+plt.tight_layout()
+plt.show()
+```
 
-sm.qqplot(resid, line="s", ax=axes[2])
+### Diagnostics
+
+```python
+fig, axes = plt.subplots(1, 3, figsize=(11, 3.5))
+axes[0].scatter(ols.fittedvalues, ols.resid, color="#6CA2C6")
+axes[0].axhline(0, color="0.2", linestyle="--")
+axes[0].set_xlabel("Fitted energy (kWh)")
+axes[0].set_ylabel("Residual (kWh)")
+axes[0].set_title("Residual versus fitted")
+
+axes[1].scatter(df["day"], ols.resid, color="#6CA2C6")
+axes[1].axhline(0, color="0.2", linestyle="--")
+axes[1].set_xlabel("Day (run order)")
+axes[1].set_ylabel("Residual (kWh)")
+axes[1].set_title("Residual versus order")
+
+probplot(ols.resid, dist="norm", plot=axes[2])
+axes[2].get_lines()[0].set_markerfacecolor("#6CA2C6")
+axes[2].get_lines()[0].set_markeredgecolor("#6CA2C6")
+axes[2].get_lines()[1].set_color("#FF8C00")
 axes[2].set_title("QQ-plot of residuals")
 plt.tight_layout()
 plt.show()
 ```
 
-Prediction at 70% load:
+```python
+infl = ols.get_influence()
+leverage = infl.hat_matrix_diag
+cooks = infl.cooks_distance[0]
+flag = np.argmax(cooks)
+print(f"largest Cook's distance: day {int(df.loc[flag, 'day'])}, D = {cooks[flag]:.3f}, leverage = {leverage[flag]:.3f}")
+print("Investigate an influential day; do not delete it automatically.")
+```
+
+Pause: if one day has large Cook’s distance, what would you check in the operations log before changing the model?
+
+### Mean response versus one new day, at 70% load
+
+70% lies inside the observed load range.
 
 ```python
 pred = ols.get_prediction([1, 70])
-print(pred.summary_frame(alpha=0.05))
+frame = pred.summary_frame(alpha=0.05)
+print(frame[["mean", "mean_ci_lower", "mean_ci_upper", "obs_ci_lower", "obs_ci_upper"]])
 ```
 
-scikit-learn as a prediction tool, not as inference:
+`mean_ci_*` is the 95% interval for the **mean** energy at 70% load. `obs_ci_*` is the wider 95% **prediction** interval for **one new day** at 70%.
 
-```python
-X_sk = x.to_numpy().reshape(-1, 1)
-X_train, X_test, y_train, y_test = train_test_split(
-    X_sk, y, test_size=0.25, random_state=42
-)
-lin = LinearRegression().fit(X_train, y_train)
-print("sklearn intercept, slope:", lin.intercept_, lin.coef_[0])
-print("test R^2:", lin.score(X_test, y_test))
-print("sklearn does not give SE(beta1) or a p-value; use statsmodels for that.")
-```
+A load of 5% or 110% is outside the observed range. We do not predict there from this line alone.
 
-```python
-cpu = pd.read_excel(DATA / "cpu_order_lines.xlsx")
-print(sm.OLS(cpu["CPU_utilisation"], sm.add_constant(cpu["Order_lines_per_day"])).fit().params)
-```
+## 4. Interpretation
 
-## 5. Interpretation
+Follow the Chapter 10 eight-step workflow: population, unit, \(y\), \(x\), range; design; scatterplot; slope in kWh per percentage point; residual diagnostics and influence; slope interval, \(t\), \(p\), \(s\), \(R^2\); mean versus prediction interval; association versus causation.
 
-If \(\hat\beta_1\approx 0.38\), each extra percentage point of CPU load is associated with about 0.38 kWh extra energy **in this linear model**. That is not a licence to claim that load **causes** energy without a design that supports causation. The prediction interval at 70% is the honest range for a **new day**, not the interval for the mean of all days at 70%.
+The fitted slope describes an association in these benchmark days. It does not, by itself, prove that raising load **causes** energy to rise, even though that mechanism may be physically plausible. The design of the study, not the size of \(R^2\), decides a causal claim.
 
-## 6. Common mistakes / things to notice
+## 5. Common mistakes / things to notice
 
-- Using scikit-learn alone and then quoting a \(p\)-value that does not exist there.
-- Treating \(R^2=0.8\) as “the model is true”.
-- Extrapolating far outside the observed load range.
+- Interpreting the intercept at 0% load when 0% was never observed.
+- Treating \(R^2\) as the probability that the line is true, or as causation.
+- Using a QQ-plot of raw \(y\) instead of residuals.
+- Deleting an influential point because it is inconvenient.
+- Quoting the mean-response interval as if it were a prediction for one new day.
+- Extrapolating outside the observed load range.
+- Fitting with scikit-learn and then reporting a \(p\)-value that that library does not compute.
 
-## 7. Short worked example
-
-Compare `ols.params["cpu_load_pct"]` with `lin.coef_[0]` on the **full** data; they should match least squares. They need not match the train/test sklearn fit, because that fit used a subset.
-
-**Conclusion in one sentence:** Fit and interpret the energy–load line with statsmodels so that slope, \(R^2\), residual plots, and prediction intervals are available; use scikit-learn only as a prediction API, not as a substitute for statistical inference.
+**Conclusion:** In this sample, mean energy increases with CPU load on a roughly linear scale. Report the slope in kWh per percentage point with its interval, \(R^2\) as a description of squared variation, the residual SD as leftover day-to-day variation, and a prediction interval when the question is about **one new day**. Stay inside the observed load range.

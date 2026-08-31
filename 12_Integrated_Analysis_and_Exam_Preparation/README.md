@@ -11,17 +11,9 @@ The last session is synthesis: choose a method, run a complete analysis from raw
 
 A short method map is enough for most STA1 questions:
 
-```mermaid
-flowchart TD
-  q[What is the question?] --> num{Numeric response?}
-  num -->|No, counts or labels| cat[Chi-square GOF or independence]
-  num -->|Yes| pred{Is there a predictor?}
-  pred -->|Yes, one numeric x| reg[Simple linear regression]
-  pred -->|No| groups{How many groups?}
-  groups -->|One sample vs a target| one[CI or one-sample test]
-  groups -->|Two groups| two[Two-sample or paired t]
-  groups -->|Three or more| anova[One-way ANOVA]
-```
+<p align="center">
+  <img src="../figures/sta_method_map.svg" alt="Flowchart for choosing a statistical method" style="width: 100%; max-width: 800px;">
+</p>
 
 The group project is the same kind of analysis at slightly larger scale. The oral exam starts from one assignment and then discusses the project.
 
@@ -54,10 +46,8 @@ Revisit your six assignments and the [project](../pages/assignments.md#group-pro
 
 [Tutorial 12: From raw data to a recommendation](Tutorial_12_notebook.ipynb)
 
+The tutorial is a guided integrated analysis of the synthetic benchmark `system_benchmark.csv`. It is not the final-project brief.
+
 [Exam](../pages/exam.md)
 
 [Assignments and project](../pages/assignments.md)
-
-<hr/>
-
-### Exercises

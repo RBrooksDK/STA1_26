@@ -131,6 +131,83 @@ def packet_trials() -> dict:
     return {"file": path.name, "n": n, "p_loss": p}
 
 
+def supplier_impurity() -> dict:
+    """Impurity concentration (mg/kg) from three independent supplier samples."""
+    n = 24
+    params = {"A": (12.0, 1.4), "B": (15.2, 1.5), "C": (12.4, 1.3)}
+    rows = []
+    sample_id = 1
+    for supplier, (mu, sigma) in params.items():
+        vals = np.clip(rng.normal(mu, sigma, size=n), 0.0, None)
+        for value in vals:
+            rows.append(
+                {
+                    "sample_id": sample_id,
+                    "supplier": supplier,
+                    "impurity_mg_kg": round(float(value), 3),
+                }
+            )
+            sample_id += 1
+    df = pd.DataFrame(rows)
+    path = DATA / "supplier_impurity.csv"
+    df.to_csv(path, index=False)
+    return {
+        "file": path.name,
+        "n_per_supplier": n,
+        "mu": {k: v[0] for k, v in params.items()},
+        "sigma": {k: v[1] for k, v in params.items()},
+    }
+
+
+def system_benchmark() -> dict:
+    """Independent benchmark runs for the Session 12 integrated case.
+
+    True generating parameters are stored here for reproducibility. Tutorials
+    must not treat them as known analysis inputs.
+    """
+    n_per = 40
+    configs = np.repeat(["C1", "C2", "C3"], n_per)
+    rng.shuffle(configs)
+    n = configs.size
+    load = np.clip(rng.uniform(22.0, 88.0, size=n) + rng.normal(0, 1.2, size=n), 18.0, 92.0)
+    latency0 = {"C1": 96.0, "C2": 82.0, "C3": 89.0}
+    energy0 = {"C1": 10.0, "C2": 12.4, "C3": 9.6}
+    latency = np.array(
+        [
+            latency0[c] + 0.52 * load[i] + rng.normal(0.0, 8.5)
+            for i, c in enumerate(configs)
+        ]
+    )
+    latency = np.clip(latency, 45.0, None)
+    energy = np.array(
+        [
+            energy0[c] + 0.33 * load[i] + rng.normal(0.0, 2.1)
+            for i, c in enumerate(configs)
+        ]
+    )
+    energy = np.clip(energy, 1.0, None)
+    p_incident = 1.0 / (1.0 + np.exp(-(latency - 148.0) / 11.0))
+    incident = rng.binomial(1, p_incident)
+    df = pd.DataFrame(
+        {
+            "run_id": np.arange(1, n + 1),
+            "configuration": configs,
+            "load_pct": np.round(load, 2),
+            "latency_ms": np.round(latency, 2),
+            "energy_kwh": np.round(energy, 3),
+            "incident": incident.astype(int),
+        }
+    )
+    path = DATA / "system_benchmark.csv"
+    df.to_csv(path, index=False)
+    return {
+        "file": path.name,
+        "n": int(n),
+        "n_per_configuration": n_per,
+        "note": "Generating parameters are for reproducibility only.",
+    }
+
+
 def main() -> None:
     log = {
         "seed": 2026,
@@ -141,6 +218,8 @@ def main() -> None:
             energy_load(),
             defect_types(),
             packet_trials(),
+            supplier_impurity(),
+            system_benchmark(),
         ],
     }
     (DATA / "generation_log.json").write_text(json.dumps(log, indent=2), encoding="utf-8")

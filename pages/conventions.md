@@ -115,7 +115,7 @@ Rules:
 - Set a seed or `random_state` whenever you simulate.
 - Prefer `scipy.stats` named distributions (`binom`, `poisson`, `norm`, `expon`, `t`) over ad-hoc formulas when computing probabilities.
 - Use **statsmodels** for inference (tests, confidence intervals, ANOVA, regression summaries).
-- Use **scikit-learn** in Session 10 to fit a prediction model and to illustrate train/test split — not as a substitute for statistical inference.
+- Treat Session 10 as statistical regression: use statsmodels for coefficients, inference, diagnostics, and intervals rather than a machine-learning train/test workflow.
 - Label axes with units.
 - End every analysis with a sentence in ordinary language, not only a number.
 

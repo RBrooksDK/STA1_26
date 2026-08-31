@@ -4,11 +4,11 @@ STA1 uses one primary textbook throughout the course:
 
 Richard Brooks, [*Statistics and Data Analysis for Engineers*](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf).
 
-The book is written specifically for STA1. Its chapter order, notation, Python examples, and engineering cases follow the course directly. No textbook purchase is required.
+The book is written specifically for STA1. Its chapter order, notation, theoretical explanations, and worked engineering examples follow the course directly. No textbook purchase is required.
 
 The textbook is a work in progress. Chapters and examples will be updated throughout the course, so use the online version whenever possible. A downloaded file is only a snapshot and must be replaced regularly if you want the newest version.
 
-Python tutorials and notebooks on this site are the working material. The textbook supplies definitions, explanations, worked examples, and chapter exercises.
+Python tutorials and notebooks on this site are the practical working material. The textbook is a standalone theory book with definitions, explanations, results, and worked examples; exercises and executable Python belong on the course site.
 
 ## Session mapping
 
@@ -26,7 +26,7 @@ Python tutorials and notebooks on this site are the working material. The textbo
 | 09 | [Chapter 9: Analysis of Variance](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf) |
 | 10 | [Chapter 10: Simple Linear Regression](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf) |
 | 11 | [Chapter 11: Categorical Data and Chi-Square Tests](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf) |
-| 12 | [Chapter 12: Integrated Statistical Analysis and Exam Preparation](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf) |
+| 12 | [Chapter 12: Planning and Reporting a Statistical Analysis](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf) |
 
 ## Course boundaries
 
@@ -49,4 +49,3 @@ Useful references while you work:
 - [Pandas user guide](https://pandas.pydata.org/docs/user_guide/index.html)
 - [SciPy statistical functions](https://docs.scipy.org/doc/scipy/reference/stats.html)
 - [statsmodels](https://www.statsmodels.org/stable/index.html)
-- [scikit-learn: LinearRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html)

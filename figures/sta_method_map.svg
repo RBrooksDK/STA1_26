@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 780" role="img" aria-labelledby="title desc">
+  <title id="title">Statistical method map</title>
+  <desc id="desc">A flowchart for selecting among chi-square tests, regression, confidence intervals, t tests, and one-way ANOVA.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4d5964"/>
+    </marker>
+    <style>
+      .node { fill: #fff8ed; stroke: #f3a33b; stroke-width: 2.5; }
+      .result { fill: #f2f8fc; stroke: #75a9c9; stroke-width: 2.5; }
+      .line { fill: none; stroke: #4d5964; stroke-width: 2.2; marker-end: url(#arrow); }
+      .label { fill: #263238; font: 600 20px Arial, sans-serif; text-anchor: middle; dominant-baseline: middle; }
+      .edge { fill: #4d5964; font: 17px Arial, sans-serif; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <rect class="node" x="330" y="24" width="300" height="62" rx="8"/>
+  <text class="label" x="480" y="56">What is the question?</text>
+
+  <path class="line" d="M480 86 V126"/>
+  <polygon class="node" points="480,126 625,201 480,276 335,201"/>
+  <text class="label" x="480" y="201">Numeric response?</text>
+
+  <path class="line" d="M335 201 H190 V310"/>
+  <text class="edge" x="242" y="185">No — counts or labels</text>
+  <rect class="result" x="24" y="310" width="332" height="92" rx="8"/>
+  <text class="label" x="190" y="343">Chi-square GOF, independence,</text>
+  <text class="label" x="190" y="372">or homogeneity</text>
+
+  <path class="line" d="M480 276 V315"/>
+  <text class="edge" x="505" y="304">Yes</text>
+  <polygon class="node" points="480,315 620,385 480,455 340,385"/>
+  <text class="label" x="480" y="385">Is there a predictor?</text>
+
+  <path class="line" d="M620 385 H760 V472"/>
+  <text class="edge" x="744" y="368">Yes — one numeric x</text>
+  <rect class="result" x="650" y="472" width="286" height="68" rx="8"/>
+  <text class="label" x="793" y="506">Simple linear regression</text>
+
+  <path class="line" d="M480 455 V490"/>
+  <text class="edge" x="505" y="482">No</text>
+  <polygon class="node" points="480,490 620,560 480,630 340,560"/>
+  <text class="label" x="480" y="560">How many groups?</text>
+
+  <path class="line" d="M385 612 L190 682"/>
+  <text class="edge" x="245" y="628">One vs a target</text>
+  <rect class="result" x="38" y="682" width="286" height="68" rx="8"/>
+  <text class="label" x="181" y="716">CI or one-sample test</text>
+
+  <path class="line" d="M480 630 V682"/>
+  <text class="edge" x="515" y="658">Two</text>
+  <rect class="result" x="337" y="682" width="286" height="68" rx="8"/>
+  <text class="label" x="480" y="716">Two-sample or paired t</text>
+
+  <path class="line" d="M575 612 L770 682"/>
+  <text class="edge" x="724" y="628">Three or more</text>
+  <rect class="result" x="636" y="682" width="286" height="68" rx="8"/>
+  <text class="label" x="779" y="716">One-way ANOVA</text>
+</svg>

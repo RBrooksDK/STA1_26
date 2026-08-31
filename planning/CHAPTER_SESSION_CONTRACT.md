@@ -18,26 +18,22 @@ Every numbered chapter must contain the following, scaled to the topic:
 
 1. **Engineering question and motivation** — one question that a practitioner
    could recognise.
-2. **Learning outcomes** — phrased as observable abilities and matched to the
-   session.
-3. **Core concepts** — definitions, notation, and only the results needed for
+2. **Core concepts** — definitions, notation, and only the results needed for
    correct application.
-4. **Worked engineering example** — calculations plus interpretation.
-5. **Assumptions, diagnostics, and limitations** — including what a conclusion
+3. **Worked engineering examples** — calculations using formulas plus
+   interpretation in varied engineering contexts.
+4. **Assumptions, diagnostics, and limitations** — including what a conclusion
    does *not* establish.
-6. **Python in practice** — reproducible code, an appropriate plot/table, and
-   a plain-language conclusion.
-7. **Common pitfalls** — especially notation, interpretation, or library
-   parameter traps.
-8. **Short practice / bridge** — enough to prepare the tutorial and the
-   relevant assignment; this is not a seventh assignment.
-9. **References and data provenance** — source-checking reference, data origin,
+5. **Interpretation and synthesis** — enough explanation to connect formulas,
+   statistical evidence, and responsible engineering conclusions.
+6. **References and data provenance** — source-checking reference, data origin,
    and licences where applicable.
 
-Definitions, propositions/theorems, examples, remarks, and exercises should
-use the same visual language as the MSE book template, but their amount must be
-appropriate to a practical 5-ECTS statistics course.  Proof-heavy exposition
-is not a goal unless it is necessary to avoid a misconception.
+Definitions, results/theorems, examples, and remarks use the same visual
+language as the MSE book template. The textbook is a standalone theory book:
+it contains no executable Python, chapter exercises, course learning outcomes,
+or semester logistics. Proofs are omitted; explanations and worked examples
+provide the reasoning needed for a practical 5-ECTS statistics course.
 
 The one-to-one alignment is an output requirement, not a requirement to
 preserve existing tutorial content. During development, choose the strongest
@@ -51,7 +47,7 @@ Each chapter/session has to answer these fields before it is marked complete:
 
 | Field | Required decision or evidence |
 | --- | --- |
-| Canonical title | Exact same number and title in book, session page, tutorial, and plan. |
+| Canonical mapping | Chapter and session numbers, scope, and references agree. A session title may add a practical or exam-preparation emphasis. |
 | Prerequisites | Earlier chapters and specific notation/code skills assumed. |
 | Student outcome | What students can do after the session and independent practice. |
 | In scope | Concepts, procedures, models, and interpretation rules taught. |
@@ -94,9 +90,9 @@ together as one reviewed decision.
 | 7 / 07 | Hypothesis Testing I: Principles and One-Sample Tests | Chapter 6 | Assignment 4 |
 | 8 / 08 | Hypothesis Testing II: Comparing Two Groups | Chapters 6--7 | Assignment 5 |
 | 9 / 09 | Analysis of Variance | Chapter 8 | Assignment 5 |
-| 10 / 10 | Simple Linear Regression | Chapters 1, 6--7 | Assignment 6 and project introduction |
+| 10 / 10 | Simple Linear Regression | Chapters 1, 6--7 | Assignment 6 |
 | 11 / 11 | Categorical Data and Chi-Square Tests | Chapters 2--3, 7 | Assignment 6 |
-| 12 / 12 | Integrated Statistical Analysis and Exam Preparation | Chapters 1--11 | Group project and oral exam |
+| 12 / 12 | Planning and Reporting a Statistical Analysis / Integrated Statistical Analysis and Exam Preparation | Chapters 1--11 | Group project and oral exam |
 
 ## Per-chapter contracts
 
@@ -249,14 +245,16 @@ together as one reviewed decision.
 - **Purpose and outcome:** students choose between independent and paired
   designs, compare two groups, and report uncertainty and practical effect.
 - **In scope:** independent versus paired data, pooled versus Welch framing,
-  two-sample t-test, paired t-test, interval for a difference, effect size, and
-  practical versus statistical significance.
+  two-sample t-test, paired t-test, comparison of two independent proportions,
+  intervals for differences, effect size, and practical versus statistical
+  significance.
 - **Out of scope:** two-variance tests as a standalone topic, indiscriminate
   repeated pairwise tests, and treating paired data as independent.
 - **Sources:** Ross 7.4, 8.4, and two-sample 8.6; old STA testing material;
   existing STA1 Session 08 and `cpu_order_lines.xlsx`.
 - **Python outcome:** inspect paired structure, use `ttest_ind`/`ttest_rel`
-  appropriately, report a difference interval and visual comparison.
+  appropriately, compare two independent proportions, and report difference
+  intervals with visual comparisons.
 - **Assessment bridge:** Assignment 5 begins.
 - **Acceptance:** every worked example states its design and avoids assuming
   equal variances without justification.
@@ -266,15 +264,15 @@ together as one reviewed decision.
 - **Purpose and outcome:** students compare three or more group means with
   one-way ANOVA, check practical assumptions, and use Tukey HSD responsibly.
 - **In scope:** motivation versus many t-tests, between/within variation, ANOVA
-  table, F test, independence/normality/similar-variance assumptions, one-way
-  ANOVA, and Tukey HSD.
+  table, F test, independence/normality/similar-variance assumptions, classical
+  and Welch one-way ANOVA, Tukey HSD when compatible, and eta-squared.
 - **Out of scope:** two-way ANOVA, interaction effects, and identifying pairs
   from a significant omnibus F-test alone.
 - **Sources:** Ross 10.1--10.3; STA_26 ANOVA session/site material; existing
   STA1 Session 09 and `resin_impurities.xlsx`.
-- **Python outcome:** make group boxplots, run one-way ANOVA and Tukey HSD in
-  statsmodels, diagnose assumptions at an introductory level, and communicate
-  which comparisons differ.
+- **Python outcome:** make group boxplots, choose between classical and Welch
+  one-way ANOVA, run compatible Tukey HSD comparisons in statsmodels, calculate
+  eta-squared, diagnose errors, and communicate which comparisons differ.
 - **Assessment bridge:** Assignment 5 completes.
 - **Acceptance:** use a newly reviewed original ANOVA exposition and example;
   do not claim the old STA course has a separate note PDF if it does not.
@@ -286,26 +284,28 @@ together as one reviewed decision.
   response and new-observation prediction.
 - **In scope:** response/predictor roles, least squares, intercept/slope with
   units, correlation and \(R^2\), slope inference, residual diagnostics,
-  confidence interval for mean response, prediction interval, and a limited
-  train/test illustration.
+  confidence interval for mean response, prediction interval, influence, and
+  limits on extrapolation.
 - **Out of scope:** multiple, polynomial, and logistic regression; causal
   inference from observational data; treating machine-learning metrics as
   statistical inference.
 - **Sources:** Ross 9.1--9.2, 9.4--9.6; old STA regression note; SMP Session
   08; existing STA1 Session 10, `energy_load.csv`, and `scope_filter_intensity.xlsx`.
-- **Python outcome:** fit using statsmodels for inference and scikit-learn only
-  for the stated predictive comparison; create scatter, residual, and QQ plots.
-- **Assessment bridge:** Assignment 6 begins; group project introduced.
+- **Python outcome:** fit using statsmodels for coefficients, inference,
+  diagnostics, and intervals; create scatter, residual, order, and QQ plots.
+- **Assessment bridge:** Assignment 6 begins.
 - **Acceptance:** intervals are not conflated with prediction intervals, and
   \(R^2\) is not presented as causal evidence.
 
 ### Chapter 11 / Session 11 — Categorical Data and Chi-Square Tests
 
 - **Purpose and outcome:** students analyse categorical counts using
-  goodness-of-fit and independence tests and interpret residual patterns.
+  goodness-of-fit, independence, and homogeneity tests and interpret residual
+  patterns and effect magnitude.
 - **In scope:** categorical variables, contingency tables, expected counts,
-  goodness-of-fit, independence, chi-square statistic, expected-count
-  guideline, standardised residuals, and contextual conclusions.
+  goodness-of-fit, independence versus homogeneity, chi-square statistic,
+  expected-count guideline, Pearson and adjusted residuals, Cramér's V,
+  simulation, sparse-table alternatives, and contextual conclusions.
 - **Out of scope:** Ross 11.5--11.6 and causal claims from association.
 - **Sources:** Ross 11.1--11.4; STA_26 goodness-of-fit/contingency material;
   existing STA1 Session 11 and `defect_types.csv`.
@@ -316,7 +316,7 @@ together as one reviewed decision.
 - **Acceptance:** degrees of freedom and expected-count assumptions are correct
   in text, code, and output interpretation.
 
-### Chapter 12 / Session 12 — Integrated Statistical Analysis and Exam Preparation
+### Chapter 12 — Planning and Reporting a Statistical Analysis / Session 12 — Integrated Statistical Analysis and Exam Preparation
 
 - **Purpose and outcome:** students select a justified method, complete an
   analysis from raw data to recommendation, and explain an assignment/project
@@ -337,7 +337,7 @@ together as one reviewed decision.
 
 ## Completion checklist for a chapter/session pair
 
-- [ ] Exact canonical title matches the alignment map.
+- [ ] Chapter/session mapping and scope match the alignment map.
 - [ ] Session preparation points to the finished chapter/sections and valid
       supporting material.
 - [ ] The chapter has all shared template sections appropriate to the topic.

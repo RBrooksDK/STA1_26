@@ -43,8 +43,9 @@ The following are fixed unless the course responsible explicitly changes them.
 - 5 ECTS / approximately 135 student working hours.
 - One textbook chapter for every taught session (Chapters 1--12).
 - Session 00 maps to a Python appendix, not a numbered statistics chapter.
-- The course uses Python throughout: NumPy, Pandas, Matplotlib, SciPy,
-  statsmodels, and selectively scikit-learn.
+- The course uses Python throughout: NumPy, Pandas, Matplotlib, SciPy, and
+  statsmodels. Session 10 treats regression statistically rather than as a
+  machine-learning train/test workflow.
 - Six practice-oriented group assignments are released after Sessions 1, 3,
   5, 7, 9, and 11.  A small integrated group project follows Session 12.
 - The twelve current `Exercises.md` pages are intentional placeholders for the
@@ -115,8 +116,8 @@ checkpoints after their relevant build/verification steps.
 | --- | --- | --- | --- | --- |
 | 1. Planning and contracts | Establish a single, approved curriculum contract. | Existing STA1 scaffold, MSE book, source material inventory. | Restored `source_map.md`; this plan; `CHAPTER_SESSION_CONTRACT.md`; notation and Python decisions; a source/provenance register. | All 12 topics, reading sources, assignment links, scope boundaries, and chapter/session titles are agreed; no unresolved contradiction with the official course description or SMP1 boundary. |
 | 2. Website foundation | Make the existing site a clear, trustworthy course home before content expansion. | Phase 1 contract. | Revised front page, navigation, session-page template, literature/conventions/assessment pages, link and responsive-layout fixes. | No internal/meta language remains; public claims are accurate; navigation works on desktop and mobile; build is strict and links resolve.  Assignment/project pages remain frameworks until briefs are approved. |
-| 3. Textbook foundation | Create a reproducible new-book project based on the approved MSE template. | Phase 1; completed MSE book revision. | New repository or clearly named book directory; copied/adapted template and licence decisions; master file; bibliography; chapter stubs; PDF build workflow; visual QA checklist. | A clean checkout builds a PDF; all chapter stubs compile; definitions, results, examples, remarks, Python sections, references, and cross-references render in the established house style. |
-| 4. Content production in waves | Produce aligned, reviewed teaching content without drift. | Phases 1--3; chapter-specific source map entries. | Four waves: A (1--3), B (4--6), C (7--9), D (10--12).  For each chapter: book chapter, Python section, tutorial/notebook, web session update, and source record. | Each completed chapter meets the chapter contract; its notebook executes from a clean environment; corresponding web page has correct reading, links, data, and assignment/project connection. |
+| 3. Textbook foundation | Create a reproducible new-book project based on the approved MSE template. | Phase 1; completed MSE book revision. | New repository or clearly named book directory; copied/adapted template and licence decisions; master file; bibliography; chapter stubs; PDF build workflow; visual QA checklist. | A clean checkout builds a PDF; all chapter stubs compile; definitions, results, examples, remarks, references, and cross-references render in the established house style without executable Python or chapter exercises. |
+| 4. Content production in waves | Produce aligned, reviewed teaching content without drift. | Phases 1--3; chapter-specific source map entries. | Four waves: A (1--3), B (4--6), C (7--9), D (10--12). For each chapter: standalone theory chapter, separate Python tutorial/notebook, web session update, and source record. | Each completed chapter meets the chapter contract; its notebook executes from a clean environment; corresponding web page has correct reading, links, data, and assignment/project connection. |
 | 5. Assessment design | Turn deliberate placeholders into six authentic assignments and an integrated project. | Relevant content waves; confirmed exam framework. | Six briefs, datasets, marking/feedback guidance, group-work rules, project brief, submission schedule, and exam preparation alignment. | Every task has a realistic workload, an unambiguous deliverable, suitable data, method prerequisites already taught, and a clear connection to the oral exam.  No task accidentally becomes an unannounced extra project. |
 | 6. Quality assurance and publication | Release a consistent, correct, usable course package. | All prior phases. | Mathematical/statistical audit, notebook execution report, PDF visual review, website/link/responsive audit, cross-material matrix, release notes. | Book PDF builds and is visually checked; MkDocs strict build passes; every public link works; all 12 session/chapter mappings, notation, datasets, assignments, and exam statements agree.  Changes are committed, pushed, and deployed. |
 
@@ -190,10 +191,10 @@ For every numbered chapter, use this sequence:
 
 1. Confirm the contract entry and source-map rows.
 2. Select one central engineering question and data example.
-3. Draft conceptual explanation, definitions/results where helpful, worked
-   examples, and a concise Python section.
+3. Draft conceptual explanation, definitions/results where helpful, and worked
+   examples using formulas. Keep executable Python and exercises on the site.
 4. Perform a statistical/mathematical review and a notation review.
-5. Build the chapter PDF and visually inspect formulas, code, figures,
+5. Build the chapter PDF and visually inspect formulas, figures,
    cross-references, and page breaks.
 6. Update the corresponding website session: preparation, direct links,
    tutorial, data, and assignment/project connection.

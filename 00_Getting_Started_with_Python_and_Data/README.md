@@ -133,14 +133,14 @@ Open a terminal **inside VS Code**: Terminal → New Terminal.
 
 ```text
 py -m pip install --upgrade pip
-py -m pip install numpy pandas matplotlib scipy statsmodels scikit-learn openpyxl ipykernel
+py -m pip install numpy pandas matplotlib scipy statsmodels openpyxl ipykernel
 ```
 
 **macOS:**
 
 ```text
 python3 -m pip install --upgrade pip
-python3 -m pip install numpy pandas matplotlib scipy statsmodels scikit-learn openpyxl ipykernel
+python3 -m pip install numpy pandas matplotlib scipy statsmodels openpyxl ipykernel
 ```
 
 `ipykernel` is what VS Code uses to run notebook cells. If a notebook offers no kernel, this package is usually missing.
