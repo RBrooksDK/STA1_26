@@ -14,7 +14,7 @@ Use sources in this order:
 2. The frozen chapter/session contract in this repository.
 3. Correct statistical theory, cross-checked against Ross and another authoritative source where necessary.
 4. Brooks-authored material in `MSE_book_v2`, `STA_26`, `SMP1_25`, and `STA1_26`.
-5. Newly written examples, explanations, Python sections, assignments, and project material.
+5. Newly written examples, explanations, Python tutorials, assignments, and project material.
 
 Ross is a scope and verification source. Do not copy its prose, figures, examples, or exercises. Brooks-authored material may be revised and reused, but it must still be checked for correctness, notation, level, and fit with the new course.
 
@@ -29,7 +29,7 @@ textbook chapter and session contract, not constrain them.
 | Course item | Textbook item |
 | --- | --- |
 | Self-study 00 | Appendix A — Python and Data Setup |
-| Session 01 | Chapter 1 — Data and Descriptive Statistics |
+| Session 01 | Chapter 1 — Descriptive Statistics |
 | Session 02 | Chapter 2 — Probability for Data Analysis |
 | Session 03 | Chapter 3 — Random Variables and Discrete Distributions |
 | Session 04 | Chapter 4 — Continuous Distributions in Practice |
@@ -40,7 +40,7 @@ textbook chapter and session contract, not constrain them.
 | Session 09 | Chapter 9 — Analysis of Variance |
 | Session 10 | Chapter 10 — Simple Linear Regression |
 | Session 11 | Chapter 11 — Categorical Data and Chi-Square Tests |
-| Session 12 | Chapter 12 — Integrated Statistical Analysis and Exam Preparation |
+| Session 12 | Chapter 12 — Planning and Reporting a Statistical Analysis |
 
 ## Chapter sources
 
@@ -130,7 +130,7 @@ textbook chapter and session contract, not constrain them.
 - **Old STA:** `10_Variansanalyse_ANOVA/README.md` and tutorial/site exercises
 - **Ross check:** 10.1–10.3
 - **Core:** family-wise type I error, one-way ANOVA, between/within variation, F-statistic, assumptions, diagnostics and Tukey HSD
-- **New work:** the old course has no separate session-notes PDF; this chapter requires substantial new prose, examples, figures and exercises
+- **New work:** the old course has no separate session-notes PDF; this chapter requires substantial new prose, examples, and figures
 - **Boundary:** no two-way ANOVA or interactions in core STA1
 
 ### Chapter 10 — Simple Linear Regression
@@ -141,17 +141,17 @@ textbook chapter and session contract, not constrain them.
 - **Session notes:** [STA 09](https://drive.google.com/file/d/155VOAnrutze7091LObcAhAcnau__uBl1/view?usp=sharing), [SMP 08](https://drive.google.com/file/d/1N_hUEd6Hwn93dVtaSWHsFqe9N47E2WRg/view?usp=sharing)
 - **Ross check:** 9.1–9.2 and 9.4–9.6
 - **Core:** least squares, coefficient interpretation, correlation, R-squared, slope inference, residual diagnostics, confidence and prediction intervals
-- **Python:** Statsmodels for inference; scikit-learn only to connect to predictive workflows
+- **Python:** statsmodels for coefficients, inference, diagnostics, confidence intervals, and prediction intervals; no machine-learning train/test workflow
 
 ### Chapter 11 — Categorical Data and Chi-Square Tests
 
 - **STA1:** `11_Categorical_Data_and_Chi_Square_Tests/README.md`, `Tutorial_11.md`, dataset `defect_types.csv`
 - **Old STA:** `10_Goodness_of_fit_og_analyse_af_kategoriske_data/README.md` and tutorial/site exercises
 - **Ross check:** 11.1–11.4
-- **Core:** counts and proportions, expected counts, goodness-of-fit, independence, assumptions and standardised residuals
+- **Core:** counts and proportions, expected counts, goodness-of-fit, independence versus homogeneity, assumptions, Pearson and adjusted residuals, Cramér's V, simulation, and sparse-table alternatives
 - **New work:** there is no separate old session-notes PDF; create a coherent textbook narrative and original engineering examples
 
-### Chapter 12 — Integrated Statistical Analysis and Exam Preparation
+### Chapter 12 — Planning and Reporting a Statistical Analysis
 
 - **STA1:** `12_Integrated_Analysis_and_Exam_Preparation/README.md`, `Tutorial_12.md`, `pages/assignments.md`, `pages/project.md`
 - **Inputs:** selected datasets and examples from Chapters 1–11
@@ -185,5 +185,5 @@ Before drafting a chapter, record:
 2. Old hypothesis-testing material must be divided cleanly between Chapters 7 and 8.
 3. MSE probability Chapters 4–5 must be condensed; general combinatorics is removed from the STA1 narrative.
 4. Continuous-distribution explanations must be rewritten without manual integration.
-5. The assessment pages intentionally remain placeholders until the six assignments and group project are designed.
+5. The six assignment briefs remain placeholders. The fixed group-project requirements are already synchronised across the assessment page and Tutorial 12; the detailed project brief will be added separately.
 6. Every reused example must be checked for units, assumptions, notation, licensing and alignment with the practical Python focus.

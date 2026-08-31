@@ -1,6 +1,6 @@
 <h1 align="center">Project</h1>
 
-At the end of the course you complete a **small group project**. You analyse a more comprehensive engineering data set, apply relevant statistical methods, and present the findings. The project is part of the oral exam together with one of the six assignments.
+At the end of the course you complete a **small group project**. You analyse a more comprehensive engineering data set, apply relevant statistical methods, and present the findings. The project is discussed during the oral examination together with one of the six assignments.
 
 The detailed project brief will be published during the semester.
 
@@ -16,22 +16,22 @@ You should be able to:
 - implement the analysis in Python;
 - communicate results, assumptions, limitations, and uncertainty to technical and non-technical readers.
 
-## Timing
+## Fixed requirements
 
-The project is introduced in [Session 10](../10_Simple_Linear_Regression/README.md) and submitted after [Session 12](../12_Integrated_Analysis_and_Exam_Preparation/README.md). Session 12 is organised around a complete worked analysis in the same spirit as the project.
+The complete workflow is developed in Brooks, Chapter 12 and practised in [Tutorial 12](../12_Integrated_Analysis_and_Exam_Preparation/Tutorial_12_notebook.ipynb). The detailed brief will define the task, but these requirements are fixed:
 
-## Format
-
-The brief will confirm the requirements. Unless it says otherwise, use these
-defaults:
-
-- **Group size:** the same groups as for the assignments, unless announced otherwise.
-- **Product:** a short report supported by a Jupyter notebook, or a well-written notebook that can stand as the report.
-- **Scope:** one coherent engineering data set, not six disconnected analyses.
+- **Deadline:** June 1.
+- **Group size:** 2--4 students. Any deviation must be discussed with R. Brooks before Session 12.
+- **Workload:** approximately 25 hours per student.
+- **Product:** one Jupyter notebook. Explanations, reasoning, interpretation, and conclusions belong in Markdown cells; Python belongs in code cells.
+- **Executed notebook:** every code cell must be executed before submission so that outputs, tables, and figures are visible.
+- **Methods:** at least three statistical methods from three different sessions or textbook chapters, excluding Session/Chapter 12.
+- **Scope:** one coherent engineering investigation, not three unrelated tests.
+- **Workflow:** the project must comply with Brooks, Chapter 12 and Tutorial 12.
 - **Language:** English.
+
+The project is not graded separately, but it contributes to the overall course grade through the oral examination. The same principle applies to all six assignments.
 
 ## Relation to the assignments
 
-The six assignments train individual methods. The project asks you to choose
-among them and use them in one coherent analysis. Project information is
-published from the Session 12 assessment page.
+The six assignments train individual methods. The project asks you to choose among them and use them in one coherent analysis. Project information is published from the Session 12 assessment page.

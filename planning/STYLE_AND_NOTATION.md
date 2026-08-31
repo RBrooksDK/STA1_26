@@ -20,14 +20,14 @@ This internal guide is the shared contract for the STA1 website, tutorials, note
 
 | Artifact | Primary responsibility |
 | --- | --- |
-| Textbook | durable theory, definitions, results, derivations at STA1 level, worked examples, Python translation and chapter exercises |
+| Textbook | standalone theory, definitions, results, explanations at STA1 level, and worked examples using formulas |
 | Session page | preparation, session focus, links, learning outcomes, material and assessment connection |
 | Tutorial/notebook | guided practical analysis and executable Python |
 | Assignment | a bounded analysis that students can defend orally |
 | Group project | integrated method selection and complete engineering analysis |
 | Course-site reference page | logistics, conventions, literature, datasets and exam information |
 
-The website should not duplicate whole textbook sections. The textbook should not contain semester dates, release schedules or platform instructions.
+The website should not duplicate whole textbook sections. The textbook should not contain executable Python, exercises, semester dates, release schedules, course logistics, or platform instructions. It may mention that statistical software evaluates a quantity, but the concrete Python workflow belongs in the tutorials.
 
 ## Textbook environments
 
@@ -38,9 +38,7 @@ Reuse the visual system and LaTeX template from `MSE_book_v2`.
 - **Example:** a worked application with context, calculation and interpretation.
 - **Remark:** clarification, nuance or connection.
 - **Warning/Common mistake:** a specific recurring misconception, used sparingly.
-- **Python section:** translation from mathematical objects to library calls, followed by a complete reproducible example.
-- **Summary:** a compact conceptual and procedural recap.
-- **Exercises:** interpretation, calculation, implementation and decision-making in increasing difficulty.
+- **Closing synthesis:** a natural prose transition or recap where useful, not a mandatory repeated chapter template.
 
 Do not label procedural advice as a theorem. Do not use formal proof language where the course only needs an intuitive or simulation-based justification.
 
@@ -122,7 +120,7 @@ rng = np.random.default_rng(2026)
 - Pandas is the default for tables and grouping.
 - SciPy named distributions are the default for probabilities, quantiles and simulation.
 - Statsmodels is the default for inference, ANOVA and regression summaries.
-- Scikit-learn is used only where predictive workflow is explicitly discussed.
+- Statsmodels is also used for the statistical regression workflow in Session 10; scikit-learn and train/test modelling are outside the course scope.
 
 ### Translation table
 
@@ -182,4 +180,3 @@ Before a chapter/session bundle is approved:
 - reused material has been rewritten as needed and checked for copyright;
 - the final example ends with an engineering interpretation;
 - website and PDF layouts have been inspected visually.
-
