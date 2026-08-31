@@ -46,12 +46,11 @@ The following are fixed unless the course responsible explicitly changes them.
 - The course uses Python throughout: NumPy, Pandas, Matplotlib, SciPy, and
   statsmodels. Session 10 treats regression statistically rather than as a
   machine-learning train/test workflow.
-- Six practice-oriented group assignments are released after Sessions 1, 3,
-  5, 7, 9, and 11.  A small integrated group project follows Session 12.
-- The twelve current `Exercises.md` pages are intentional placeholders for the
-  six assignments and project workflow.  They are not missing conventional
-  exercise sets and must not be filled with generic practice merely to make a
-  page look complete.
+- Six practice-oriented group assignments pair Sessions 1--2, 3--4, 5--6,
+  7--8, and 9--10, with Session 11 forming the final assignment. An integrated
+  group project follows Session 12.
+- There are no separate exercise pages. Tutorials provide guided Python
+  practice, while the six assignments and project provide independent work.
 - The oral exam is based on one assignment and the group project, in accordance
   with the official course description.
 - `planning/STYLE_AND_NOTATION.md` is the canonical internal convention;
@@ -164,9 +163,9 @@ probability and sampling language:
 | Gate | Chapters / sessions | Must be complete before advancing |
 | --- | --- | --- |
 | D1 | 1--3: descriptive data, probability, discrete distributions | Assignment 1 and 2 prerequisites, foundational notation, basic Python data workflow. |
-| D2 | 4--6: continuous models, CLT, confidence intervals | Correct distinction between data distribution and sampling distribution; interval language and code. |
+| D2 | 4--6: continuous models, CLT, confidence intervals | Assignment 2 and 3 prerequisites; correct distinction between data and sampling distributions; interval language and code. |
 | D3 | 7--9: one-sample tests, two-group tests, ANOVA | Coherent inferential vocabulary, assumptions, effect-size/reporting guidance, Assignment 4 and 5 prerequisites. |
-| D4 | 10--12: regression, categorical data, integrated analysis | Assignment 6, project support, method-choice guidance, and oral-exam synthesis. |
+| D4 | 10--12: regression, categorical data, integrated analysis | Assignments 5 and 6, project support, method-choice guidance, and oral-exam synthesis. |
 
 For each gate, first draft the chapters, then run technical review, then update
 the paired website sessions/tutorials and test the notebooks.  Do not publish a

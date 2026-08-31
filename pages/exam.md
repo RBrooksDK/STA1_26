@@ -4,9 +4,11 @@
 
 The course description states that the exam is a **20-minute oral examination**.
 
-It starts from **one of the six assignments** that the group completed during the semester. The examiner also discusses the **group project**.
+It starts from **one of the six assignments** that the group completed during the semester. The examiner also discusses the [**group project**](project.md).
 
 The six assignments and the group project are not graded separately. They form part of the basis for the oral examination and contribute to the overall course grade. Consult the [course description](https://my.via.dk/media/mitvia/semesteroverblik/kursusbeskrivelser/software-engineering/6.-og-7.-semester/it-sta1-1-0) and itslearning for formal requirements and practical arrangements.
+
+The six assignments are completed during the autumn teaching period. The group project is completed after Session 12 and submitted by **31 December 2026**.
 
 You should be able to:
 

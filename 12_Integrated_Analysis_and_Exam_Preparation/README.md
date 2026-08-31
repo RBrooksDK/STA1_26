@@ -38,16 +38,16 @@ The group project is the same kind of analysis at slightly larger scale. The ora
 
 Brooks: [Chapter 12](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf)
 
-Revisit your six assignments and the [project](../pages/assignments.md#group-project). Bring questions about the oral exam.
+Revisit your six assignments and the [Group Project brief](../pages/project.md). Bring questions about the oral exam.
 
 ### Resources
 
-[Session material](https://github.com/RBrooksDK/STA1_26/tree/main/12_Integrated_Analysis_and_Exam_Preparation/session_material)
-
 [Tutorial 12: From raw data to a recommendation](Tutorial_12_notebook.ipynb)
 
-The tutorial is a guided integrated analysis of the synthetic benchmark `system_benchmark.csv`. It is not the final-project brief.
+The tutorial is a guided integrated analysis of the synthetic benchmark `system_benchmark.csv`. It illustrates the workflow but does not replace the [Group Project brief](../pages/project.md).
 
 [Exam](../pages/exam.md)
 
-[Assignments and project](../pages/assignments.md)
+[Assignments](../pages/assignments.md)
+
+[Group Project brief](../pages/project.md) — due 31 Dec. 2026

@@ -14,9 +14,8 @@ exclude_docs: |
   **/session_material/**
   pages/literature.md
   pages/conventions.md
-  pages/project.md
   **/Tutorial_[0-9][0-9].md
-  **/Exercises.md
+  10_Simple_Linear_Regression/Calculating_metrics.md
 
 validation:
   omitted_files: ignore
@@ -186,7 +185,15 @@ nav:
     - "12 Integrated Statistical Analysis and Exam Preparation":
       - 12_Integrated_Analysis_and_Exam_Preparation/README.md
       - "Tutorial 12": 12_Integrated_Analysis_and_Exam_Preparation/Tutorial_12_notebook.ipynb
-  - Assignments: pages/assignments.md
+  - Assignments:
+    - Overview: pages/assignments.md
+    - "Assignment 1 — Data and Probability Foundations": assignments/assignment_01_data_and_probability_foundations.md
+    - "Assignment 2 — Discrete and Continuous Probability Models": assignments/assignment_02_discrete_and_continuous_models.md
+    - "Assignment 3 — Sampling Distributions and Estimation": assignments/assignment_03_sampling_and_estimation.md
+    - "Assignment 4 — One- and Two-Sample Tests": assignments/assignment_04_one_and_two_sample_tests.md
+    - "Assignment 5 — ANOVA and Simple Linear Regression": assignments/assignment_05_anova_and_regression.md
+    - "Assignment 6 — Categorical Data and Chi-Square Analysis": assignments/assignment_06_categorical_data.md
+    - "Group Project": pages/project.md
   - Exam: pages/exam.md
   - Datasets: pages/datasets.md
   - FAQ: pages/faq.md

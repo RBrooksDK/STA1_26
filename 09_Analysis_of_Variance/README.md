@@ -41,6 +41,6 @@ Brooks: [Chapter 9](https://docs.google.com/viewer?url=https://raw.githubusercon
 
 ### Resources
 
-[Session material](https://github.com/RBrooksDK/STA1_26/tree/main/09_Analysis_of_Variance/session_material)
-
 [Tutorial 9: Several suppliers, one quality measure](Tutorial_09_notebook.ipynb)
+
+[Assignment 5 — ANOVA and Regression](../assignments/assignment_05_anova_and_regression.md) — due 17 Nov. 2026, 12:45

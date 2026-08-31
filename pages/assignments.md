@@ -1,69 +1,36 @@
 <h1 align="center">Assignments</h1>
 
-The [course description](https://my.via.dk/media/mitvia/semesteroverblik/kursusbeskrivelser/software-engineering/6.-og-7.-semester/it-sta1-1-0) specifies **six practice-oriented group assignments** and a **small group project** distributed through the semester. They connect statistical theory with engineering applications and form the exam basis.
+!!! important "Group size"
+    All six assignments and the group project must be completed in groups of **2–4 students**. Any deviation from the group-size requirement must be discussed with R. Brooks before the final session, Session 12.
 
-There are no in-class exercise sheets. The textbook supplies the theory, the tutorials translate it into Python, and the assignments are where you use the methods independently.
+The course includes **six practice-oriented group assignments** and a **group project**. The six assignments are bound tasks: each brief supplies the data or model inputs, engineering questions, statistical scope, and required outputs. The group project is a free, coherent statistical investigation chosen by your group.
 
-Detailed task briefs will be published during the semester.
+The assignments and project are not graded separately. They form part of the basis for the [20-minute oral examination](exam.md), which starts from one of the six assignments and also includes discussion of the group project. The textbook supplies the theory, the tutorials translate it into Python, and the assignments are where you use the methods independently.
 
-## Purpose
+The six assignments follow the sessions during the autumn teaching period. The group project is completed after Session 12 and submitted by **31 December 2026**.
 
-Each assignment is a complete, small analysis that you should be able to defend in a 20-minute oral exam:
+## Shared requirements
 
-1. state an engineering question;
-2. prepare or simulate relevant data;
-3. choose and apply a statistical method;
-4. interpret the result, including assumptions and uncertainty;
-5. communicate a recommendation.
+Unless an individual brief states otherwise:
 
-Tutorial examples prepare you for the assignments; they are not additional assessment tasks.
+- Submit one fully executed **Jupyter notebook in English**, with all code output, tables, and figures visible.
+- Submit all six assignments and the group project in **itslearning as a group hand-in**.
+- Include the required **AI-use** section explaining how AI was used and how its output was checked. If no AI was used, state that explicitly.
+- Every group member must understand the statistical analysis, know what the code does, and be able to defend the submission at the oral exam.
+- Follow the individual brief for the required data, analyses, presentation, and submission checklist.
 
-## Cadence
+## Assignment schedule
 
-| Assignment | After session | Statistical focus |
-| ---: | ---: | --- |
-| 1 | [01 Descriptive statistics](../01_Data_and_Descriptive_Statistics/README.md) | Data collection or import, preprocessing, summaries, and visualisation |
-| 2 | [03 Discrete distributions](../03_Random_Variables_and_Discrete_Distributions/README.md) | Probability, random variables, and discrete models |
-| 3 | [05 Sampling and the CLT](../05_Sampling_Distributions_and_the_CLT/README.md) | Continuous models, sampling distributions, and the CLT |
-| 4 | [07 Hypothesis testing I](../07_Hypothesis_Testing_I_Principles_and_One_Sample_Tests/README.md) | Confidence intervals and one-sample tests |
-| 5 | [09 ANOVA](../09_Analysis_of_Variance/README.md) | Two-sample tests and comparison of several groups |
-| 6 | [11 Categorical data](../11_Categorical_Data_and_Chi_Square_Tests/README.md) | Simple linear regression and categorical analysis |
-| Project | [12 Integrated analysis](../12_Integrated_Analysis_and_Exam_Preparation/README.md) | A complete analysis of an engineering data set |
+<div class="cadence-table" markdown="1">
 
-## Format
+| Assignment | Session(s) | Statistical focus | Deadline |
+| ---: | :---: | --- | --- |
+| [1](../assignments/assignment_01_data_and_probability_foundations.md) | [1](../01_Data_and_Descriptive_Statistics/README.md) + [2](../02_Probability_for_Data_Analysis/README.md) | Descriptive analysis, events, conditional probability, and Bayes | 15 Sept. 2026, 12:45 |
+| [2](../assignments/assignment_02_discrete_and_continuous_models.md) | [3](../03_Random_Variables_and_Discrete_Distributions/README.md) + [4](../04_Continuous_Distributions_in_Practice/README.md) | Random variables; binomial, Poisson, uniform, normal, and exponential models | 29 Sept. 2026, 12:45 |
+| [3](../assignments/assignment_03_sampling_and_estimation.md) | [5](../05_Sampling_Distributions_and_the_CLT/README.md) + [6](../06_Estimation_and_Confidence_Intervals/README.md) | Sampling distributions, standard errors, confidence intervals, and bootstrap | 20 Oct. 2026, 12:45 |
+| [4](../assignments/assignment_04_one_and_two_sample_tests.md) | [7](../07_Hypothesis_Testing_I_Principles_and_One_Sample_Tests/README.md) + [8](../08_Hypothesis_Testing_II_Comparing_Two_Groups/README.md) | Tests for one and two means or proportions; independent and paired designs | 3 Nov. 2026, 12:45 |
+| [5](../assignments/assignment_05_anova_and_regression.md) | [9](../09_Analysis_of_Variance/README.md) + [10](../10_Simple_Linear_Regression/README.md) | Quantitative responses with categorical and quantitative predictors | 17 Nov. 2026, 12:45 |
+| [6](../assignments/assignment_06_categorical_data.md) | [11](../11_Categorical_Data_and_Chi_Square_Tests/README.md) | Goodness of fit, homogeneity, residuals, effect magnitude, and sparse tables | 24 Nov. 2026, 12:45 |
+| [Project](project.md) | [12](../12_Integrated_Analysis_and_Exam_Preparation/README.md) | A complete analysis of an engineering data set | 31 Dec. 2026 |
 
-The detailed brief for each assignment will confirm the requirements. Unless a brief says otherwise, use these defaults:
-
-- **Group size:** 2–4 students.
-- **Product:** a short Jupyter notebook (or a short report plus notebook) with a clear question, analysis, figures, and a written conclusion in ordinary language.
-- **Length:** enough to be discussed in 20 minutes — typically a few pages of narrative, not a dump of Python output.
-- **Language:** English.
-- **Tools:** Python with Pandas, NumPy, SciPy, Matplotlib, and, where relevant, statsmodels.
-
-## What is assessed
-
-- Is the statistical method appropriate for the question?
-- Are assumptions stated and, where possible, checked?
-- Is Python used as a means of analysis, not as a black box?
-- Does the conclusion answer the engineering question and mention uncertainty?
-
-## Group project
-
-At the end of the course you complete a **small group project**. You analyse a more comprehensive engineering data set, apply relevant statistical methods, and present the findings. The project is discussed during the oral examination together with one of the six assignments.
-
-The project is the course's synthesis: a full data-analysis workflow from raw measurements to a decision. You should be able to formulate an engineering question, import and preprocess data, select methods from across the course, implement the analysis in Python, and communicate results, assumptions, limitations, and uncertainty.
-
-The complete analysis workflow is developed in Brooks, Chapter 12 and practised in [Tutorial 12](../12_Integrated_Analysis_and_Exam_Preparation/Tutorial_12_notebook.ipynb). The detailed project brief will be published separately, but the following minimum requirements are fixed.
-
-- **Deadline:** June 1.
-- **Group size:** 2--4 students. Any deviation must be discussed with R. Brooks before the final session, Session 12.
-- **Workload:** approximately 25 hours per student.
-- **Product:** one Jupyter notebook in English. Explanations, reasoning, interpretation, and conclusions must be written in Markdown cells, while Python belongs in code cells.
-- **Executed notebook:** every code cell must be executed before submission so that all output, tables, and figures are visible.
-- **Methods:** at least three statistical methods from three different sessions or textbook chapters, excluding Session/Chapter 12.
-- **Coherence:** every method must answer a stated question and contribute to one coherent engineering investigation rather than three unrelated tests.
-- **Workflow:** the project must comply with Brooks, Chapter 12 and Tutorial 12.
-
-The project is not graded separately, but it contributes to the overall course grade through the oral examination. The same assessment principle applies to all six assignments: they are not separately graded, but form part of the overall exam basis and grade.
-
-The six assignments train individual methods. The project asks you to choose among them and use them in one coherent analysis.
+</div>

@@ -135,7 +135,7 @@ textbook chapter and session contract, not constrain them.
 
 ### Chapter 10 — Simple Linear Regression
 
-- **STA1:** `10_Simple_Linear_Regression/README.md`, `Tutorial_10.md`, `Calculating_metrics.md`, dataset `energy_load.csv`
+- **STA1:** `10_Simple_Linear_Regression/README.md`, `Tutorial_10.md`, instructor-only source note `Calculating_metrics.md`, dataset `energy_load.csv`
 - **Old STA:** session 09 and `Tutorial_9.md`
 - **Old SMP:** session 08 and `Calculating_metrics.md`
 - **Session notes:** [STA 09](https://drive.google.com/file/d/155VOAnrutze7091LObcAhAcnau__uBl1/view?usp=sharing), [SMP 08](https://drive.google.com/file/d/1N_hUEd6Hwn93dVtaSWHsFqe9N47E2WRg/view?usp=sharing)
@@ -185,5 +185,5 @@ Before drafting a chapter, record:
 2. Old hypothesis-testing material must be divided cleanly between Chapters 7 and 8.
 3. MSE probability Chapters 4–5 must be condensed; general combinatorics is removed from the STA1 narrative.
 4. Continuous-distribution explanations must be rewritten without manual integration.
-5. The six assignment briefs remain placeholders. The fixed group-project requirements are already synchronised across the assessment page and Tutorial 12; the detailed project brief will be added separately.
+5. The six assignment briefs and the dedicated group-project brief are implemented and aligned with the assessment page, Chapter 12, and Tutorial 12.
 6. Every reused example must be checked for units, assumptions, notation, licensing and alignment with the practical Python focus.

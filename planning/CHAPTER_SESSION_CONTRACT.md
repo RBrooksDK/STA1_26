@@ -81,17 +81,17 @@ together as one reviewed decision.
 | Ch. / session | Canonical title | Main dependency | Assessment bridge |
 | --- | --- | --- | --- |
 | A / 00 | Getting Started with Python and Data | None | Enables all tutorials and assignments |
-| 1 / 01 | Data and Descriptive Statistics | Appendix A | Assignment 1 |
-| 2 / 02 | Probability for Data Analysis | Chapter 1 | Assignment 2 |
-| 3 / 03 | Random Variables and Discrete Distributions | Chapter 2 | Assignment 2 |
-| 4 / 04 | Continuous Distributions in Practice | Chapters 2--3 | Assignment 3 |
-| 5 / 05 | Sampling Distributions and the Central Limit Theorem | Chapters 1, 3--4 | Assignment 3 |
-| 6 / 06 | Estimation and Confidence Intervals | Chapter 5 | Assignment 4 |
-| 7 / 07 | Hypothesis Testing I: Principles and One-Sample Tests | Chapter 6 | Assignment 4 |
-| 8 / 08 | Hypothesis Testing II: Comparing Two Groups | Chapters 6--7 | Assignment 5 |
-| 9 / 09 | Analysis of Variance | Chapter 8 | Assignment 5 |
-| 10 / 10 | Simple Linear Regression | Chapters 1, 6--7 | Assignment 6 |
-| 11 / 11 | Categorical Data and Chi-Square Tests | Chapters 2--3, 7 | Assignment 6 |
+| 1 / 01 | Data and Descriptive Statistics | Chapter 1 | Assignment 1 |
+| 2 / 02 | Probability for Data Analysis | Chapter 2 | Assignment 1 |
+| 3 / 03 | Random Variables and Discrete Distributions | Chapter 3 | Assignment 2 |
+| 4 / 04 | Continuous Distributions in Practice | Chapter 4 | Assignment 2 |
+| 5 / 05 | Sampling Distributions and the Central Limit Theorem | Chapter 5 | Assignment 3 |
+| 6 / 06 | Estimation and Confidence Intervals | Chapter 6 | Assignment 3 |
+| 7 / 07 | Hypothesis Testing I: Principles and One-Sample Tests | Chapter 7 | Assignment 4 |
+| 8 / 08 | Hypothesis Testing II: Comparing Two Groups | Chapter 8 | Assignment 4 |
+| 9 / 09 | Analysis of Variance | Chapter 9 | Assignment 5 |
+| 10 / 10 | Simple Linear Regression | Chapter 10 | Assignment 5 |
+| 11 / 11 | Categorical Data and Chi-Square Tests | Chapter 11 | Assignment 6 |
 | 12 / 12 | Planning and Reporting a Statistical Analysis / Integrated Statistical Analysis and Exam Preparation | Chapters 1--11 | Group project and oral exam |
 
 ## Per-chapter contracts
@@ -127,7 +127,7 @@ together as one reviewed decision.
 - **Python outcome:** import/clean a measurement file; compute `describe()`
   plus explicit summaries; make histogram, boxplot, and scatterplot with
   units; state a data-quality caveat.
-- **Assessment bridge:** Assignment 1—small end-to-end descriptive analysis.
+- **Assessment bridge:** Assignment 1 begins with descriptive analysis.
 - **Acceptance:** book and notebook both explain why sample variance uses
   `ddof=1`; all displayed plots and conclusions are reproducible.
 
@@ -147,8 +147,7 @@ together as one reviewed decision.
 - **Python outcome:** calculate and visualise false-positive/false-negative
   scenarios from a contingency table; distinguish base rate from predictive
   value.
-- **Assessment bridge:** Assignment 2 begins—probability modelling for an
-  engineering process.
+- **Assessment bridge:** Assignment 1 completes with probability reasoning.
 - **Acceptance:** every independence claim is distinguished from mutual
   exclusivity, and Bayes is interpreted in the data context.
 
@@ -166,7 +165,7 @@ together as one reviewed decision.
   notes; SMP Session 02; existing STA1 Session 03 and `packet_loss.csv`.
 - **Python outcome:** use `scipy.stats.binom` and `poisson` for probabilities,
   compare observed counts with a plausible model, and report modelling limits.
-- **Assessment bridge:** Assignment 2 completes.
+- **Assessment bridge:** Assignment 2 begins with discrete models.
 - **Acceptance:** binomial assumptions are stated explicitly; Poisson parameter
   meaning and units are correct.
 
@@ -184,7 +183,7 @@ together as one reviewed decision.
   `component_lifetimes.csv`.
 - **Python outcome:** use SciPy CDF/SF/PPF correctly, create a QQ plot, and
   explain why a diagnostic does not prove normality.
-- **Assessment bridge:** Assignment 3 begins.
+- **Assessment bridge:** Assignment 2 completes with continuous models.
 - **Acceptance:** normal is always parameterised by variance in prose/math and
   SciPy `scale` is described as standard deviation.
 
@@ -202,7 +201,7 @@ together as one reviewed decision.
 - **Python outcome:** simulate repeated samples with a fixed seed, plot sample
   means, compare empirical and theoretical standard errors, and identify a
   case where the CLT is not a remedy.
-- **Assessment bridge:** Assignment 3 completes.
+- **Assessment bridge:** Assignment 3 begins with sampling distributions.
 - **Acceptance:** the distribution is written \(N(\mu,\sigma^2/n)\), never
   with \(\sigma/\sqrt{n}\) in the variance position.
 
@@ -219,7 +218,7 @@ together as one reviewed decision.
   Session 06; existing STA1 Session 06 and `batteries.xlsx`.
 - **Python outcome:** calculate intervals with transparent inputs, bootstrap a
   mean with a seed, and compare interval widths.
-- **Assessment bridge:** Assignment 4 begins.
+- **Assessment bridge:** Assignment 3 completes with estimation.
 - **Acceptance:** no material says that a fixed parameter has a 95% probability
   of lying in the realised frequentist interval.
 
@@ -236,7 +235,7 @@ together as one reviewed decision.
   Session 07; existing STA1 Session 07 and a specification-focused dataset.
 - **Python outcome:** perform both tests with assumptions and contextual
   conclusion; show why p-value is not \(P(H_0\mid\text{data})\).
-- **Assessment bridge:** Assignment 4 completes.
+- **Assessment bridge:** Assignment 4 begins with one-sample tests.
 - **Acceptance:** examples distinguish statistical from practical significance
   and include a suitable effect/context measure where possible.
 
@@ -255,7 +254,7 @@ together as one reviewed decision.
 - **Python outcome:** inspect paired structure, use `ttest_ind`/`ttest_rel`
   appropriately, compare two independent proportions, and report difference
   intervals with visual comparisons.
-- **Assessment bridge:** Assignment 5 begins.
+- **Assessment bridge:** Assignment 4 completes with two-group tests.
 - **Acceptance:** every worked example states its design and avoids assuming
   equal variances without justification.
 
@@ -273,7 +272,7 @@ together as one reviewed decision.
 - **Python outcome:** make group boxplots, choose between classical and Welch
   one-way ANOVA, run compatible Tukey HSD comparisons in statsmodels, calculate
   eta-squared, diagnose errors, and communicate which comparisons differ.
-- **Assessment bridge:** Assignment 5 completes.
+- **Assessment bridge:** Assignment 5 begins with ANOVA.
 - **Acceptance:** use a newly reviewed original ANOVA exposition and example;
   do not claim the old STA course has a separate note PDF if it does not.
 
@@ -293,7 +292,7 @@ together as one reviewed decision.
   08; existing STA1 Session 10, `energy_load.csv`, and `scope_filter_intensity.xlsx`.
 - **Python outcome:** fit using statsmodels for coefficients, inference,
   diagnostics, and intervals; create scatter, residual, order, and QQ plots.
-- **Assessment bridge:** Assignment 6 begins.
+- **Assessment bridge:** Assignment 5 completes with regression.
 - **Acceptance:** intervals are not conflated with prediction intervals, and
   \(R^2\) is not presented as causal evidence.
 

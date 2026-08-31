@@ -202,8 +202,6 @@ When you simulate, keep a seed: `rng = np.random.default_rng(2026)`. Write `ddof
 
 ### Resources
 
-[Session material](https://github.com/RBrooksDK/STA1_26/tree/main/00_Getting_Started_with_Python_and_Data/session_material)
-
 [Datasets](../pages/datasets.md)
 
 [Download data folder](https://download-directory.github.io/?url=https://github.com/RBrooksDK/STA1_26/tree/main/data)

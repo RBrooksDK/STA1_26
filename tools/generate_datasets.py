@@ -208,6 +208,347 @@ def system_benchmark() -> dict:
     }
 
 
+def assignment01_digital_services() -> dict:
+    """Service latency and security-alert categories for Assignment 1."""
+    n = 144
+    services = rng.choice(
+        ["identity", "orders", "telemetry"], size=n, p=[0.32, 0.38, 0.30]
+    )
+    baseline = {"identity": 72.0, "orders": 96.0, "telemetry": 84.0}
+    latency = np.array(
+        [baseline[s] + rng.gamma(shape=2.2, scale=11.0) for s in services]
+    )
+    latency[[18, 87, 131]] += [82.0, 105.0, 76.0]
+    alert_type = rng.choice(
+        ["none", "authentication", "rate_limit", "injection_signature"],
+        size=n,
+        p=[0.72, 0.15, 0.08, 0.05],
+    )
+    df = pd.DataFrame(
+        {
+            "observation_id": np.arange(1, n + 1),
+            "service": services,
+            "latency_ms": np.round(latency, 2),
+            "alert_type": alert_type,
+        }
+    )
+    path = DATA / "assignment01_digital_services.csv"
+    df.to_csv(path, index=False)
+    return {
+        "file": path.name,
+        "n": n,
+    }
+
+
+def assignment01_smart_building() -> dict:
+    """Two-zone building measurements for climate and building engineering."""
+    hours = np.tile(np.arange(1, 49), 2)
+    zones = np.repeat(["north", "south"], 48)
+    outdoor_base = 7.0 + 5.5 * np.sin(2 * np.pi * (np.arange(1, 49) - 9) / 24)
+    outdoor = np.tile(outdoor_base, 2) + rng.normal(0.0, 0.45, size=96)
+    zone_temp = np.where(zones == "north", 20.7, 21.5)
+    indoor = zone_temp + 0.10 * outdoor + rng.normal(0.0, 0.45, size=96)
+    zone_energy = np.where(zones == "north", 3.0, 0.0)
+    energy = 43.0 - 0.85 * outdoor + zone_energy + rng.normal(0.0, 2.2, size=96)
+    df = pd.DataFrame(
+        {
+            "measurement_id": np.arange(1, 97),
+            "hour": hours,
+            "zone": zones,
+            "outdoor_temp_c": np.round(outdoor, 2),
+            "indoor_temp_c": np.round(indoor, 2),
+            "energy_kwh": np.round(energy, 2),
+        }
+    )
+    path = DATA / "assignment01_smart_building.csv"
+    df.to_csv(path, index=False)
+    return {
+        "file": path.name,
+        "n": int(df.shape[0]),
+    }
+
+
+def assignment01_production() -> dict:
+    """Component dimensions and machine vibration for Assignment 1."""
+    n_per_machine = 40
+    machines = np.repeat(["M1", "M2", "M3"], n_per_machine)
+    diameter_mu = {"M1": 20.00, "M2": 20.04, "M3": 19.98}
+    vibration_mu = {"M1": 2.15, "M2": 2.70, "M3": 2.35}
+    diameter = np.array(
+        [rng.normal(diameter_mu[m], 0.045) for m in machines]
+    )
+    vibration = np.array(
+        [max(0.15, rng.normal(vibration_mu[m], 0.32)) for m in machines]
+    )
+    vibration[111] = 5.60  # unusual but valid measurement
+    df = pd.DataFrame(
+        {
+            "part_id": np.arange(1, machines.size + 1),
+            "machine": machines,
+            "diameter_mm": np.round(diameter, 3),
+            "vibration_mm_s": np.round(vibration, 2),
+        }
+    )
+    path = DATA / "assignment01_production.csv"
+    df.to_csv(path, index=False)
+    return {
+        "file": path.name,
+        "n_per_machine": n_per_machine,
+        "valid_unusual_measurement": "vibration_mm_s = 5.60 for part_id 112",
+    }
+
+
+def assignment01_supplier_deliveries() -> dict:
+    """Right-skewed supplier lead times for Assignment 1."""
+    n_per_supplier = 40
+    suppliers = np.repeat(["S1", "S2", "S3"], n_per_supplier)
+    base = {"S1": 2.8, "S2": 3.3, "S3": 3.0}
+    scale = {"S1": 1.10, "S2": 1.35, "S3": 1.55}
+    lead_time = np.array(
+        [base[s] + rng.gamma(shape=2.0, scale=scale[s]) for s in suppliers]
+    )
+    lead_time[116] = 18.50  # a valid, documented customs delay
+    df = pd.DataFrame(
+        {
+            "shipment_id": np.arange(1, suppliers.size + 1),
+            "supplier": suppliers,
+            "lead_time_days": np.round(lead_time, 2),
+        }
+    )
+    path = DATA / "assignment01_supplier_deliveries.csv"
+    df.to_csv(path, index=False)
+    return {
+        "file": path.name,
+        "n_per_supplier": n_per_supplier,
+        "documented_event": "shipment_id 117 had a genuine customs delay",
+    }
+
+
+def assignment02_concrete_strength() -> dict:
+    """Concrete compressive-strength measurements for Assignment 2."""
+    n = 160
+    mean_strength = 42.0
+    sd_strength = 4.2
+    strength = rng.normal(mean_strength, sd_strength, size=n)
+    df = pd.DataFrame(
+        {
+            "specimen_id": np.arange(1, n + 1),
+            "strength_mpa": np.round(strength, 2),
+        }
+    )
+    path = DATA / "assignment02_concrete_strength.csv"
+    df.to_csv(path, index=False)
+    return {
+        "file": path.name,
+        "n": n,
+        "generating_mean_mpa": mean_strength,
+        "generating_sd_mpa": sd_strength,
+        "note": "Generating parameters are recorded only for reproducibility.",
+    }
+
+
+def assignment02_service_repairs() -> dict:
+    """Right-skewed service-restoration times for Assignment 2."""
+    n = 180
+    mean_minutes = 72.0
+    repair_time = rng.exponential(scale=mean_minutes, size=n)
+    df = pd.DataFrame(
+        {
+            "incident_id": np.arange(1, n + 1),
+            "repair_time_min": np.round(repair_time, 2),
+        }
+    )
+    path = DATA / "assignment02_service_repairs.csv"
+    df.to_csv(path, index=False)
+    return {
+        "file": path.name,
+        "n": n,
+        "generating_mean_minutes": mean_minutes,
+        "note": "Generating parameters are recorded only for reproducibility.",
+    }
+
+
+def assignment03_sensor_calibration() -> dict:
+    """Temperature-sensor calibration errors for Assignments 3 and 4."""
+    assignment_rng = np.random.default_rng(2402)
+    n = 64
+    mean_error_c = 0.18
+    sd_error_c = 0.60
+    error = assignment_rng.normal(mean_error_c, sd_error_c, size=n)
+    df = pd.DataFrame(
+        {
+            "sensor_id": np.arange(1, n + 1),
+            "calibration_error_c": np.round(error, 3),
+        }
+    )
+    path = DATA / "assignment03_sensor_calibration.csv"
+    df.to_csv(path, index=False)
+    return {
+        "file": path.name,
+        "n": n,
+        "generating_mean_error_c": mean_error_c,
+        "generating_sd_error_c": sd_error_c,
+        "note": "Generating parameters are recorded only for reproducibility.",
+    }
+
+
+def assignment03_access_control() -> dict:
+    """False rejections of legitimate login attempts for Assignments 3 and 4."""
+    assignment_rng = np.random.default_rng(2516)
+    n = 240
+    false_reject_probability = 0.085
+    false_reject = assignment_rng.binomial(1, false_reject_probability, size=n)
+    df = pd.DataFrame(
+        {
+            "attempt_id": np.arange(1, n + 1),
+            "false_reject": false_reject,
+        }
+    )
+    path = DATA / "assignment03_access_control.csv"
+    df.to_csv(path, index=False)
+    return {
+        "file": path.name,
+        "n": n,
+        "generating_false_reject_probability": false_reject_probability,
+        "observed_false_rejections": int(false_reject.sum()),
+        "note": "Generating parameters are recorded only for reproducibility.",
+    }
+
+
+def assignment04_coating_durability() -> dict:
+    """Independent durability samples from two coating processes."""
+    assignment_rng = np.random.default_rng(2804)
+    parameters = {"standard": (44, 118.0, 14.0), "modified": (48, 128.0, 22.0)}
+    rows = []
+    specimen_id = 1
+    for process, (n, mean_h, sd_h) in parameters.items():
+        values = assignment_rng.normal(mean_h, sd_h, size=n)
+        for value in values:
+            rows.append(
+                {
+                    "specimen_id": specimen_id,
+                    "process": process,
+                    "durability_h": round(float(value), 2),
+                }
+            )
+            specimen_id += 1
+    df = pd.DataFrame(rows)
+    path = DATA / "assignment04_coating_durability.csv"
+    df.to_csv(path, index=False)
+    return {
+        "file": path.name,
+        "n_by_process": {key: value[0] for key, value in parameters.items()},
+        "note": "Generating parameters are recorded only for reproducibility.",
+    }
+
+
+def assignment04_energy_retrofit() -> dict:
+    """Paired energy use before and after a building-control retrofit."""
+    assignment_rng = np.random.default_rng(2805)
+    n = 36
+    before = assignment_rng.normal(82.0, 9.0, size=n)
+    reduction = assignment_rng.normal(4.5, 5.5, size=n)
+    after = before - reduction
+    df = pd.DataFrame(
+        {
+            "building_id": np.arange(1, n + 1),
+            "before_kwh_day": np.round(before, 2),
+            "after_kwh_day": np.round(after, 2),
+        }
+    )
+    path = DATA / "assignment04_energy_retrofit.csv"
+    df.to_csv(path, index=False)
+    return {
+        "file": path.name,
+        "n_pairs": n,
+        "generating_mean_reduction_kwh_day": 4.5,
+        "note": "Generating parameters are recorded only for reproducibility.",
+    }
+
+
+def assignment05_composite_strength() -> dict:
+    """Composite strength under four curing methods for Assignment 5."""
+    assignment_rng = np.random.default_rng(2905)
+    parameters = {
+        "ambient": (24, 52.0, 4.7),
+        "thermal": (24, 57.0, 4.7),
+        "uv": (24, 56.0, 4.7),
+        "hybrid": (24, 63.0, 4.7),
+    }
+    rows = []
+    specimen_id = 1
+    for method, (n, mean_mpa, sd_mpa) in parameters.items():
+        values = assignment_rng.normal(mean_mpa, sd_mpa, size=n)
+        for value in values:
+            rows.append(
+                {
+                    "specimen_id": specimen_id,
+                    "curing_method": method,
+                    "strength_mpa": round(float(value), 2),
+                }
+            )
+            specimen_id += 1
+    df = pd.DataFrame(rows)
+    path = DATA / "assignment05_composite_strength.csv"
+    df.to_csv(path, index=False)
+    return {
+        "file": path.name,
+        "n_per_method": 24,
+        "note": "Generating parameters are recorded only for reproducibility.",
+    }
+
+
+def assignment05_pump_energy() -> dict:
+    """Pump energy use over an observed flow-rate range for Assignment 5."""
+    assignment_rng = np.random.default_rng(2906)
+    n = 55
+    flow = np.sort(assignment_rng.uniform(22.0, 98.0, size=n))
+    energy = 8.0 + 0.42 * flow + assignment_rng.normal(0.0, 3.2, size=n)
+    df = pd.DataFrame(
+        {
+            "run_id": np.arange(1, n + 1),
+            "flow_l_min": np.round(flow, 2),
+            "energy_kwh": np.round(energy, 3),
+        }
+    )
+    path = DATA / "assignment05_pump_energy.csv"
+    df.to_csv(path, index=False)
+    return {
+        "file": path.name,
+        "n": n,
+        "observed_flow_range_l_min": [float(flow.min()), float(flow.max())],
+        "note": "Generating parameters are recorded only for reproducibility.",
+    }
+
+
+def assignment06_safety_events() -> dict:
+    """Safety-event categories across three sites for Assignment 6."""
+    assignment_rng = np.random.default_rng(3011)
+    event_types = ["sensor", "network", "mechanical", "power"]
+    probabilities = {
+        "north": [0.52, 0.20, 0.18, 0.10],
+        "central": [0.38, 0.34, 0.18, 0.10],
+        "coastal": [0.28, 0.22, 0.35, 0.15],
+    }
+    rows = []
+    event_id = 1
+    for site, probs in probabilities.items():
+        events = assignment_rng.choice(event_types, size=90, p=probs)
+        for event_type in events:
+            rows.append(
+                {"event_id": event_id, "site": site, "event_type": event_type}
+            )
+            event_id += 1
+    df = pd.DataFrame(rows)
+    path = DATA / "assignment06_safety_events.csv"
+    df.to_csv(path, index=False)
+    return {
+        "file": path.name,
+        "n_per_site": 90,
+        "note": "Generating parameters are recorded only for reproducibility.",
+    }
+
+
 def main() -> None:
     log = {
         "seed": 2026,
@@ -220,6 +561,19 @@ def main() -> None:
             packet_trials(),
             supplier_impurity(),
             system_benchmark(),
+            assignment01_digital_services(),
+            assignment01_smart_building(),
+            assignment01_production(),
+            assignment01_supplier_deliveries(),
+            assignment02_concrete_strength(),
+            assignment02_service_repairs(),
+            assignment03_sensor_calibration(),
+            assignment03_access_control(),
+            assignment04_coating_durability(),
+            assignment04_energy_retrofit(),
+            assignment05_composite_strength(),
+            assignment05_pump_energy(),
+            assignment06_safety_events(),
         ],
     }
     (DATA / "generation_log.json").write_text(json.dumps(log, indent=2), encoding="utf-8")
