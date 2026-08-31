@@ -85,10 +85,6 @@
          <lastmod>2026-08-31</lastmod>
     </url>
     <url>
-         <loc>https://rbrooksdk.github.io/STA1_26/10_Simple_Linear_Regression/Calculating_metrics/</loc>
-         <lastmod>2026-08-31</lastmod>
-    </url>
-    <url>
          <loc>https://rbrooksdk.github.io/STA1_26/10_Simple_Linear_Regression/Tutorial_10_notebook/</loc>
          <lastmod>2026-08-31</lastmod>
     </url>
@@ -113,6 +109,30 @@
          <lastmod>2026-08-31</lastmod>
     </url>
     <url>
+         <loc>https://rbrooksdk.github.io/STA1_26/assignments/assignment_01_data_and_probability_foundations/</loc>
+         <lastmod>2026-08-31</lastmod>
+    </url>
+    <url>
+         <loc>https://rbrooksdk.github.io/STA1_26/assignments/assignment_02_discrete_and_continuous_models/</loc>
+         <lastmod>2026-08-31</lastmod>
+    </url>
+    <url>
+         <loc>https://rbrooksdk.github.io/STA1_26/assignments/assignment_03_sampling_and_estimation/</loc>
+         <lastmod>2026-08-31</lastmod>
+    </url>
+    <url>
+         <loc>https://rbrooksdk.github.io/STA1_26/assignments/assignment_04_one_and_two_sample_tests/</loc>
+         <lastmod>2026-08-31</lastmod>
+    </url>
+    <url>
+         <loc>https://rbrooksdk.github.io/STA1_26/assignments/assignment_05_anova_and_regression/</loc>
+         <lastmod>2026-08-31</lastmod>
+    </url>
+    <url>
+         <loc>https://rbrooksdk.github.io/STA1_26/assignments/assignment_06_categorical_data/</loc>
+         <lastmod>2026-08-31</lastmod>
+    </url>
+    <url>
          <loc>https://rbrooksdk.github.io/STA1_26/blog/</loc>
          <lastmod>2026-08-31</lastmod>
     </url>
@@ -130,6 +150,10 @@
     </url>
     <url>
          <loc>https://rbrooksdk.github.io/STA1_26/pages/faq/</loc>
+         <lastmod>2026-08-31</lastmod>
+    </url>
+    <url>
+         <loc>https://rbrooksdk.github.io/STA1_26/pages/project/</loc>
          <lastmod>2026-08-31</lastmod>
     </url>
 </urlset>

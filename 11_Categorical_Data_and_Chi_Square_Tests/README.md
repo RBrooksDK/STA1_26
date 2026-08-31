@@ -41,6 +41,6 @@ Brooks: [Chapter 11](https://docs.google.com/viewer?url=https://raw.githubuserco
 
 ### Resources
 
-[Session material](https://github.com/RBrooksDK/STA1_26/tree/main/11_Categorical_Data_and_Chi_Square_Tests/session_material)
-
 [Tutorial 11: Defect types across production lines](Tutorial_11_notebook.ipynb)
+
+[Assignment 6 — Categorical Data](../assignments/assignment_06_categorical_data.md) — due 24 Nov. 2026, 12:45

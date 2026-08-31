@@ -22,7 +22,7 @@ The standard error of the mean is \(\operatorname{SE}(\bar{X}) = \sigma / \sqrt{
 !!! tip "Learning Objectives"
 
     - Describe the sampling distribution of \(\bar{X}\) and write \(\operatorname{SE}(\bar{X}) = \sigma / \sqrt{n}\).
-    - Use \(N(\mu, \sigma^2 / n)\) when the CLT applies.
+    - Use \(\bar X \approx N(\mu, \sigma^2 / n)\) when the CLT applies.
     - Simulate repeated samples and watch the histogram of \(\bar{x}\) become approximately normal.
     - State when the CLT helps (means, large \(n\)) and when it does not (small \(n\), strong skew, a single observation).
 
@@ -34,6 +34,6 @@ Brooks: [Chapter 5](https://docs.google.com/viewer?url=https://raw.githubusercon
 
 ### Resources
 
-[Session material](https://github.com/RBrooksDK/STA1_26/tree/main/05_Sampling_Distributions_and_the_CLT/session_material)
-
 [Tutorial 5: From one sample to many](Tutorial_05_notebook.ipynb)
+
+[Assignment 3 — Sampling and Estimation](../assignments/assignment_03_sampling_and_estimation.md) — due 20 Oct. 2026, 12:45

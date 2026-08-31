@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../figures/vialogo_white.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -33,7 +33,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -289,17 +289,20 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../assignments/" class="md-tabs__link">
-        
+    
+    
+      <li class="md-tabs__item">
+        <a href="../assignments/" class="md-tabs__link">
+          
   
   
     
   
   Assignments
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -522,9 +525,45 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../assignments/" class="md-nav__link">
+    
+    
+      
         
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../assignments/" class="md-nav__link">
+      
   
   
   <span class="md-ellipsis">
@@ -538,7 +577,13 @@
   
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -760,7 +805,7 @@
 <p>All course files live in the folder <code>data/</code> on GitHub. You do not need Git: <a href="https://download-directory.github.io/?url=https://github.com/RBrooksDK/STA1_26/tree/main/data">download the data folder</a>, unzip it, and keep a folder named <code>data</code> next to your notebook. Session 00 has the full steps. If a file is missing later in the semester, download the folder again and replace the old copy.</p>
 <p>From a session notebook:</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">DATA</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;../data&quot;</span><span class="p">)</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">DATA</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">"../data"</span><span class="p">)</span>
 </span></code></pre></div>
 <p>Synthetic files are generated reproducibly by <code>tools/generate_datasets.py</code> with seed <code>2026</code>. Analyse them as measurements whose generating parameters are unknown.</p>
 <h2 id="files">Files<a class="headerlink" href="#files" title="Permanent link">&para;</a></h2>
@@ -832,36 +877,130 @@
 <td>Session 12</td>
 </tr>
 <tr>
+<td><code>assignment01_digital_services.csv</code></td>
+<td>Synthetic</td>
+<td>144</td>
+<td><code>observation_id</code>, <code>service</code>, <code>latency_ms</code>, <code>alert_type</code></td>
+<td>Assignment 1</td>
+</tr>
+<tr>
+<td><code>assignment01_smart_building.csv</code></td>
+<td>Synthetic</td>
+<td>96</td>
+<td><code>measurement_id</code>, <code>hour</code>, <code>zone</code>, <code>outdoor_temp_c</code>, <code>indoor_temp_c</code>, <code>energy_kwh</code></td>
+<td>Assignment 1</td>
+</tr>
+<tr>
+<td><code>assignment01_production.csv</code></td>
+<td>Synthetic</td>
+<td>120</td>
+<td><code>part_id</code>, <code>machine</code>, <code>diameter_mm</code>, <code>vibration_mm_s</code></td>
+<td>Additional practice</td>
+</tr>
+<tr>
+<td><code>assignment01_supplier_deliveries.csv</code></td>
+<td>Synthetic</td>
+<td>120</td>
+<td><code>shipment_id</code>, <code>supplier</code>, <code>lead_time_days</code></td>
+<td>Additional practice</td>
+</tr>
+<tr>
+<td><code>assignment02_concrete_strength.csv</code></td>
+<td>Synthetic</td>
+<td>160</td>
+<td><code>specimen_id</code>, <code>strength_mpa</code></td>
+<td>Assignment 2</td>
+</tr>
+<tr>
+<td><code>assignment02_service_repairs.csv</code></td>
+<td>Synthetic</td>
+<td>180</td>
+<td><code>incident_id</code>, <code>repair_time_min</code></td>
+<td>Assignment 2</td>
+</tr>
+<tr>
+<td><code>assignment03_sensor_calibration.csv</code></td>
+<td>Synthetic</td>
+<td>64</td>
+<td><code>sensor_id</code>, <code>calibration_error_c</code></td>
+<td>Assignments 3–4</td>
+</tr>
+<tr>
+<td><code>assignment03_access_control.csv</code></td>
+<td>Synthetic</td>
+<td>240</td>
+<td><code>attempt_id</code>, <code>false_reject</code></td>
+<td>Assignments 3–4</td>
+</tr>
+<tr>
+<td><code>assignment04_coating_durability.csv</code></td>
+<td>Synthetic</td>
+<td>92</td>
+<td><code>specimen_id</code>, <code>process</code>, <code>durability_h</code></td>
+<td>Assignment 4</td>
+</tr>
+<tr>
+<td><code>assignment04_energy_retrofit.csv</code></td>
+<td>Synthetic</td>
+<td>36</td>
+<td><code>building_id</code>, <code>before_kwh_day</code>, <code>after_kwh_day</code></td>
+<td>Assignment 4</td>
+</tr>
+<tr>
+<td><code>assignment05_composite_strength.csv</code></td>
+<td>Synthetic</td>
+<td>96</td>
+<td><code>specimen_id</code>, <code>curing_method</code>, <code>strength_mpa</code></td>
+<td>Assignment 5</td>
+</tr>
+<tr>
+<td><code>assignment05_pump_energy.csv</code></td>
+<td>Synthetic</td>
+<td>55</td>
+<td><code>run_id</code>, <code>flow_l_min</code>, <code>energy_kwh</code></td>
+<td>Assignment 5</td>
+</tr>
+<tr>
+<td><code>assignment06_safety_events.csv</code></td>
+<td>Synthetic</td>
+<td>270</td>
+<td><code>event_id</code>, <code>site</code>, <code>event_type</code></td>
+<td>Assignment 6</td>
+</tr>
+<tr>
 <td><code>batteries.xlsx</code></td>
 <td>STA_26</td>
 <td>30</td>
 <td><code>Producer 1</code>, <code>Producer 2</code> (lifetimes)</td>
-<td>Extra</td>
+<td>Additional practice</td>
 </tr>
 <tr>
 <td><code>cpu_order_lines.xlsx</code></td>
 <td>STA_26</td>
 <td>31</td>
 <td><code>Sample</code>, <code>CPU_utilisation</code>, <code>Order_lines_per_day</code></td>
-<td>Extra</td>
+<td>Additional practice</td>
 </tr>
 <tr>
 <td><code>resin_impurities.xlsx</code></td>
 <td>STA_26</td>
 <td>15</td>
 <td><code>resin</code>, <code>impurity</code></td>
-<td>Extra</td>
+<td>Additional practice</td>
 </tr>
 <tr>
 <td><code>scope_filter_intensity.xlsx</code></td>
 <td>STA_26</td>
 <td>60</td>
 <td><code>filter</code>, <code>intensity</code></td>
-<td>Extra</td>
+<td>Additional practice</td>
 </tr>
 </tbody>
 </table>
 <p><code>shift_um</code> in <code>sensor_thickness.csv</code> documents a late production drift used when generating the file. Do not use it as a predictor in Sessions 01--07; treat <code>thickness_um</code> as the measurement.</p>
+<p>The two active Assignment 1 files support descriptive analysis in <a href="../../assignments/assignment_01_data_and_probability_foundations/">Assignment 1</a>. The production and supplier files remain available as additional descriptive-practice data.</p>
+<p>The Assignment 2 files support normal- and exponential-model assessment in <a href="../../assignments/assignment_02_discrete_and_continuous_models/">Assignment 2</a>.</p>
+<p>The Assignment 3 files are first used for estimation in <a href="../../assignments/assignment_03_sampling_and_estimation/">Assignment 3</a> and then revisited for one-sample tests in <a href="../../assignments/assignment_04_one_and_two_sample_tests/">Assignment 4</a>. The remaining files provide new two-sample, ANOVA, regression, and categorical cases for Assignments 4–6. Treat all generating parameters as unknown analysis targets.</p>
 <h2 id="regenerating-the-synthetic-files">Regenerating the synthetic files<a class="headerlink" href="#regenerating-the-synthetic-files" title="Permanent link">&para;</a></h2>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python tools/generate_datasets.py
 </span></code></pre></div>
@@ -1007,7 +1146,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.expand", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.prune", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       

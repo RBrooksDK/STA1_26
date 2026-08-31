@@ -39,6 +39,6 @@ Brooks: [Chapter 8](https://docs.google.com/viewer?url=https://raw.githubusercon
 
 ### Resources
 
-[Session material](https://github.com/RBrooksDK/STA1_26/tree/main/08_Hypothesis_Testing_II_Comparing_Two_Groups/session_material)
-
 [Tutorial 8: A/B test of response times](Tutorial_08_notebook.ipynb)
+
+[Assignment 4 — One- and Two-Sample Tests](../assignments/assignment_04_one_and_two_sample_tests.md) — due 3 Nov. 2026, 12:45

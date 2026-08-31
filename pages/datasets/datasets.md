@@ -23,12 +23,31 @@ Synthetic files are generated reproducibly by `tools/generate_datasets.py` with 
 | `defect_types.csv` | Synthetic | 360 | `line`, `defect_type` | Session 11 |
 | `supplier_impurity.csv` | Synthetic | 72 | `sample_id`, `supplier` (A/B/C), `impurity_mg_kg` | Session 09 |
 | `system_benchmark.csv` | Synthetic | 120 | `run_id`, `configuration`, `load_pct`, `latency_ms`, `energy_kwh`, `incident` | Session 12 |
-| `batteries.xlsx` | STA_26 | 30 | `Producer 1`, `Producer 2` (lifetimes) | Extra |
-| `cpu_order_lines.xlsx` | STA_26 | 31 | `Sample`, `CPU_utilisation`, `Order_lines_per_day` | Extra |
-| `resin_impurities.xlsx` | STA_26 | 15 | `resin`, `impurity` | Extra |
-| `scope_filter_intensity.xlsx` | STA_26 | 60 | `filter`, `intensity` | Extra |
+| `assignment01_digital_services.csv` | Synthetic | 144 | `observation_id`, `service`, `latency_ms`, `alert_type` | Assignment 1 |
+| `assignment01_smart_building.csv` | Synthetic | 96 | `measurement_id`, `hour`, `zone`, `outdoor_temp_c`, `indoor_temp_c`, `energy_kwh` | Assignment 1 |
+| `assignment01_production.csv` | Synthetic | 120 | `part_id`, `machine`, `diameter_mm`, `vibration_mm_s` | Additional practice |
+| `assignment01_supplier_deliveries.csv` | Synthetic | 120 | `shipment_id`, `supplier`, `lead_time_days` | Additional practice |
+| `assignment02_concrete_strength.csv` | Synthetic | 160 | `specimen_id`, `strength_mpa` | Assignment 2 |
+| `assignment02_service_repairs.csv` | Synthetic | 180 | `incident_id`, `repair_time_min` | Assignment 2 |
+| `assignment03_sensor_calibration.csv` | Synthetic | 64 | `sensor_id`, `calibration_error_c` | Assignments 3–4 |
+| `assignment03_access_control.csv` | Synthetic | 240 | `attempt_id`, `false_reject` | Assignments 3–4 |
+| `assignment04_coating_durability.csv` | Synthetic | 92 | `specimen_id`, `process`, `durability_h` | Assignment 4 |
+| `assignment04_energy_retrofit.csv` | Synthetic | 36 | `building_id`, `before_kwh_day`, `after_kwh_day` | Assignment 4 |
+| `assignment05_composite_strength.csv` | Synthetic | 96 | `specimen_id`, `curing_method`, `strength_mpa` | Assignment 5 |
+| `assignment05_pump_energy.csv` | Synthetic | 55 | `run_id`, `flow_l_min`, `energy_kwh` | Assignment 5 |
+| `assignment06_safety_events.csv` | Synthetic | 270 | `event_id`, `site`, `event_type` | Assignment 6 |
+| `batteries.xlsx` | STA_26 | 30 | `Producer 1`, `Producer 2` (lifetimes) | Additional practice |
+| `cpu_order_lines.xlsx` | STA_26 | 31 | `Sample`, `CPU_utilisation`, `Order_lines_per_day` | Additional practice |
+| `resin_impurities.xlsx` | STA_26 | 15 | `resin`, `impurity` | Additional practice |
+| `scope_filter_intensity.xlsx` | STA_26 | 60 | `filter`, `intensity` | Additional practice |
 
 `shift_um` in `sensor_thickness.csv` documents a late production drift used when generating the file. Do not use it as a predictor in Sessions 01--07; treat `thickness_um` as the measurement.
+
+The two active Assignment 1 files support descriptive analysis in [Assignment 1](../assignments/assignment_01_data_and_probability_foundations.md). The production and supplier files remain available as additional descriptive-practice data.
+
+The Assignment 2 files support normal- and exponential-model assessment in [Assignment 2](../assignments/assignment_02_discrete_and_continuous_models.md).
+
+The Assignment 3 files are first used for estimation in [Assignment 3](../assignments/assignment_03_sampling_and_estimation.md) and then revisited for one-sample tests in [Assignment 4](../assignments/assignment_04_one_and_two_sample_tests.md). The remaining files provide new two-sample, ANOVA, regression, and categorical cases for Assignments 4–6. Treat all generating parameters as unknown analysis targets.
 
 ## Regenerating the synthetic files
 
