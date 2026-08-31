@@ -37,6 +37,6 @@ Brooks: [Chapter 3](https://docs.google.com/viewer?url=https://raw.githubusercon
 
 ### Resources
 
-[Session material](https://github.com/RBrooksDK/STA1_26/tree/main/03_Random_Variables_and_Discrete_Distributions/session_material)
-
 [Tutorial 3: Packet loss and failure counts](Tutorial_03_notebook.ipynb)
+
+[Assignment 2 — Discrete and Continuous Probability Models](../assignments/assignment_02_discrete_and_continuous_models.md) — due 29 Sept. 2026, 12:45

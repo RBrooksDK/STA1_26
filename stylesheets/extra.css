@@ -294,6 +294,27 @@ body, .md-typeset, .md-content, .md-main, .md-typeset p, .md-typeset li, .md-typ
   -ms-overflow-style: none; /* IE 10+ */
 }
 
+/* Use the VIA blue identity for "important" admonitions. */
+.md-typeset .admonition.important,
+.md-typeset details.important {
+  border-color: #6CA2C6;
+}
+
+.md-typeset .important > .admonition-title,
+.md-typeset .important > summary {
+  background-color: rgba(108, 162, 198, 0.18);
+}
+
+.md-typeset .important > .admonition-title::before,
+.md-typeset .important > summary::before {
+  background-color: #6CA2C6;
+}
+
+.md-typeset details[open].important summary::after,
+.md-typeset details.important summary::after {
+  color: #6CA2C6;
+}
+
 [data-md-color-scheme="default"] {
 
 /* Change the border color for the "answer" admonition */
@@ -376,4 +397,31 @@ body[data-md-color-scheme] .md-content ol li {
 .md-typeset .center-table table {
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Keep the assignment cadence compact while leaving deadlines on one line. */
+.md-typeset .cadence-table table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.md-typeset .cadence-table th:nth-child(1),
+.md-typeset .cadence-table td:nth-child(1) {
+  width: 9%;
+}
+
+.md-typeset .cadence-table th:nth-child(2),
+.md-typeset .cadence-table td:nth-child(2) {
+  width: 13%;
+}
+
+.md-typeset .cadence-table th:nth-child(3),
+.md-typeset .cadence-table td:nth-child(3) {
+  width: 51%;
+}
+
+.md-typeset .cadence-table th:nth-child(4),
+.md-typeset .cadence-table td:nth-child(4) {
+  width: 27%;
+  white-space: nowrap;
 }

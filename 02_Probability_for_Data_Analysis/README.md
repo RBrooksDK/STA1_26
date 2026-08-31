@@ -37,6 +37,6 @@ Brooks: [Chapter 2](https://docs.google.com/viewer?url=https://raw.githubusercon
 
 ### Resources
 
-[Session material](https://github.com/RBrooksDK/STA1_26/tree/main/02_Probability_for_Data_Analysis/session_material)
-
 [Tutorial 2: Probability tools for automated inspection](Tutorial_02_notebook.ipynb)
+
+[Assignment 1 — Data and Probability Foundations](../assignments/assignment_01_data_and_probability_foundations.md) — due 15 Sept. 2026, 12:45

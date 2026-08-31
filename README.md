@@ -37,15 +37,15 @@ The course contains **six practice-oriented group assignments** and one **small 
 
 | Activity | After session | Focus |
 | ---: | ---: | --- |
-| Assignment 1 | 01 | Data, preprocessing, and descriptive analysis |
-| Assignment 2 | 03 | Probability and discrete models |
-| Assignment 3 | 05 | Continuous models, sampling, and the CLT |
-| Assignment 4 | 07 | Confidence intervals and one-sample tests |
-| Assignment 5 | 09 | Comparing two and several groups |
-| Assignment 6 | 11 | Regression and categorical data |
+| Assignment 1 | 02 | Data, descriptive analysis, and probability foundations |
+| Assignment 2 | 04 | Discrete and continuous probability models |
+| Assignment 3 | 06 | Sampling distributions and estimation |
+| Assignment 4 | 08 | One- and two-sample hypothesis testing |
+| Assignment 5 | 10 | ANOVA and simple linear regression |
+| Assignment 6 | 11 | Categorical data and chi-square analysis |
 | Project | 12 | A complete analysis of an engineering data set |
 
-See [Assignments](pages/assignments.md) for the assessment overview, including the group project. The detailed briefs will be published during the semester.
+See the [Assignments](pages/assignments.md) overview and the dedicated [Group Project brief](pages/project.md).
 
 ## <i class="fas fa-wave-square" style="color:#6CA2C6"></i> Course Content and Learning Objectives
 

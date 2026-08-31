@@ -41,8 +41,8 @@ Pay particular attention to population versus sample and to \(n-1\) in the sampl
 
 ### Resources
 
-[Session material](https://github.com/RBrooksDK/STA1_26/tree/main/01_Data_and_Descriptive_Statistics/session_material)
-
 [Tutorial 1: Characterising sensor measurements](Tutorial_01_notebook.ipynb)
+
+[Assignment 1 — Data and Probability Foundations](../assignments/assignment_01_data_and_probability_foundations.md) — due 15 Sept. 2026, 12:45
 
 [Datasets](../pages/datasets.md) (`sensor_thickness.csv`)

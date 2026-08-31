@@ -18,7 +18,7 @@ Three **planned** subquestions, written before looking at inferential output:
 
 Those three methods come from three different sessions. They are not a shopping list: each answers one part of the same decision. Exploratory plots may suggest more questions; those will be labelled exploratory.
 
-This tutorial is a **worked example of the process**, not the final-project brief and not a template that dictates your project topic. Your group still chooses its own engineering question and dataset. The project must follow Brooks Chapter 12 and the readiness checklist at the end.
+This tutorial is a **worked example of the process**, not the [Group Project brief](../pages/project.md) and not a template that dictates your project topic. Your group still chooses its own engineering question and dataset. The project must follow Brooks Chapter 12, the official brief, and the readiness checklist at the end.
 
 ## 2. What we will compute
 
@@ -183,9 +183,9 @@ Copy and complete this table for the group project. It is a planning tool, not a
 
 ## 6. Final-project readiness checklist
 
-Use this checklist exactly. The detailed project brief will be published separately; this tutorial does not replace it.
+Use this checklist together with the [Group Project brief](../pages/project.md). This tutorial illustrates the workflow but does not replace the official requirements.
 
-- Deadline: **June 1**.
+- Deadline: **31 December 2026**.
 - Group size: **2–4 students**. Any deviation must be discussed with **R. Brooks before the final session, Session 12**.
 - Workload: **25 hours per student**.
 - Submission format: **one Jupyter notebook**.

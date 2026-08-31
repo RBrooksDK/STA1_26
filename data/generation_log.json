@@ -76,6 +76,84 @@
       "n": 120,
       "n_per_configuration": 40,
       "note": "Generating parameters are for reproducibility only."
+    },
+    {
+      "file": "assignment01_digital_services.csv",
+      "n": 144
+    },
+    {
+      "file": "assignment01_smart_building.csv",
+      "n": 96
+    },
+    {
+      "file": "assignment01_production.csv",
+      "n_per_machine": 40,
+      "valid_unusual_measurement": "vibration_mm_s = 5.60 for part_id 112"
+    },
+    {
+      "file": "assignment01_supplier_deliveries.csv",
+      "n_per_supplier": 40,
+      "documented_event": "shipment_id 117 had a genuine customs delay"
+    },
+    {
+      "file": "assignment02_concrete_strength.csv",
+      "n": 160,
+      "generating_mean_mpa": 42.0,
+      "generating_sd_mpa": 4.2,
+      "note": "Generating parameters are recorded only for reproducibility."
+    },
+    {
+      "file": "assignment02_service_repairs.csv",
+      "n": 180,
+      "generating_mean_minutes": 72.0,
+      "note": "Generating parameters are recorded only for reproducibility."
+    },
+    {
+      "file": "assignment03_sensor_calibration.csv",
+      "n": 64,
+      "generating_mean_error_c": 0.18,
+      "generating_sd_error_c": 0.6,
+      "note": "Generating parameters are recorded only for reproducibility."
+    },
+    {
+      "file": "assignment03_access_control.csv",
+      "n": 240,
+      "generating_false_reject_probability": 0.085,
+      "observed_false_rejections": 20,
+      "note": "Generating parameters are recorded only for reproducibility."
+    },
+    {
+      "file": "assignment04_coating_durability.csv",
+      "n_by_process": {
+        "standard": 44,
+        "modified": 48
+      },
+      "note": "Generating parameters are recorded only for reproducibility."
+    },
+    {
+      "file": "assignment04_energy_retrofit.csv",
+      "n_pairs": 36,
+      "generating_mean_reduction_kwh_day": 4.5,
+      "note": "Generating parameters are recorded only for reproducibility."
+    },
+    {
+      "file": "assignment05_composite_strength.csv",
+      "n_per_method": 24,
+      "note": "Generating parameters are recorded only for reproducibility."
+    },
+    {
+      "file": "assignment05_pump_energy.csv",
+      "n": 55,
+      "observed_flow_range_l_min": [
+        22.701020551885392,
+        96.9963966764798
+      ],
+      "note": "Generating parameters are recorded only for reproducibility."
+    },
+    {
+      "file": "assignment06_safety_events.csv",
+      "n_per_site": 90,
+      "note": "Generating parameters are recorded only for reproducibility."
     }
   ]
 }
