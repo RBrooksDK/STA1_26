@@ -37,13 +37,13 @@ The course contains **six practice-oriented group assignments** and one **small 
 
 | Activity | After session | Focus |
 | ---: | ---: | --- |
-| Assignment 1 | 02 | Data, descriptive analysis, and probability foundations |
-| Assignment 2 | 04 | Discrete and continuous probability models |
-| Assignment 3 | 06 | Sampling distributions and estimation |
-| Assignment 4 | 08 | One- and two-sample hypothesis testing |
-| Assignment 5 | 10 | ANOVA and simple linear regression |
-| Assignment 6 | 11 | Categorical data and chi-square analysis |
-| Project | 12 | A complete analysis of an engineering data set |
+| [Assignment 1](assignments/assignment_01_data_and_probability_foundations.md) | 02 | Data, descriptive analysis, and probability foundations |
+| [Assignment 2](assignments/assignment_02_discrete_and_continuous_models.md) | 04 | Discrete and continuous probability models |
+| [Assignment 3](assignments/assignment_03_sampling_and_estimation.md) | 06 | Sampling distributions and estimation |
+| [Assignment 4](assignments/assignment_04_one_and_two_sample_tests.md) | 08 | One- and two-sample hypothesis testing |
+| [Assignment 5](assignments/assignment_05_anova_and_regression.md) | 10 | ANOVA and simple linear regression |
+| [Assignment 6](assignments/assignment_06_categorical_data.md) | 11 | Categorical data and chi-square analysis |
+| [Project](pages/project.md) | 12 | A complete analysis of an engineering data set |
 
 See the [Assignments](pages/assignments.md) overview and the dedicated [Group Project brief](pages/project.md).
 
