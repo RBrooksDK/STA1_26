@@ -41,6 +41,8 @@ Brooks: [Chapter 9](https://docs.google.com/viewer?url=https://raw.githubusercon
 
 ### Resources
 
+[Session material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgAzeZpcNR3AQrElMhY31otqAfb6r5-bZFwqdVQ6dIazSSU)
+
 [Tutorial 9: Several suppliers, one quality measure](Tutorial_09_notebook.ipynb)
 
 [Assignment 5 — ANOVA and Regression](../assignments/assignment_05_anova_and_regression.md) — due 17 Nov. 2026, 12:45
