@@ -42,6 +42,8 @@ Revisit your six assignments and the [Group Project brief](../pages/project.md).
 
 ### Resources
 
+[Session material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgAevq3HTqsESLYw8wgKZZSHAVTx7hfxyRWIXFlGmLmCVmk)
+
 [Tutorial 12: From raw data to a recommendation](Tutorial_12_notebook.ipynb)
 
 The tutorial is a guided integrated analysis of the synthetic benchmark `system_benchmark.csv`. It illustrates the workflow but does not replace the [Group Project brief](../pages/project.md).

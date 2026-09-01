@@ -37,6 +37,8 @@ Brooks: [Chapter 3](https://docs.google.com/viewer?url=https://raw.githubusercon
 
 ### Resources
 
+[Session material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgD6XzeqUeXCS7LIvC_9_U5wAb6CghgmcjpjaALfv6wQHxY)
+
 [Tutorial 3: Packet loss and failure counts](Tutorial_03_notebook.ipynb)
 
 [Assignment 2 — Discrete and Continuous Probability Models](../assignments/assignment_02_discrete_and_continuous_models.md) — due 29 Sept. 2026, 12:45

@@ -36,6 +36,8 @@ Brooks: [Chapter 6](https://docs.google.com/viewer?url=https://raw.githubusercon
 
 ### Resources
 
+[Session material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgBMYgMBBEcdSZsuxun1-eqXAWpTErjiliEf4RvxTqdvguk)
+
 [Tutorial 6: How precise is this measurement?](Tutorial_06_notebook.ipynb)
 
 [Assignment 3 — Sampling and Estimation](../assignments/assignment_03_sampling_and_estimation.md) — due 20 Oct. 2026, 12:45

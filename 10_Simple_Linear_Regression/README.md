@@ -37,6 +37,8 @@ Brooks: [Chapter 10](https://docs.google.com/viewer?url=https://raw.githubuserco
 
 ### Resources
 
+[Session material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgCTZYJOjiA6T7ahrSfe-UpnAQBFfuCv1R0c3l5R4tzvYpY)
+
 [Tutorial 10: Energy use and processor load](Tutorial_10_notebook.ipynb)
 
 [Assignment 5 — ANOVA and Regression](../assignments/assignment_05_anova_and_regression.md) — due 17 Nov. 2026, 12:45

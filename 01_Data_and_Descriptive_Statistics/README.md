@@ -41,6 +41,8 @@ Pay particular attention to population versus sample and to \(n-1\) in the sampl
 
 ### Resources
 
+[Session material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgDNor5iM8t9S7mty2xYLe7kAYjgEfJwN86pwbmJmsy-7Go)
+
 [Tutorial 1: Characterising sensor measurements](Tutorial_01_notebook.ipynb)
 
 [Assignment 1 — Data and Probability Foundations](../assignments/assignment_01_data_and_probability_foundations.md) — due 15 Sept. 2026, 12:45

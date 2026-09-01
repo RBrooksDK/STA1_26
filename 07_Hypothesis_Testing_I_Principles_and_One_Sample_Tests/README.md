@@ -36,6 +36,8 @@ Brooks: [Chapter 7](https://docs.google.com/viewer?url=https://raw.githubusercon
 
 ### Resources
 
+[Session material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgCy1Pl1liHATKmAJAONXmm1AUiyh9bDXLwBFVbyUMeANwQ)
+
 [Tutorial 7: Does the process meet the specification?](Tutorial_07_notebook.ipynb)
 
 [Assignment 4 — One- and Two-Sample Tests](../assignments/assignment_04_one_and_two_sample_tests.md) — due 3 Nov. 2026, 12:45
