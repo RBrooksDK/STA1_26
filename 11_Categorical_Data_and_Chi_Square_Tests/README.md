@@ -41,6 +41,8 @@ Brooks: [Chapter 11](https://docs.google.com/viewer?url=https://raw.githubuserco
 
 ### Resources
 
+[Session material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgAdD_we_CDBR5mfVMe-bKBtAYLDRCEBF_5lJKAhW2-uoik)
+
 [Tutorial 11: Defect types across production lines](Tutorial_11_notebook.ipynb)
 
 [Assignment 6 — Categorical Data](../assignments/assignment_06_categorical_data.md) — due 24 Nov. 2026, 12:45

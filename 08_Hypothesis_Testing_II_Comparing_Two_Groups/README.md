@@ -39,6 +39,8 @@ Brooks: [Chapter 8](https://docs.google.com/viewer?url=https://raw.githubusercon
 
 ### Resources
 
+[Session material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgADtRf7HAcvQ53k07MRhNujAX-REUsRY_u35NU9LeaV_cA)
+
 [Tutorial 8: A/B test of response times](Tutorial_08_notebook.ipynb)
 
 [Assignment 4 — One- and Two-Sample Tests](../assignments/assignment_04_one_and_two_sample_tests.md) — due 3 Nov. 2026, 12:45

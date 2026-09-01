@@ -37,6 +37,8 @@ Brooks: [Chapter 2](https://docs.google.com/viewer?url=https://raw.githubusercon
 
 ### Resources
 
+[Session material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgA24sEZYGqVRZiq4FEeoC80AU2jRRwgJdeO8VgY2eTbcWk)
+
 [Tutorial 2: Probability tools for automated inspection](Tutorial_02_notebook.ipynb)
 
 [Assignment 1 — Data and Probability Foundations](../assignments/assignment_01_data_and_probability_foundations.md) — due 15 Sept. 2026, 12:45

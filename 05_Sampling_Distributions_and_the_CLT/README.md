@@ -34,6 +34,8 @@ Brooks: [Chapter 5](https://docs.google.com/viewer?url=https://raw.githubusercon
 
 ### Resources
 
+[Session material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgBodH9cBwKgR78DJoVYlYnsASAVcCl56bzFE2EgoEY0eog)
+
 [Tutorial 5: From one sample to many](Tutorial_05_notebook.ipynb)
 
 [Assignment 3 — Sampling and Estimation](../assignments/assignment_03_sampling_and_estimation.md) — due 20 Oct. 2026, 12:45
