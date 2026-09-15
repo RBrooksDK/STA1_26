@@ -37,7 +37,7 @@ Brooks: [Chapter 3](https://docs.google.com/viewer?url=https://raw.githubusercon
 
 ### Resources
 
-[Session material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgD6XzeqUeXCS7LIvC_9_U5wAb6CghgmcjpjaALfv6wQHxY)
+[Session material](https://github.com/RBrooksDK/STA1_26/tree/main/03_Random_Variables_and_Discrete_Distributions/session_material)
 
 [Session notes](https://drive.google.com/file/d/1hBAMOLRnT0kbAp3mCQfVNr_LxmO6OFoc/view?usp=sharing)
 

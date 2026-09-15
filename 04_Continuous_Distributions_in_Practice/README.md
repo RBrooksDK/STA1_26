@@ -37,7 +37,7 @@ Brooks: [Chapter 4](https://docs.google.com/viewer?url=https://raw.githubusercon
 
 ### Resources
 
-[Session material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgDSmYZksHCGRLhWixBdyOOdAWZM_5MGaFvdM7LAki33vQc)
+[Session material](https://github.com/RBrooksDK/STA1_26/tree/main/04_Continuous_Distributions_in_Practice/session_material)
 
 [Tutorial 4: Response times and component lifetimes](Tutorial_04_notebook.ipynb)
 

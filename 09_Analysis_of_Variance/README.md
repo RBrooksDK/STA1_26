@@ -41,7 +41,7 @@ Brooks: [Chapter 9](https://docs.google.com/viewer?url=https://raw.githubusercon
 
 ### Resources
 
-[Session material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgAzeZpcNR3AQrElMhY31otqAfb6r5-bZFwqdVQ6dIazSSU)
+[Session material](https://github.com/RBrooksDK/STA1_26/tree/main/09_Analysis_of_Variance/session_material)
 
 [Tutorial 9: Several suppliers, one quality measure](Tutorial_09_notebook.ipynb)
 

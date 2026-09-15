@@ -41,7 +41,7 @@ Pay particular attention to population versus sample and to \(n-1\) in the sampl
 
 ### Resources
 
-[Session material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgDNor5iM8t9S7mty2xYLe7kAYjgEfJwN86pwbmJmsy-7Go)
+[Session material](https://github.com/RBrooksDK/STA1_26/tree/main/01_Data_and_Descriptive_Statistics/session_material)
 
 [Tutorial 1: Characterising sensor measurements](Tutorial_01_notebook.ipynb)
 
