@@ -42,7 +42,7 @@ Revisit your six assignments and the [Group Project brief](../pages/project.md).
 
 ### Resources
 
-[Session material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgAevq3HTqsESLYw8wgKZZSHAVTx7hfxyRWIXFlGmLmCVmk)
+[Session material](https://github.com/RBrooksDK/STA1_26/tree/main/12_Integrated_Analysis_and_Exam_Preparation/session_material)
 
 [Tutorial 12: From raw data to a recommendation](Tutorial_12_notebook.ipynb)
 
