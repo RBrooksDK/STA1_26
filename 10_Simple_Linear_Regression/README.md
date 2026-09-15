@@ -37,7 +37,7 @@ Brooks: [Chapter 10](https://docs.google.com/viewer?url=https://raw.githubuserco
 
 ### Resources
 
-[Session material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgCTZYJOjiA6T7ahrSfe-UpnAQBFfuCv1R0c3l5R4tzvYpY)
+[Session material](https://github.com/RBrooksDK/STA1_26/tree/main/10_Simple_Linear_Regression/session_material)
 
 [Tutorial 10: Energy use and processor load](Tutorial_10_notebook.ipynb)
 

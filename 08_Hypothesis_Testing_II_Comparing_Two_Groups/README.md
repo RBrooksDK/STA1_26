@@ -39,7 +39,7 @@ Brooks: [Chapter 8](https://docs.google.com/viewer?url=https://raw.githubusercon
 
 ### Resources
 
-[Session material](https://viaucdk-my.sharepoint.com/:f:/g/personal/rib_viauc_dk/IgADtRf7HAcvQ53k07MRhNujAX-REUsRY_u35NU9LeaV_cA)
+[Session material](https://github.com/RBrooksDK/STA1_26/tree/main/08_Hypothesis_Testing_II_Comparing_Two_Groups/session_material)
 
 [Tutorial 8: A/B test of response times](Tutorial_08_notebook.ipynb)
 
