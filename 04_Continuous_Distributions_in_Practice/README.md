@@ -39,6 +39,8 @@ Brooks: [Chapter 4](https://docs.google.com/viewer?url=https://raw.githubusercon
 
 [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/04_Continuous_Distributions_in_Practice/session_material)
 
+[Session notes](https://drive.google.com/file/d/1i4mlzumvM5jwTnBoSqmUh85BfLe_K2Hz/view?usp=sharing)
+
 [Tutorial 4: Response times and component lifetimes](Tutorial_04_notebook.ipynb)
 
 [Assignment 2 — Discrete and Continuous Probability Models](../assignments/assignment_02_discrete_and_continuous_models.md) — due 29 Sept. 2026, 12:45
