@@ -19,6 +19,8 @@
 
 **8 September 2026**
 
+Due to sound issues at the beginning, I edited that section out, so the recording starts a little after the session began. I also forgot to restart the recording after the break, so the first few minutes of the lesson afterward are missing.
+
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
     <iframe
         src="https://drive.google.com/file/d/1c4NcugELKjRqJDZOvJQkT_Jv4SC616fn/preview"
