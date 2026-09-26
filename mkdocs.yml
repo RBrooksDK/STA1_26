@@ -185,6 +185,7 @@ nav:
     - "12 Integrated Statistical Analysis and Exam Preparation":
       - 12_Integrated_Analysis_and_Exam_Preparation/README.md
       - "Tutorial 12": 12_Integrated_Analysis_and_Exam_Preparation/Tutorial_12_notebook.ipynb
+  - Recordings: pages/recording.md
   - Assignments:
     - Overview: pages/assignments.md
     - "Assignment 1 — Data and Probability Foundations": assignments/assignment_01_data_and_probability_foundations.md
