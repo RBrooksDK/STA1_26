@@ -13,6 +13,12 @@ __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
 
+# Keep instructor notes out of every published session-material folder
+**/session_material/*[Nn]otes*.pdf
+**/session_material/*[Nn]otes*.tex
+**/session_material/*[Aa]nnote*.pdf
+**/session_material/*[Aa]nnote*.tex
+
 # OS / editor
 .DS_Store
 Thumbs.db

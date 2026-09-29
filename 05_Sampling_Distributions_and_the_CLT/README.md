@@ -36,6 +36,8 @@ Brooks: [Chapter 5](https://docs.google.com/viewer?url=https://raw.githubusercon
 
 [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/05_Sampling_Distributions_and_the_CLT/session_material)
 
+[Session notes](https://drive.google.com/file/d/1QALXO_LjtaePJFrP0iJmW_1qY6dJm5fZ/view?usp=sharing)
+
 [Tutorial 5: From one sample to many](Tutorial_05_notebook.ipynb)
 
 [Assignment 3 — Sampling and Estimation](../assignments/assignment_03_sampling_and_estimation.md) — due 20 Oct. 2026, 12:45
