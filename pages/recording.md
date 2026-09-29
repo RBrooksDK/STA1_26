@@ -59,3 +59,18 @@ Due to sound issues at the beginning, I edited that section out, so the recordin
         allowfullscreen>
     </iframe>
 </div>
+
+---
+
+### 05 Sampling Distributions and the Central Limit Theorem
+
+**29 September 2026**
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
+    <iframe
+        src="https://drive.google.com/file/d/1a9k7jOxXlkDpius5cCJ295zChStfd0oZ/preview"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+        allow="autoplay; encrypted-media"
+        allowfullscreen>
+    </iframe>
+</div>
