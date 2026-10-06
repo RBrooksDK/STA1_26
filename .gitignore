@@ -18,6 +18,11 @@ __pycache__/
 **/session_material/*[Nn]otes*.tex
 **/session_material/*[Aa]nnote*.pdf
 **/session_material/*[Aa]nnote*.tex
+**/session_material/*[Nn]otes*_figures/
+
+# Store all future instructor lecture notes and copyable figures here, by session.
+# The entire folder stays local and must never be committed or pushed.
+/instructor_material/
 
 # OS / editor
 .DS_Store
