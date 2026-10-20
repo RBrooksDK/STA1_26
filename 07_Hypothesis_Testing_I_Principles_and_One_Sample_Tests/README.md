@@ -38,6 +38,8 @@ Brooks: [Chapter 7](https://docs.google.com/viewer?url=https://raw.githubusercon
 
 [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/07_Hypothesis_Testing_I_Principles_and_One_Sample_Tests/session_material)
 
+[Session notes](https://drive.google.com/file/d/1jAWMK0yaZEKXZ13KULtfeYcCxp9xE0Mo/view?usp=sharing)
+
 [Tutorial 7: Does the process meet the specification?](Tutorial_07_notebook.ipynb)
 
 [Assignment 4 — One- and Two-Sample Tests](../assignments/assignment_04_one_and_two_sample_tests.md) — due 3 Nov. 2026, 12:45
