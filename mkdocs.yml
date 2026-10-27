@@ -6,6 +6,7 @@ site_description: Course page for Statistics and Data Analysis for Engineers at 
 docs_dir: .
 site_dir: _site
 exclude_docs: |
+  CLAUDE.md
   manim/**
   planning/**
   tools/**
