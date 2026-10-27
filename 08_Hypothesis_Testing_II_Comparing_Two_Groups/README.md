@@ -7,7 +7,7 @@ tags:
     - Effect size
 ---
 
-<h1 align="center">Hypothesis Testing II: Comparing Two Groups (Video lecture</h1>
+<h1 align="center">Hypothesis Testing II: Comparing Two Groups (Video lecture)</h1>
 
 Many engineering questions compare two conditions: two servers, two suppliers, before and after a change. The design — independent samples versus paired observations — decides the test.
 
@@ -46,8 +46,6 @@ Brooks: [Chapter 8](https://docs.google.com/viewer?url=https://raw.githubusercon
 [Tutorial 8: A/B test of response times](Tutorial_08_notebook.ipynb)
 
 [Assignment 4 — One- and Two-Sample Tests](../assignments/assignment_04_one_and_two_sample_tests.md) — due 3 Nov. 2026, 12:45 
-
-### Video Lecture
 
 ### Video Lecture: 08 Hypothesis Testing II: Comparing Two Groups
 
