@@ -12,7 +12,7 @@ Kursusside (engelsk) for STA1, efterår 2026 (start 1. september 2026). Kursussi
 
 Kopier af kontrakt, stilguide og kildekort ligger også i `STA_book_v1/planning/`. De to sæt er ikke ens; versionerne her er senest ændret (31.08.2026 mod 29.08.2026). Spørg, før de synkroniseres.
 
-ANOVA skal fremadrettet ud af STA1. I 2026-materialet findes det stadig (`09_Analysis_of_Variance`, `assignments/assignment_05_anova_and_regression.md`, bogens kapitel 9). Fjern eller omstrukturer det kun efter aftale, og opdatér da kildekort, kontrakt og bog samtidig.
+Huskeregel til næste udgave: ANOVA skal ud af STA1. Det nuværende kursus (efterår 2026) ændres ikke; `09_Analysis_of_Variance`, assignment 5 og bogens kapitel 9 bliver. Når næste udgave planlægges, skal kildekort, kontrakt og bog opdateres samtidig.
 
 ## Struktur
 
