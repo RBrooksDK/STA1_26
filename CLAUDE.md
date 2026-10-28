@@ -35,5 +35,4 @@ Huskeregel til næste udgave: ANOVA skal ud af STA1. Det nuværende kursus (efte
 
 ## Byg og CI
 
-- Lokalt: `.venv\Scripts\mkdocs build --strict` (Python 3.12-miljø; Python 3.14 giver template-fejl i mkdocs-jupyter).
 - CI (`ci.yml`) bygger med `--strict` og deployer med `mkdocs gh-deploy`.
