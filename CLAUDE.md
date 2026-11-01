@@ -36,3 +36,10 @@ Huskeregel til næste udgave: ANOVA skal ud af STA1. Det nuværende kursus (efte
 ## Byg og CI
 
 - CI (`ci.yml`) bygger med `--strict` og deployer med `mkdocs gh-deploy`.
+
+## Status (efterår 2026)
+
+- Sessionerne 01–08 er afholdt. GoodNotes-noter findes for 02–08 i `G:\Mit drev\GoodNotes\STA1_26\STA02`–`STA08`.
+- Sessionerne 09–12 er skrevet til dette gennemløb før kursusstart og ikke gennemgået siden (senest ændret 15.09.2026). Tjek dem mod bogen, før der laves noter.
+- `G:\Mit drev\GoodNotes\STA\` indeholder noter fra det danske hold (STA_26, forår 2026) og er ikke kilde til indhold eller notation.
+- GoodNotes-noter bygges fra session 09 i `tools/goodnotes/` (git-ignoreret, udelukket fra mkdocs) efter `C:\GitHub\claude-setup\session-notes-metode.md`, uden recap-noter. Mapperne i GoodNotes-mappen oprettes af Richard inde fra GoodNotes.

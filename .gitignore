@@ -25,6 +25,9 @@ __pycache__/
 # The entire folder stays local and must never be committed or pushed.
 /instructor_material/
 
+# GoodNotes session notes (built locally, never published)
+/tools/goodnotes/
+
 # OS / editor
 .DS_Store
 Thumbs.db
