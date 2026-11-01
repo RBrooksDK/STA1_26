@@ -5,7 +5,7 @@ In this mini-project, you will analyse counts and categorical outcomes. You will
 !!! info "Practical information"
     - **Group size:** 2–4 students
     - **Submission:** one executed Jupyter notebook in English
-    - **Expected workload:** approximately 5–8 hours in total
+    - **Expected workload:** approximately 4–6 hours in total
     - **Statistical scope:** Session 11 and Brooks, Chapter 11
     - **Required method:** Python throughout
 

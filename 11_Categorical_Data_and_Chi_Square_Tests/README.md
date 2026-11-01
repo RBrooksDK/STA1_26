@@ -45,4 +45,4 @@ Brooks: [Chapter 11](https://docs.google.com/viewer?url=https://raw.githubuserco
 
 [Tutorial 11: Defect types across production lines](Tutorial_11_notebook.ipynb)
 
-[Assignment 6 — Categorical Data](../assignments/assignment_06_categorical_data.md) — due 24 Nov. 2026, 12:45
+[Assignment 6 — Categorical Data](../assignments/assignment_06_categorical_data.md) — due 1 Dec. 2026, 12:45

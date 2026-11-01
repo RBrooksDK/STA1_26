@@ -49,6 +49,8 @@ The following are fixed unless the course responsible explicitly changes them.
 - Six practice-oriented group assignments pair Sessions 1--2, 3--4, 5--6,
   7--8, and 9--10, with Session 11 forming the final assignment. An integrated
   group project follows Session 12.
+  Autumn 2026: no session on 17 Nov.; Session 11 on 24 Nov.; Session 12
+  delivered as self-study plus a Q&A session before the exam in January.
 - There are no separate exercise pages. Tutorials provide guided Python
   practice, while the six assignments and project provide independent work.
 - The oral exam is based on one assignment and the group project, in accordance
