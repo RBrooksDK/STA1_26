@@ -7,6 +7,12 @@ tags:
 
 <h1 align="center">Integrated Statistical Analysis and Exam Preparation</h1>
 
+!!! info "Format in autumn 2026"
+    This session is not taught as a lecture. Work through Chapter 12 and Tutorial 12
+    as self-study **before you start the group project**: the project must follow
+    the workflow shown there. Questions about the oral exam are answered in a
+    Q&A session before the exam in January.
+
 The last session is synthesis: choose a method, run a complete analysis from raw data to a recommendation, and practise the oral format. Always start with plots from Session 01. Always end with a sentence that a colleague in production or operations could use.
 
 A short method map is enough for most STA1 questions:
@@ -38,7 +44,7 @@ The group project is the same kind of analysis at slightly larger scale. The ora
 
 Brooks: [Chapter 12](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/RBrooksDK/STA_book_v1/main/main.pdf)
 
-Revisit your six assignments and the [Group Project brief](../pages/project.md). Bring questions about the oral exam.
+Revisit your six assignments and the [Group Project brief](../pages/project.md). Bring questions about the oral exam to the Q&A session before the exam in January.
 
 ### Resources
 

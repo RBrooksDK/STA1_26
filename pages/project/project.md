@@ -58,7 +58,7 @@ Examples of eligible method families include:
 
 Descriptive summaries and plots are required in every project. Several summaries or plots of the same data do not automatically constitute several separate methods. Do not add a method merely to reach the minimum count; justify what question it answers.
 
-The primary methods should come from Sessions 1–11. If your project appears to require a statistical method not covered by the course, discuss it with R. Brooks before Session 12 rather than introducing an unfamiliar method without guidance.
+The primary methods should come from Sessions 1–11. If your project appears to require a statistical method not covered by the course, discuss it with R. Brooks before you start the project, and no later than 1 December 2026, rather than introducing an unfamiliar method without guidance.
 
 !!! tip "Plan before calculating"
     Before examining final inferential output, record:
@@ -153,7 +153,7 @@ At the exam, you should be able to explain:
 
 ## Submission checklist
 
-- [ ] The group contains 2–4 students, or a deviation was agreed before Session 12.
+- [ ] The group contains 2–4 students, or a deviation was agreed by 1 December 2026.
 - [ ] The workload and scope are appropriate for approximately 25 hours per student.
 - [ ] The notebook states one coherent engineering objective and related subquestions.
 - [ ] The dataset's source, population, observational unit, variables, units, and design are documented.
