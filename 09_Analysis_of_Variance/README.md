@@ -43,7 +43,7 @@ Brooks: [Chapter 9](https://docs.google.com/viewer?url=https://raw.githubusercon
 
 [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/09_Analysis_of_Variance/session_material)
 
-[Session notes](https://drive.google.com/file/d/1RSJyK51j9K_39f6OBb7tGSF0SJyrBjOY/view?usp=sharing)
+[Session notes](https://drive.google.com/file/d/1YrIKpa-jCPJVreZWr2eFFn4mqFnoQHIM/view?usp=sharing)
 
 [Tutorial 9: Several suppliers, one quality measure](Tutorial_09_notebook.ipynb)
 
