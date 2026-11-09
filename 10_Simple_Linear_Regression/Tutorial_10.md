@@ -2,7 +2,7 @@
 
 ## 1. Problem / context
 
-Facilities want to know how daily energy use (kWh) changes with CPU load (%) on a set of one-day benchmark runs. The file is `energy_load.csv`. Each row is one day: that is the observational unit. The quantitative response is `energy_kwh`; the quantitative predictor is `cpu_load_pct`.
+Facilities want to know how the energy use (kWh) of a server changes with CPU load (%) over 40 one-hour benchmark runs, carried out in random order. The file is `energy_load.csv`. Each row is one run (the column `day` is the run number): that is the observational unit. The quantitative response is `energy_kwh`; the quantitative predictor is `cpu_load_pct`.
 
 This is a **statistics** tutorial: a conditional-mean model, residuals, inference for the slope, and the distinction between a mean-response interval and a prediction interval. Brooks Chapter 10 is the theory. We use **statsmodels**. We do not use scikit-learn, train/test splits, or a machine-learning framing.
 
@@ -20,9 +20,9 @@ Y=\beta_0+\beta_1 x+\varepsilon,
 - **Pearson** \(r\) measures direction and strength of **linear** association, from \(-1\) to \(1\). There is no universal cutoff for “strong”. Correlation is not causation.
 - \(R^2\) is the fraction of observed squared variation in \(y\) about \(\bar y\) accounted for by the fitted line. It is not the probability that the model is correct, not causation, and not a universal measure of prediction quality.
 - For simple linear regression **with an intercept**, \(R^2=r^2\). That identity need not hold for a no-intercept fit.
-- Residual-versus-fitted, residual-versus-order, and a QQ-plot of residuals address linearity, constant spread, and the normal-error approximation used for \(t\) intervals. They do not establish representative sampling or independence of days.
+- Residual-versus-fitted, residual-versus-order, and a QQ-plot of residuals address linearity, constant spread, and the normal-error approximation used for \(t\) intervals. They do not establish representative sampling or independence of runs.
 - An unusual point is investigated, not deleted automatically.
-- At a load \(x_0\) **inside the observed range**, a confidence interval for the mean response is narrower than a prediction interval for one new day. We do not extrapolate outside the observed loads without a defensible engineering model.
+- At a load \(x_0\) **inside the observed range**, a confidence interval for the mean response is narrower than a prediction interval for one new run. We do not extrapolate outside the observed loads without a defensible engineering model.
 
 ## 3. Python implementation
 
@@ -49,7 +49,7 @@ fig, ax = plt.subplots(figsize=(6.5, 3.8))
 ax.scatter(x, y, color="#6CA2C6")
 ax.set_xlabel("CPU load (%)")
 ax.set_ylabel("Energy (kWh)")
-ax.set_title("Daily energy use against processor load")
+ax.set_title("Energy use against processor load")
 plt.tight_layout()
 plt.show()
 ```
@@ -80,7 +80,7 @@ print("R^2 equals r^2 for this intercept model?", np.isclose(ols.rsquared, r**2)
 ```python
 xx = np.linspace(x.min(), x.max(), 80)
 fig, ax = plt.subplots(figsize=(6.5, 3.8))
-ax.scatter(x, y, color="#6CA2C6", label="observed days")
+ax.scatter(x, y, color="#6CA2C6", label="observed runs")
 ax.plot(xx, ols.predict(sm.add_constant(xx)), color="#FF8C00", label="least-squares line")
 ax.set_xlabel("CPU load (%)")
 ax.set_ylabel("Energy (kWh)")
@@ -102,7 +102,7 @@ axes[0].set_title("Residual versus fitted")
 
 axes[1].scatter(df["day"], ols.resid, color="#6CA2C6")
 axes[1].axhline(0, color="0.2", linestyle="--")
-axes[1].set_xlabel("Day (run order)")
+axes[1].set_xlabel("Run number (day)")
 axes[1].set_ylabel("Residual (kWh)")
 axes[1].set_title("Residual versus order")
 
@@ -121,12 +121,12 @@ leverage = infl.hat_matrix_diag
 cooks = infl.cooks_distance[0]
 flag = np.argmax(cooks)
 print(f"largest Cook's distance: day {int(df.loc[flag, 'day'])}, D = {cooks[flag]:.3f}, leverage = {leverage[flag]:.3f}")
-print("Investigate an influential day; do not delete it automatically.")
+print("Investigate an influential run; do not delete it automatically.")
 ```
 
-Pause: if one day has large Cook’s distance, what would you check in the operations log before changing the model?
+Pause: if one run has large Cook’s distance, what would you check in the operations log before changing the model?
 
-### Mean response versus one new day, at 70% load
+### Mean response versus one new run, at 70% load
 
 70% lies inside the observed load range.
 
@@ -136,7 +136,7 @@ frame = pred.summary_frame(alpha=0.05)
 print(frame[["mean", "mean_ci_lower", "mean_ci_upper", "obs_ci_lower", "obs_ci_upper"]])
 ```
 
-`mean_ci_*` is the 95% interval for the **mean** energy at 70% load. `obs_ci_*` is the wider 95% **prediction** interval for **one new day** at 70%.
+`mean_ci_*` is the 95% interval for the **mean** energy at 70% load. `obs_ci_*` is the wider 95% **prediction** interval for **one new run** at 70%.
 
 A load of 5% or 110% is outside the observed range. We do not predict there from this line alone.
 
@@ -144,7 +144,7 @@ A load of 5% or 110% is outside the observed range. We do not predict there from
 
 Follow the Chapter 10 eight-step workflow: population, unit, \(y\), \(x\), range; design; scatterplot; slope in kWh per percentage point; residual diagnostics and influence; slope interval, \(t\), \(p\), \(s\), \(R^2\); mean versus prediction interval; association versus causation.
 
-The fitted slope describes an association in these benchmark days. It does not, by itself, prove that raising load **causes** energy to rise, even though that mechanism may be physically plausible. The design of the study, not the size of \(R^2\), decides a causal claim.
+The fitted slope describes an association in these benchmark runs. It does not, by itself, prove that raising load **causes** energy to rise, even though that mechanism may be physically plausible. The design of the study, not the size of \(R^2\), decides a causal claim.
 
 ## 5. Common mistakes / things to notice
 
@@ -152,8 +152,8 @@ The fitted slope describes an association in these benchmark days. It does not, 
 - Treating \(R^2\) as the probability that the line is true, or as causation.
 - Using a QQ-plot of raw \(y\) instead of residuals.
 - Deleting an influential point because it is inconvenient.
-- Quoting the mean-response interval as if it were a prediction for one new day.
+- Quoting the mean-response interval as if it were a prediction for one new run.
 - Extrapolating outside the observed load range.
 - Fitting with scikit-learn and then reporting a \(p\)-value that that library does not compute.
 
-**Conclusion:** In this sample, mean energy increases with CPU load on a roughly linear scale. Report the slope in kWh per percentage point with its interval, \(R^2\) as a description of squared variation, the residual SD as leftover day-to-day variation, and a prediction interval when the question is about **one new day**. Stay inside the observed load range.
+**Conclusion:** In this sample, mean energy increases with CPU load on a roughly linear scale. Report the slope in kWh per percentage point with its interval, \(R^2\) as a description of squared variation, the residual SD as leftover run-to-run variation, and a prediction interval when the question is about **one new run**. Stay inside the observed load range.

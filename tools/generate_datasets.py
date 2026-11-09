@@ -95,9 +95,19 @@ def energy_load() -> dict:
             "energy_kwh": np.round(np.clip(energy, 0, None), 3),
         }
     )
+    order_rng = np.random.default_rng(2026)  # local; global stream unchanged
+    df["day"] = order_rng.permutation(n) + 1
+    df = df.sort_values("day").reset_index(drop=True)
     path = DATA / "energy_load.csv"
     df.to_csv(path, index=False)
-    return {"file": path.name, "n": n, "beta0": beta0, "beta1": beta1, "sigma": sigma}
+    return {
+        "file": path.name,
+        "n": n,
+        "beta0": beta0,
+        "beta1": beta1,
+        "sigma": sigma,
+        "run_order": "randomised (local rng, seed 2026)",
+    }
 
 
 def defect_types() -> dict:
