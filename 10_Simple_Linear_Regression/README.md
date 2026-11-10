@@ -39,6 +39,8 @@ Brooks: [Chapter 10](https://docs.google.com/viewer?url=https://raw.githubuserco
 
 [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/10_Simple_Linear_Regression/session_material)
 
+[Session notes](https://drive.google.com/file/d/1qgRGqkroh6sIxe23isFTBIpf82Kv022g/view?usp=sharing)
+
 [Tutorial 10: Energy use and processor load](Tutorial_10_notebook.ipynb)
 
 [Assignment 5 — ANOVA and Regression](../assignments/assignment_05_anova_and_regression.md) — due 17 Nov. 2026, 12:45
