@@ -2686,19 +2686,15 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </ol>
 <p>Those three methods come from three different sessions. They are not a shopping list: each answers one part of the same decision. Exploratory plots may suggest more questions; those will be labelled exploratory.</p>
 <p>This tutorial is a <strong>worked example of the process</strong>, not the <a href="../pages/project.md">Group Project brief</a> and not a template that dictates your project topic. Your group still chooses its own engineering question and dataset. The project must follow Brooks Chapter 12, the official brief, and the readiness checklist at the end.</p>
-<h2 id="2-what-we-will-compute">2. What we will compute<a class="anchor-link" href="#2-what-we-will-compute">¶</a></h2><p>Chapter 12’s workflow, compressed into one lab:</p>
+<h2 id="2-what-we-will-compute">2. What we will compute<a class="anchor-link" href="#2-what-we-will-compute">¶</a></h2><p>Chapter 12’s seven-step workflow (Brooks, Section 12.6), applied to one benchmark. Steps 4–6 are repeated for each of the three methods.</p>
 <ol>
-<li>Translate the decision into statistical questions.</li>
-<li>Identify population, unit, variables, units, and thresholds.</li>
-<li>Audit provenance, identifiers, missingness, ranges, coding, dependence, comparability.</li>
-<li>Separate planned from exploratory questions.</li>
-<li>Describe before testing.</li>
-<li>Choose methods because they answer the questions.</li>
-<li>State assumptions and diagnostics for each method.</li>
-<li>Report estimates, intervals, statistics, df, $p$-values, and effect magnitudes — not raw software dumps.</li>
-<li>Integrate the three results into one recommendation.</li>
-<li>Separate statistical evidence, practical importance, association, causation, and scope.</li>
-<li>State specific limitations.</li>
+<li><strong>Objective, population and questions.</strong> Translate the decision into statistical questions. Identify population, unit, variables, units, and thresholds. Separate planned from exploratory questions.</li>
+<li><strong>Study design and data provenance.</strong> How were the runs obtained, and what can the design support: description, association, generalisation, or causation?</li>
+<li><strong>Data audit and descriptive evidence.</strong> Audit provenance, identifiers, missingness, ranges, coding, dependence, comparability. Describe before testing.</li>
+<li><strong>Method and assumptions</strong> (each method). Choose methods because they answer the questions. State assumptions and diagnostics.</li>
+<li><strong>Results</strong> (each method). Report estimates, intervals, statistics, df, $p$-values, and effect magnitudes — not raw software dumps.</li>
+<li><strong>Interpretation in context</strong> (each method). Separate statistical evidence, practical importance, association, causation, and scope.</li>
+<li><strong>Integrated recommendation and limitations.</strong> Integrate the three results into one recommendation. State specific limitations.</li>
 </ol>
 <p>A practical threshold, set in advance: latency above 150 ms is operationally poor; an incident rate above 20% is unacceptable.</p>
 <h2 id="3-python-implementation">3. Python implementation<a class="anchor-link" href="#3-python-implementation">¶</a></h2>

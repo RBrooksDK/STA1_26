@@ -72,38 +72,41 @@ The primary methods should come from Sessions 1–11. If your project appears to
 
 ## Required workflow
 
-The notebook must follow the integrated workflow in Brooks, Chapter 12 and [Tutorial 12](../12_Integrated_Analysis_and_Exam_Preparation/Tutorial_12_notebook.ipynb).
+The notebook must follow the seven-step workflow in Brooks, Chapter 12 (Section 12.6), practised in [Tutorial 12](../12_Integrated_Analysis_and_Exam_Preparation/Tutorial_12_notebook.ipynb). Steps 4–6 are repeated for each of your three or more methods.
 
-### 1. Engineering objective and questions
+### 1. Objective, population and questions
 
-State one overall objective or decision and formulate the statistical subquestions. Explain how answering the subquestions contributes to the objective.
+State one overall engineering objective or decision, the target population or operating conditions, the observational unit, and the statistical subquestions. Explain how answering the subquestions contributes to the objective.
 
-### 2. Data audit and preparation
+### 2. Study design and data provenance
 
-Document the dataset's source, dimensions, identifiers, data types, units, category coding, missing values, duplicates, ranges, and unusual observations. Explain every exclusion, transformation, or derived variable. Do not delete an observation solely because it is inconvenient or changes a result.
+Describe how the observations were sampled, assigned, measured, paired or grouped, and where the dataset comes from. State what the design can support: description, association, generalisation or causation.
 
-### 3. Descriptive evidence
+### 3. Data audit and descriptive evidence
 
-Use appropriate summaries and plots before inference. Tables and figures must have meaningful labels, units, and short interpretations. Describe what the sample shows without treating descriptive differences as established population effects.
+Report sample sizes, data types, units, category coding, missing values, duplicates, ranges and unusual observations. Explain every exclusion, transformation or derived variable. Do not delete an observation solely because it is inconvenient or changes a result.
 
-### 4. Statistical analyses
+Use appropriate summaries and plots before inference. Tables and figures must have meaningful labels, units and short interpretations. Describe what the sample shows without treating descriptive differences as established population effects.
 
-For each of the three or more methods:
+### Steps 4–6: for each method
 
-1. state the subquestion and population parameter or model quantity;
-2. justify the method from the variables and study design;
-3. state the hypotheses or model, where relevant;
-4. examine assumptions and explain which cannot be checked from the data alone;
-5. report the relevant estimate, uncertainty, statistic, degrees of freedom, \(p\)-value, effect magnitude, or prediction—not merely a software dump; and
-6. write a contextual conclusion that distinguishes statistical evidence from practical importance.
+#### 4. Method and assumptions
 
-### 5. Integrated conclusion and recommendation
+State the subquestion and the population parameter or model quantity. Name and justify the method from the variables and study design, including the direction of comparisons. State the hypotheses or model, where relevant, and examine the assumptions; explain which cannot be checked from the data alone.
+
+#### 5. Results
+
+Report the relevant estimate, confidence interval, test statistic, degrees of freedom, \(p\)-value, effect magnitude or prediction — not merely a software dump.
+
+#### 6. Interpretation in context
+
+Interpret magnitude, uncertainty, diagnostics and practical importance in the units of the problem. Distinguish statistical evidence from practical importance.
+
+### 7. Integrated recommendation and limitations
 
 Bring the analyses together. The final recommendation must use evidence from the complete project rather than list three disconnected conclusions. State conflicts or trade-offs honestly—for example, when one alternative performs better on one response but worse on another.
 
 Explain what the evidence supports, what remains uncertain, and what should happen next. Keep generalisation and causal language within the limits of the study design.
-
-### 6. Limitations
 
 State specific limitations and their likely consequences. Examples include unrepresentative sampling, dependence, confounding, measurement limitations, missing operating conditions, small samples, sparse categories, model departures, or imprecise effects. “More data are needed” is not sufficient unless you explain what evidence is missing and why it matters.
 
