@@ -22,19 +22,15 @@ This tutorial is a **worked example of the process**, not the [Group Project bri
 
 ## 2. What we will compute
 
-Chapter 12’s workflow, compressed into one lab:
+Chapter 12’s seven-step workflow (Brooks, Section 12.6), applied to one benchmark. Steps 4–6 are repeated for each of the three methods.
 
-1. Translate the decision into statistical questions.
-2. Identify population, unit, variables, units, and thresholds.
-3. Audit provenance, identifiers, missingness, ranges, coding, dependence, comparability.
-4. Separate planned from exploratory questions.
-5. Describe before testing.
-6. Choose methods because they answer the questions.
-7. State assumptions and diagnostics for each method.
-8. Report estimates, intervals, statistics, df, \(p\)-values, and effect magnitudes — not raw software dumps.
-9. Integrate the three results into one recommendation.
-10. Separate statistical evidence, practical importance, association, causation, and scope.
-11. State specific limitations.
+1. **Objective, population and questions.** Translate the decision into statistical questions. Identify population, unit, variables, units, and thresholds. Separate planned from exploratory questions.
+2. **Study design and data provenance.** How were the runs obtained, and what can the design support: description, association, generalisation, or causation?
+3. **Data audit and descriptive evidence.** Audit provenance, identifiers, missingness, ranges, coding, dependence, comparability. Describe before testing.
+4. **Method and assumptions** (each method). Choose methods because they answer the questions. State assumptions and diagnostics.
+5. **Results** (each method). Report estimates, intervals, statistics, df, \(p\)-values, and effect magnitudes — not raw software dumps.
+6. **Interpretation in context** (each method). Separate statistical evidence, practical importance, association, causation, and scope.
+7. **Integrated recommendation and limitations.** Integrate the three results into one recommendation. State specific limitations.
 
 A practical threshold, set in advance: latency above 150 ms is operationally poor; an incident rate above 20% is unacceptable.
 

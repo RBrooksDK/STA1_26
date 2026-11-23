@@ -26,7 +26,7 @@ The group project is the same kind of analysis at slightly larger scale. The ora
 #### Key Concepts
 
 - Method choice from the question, not from a favourite procedure
-- A complete workflow: import, plots, justified method, conclusion
+- The seven-step workflow of Chapter 12: from objective and design to an integrated recommendation
 - Communicating uncertainty and assumptions
 - Relating an assignment to the project
 - The 20-minute oral format
