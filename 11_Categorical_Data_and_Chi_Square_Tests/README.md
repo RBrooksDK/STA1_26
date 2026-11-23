@@ -43,6 +43,10 @@ Brooks: [Chapter 11](https://docs.google.com/viewer?url=https://raw.githubuserco
 
 [Session material](https://github.com/RBrooksDK/STA1_26/tree/main/11_Categorical_Data_and_Chi_Square_Tests/session_material)
 
+[Session notes](https://drive.google.com/file/d/1tJRKHv62Dj6KTbpk8pbdeEdLfNREtAac/view?usp=sharing)
+
+[Session notes code (Jupyter notebook)](https://github.com/RBrooksDK/STA1_26/blob/main/11_Categorical_Data_and_Chi_Square_Tests/session_material/session11_notes_code.ipynb) — download it and run the code from the notes yourself
+
 [Tutorial 11: Defect types across production lines](Tutorial_11_notebook.ipynb)
 
 [Assignment 6 — Categorical Data](../assignments/assignment_06_categorical_data.md) — due 1 Dec. 2026, 12:45
